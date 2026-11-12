@@ -108,7 +108,7 @@ export default function FeaturesDialog({
           sx={{
             fontFamily: FONT,
             fontSize: 13,
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: 600,
             cursor: "pointer",
           }}
@@ -148,7 +148,7 @@ export default function FeaturesDialog({
                   sx={{
                     fontFamily: FONT,
                     fontSize: 15,
-                    color: isSelected ? "#b92a31" : "#333",
+                    color: isSelected ? "#7a97ff" : "#333",
                     fontWeight: isSelected ? 700 : 500,
                   }}
                 >
@@ -158,9 +158,9 @@ export default function FeaturesDialog({
                   checked={isSelected}
                   onChange={() => toggle(f.value)}
                   sx={{
-                    "& .MuiSwitch-switchBase.Mui-checked": { color: "#b92a31" },
+                    "& .MuiSwitch-switchBase.Mui-checked": { color: "#7a97ff" },
                     "& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track": {
-                      backgroundColor: "#b92a31",
+                      backgroundColor: "#7a97ff",
                     },
                   }}
                 />
@@ -183,7 +183,7 @@ export default function FeaturesDialog({
             textTransform: "none",
             borderRadius: "10px",
             py: 1.25,
-            backgroundColor: "#b92a31",
+            backgroundColor: "#7a97ff",
             "&:hover": { backgroundColor: "#a01c22" },
           }}
         >

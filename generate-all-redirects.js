@@ -136,7 +136,7 @@ const manualRedirects = [
 function fetchData() {
   return new Promise((resolve, reject) => {
     console.log('🔄 Fetching data from API...');
-    https.get('https://api.ajur.app/api/active-category-cities', (res) => {
+    https.get('https://api.boomlex.ir/api/active-category-cities', (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
@@ -279,12 +279,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.ajur.app',
+        hostname: 'api.boomlex.ir',
         pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'www.api.ajur.app',
+        hostname: 'www.api.boomlex.ir',
         pathname: '/**',
       },
       {

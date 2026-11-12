@@ -57,7 +57,7 @@ const RealStateInDepartmentCard = (props) => {
     axios({
       method: "post",
     
-      url: "https://api.ajur.app/api/department-join-request-verify",
+      url: "https://api.boomlex.ir/api/department-join-request-verify",
 
       params: {
         token: token,
@@ -97,7 +97,7 @@ const RealStateInDepartmentCard = (props) => {
     axios({
       method: "post",
     
-      url: "https://api.ajur.app/api/department-join-request-decline",
+      url: "https://api.boomlex.ir/api/department-join-request-decline",
 
       params: {
         token: token,

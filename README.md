@@ -61,7 +61,7 @@ Here's the full inventory. 16 events, all wired end-to-end and verified.
 11	auth	Enter SMS code + verify	handleSubmit() in verify.jsx	{ action: "signup"|"login", method: "otp", phone_prefix, has_next_redirect }
 🔹 Contact Funnel Events (homepage CTA → form page)
 #	Event	Trigger	Fires from	Payload
-12	contact_call_click	Click "تماس با آجر"	FileRequest.jsx → handleCallClick()	{ source, phone }
+12	contact_call_click	Click "تماس با بوملکس"	FileRequest.jsx → handleCallClick()	{ source, phone }
 13	contact_intent	Click "ثبت درخواست"	FileRequest.jsx → handleActionClick()	{ source, intent: "form" }
 14	contact_form_started	Load /file-request page	useEffect on mount	{ source: "file-request-page" }
 15	contact_form_submitted	Click "ادامه" + SMS sent	handleSendVerification() success	{ source, request_type, city_id, property_type, has_description, description_length, phone_prefix, property_request_id, ... }
@@ -113,7 +113,7 @@ Browser (or SSR) fires trackEvent / fireSsrEvent
            │
            ├── Client clicks → lib/track.js → POST /api/track-event
            │
-           └── SSR events → lib/ssrTrack.js → POST api.ajur.app/api/analytics/track
+           └── SSR events → lib/ssrTrack.js → POST api.boomlex.ir/api/analytics/track
                               (server-to-server, no CORS)
            │
            ▼

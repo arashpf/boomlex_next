@@ -19,7 +19,7 @@ const CityChangeAlertDialog = ({
   onConfirm,
   currentCity,
   newCity,
-  title = "نیاز به تغییر شهر در آجر",
+  title = "نیاز به تغییر شهر در بوملکس",
   confirmButtonText = "تغییر شهر",
   cancelButtonText = "لغو",
 }) => {
@@ -40,7 +40,7 @@ const CityChangeAlertDialog = ({
       {/* Simple header with brand color */}
       <Box
         sx={{
-          backgroundColor: '#b92a31',
+          backgroundColor: '#7a97ff',
           padding: '20px 24px 16px',
           textAlign: 'center',
           position: 'relative',
@@ -79,10 +79,10 @@ const CityChangeAlertDialog = ({
         {/* Simple centered content */}
         <Box
           sx={{
-            backgroundColor: 'rgba(185, 42, 49, 0.03)',
+            backgroundColor: 'rgba(15, 180, 187, 0.03)',
             borderRadius: '10px',
             padding: '20px',
-            border: '1px solid rgba(185, 42, 49, 0.1)',
+            border: '1px solid rgba(15, 180, 187, 0.1)',
             marginTop: '8px',
             textAlign: 'center',
           }}
@@ -113,7 +113,7 @@ const CityChangeAlertDialog = ({
             <Typography
               variant="body2"
               sx={{
-                color: '#b92a31',
+                color: '#7a97ff',
                 mx: 1,
               }}
             >
@@ -122,7 +122,7 @@ const CityChangeAlertDialog = ({
             <Typography
               variant="body1"
               sx={{
-                color: '#b92a31',
+                color: '#7a97ff',
                 fontWeight: 600,
               }}
             >
@@ -167,12 +167,12 @@ const CityChangeAlertDialog = ({
           sx={{
             borderRadius: '10px',
             padding: '10px',
-            borderColor: '#b92a31',
-            color: '#b92a31',
+            borderColor: '#7a97ff',
+            color: '#7a97ff',
             fontWeight: 600,
             '&:hover': {
               borderColor: '#a0252c',
-              backgroundColor: 'rgba(185, 42, 49, 0.04)',
+              backgroundColor: 'rgba(15, 180, 187, 0.04)',
             }
           }}
         >

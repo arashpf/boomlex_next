@@ -6,12 +6,12 @@
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
          <div className="max-w-7xl mx-auto my-6 text-center">
-              <h1 className="text-2xl md:text-3xl font-bold">بهترین‌های آجر</h1>
+              <h1 className="text-2xl md:text-3xl font-bold">بهترین‌های بوملکس</h1>
             </div>
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">بهترین‌های آجر</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">بهترین‌های بوملکس</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-            دسترسی سریع به برترین خدمات و امکانات آجر
+            دسترسی سریع به برترین خدمات و امکانات بوملکس
           </p>
         </div>
 

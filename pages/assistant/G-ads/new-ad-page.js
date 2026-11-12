@@ -65,7 +65,7 @@ function NewAdPage() {
     console.log("📤 Payload to send:", payload);
 
     try {
-      const response = await axios.post("https://api.ajur.app/api/google-ads/new", payload);
+      const response = await axios.post("https://api.boomlex.ir/api/google-ads/new", payload);
       console.log("✅ Response:", response.data);
       return response.data;
     } catch (error) {

@@ -19,7 +19,7 @@ export default function SharePage() {
 
     const fetchSharedItems = async () => {
       try {
-        const res = await fetch(`https://api.ajur.app/api/share/${shortCode}`);
+        const res = await fetch(`https://api.boomlex.ir/api/share/${shortCode}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.message || 'Failed to load shared items');
@@ -112,7 +112,7 @@ export default function SharePage() {
     href={ajour://share/${shortCode}}
     style={{
       padding: '10px 20px',
-      backgroundColor: '#b92a31',
+      backgroundColor: '#7a97ff',
       color: 'white',
       borderRadius: '4px',
       textDecoration: 'none',

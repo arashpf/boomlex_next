@@ -177,7 +177,7 @@ export default function MainForm(props) {
   const fetchworker = (worker) => {
     axios({
       method: "get",
-      url: `https://api.ajur.app/api/posts/${edit_id}`,
+      url: `https://api.boomlex.ir/api/posts/${edit_id}`,
     }).then(function (response) {
       set_old_images(response.data.images);
       set_old_videos(response.data.videos);
@@ -300,7 +300,7 @@ export default function MainForm(props) {
   useEffect(() => {
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/category-fields",
+      url: "https://api.boomlex.ir/api/category-fields",
       params: {
         cat: cat.id,
       },
@@ -643,7 +643,7 @@ export default function MainForm(props) {
         axios({
           headers: { "Content-Type": "multipart/form-data" },
           method: "post",
-          url: "https://api.ajur.app/api/post-model-with-images",
+          url: "https://api.boomlex.ir/api/post-model-with-images",
           timeout: 1000 * 100,
           params: {
             token: token,

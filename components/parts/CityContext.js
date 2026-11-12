@@ -14,7 +14,7 @@ export const CityProvider = ({ children }) => {
   const fetchAllCities = async () => {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities"
+        "https://api.boomlex.ir/api/search-cities"
       );
       if (response.data?.items) {
         setAllCities(response.data.items);

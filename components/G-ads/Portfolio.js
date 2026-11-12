@@ -14,7 +14,7 @@ function Portfolio() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('https://api.ajur.app/api/base')
+        axios.get('https://api.boomlex.ir/api/base')
             .then((response) => {
                 setData(response.data.departments);
             })

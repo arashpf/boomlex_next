@@ -55,7 +55,7 @@ const MarketingEntro = (props) => {
       
          
 
-        اپلیکیشن آجر  </h2>
+        اپلیکیشن بوملکس  </h2>
     <div className={styles['about-image-wrapper']}>
    
 
@@ -78,7 +78,7 @@ const MarketingEntro = (props) => {
     <div className={styles['about-text-wrapper']}>
     
    
-    <h2>کسب درامد از بازاریابی آجر ؟</h2>
+    <h2>کسب درامد از بازاریابی بوملکس ؟</h2>
     <p>{username}</p> 
     <p>{type}</p>
     <p style={{textAlign:'justify',direction:'rtl',fontSize:17}}>
@@ -87,7 +87,7 @@ const MarketingEntro = (props) => {
       درامد آینده این پلتفرم شریک باشید
     </p>
     <p style={{textAlign:'justify',direction:'rtl',fontSize:18}}>
-      توجه داشته باشید که این اپلیکیشن برای شما و دوستانی که معرفی میکنید  رایگان است و آجر هیچ
+      توجه داشته باشید که این اپلیکیشن برای شما و دوستانی که معرفی میکنید  رایگان است و بوملکس هیچ
       هزینه ای را بابت ثبت نام ، پنل حرفه ای املاک , بازاریابی  و امکانات دیگر از شما دریافت نمیکند
     </p>
       

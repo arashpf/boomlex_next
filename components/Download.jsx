@@ -137,14 +137,14 @@ export default function Download() {
             className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center iransans-heading"
             style={{ fontFamily: 'iransans, Sahel, Tanha, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif', fontWeight: 800 }}
           >
-            اپلیکیشن آجر را دریافت کنید
+            اپلیکیشن بوملکس را دریافت کنید
           </h1>
           <p
             className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto lg:mr-0"
             dir="rtl"
           >
             اپلیکیشن برتر املاک ما را دانلود کنید تا از تمامی امکانات پیشرفته‌ی
-            آجر بهترین استفاده را ببرید.
+            بوملکس بهترین استفاده را ببرید.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

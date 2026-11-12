@@ -59,19 +59,19 @@ function SimpleHeader() {
                                 <img
                                     className={styles["logo-just-mobile-image"]}
                                     src="/img/big-logo-180.png"
-                                    alt="لوگوی مشاور املاک آجر"
+                                    alt="لوگوی مشاور املاک بوملکس"
                                     width={45}
                                     height={45}
                                     style={{ marginRight: '5px' }}
                                 />
-                                مشاور املاک هوشمند آجر
+                                مشاور املاک هوشمند بوملکس
                             </p>
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className={`flex-grow-1 pe-3 ${styles["nav-link-wrapper-end"]}`}>
                             <Nav.Link href="/"><p>خانه</p></Nav.Link>
-                            <Nav.Link href="/about"><p>درباره آجر</p></Nav.Link>
+                            <Nav.Link href="/about"><p>درباره بوملکس</p></Nav.Link>
                             <Nav.Link href="/support"><p>پشتیبانی</p></Nav.Link>
                             <Nav.Link href="/download"><p>دانلود اپلیکیشن</p></Nav.Link>
                         </Nav>
@@ -86,7 +86,7 @@ function SimpleHeader() {
                         <img
                             className={styles.image_logo_small}
                             src="/logo/web-logo-text.png"
-                            alt="لوگوی آجر"
+                            alt="لوگوی بوملکس"
                         />
                     </Link>
                 </Navbar.Brand>

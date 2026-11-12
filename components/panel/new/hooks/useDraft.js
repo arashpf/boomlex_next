@@ -183,7 +183,7 @@ export const useDraft = ({ mode, propertyId, categoryId, onToast } = {}) => {
           return {
             image: {
               id: last.id,
-              url: `https://api.ajur.app/public/workers/images/${last.filepath}`,
+              url: `https://api.boomlex.ir/public/workers/images/${last.filepath}`,
               filepath: last.filepath,
             },
           };

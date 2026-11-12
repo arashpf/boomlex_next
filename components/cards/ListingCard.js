@@ -44,13 +44,13 @@ function WorkerCard({ file }) {
   };
 
   const calculateDaysPast = (createdAt) => {
-    if (!createdAt) return "امروز در آجر";
+    if (!createdAt) return "امروز در بوملکس";
     try {
       const createdDate = parseISO(createdAt);
       const daysPast = differenceInDays(new Date(), createdDate);
-      return daysPast < 1 ? "امروز در آجر" : `${daysPast} روز در آجر`;
+      return daysPast < 1 ? "امروز در بوملکس" : `${daysPast} روز در بوملکس`;
     } catch {
-      return "امروز در آجر";
+      return "امروز در بوملکس";
     }
   };
 
@@ -105,7 +105,7 @@ function WorkerCard({ file }) {
           className="absolute top-2 left-2 bg-white/80 rounded-md p-2 shadow-sm"
         >
           {isFavorite ? (
-            <FavoriteIcon style={{ color: "#b92a31" }} />
+            <FavoriteIcon style={{ color: "#7a97ff" }} />
           ) : (
             <FavoriteBorderIcon />
           )}

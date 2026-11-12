@@ -50,7 +50,7 @@ export default function FileRequest({
           <h2 className="fr-title">
             از جستجو خسته شدی؟{" "}
           </h2>
-          <p className="fr-subtitle">یک بار بسپار ، بقیش با آجر</p>
+          <p className="fr-subtitle">یک بار بسپار ، بقیش با بوملکس</p>
         </div>
 
         <div className="fr-ctas">
@@ -96,7 +96,7 @@ export default function FileRequest({
                 strokeLinejoin="round"
               />
             </svg>
-            <span>تماس با آجر</span>
+            <span>تماس با بوملکس</span>
           </button>
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function BoostPage() {
     if (!worker_id) return;
     async function loadData() {
       try {
-        const res = await axios.get("https://api.ajur.app/api/upgrade-plans", {
+        const res = await axios.get("https://api.boomlex.ir/api/upgrade-plans", {
           params: { worker_id },
         });
 
@@ -236,7 +236,7 @@ export default function BoostPage() {
       }
 
       const res = await axios.post(
-        "https://api.ajur.app/api/post-upgrade",
+        "https://api.boomlex.ir/api/post-upgrade",
         payload,
         {
           headers: {
@@ -381,7 +381,7 @@ export default function BoostPage() {
 
         <DialogContent>
           <Typography fontSize={14} color="text.secondary" lineHeight={2}>
-            تمام امکانات پایه آجر به صورت رایگان برای آگهی شما فعال میشود ، هر
+            تمام امکانات پایه بوملکس به صورت رایگان برای آگهی شما فعال میشود ، هر
             زمان که نیاز داشتید میتوانید از پنل خود برای ارتقاع این آگهی و جذب
             تماس و بازدید بیشتر اقدام کنید
           </Typography>

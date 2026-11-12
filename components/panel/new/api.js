@@ -5,7 +5,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_BASE = "https://api.ajur.app/api";
+const API_BASE = "https://api.boomlex.ir/api";
 
 // ==================== Helpers ====================
 const getToken = () => Cookies.get("id_token");

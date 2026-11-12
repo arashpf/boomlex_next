@@ -457,9 +457,9 @@ const FilterModal = ({
             maximumValue={filter.max}
             value={filter.low || filter.min}
             onValueChange={(value) => onRangeFilterChange(filter.id, 'low', Math.round(value))}
-            minimumTrackTintColor="#b92a31"
+            minimumTrackTintColor="#7a97ff"
             maximumTrackTintColor="#d3d3d3"
-            thumbTintColor="#b92a31"
+            thumbTintColor="#7a97ff"
           />
         )}
       </View>
@@ -496,7 +496,7 @@ const FilterModal = ({
                 {category.name || category.title}
               </Text>
               {selectedCategory?.id === category.id && (
-                <Icon name="check" size={20} color="#b92a31" />
+                <Icon name="check" size={20} color="#7a97ff" />
               )}
             </TouchableOpacity>
           ))}
@@ -521,7 +521,7 @@ const FilterModal = ({
               <Switch
                 value={selectedFeatures?.some(f => f.value === feature.value)}
                 onValueChange={() => onFeatureToggle(feature)}
-                trackColor={{ false: '#767577', true: '#b92a31' }}
+                trackColor={{ false: '#767577', true: '#7a97ff' }}
                 thumbColor="#f4f3f4"
               />
             </TouchableOpacity>
@@ -553,7 +553,7 @@ const FilterModal = ({
                 {getSortDisplayText ? getSortDisplayText(sortOption) : sortOption}
               </Text>
               {sortBy === sortOption && (
-                <Icon name="check" size={20} color="#b92a31" />
+                <Icon name="check" size={20} color="#7a97ff" />
               )}
             </TouchableOpacity>
           ))}
@@ -752,7 +752,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 8,
     paddingBottom: 0,
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
     padding: 1,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
@@ -767,7 +767,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
     padding: 16,
   },
   modalTitle: {
@@ -839,7 +839,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   selectedCategoryText: {
-    color: '#b92a31',
+    color: '#7a97ff',
     fontWeight: 'bold',
   },
   featureItem: {
@@ -875,7 +875,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   selectedSortText: {
-    color: '#b92a31',
+    color: '#7a97ff',
     fontWeight: 'bold',
   },
   categoryFieldsContainer: {
@@ -946,7 +946,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   focusedInput: {
-    borderColor: '#b92a31',
+    borderColor: '#7a97ff',
     borderWidth: 2,
   },
   chipContainerAbove: {
@@ -969,7 +969,7 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
   chip: {
-    backgroundColor: '#a92b31',
+    backgroundColor: '#7a97ff',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 16,
@@ -1035,7 +1035,7 @@ const styles = StyleSheet.create({
     borderTopColor: '#e0e0e0',
   },
   applyButton: {
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
     padding: 16,
     borderRadius: 8,
     alignItems: 'center',

@@ -64,13 +64,13 @@ function Hotspot({ name, position, onClick }) {
             background:
               "radial-gradient(circle at center, rgba(0, 242, 255, 0.8) 0%, rgba(0, 68, 102, 0.8) 100%)",
             color: "#ffffff",
-            border: "2px solid rgba(185, 42, 49, 0.7)",
+            border: "2px solid rgba(15, 180, 187, 0.7)",
             borderRadius: "50%",
             fontSize: "14px",
             fontWeight: "bold",
             cursor: "pointer",
             boxShadow:
-              "0 0 12px rgba(185, 42, 49, 0.7), 0 0 20px rgba(0,255,255,0.3)",
+              "0 0 12px rgba(15, 180, 187, 0.7), 0 0 20px rgba(0,255,255,0.3)",
             textShadow: "0 1px 2px rgba(0,0,0,0.5)",
             backdropFilter: "blur(6px)",
             transform: "translateY(20px)",
@@ -80,13 +80,13 @@ function Hotspot({ name, position, onClick }) {
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.1) translateY(20px)";
             e.currentTarget.style.boxShadow =
-              "0 0 20px rgba(185, 42, 49, 0.8), 0 0 30px rgba(0,255,255,0.4)";
+              "0 0 20px rgba(15, 180, 187, 0.8), 0 0 30px rgba(0,255,255,0.4)";
             e.currentTarget.style.opacity = "1";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1.0) translateY(20px)";
             e.currentTarget.style.boxShadow =
-              "0 0 12px rgba(185, 42, 49, 0.7), 0 0 20px rgba(0,255,255,0.3)";
+              "0 0 12px rgba(15, 180, 187, 0.7), 0 0 20px rgba(0,255,255,0.3)";
             e.currentTarget.style.opacity = "0.9";
           }}
         >
@@ -166,15 +166,15 @@ function VirtualTourPage() {
       try {
         setLoading(true);
         const tourRes = await axios.get(
-          `https://api.ajur.app/api/virtual-tour?worker_id=${id}`
+          `https://api.boomlex.ir/api/virtual-tour?worker_id=${id}`
         );
         const sectionsRes = await axios.get(
-          `https://api.ajur.app/api/virtual-tours/${tourRes.data.id}/sections`
+          `https://api.boomlex.ir/api/virtual-tours/${tourRes.data.id}/sections`
         );
         setSections(sectionsRes.data);
 
         const panoramaPromises = sectionsRes.data.map((section) =>
-          axios.get(`https://api.ajur.app/api/sections/${section.id}/panoramas`)
+          axios.get(`https://api.boomlex.ir/api/sections/${section.id}/panoramas`)
         );
 
         const panoramasRes = await Promise.all(panoramaPromises);
@@ -207,7 +207,7 @@ function VirtualTourPage() {
   return (
     <>
       <Head>
-        <title>تور مجازی آجر</title>
+        <title>تور مجازی بوملکس</title>
       </Head>
       <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
         <Canvas

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-const SITE_URL = "https://ajur.app";
+const SITE_URL = "https://boomlex.ir";
 const CANONICAL_URL = `${SITE_URL}/assistant/comissioncalc`;
 
 /*
@@ -181,7 +181,7 @@ const FAQ_ITEMS = [
       "بله. این ابزار مالیات را جداگانه محاسبه کرده و سپس آن را به کمیسیون پایه اضافه می‌کند. نرخ قابل اجرا ممکن است بر اساس مقررات و زمان معامله تغییر کند.",
   },
   {
-    question: "آیا نتیجه محاسبه‌گر کمیسیون آجر قطعی است؟",
+    question: "آیا نتیجه محاسبه‌گر کمیسیون بوملکس قطعی است؟",
     answer:
       "خیر. نتیجه این ابزار تقریبی و صرفاً برای راهنمایی است. برای تعیین مبلغ قطعی باید تعرفه معتبر شهر، نوع قرارداد و شرایط واقعی معامله بررسی شود.",
   },
@@ -196,7 +196,7 @@ const FAQ_ITEMS = [
 const webApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "محاسبه‌گر آنلاین کمیسیون املاک آجر",
+  name: "محاسبه‌گر آنلاین کمیسیون املاک بوملکس",
   alternateName: [
     "ماشین حساب کمیسیون املاک",
     "محاسبه حق کمیسیون بنگاه",
@@ -217,7 +217,7 @@ const webApplicationSchema = {
   },
   provider: {
     "@type": "Organization",
-    name: "آجر",
+    name: "بوملکس",
     url: SITE_URL,
   },
 };
@@ -229,7 +229,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 1,
-      name: "آجر",
+      name: "بوملکس",
       item: `${SITE_URL}/`,
     },
     {
@@ -772,7 +772,7 @@ export default function AjurCommissionPage() {
     <>
       <Head>
         <title>
-          محاسبه آنلاین کمیسیون املاک | ماشین حساب آجر
+          محاسبه آنلاین کمیسیون املاک | ماشین حساب بوملکس
         </title>
 
         <meta
@@ -789,11 +789,11 @@ export default function AjurCommissionPage() {
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر" />
+        <meta property="og:site_name" content="بوملکس" />
 
         <meta
           property="og:title"
-          content="محاسبه آنلاین کمیسیون املاک | آجر"
+          content="محاسبه آنلاین کمیسیون املاک | بوملکس"
         />
 
         <meta
@@ -807,7 +807,7 @@ export default function AjurCommissionPage() {
 
         <meta
           name="twitter:title"
-          content="محاسبه آنلاین کمیسیون املاک | آجر"
+          content="محاسبه آنلاین کمیسیون املاک | بوملکس"
         />
 
         <meta
@@ -850,7 +850,7 @@ export default function AjurCommissionPage() {
                   href="/"
                   className="transition-colors hover:text-[#bc323a]"
                 >
-                  آجر
+                  بوملکس
                 </Link>
               </li>
 
@@ -884,7 +884,7 @@ export default function AjurCommissionPage() {
             </h1>
 
             <p className="mx-auto mb-3 max-w-2xl text-sm leading-7 text-gray-700 sm:text-base">
-              با ماشین حساب کمیسیون املاک آجر می‌توانید
+              با ماشین حساب کمیسیون املاک بوملکس می‌توانید
               حق کمیسیون خرید، فروش، رهن و اجاره ملک را
               برای هر طرف معامله محاسبه کنید.
             </p>
@@ -1298,7 +1298,7 @@ export default function AjurCommissionPage() {
             <p>
               برای محاسبه کمیسیون خرید و فروش، ابتدا شهر،
               نوع ملک و قیمت کامل معامله را انتخاب یا وارد
-              کنید. ماشین حساب آجر کمیسیون پایه، مالیات و
+              کنید. ماشین حساب بوملکس کمیسیون پایه، مالیات و
               مبلغ نهایی قابل پرداخت توسط هر طرف را جداگانه
               نمایش می‌دهد.
             </p>
@@ -1385,7 +1385,7 @@ export default function AjurCommissionPage() {
 
         <aside className="mx-auto mt-8 max-w-3xl rounded-2xl border border-gray-200 bg-white p-5 sm:p-7">
           <h2 className="mb-4 text-lg font-bold text-gray-800">
-            ابزارهای مرتبط آجر
+            ابزارهای مرتبط بوملکس
           </h2>
 
           <div className="flex flex-wrap gap-3">
@@ -1393,7 +1393,7 @@ export default function AjurCommissionPage() {
               href="/assistant"
               className="rounded-lg border border-red-200 px-4 py-2 text-sm font-bold text-[#bc323a] transition-colors hover:bg-red-50"
             >
-              دستیار املاک آجر
+              دستیار املاک بوملکس
             </Link>
 
             <Link

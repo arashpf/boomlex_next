@@ -1,10 +1,10 @@
 import { getServerSideSitemap } from "next-sitemap";
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch("https://api.ajur.app/api/active-complexes");
+  const res = await fetch("https://api.boomlex.ir/api/active-complexes");
   const data = await res.json();
 
-  const baseUrl = "https://ajur.app";
+  const baseUrl = "https://boomlex.ir";
 
   const fields = data.items.map((item) => ({
     loc: `${baseUrl}/complex/${item.complex_name}`,

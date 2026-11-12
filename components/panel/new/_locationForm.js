@@ -143,7 +143,7 @@ function LocationForm(props) {
             bounded: 1
           },
           headers: {
-            "User-Agent": "AjurApp/1.0 (realestate@ajur.app)",
+            "User-Agent": "AjurApp/1.0 (realestate@boomlex.ir)",
           },
         }
       );
@@ -244,7 +244,7 @@ function LocationForm(props) {
             zoom: 18,
           },
           headers: {
-            "User-Agent": "AjurApp/1.0 (realestate@ajur.app)",
+            "User-Agent": "AjurApp/1.0 (realestate@boomlex.ir)",
           },
         }
       );
@@ -344,7 +344,7 @@ function LocationForm(props) {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/all-available-locations",
+      url: "https://api.boomlex.ir/api/all-available-locations",
       timeout: 1000 * 35,
       params: {},
     })
@@ -360,7 +360,7 @@ function LocationForm(props) {
   const fetch_old_locations_params = (worker) => {
     axios({
       method: "get",
-      url: `https://api.ajur.app/api/posts/${edit_id}`,
+      url: `https://api.boomlex.ir/api/posts/${edit_id}`,
     }).then(function (response) {
       set_final_lat(response.data.details.lat);
       set_final_lng(response.data.details.long);
@@ -407,7 +407,7 @@ function LocationForm(props) {
 
     axios({
       method: "post",
-      url: "https://api.ajur.app/api/post-model-location",
+      url: "https://api.boomlex.ir/api/post-model-location",
       timeout: 1000 * 35,
       params: {
         token: token,

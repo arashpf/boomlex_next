@@ -111,7 +111,7 @@ function buildWorkersApiUrl({
   query = {},
   finalNeighborhoodId = "",
 }) {
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
     catname
   )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
@@ -251,15 +251,15 @@ function buildCanonical({
   const validCity = city || "tehran";
   const validCategory = category || "";
 
-  if (!validCategory) return `https://ajur.app/${safePathSegment(validCity)}`;
+  if (!validCategory) return `https://boomlex.ir/${safePathSegment(validCity)}`;
 
   if (neighborhoodSlug && !hasMultipleNeighborhoods && !hasQueryNeighborhood) {
-    return `https://ajur.app/${safePathSegment(validCity)}/${safePathSegment(
+    return `https://boomlex.ir/${safePathSegment(validCity)}/${safePathSegment(
       validCategory
     )}/${safePathSegment(neighborhoodSlug)}`;
   }
 
-  return `https://ajur.app/${safePathSegment(validCity)}/${safePathSegment(validCategory)}`;
+  return `https://boomlex.ir/${safePathSegment(validCity)}/${safePathSegment(validCategory)}`;
 }
 
 function buildWebPageJsonLd({ canonicalUrl, seoTitle, seoDescription }) {
@@ -273,9 +273,9 @@ function buildWebPageJsonLd({ canonicalUrl, seoTitle, seoDescription }) {
     inLanguage: "fa-IR",
     isPartOf: {
       "@type": "WebSite",
-      "@id": "https://ajur.app/#website",
-      url: "https://ajur.app/",
-      name: "آجر - مشاور املاک هوشمند",
+      "@id": "https://boomlex.ir/#website",
+      url: "https://boomlex.ir/",
+      name: "بوملکس - مشاور املاک هوشمند",
     },
   };
 }
@@ -284,12 +284,12 @@ function buildOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://ajur.app/#realestateagent",
-    name: "آجر",
-    url: "https://ajur.app/",
+    "@id": "https://boomlex.ir/#realestateagent",
+    name: "بوملکس",
+    url: "https://boomlex.ir/",
     logo: {
       "@type": "ImageObject",
-      url: "https://api.ajur.app/logo/og-default.jpg",
+      url: "https://api.boomlex.ir/logo/og-default.jpg",
     },
     sameAs: [],
   };
@@ -811,16 +811,16 @@ const SingleCategory = ({
 
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | آجر`;
+        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
       }
-      return `${categoryName} در ${neighborhoodName} ${cityName} | آجر`;
+      return `${categoryName} در ${neighborhoodName} ${cityName} | بوملکس`;
     }
 
     if (totalCount > 0) {
-      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | آجر`;
+      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
     }
 
-    return `${categoryName} در ${cityName} | آجر`;
+    return `${categoryName} در ${cityName} | بوملکس`;
   }, [persian_category_name, persian_city, neighborhoodName, totalCount, slugName, city]);
 
   const seoDescription = useMemo(() => {
@@ -833,16 +833,16 @@ const SingleCategory = ({
 
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
-      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در آجر.`;
+      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در بوملکس.`;
     }
 
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
 
-    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در آجر.`;
+    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در بوملکس.`;
   }, [
     persian_category_name,
     persian_city,
@@ -854,8 +854,8 @@ const SingleCategory = ({
   ]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : "https://api.ajur.app/logo/og-default.jpg";
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : "https://api.boomlex.ir/logo/og-default.jpg";
 
   const breadcrumbJsonLd = useMemo(() => {
     const displayName = persian_category_name || slugName || "آگهی";
@@ -868,13 +868,13 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 1,
         name: "خانه",
-        item: "https://ajur.app/",
+        item: "https://boomlex.ir/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: cityName,
-        item: `https://ajur.app/${safePathSegment(validCitySlug)}`,
+        item: `https://boomlex.ir/${safePathSegment(validCitySlug)}`,
       },
     ];
 
@@ -883,7 +883,7 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 3,
         name: displayName,
-        item: `https://ajur.app/${safePathSegment(validCitySlug)}/${safePathSegment(
+        item: `https://boomlex.ir/${safePathSegment(validCitySlug)}/${safePathSegment(
           validCategorySlug
         )}`,
       });
@@ -909,7 +909,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -1019,7 +1019,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -1036,7 +1036,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -1054,7 +1054,7 @@ const SingleCategory = ({
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -1066,7 +1066,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -1081,7 +1081,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -1259,8 +1259,8 @@ const SingleCategory = ({
       justifyContent: "center",
       borderRadius: "8px",
       border: "1px solid",
-      borderColor: active ? "#b92a31" : "#e0e0e0",
-      backgroundColor: active ? "#b92a31" : "#fff",
+      borderColor: active ? "#7a97ff" : "#e0e0e0",
+      backgroundColor: active ? "#7a97ff" : "#fff",
       color: active ? "#fff" : disabled ? "#bbb" : "#333",
       fontSize: 14,
       fontWeight: active ? 700 : 500,
@@ -1270,9 +1270,9 @@ const SingleCategory = ({
       transition: "all 0.15s ease",
       fontFamily: "'Vazir','IRANSans','Segoe UI',sans-serif",
       "&:hover": {
-        backgroundColor: active ? "#b92a31" : "#fafafa",
-        borderColor: active ? "#b92a31" : "#b92a31",
-        color: active ? "#fff" : "#b92a31",
+        backgroundColor: active ? "#7a97ff" : "#fafafa",
+        borderColor: active ? "#7a97ff" : "#7a97ff",
+        color: active ? "#fff" : "#7a97ff",
       },
     });
 
@@ -1363,7 +1363,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -1521,16 +1521,16 @@ const SingleCategory = ({
                       px: 2,
                       py: 1,
                       borderRadius: "8px",
-                      backgroundColor: isPending ? "#b92a31" : "#f5f5f5",
+                      backgroundColor: isPending ? "#7a97ff" : "#f5f5f5",
                       border: "1px solid",
-                      borderColor: isPending ? "#b92a31" : "#e0e0e0",
+                      borderColor: isPending ? "#7a97ff" : "#e0e0e0",
                       fontSize: "13.5px",
                       color: isPending ? "#fff" : "#333",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        backgroundColor: "#b92a31",
+                        backgroundColor: "#7a97ff",
                         color: "#fff",
-                        borderColor: "#b92a31",
+                        borderColor: "#7a97ff",
                       },
                     }}
                   >
@@ -1590,7 +1590,7 @@ export async function getServerSideProps(context) {
     'public, s-maxage=60, stale-while-revalidate=120'
   );
 
-  const pageUrl = `https://ajur.app/${city}/${catname}${
+  const pageUrl = `https://boomlex.ir/${city}/${catname}${
     neighborhoodSlug ? `/${neighborhoodSlug}` : ""
   }`;
   const clientContext = buildClientContext(context, pageUrl);
@@ -1601,7 +1601,7 @@ export async function getServerSideProps(context) {
 
   try {
     const baseRes = await axios.get(
-      `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+      `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
       {
         timeout: 10000,
         headers: { Accept: "application/json" },

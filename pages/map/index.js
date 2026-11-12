@@ -44,7 +44,7 @@ const router = useRouter();
         }}
       >
         <div>
-          <p className="text-sm m-4">برای استفاده از نقشه و تمامی امکانات آن لطفاً اپلیکیشن آجر را نصب کنید</p>
+          <p className="text-sm m-4">برای استفاده از نقشه و تمامی امکانات آن لطفاً اپلیکیشن بوملکس را نصب کنید</p>
           <button
             onClick={handleDownloadClick} // Added click handler
              className="bg-[#bc323a] text-white px-4 py-2 rounded-lg no-underline font-bold transition-colors duration-300 whitespace-nowrap ml-2.5 hover:bg-[#99272d]"

@@ -2,7 +2,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.ajur.app/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.boomlex.ir/api';
 
 // Create axios instance with your project's config
 const apiClient = axios.create({

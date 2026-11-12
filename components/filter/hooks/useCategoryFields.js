@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { normalizeField } from "../utils/fieldUtils";
 
-const API_BASE = "https://api.ajur.app";
+const API_BASE = "https://api.boomlex.ir";
 
 // Module-level cache so we don't refetch per dialog open
 const cache = new Map();

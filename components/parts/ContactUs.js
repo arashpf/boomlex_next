@@ -12,13 +12,13 @@ const ContactUs = (props) => {
     <div className={styles['about-image-wrapper']}>
     <Image
       src="/img/customers-service.png"
-      alt='درباره مشاور املاک هوشمند آجر'
+      alt='درباره مشاور املاک هوشمند بوملکس'
       width={800}
       height={800}
     />
     </div>
     <div className={styles['about-text-wrapper']}>
-    <h2>راه های ارتباطی با مشاور املاک هوشمند آجر</h2>
+    <h2>راه های ارتباطی با مشاور املاک هوشمند بوملکس</h2>
     <div className={styles["contact-wrapper"]}>
 
        <h3> تهران ، رباط کریم
@@ -27,7 +27,7 @@ const ContactUs = (props) => {
   نبش نارون سوم  <i className="fa fa-map-marker"></i></h3>
        <h3>
  09382740488   <i className="fa fa-volume-control-phone"></i></h3>
-       <h3>support@ajur.app <i className="fa fa-envelope"></i></h3>
+       <h3>support@boomlex.ir <i className="fa fa-envelope"></i></h3>
 
     </div>
 

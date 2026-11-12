@@ -28,7 +28,7 @@ export default function FileRequest({
           ملک مورد نظرتو   <span className="fr-request">پیدا نکردی</span> هنوز؟ 
         </h2>
         <p style={{ direction: "rtl" }} className="text-center">
-        با سیستم یک پارچه مشاورین آجر ، یک بار درخواست بده بقیش با آجر
+        با سیستم یک پارچه مشاورین بوملکس ، یک بار درخواست بده بقیش با بوملکس
         </p>
       </header>
 
@@ -242,7 +242,7 @@ export default function FileRequest({
         <div className="fr-right">
           <div className="fr-card">
             <h3 className="fr-card-title text-right iransans-heading" style={{fontSize: '20px'}}>
-              ربات آجر به دنبال بهترین گزینه‌هاست
+              ربات بوملکس به دنبال بهترین گزینه‌هاست
             </h3>
 
             <ul className="fr-features" dir="rtl">

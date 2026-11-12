@@ -297,7 +297,7 @@ const SearchDiv = (props) => {
         <div className={styles["navbar-about-place"]}>
           {/* <video autoplay muted loop>
             <source
-              src="https://api.ajur.app/city/banner/roza.mp4"
+              src="https://api.boomlex.ir/city/banner/roza.mp4"
               type="video/mp4"
             />
           </video> */}

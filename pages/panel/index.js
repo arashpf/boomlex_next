@@ -55,8 +55,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://ajur.app">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir">
+        boomlex.ir
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -228,7 +228,7 @@ const DashboardContent = () => {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/get-user",
+      url: "https://api.boomlex.ir/api/get-user",
       params: { token },
     }).then((response) => {
       set_data(response.data.user);
@@ -240,7 +240,7 @@ const DashboardContent = () => {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/realstate-workers",
+      url: "https://api.boomlex.ir/api/realstate-workers",
       params: {
         title: "title",
         lat: 35.12,

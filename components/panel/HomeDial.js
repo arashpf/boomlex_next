@@ -42,7 +42,7 @@ export default function BasicSpeedDial() {
         onClick={handleClick}
         FabProps={{
           sx: {
-            bgcolor: '#b92a31',
+            bgcolor: '#7a97ff',
             '&:hover': {
               bgcolor: 'primary.main',
             }

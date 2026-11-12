@@ -38,7 +38,7 @@ function MarketerSingle(props) {
 
         axios({
             method: 'post',
-            url: 'https://api.ajur.app/api/marketer',
+            url: 'https://api.boomlex.ir/api/marketer',
             params: {
                 token: token,
             },

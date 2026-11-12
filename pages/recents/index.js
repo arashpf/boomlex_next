@@ -37,7 +37,7 @@ const historyIndex = (props) => {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/history-workers",
+      url: "https://api.boomlex.ir/api/history-workers",
       params: {
         workers_holder: historyItems,
       },
@@ -137,7 +137,7 @@ const historyIndex = (props) => {
               padding: 20,
             }}
           >
-            فایل های بازدید شده اخیر شما در آجر
+            فایل های بازدید شده اخیر شما در بوملکس
           </h1>
           <Box sx={{ flexGrow: 1, py: 3, px: { xs: 2, sm: 3 } }}>
              
@@ -166,7 +166,7 @@ const historyIndex = (props) => {
                   هنوز هیچ فایلی را بازدید نکرده اید
                 </h3>
                 <p style={{ color: "#777", lineHeight: 1.6, fontSize: 14 }}>
-                  با بازدید از فایل های مختلف در آجر، آنها به صورت خودکار به این
+                  با بازدید از فایل های مختلف در بوملکس، آنها به صورت خودکار به این
                   صفحه اضافه می‌شوند تا بتوانید به راحتی به فایل های مشاهده شده
                   اخیر خود دسترسی داشته باشید
                 </p>
@@ -182,7 +182,7 @@ const historyIndex = (props) => {
                 }}
               >
                 <p style={{
-                  background: "#b92a31",
+                  background: "#7a97ff",
                   color: "white",
                   padding: "12px 24px",
                   borderRadius: 8,
@@ -208,10 +208,10 @@ const historyIndex = (props) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         ></meta>
-        <title> آجر : فایل های بازدید شده اخیر شما </title>
+        <title> بوملکس : فایل های بازدید شده اخیر شما </title>
         <meta
           name="description"
-          content="فایل های بازدید شده اخیر شما در آجر در این صفحه نمایش داده میشوند"
+          content="فایل های بازدید شده اخیر شما در بوملکس در این صفحه نمایش داده میشوند"
         />
         <meta
           name="robots"
@@ -223,14 +223,14 @@ const historyIndex = (props) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="آجر : فایل های بازدید شده اخیر شما "
+          content="بوملکس : فایل های بازدید شده اخیر شما "
         />
         <meta
           property="og:description"
-          content="فایل های بازدید شده اخیر شما در آجر در این صفحه نمایش داده میشوند"
+          content="فایل های بازدید شده اخیر شما در بوملکس در این صفحه نمایش داده میشوند"
         />
-        <meta property="og:url" content="https://ajur.app" />
-        <meta property="og:site_name" content="آجر : مشاور املاک هوشمند " />
+        <meta property="og:url" content="https://boomlex.ir" />
+        <meta property="og:site_name" content="بوملکس : مشاور املاک هوشمند " />
         <meta
           property="article:published_time"
           content="2023-05-19T21:34:43+00:00"
@@ -241,7 +241,7 @@ const historyIndex = (props) => {
         />
         <meta
           property="og:image"
-          content="https://ajur.app/logo/ajour-meta-image.jpg"
+          content="https://boomlex.ir/logo/ajour-meta-image.jpg"
         />
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="702" />
@@ -249,7 +249,7 @@ const historyIndex = (props) => {
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content="آرش پیمانی فر" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://ajur.app/history" />
+        <link rel="canonical" href="https://boomlex.ir/history" />
       </Head>
 
       {renderHistory()}

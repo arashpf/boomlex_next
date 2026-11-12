@@ -46,10 +46,10 @@ export default function ConsultantsSection() {
             <PhoneMockup variant="consultants" />
           </div>
           <div dir="rtl" className="flex-1 text-white text-right flex flex-col items-end gap-4 animate-fade-in-up animation-delay-300 max-w-lg">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">هزاران مشاور فعال در آجر</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">هزاران مشاور فعال در بوملکس</h2>
             <div className="space-y-3 text-sm md:text-base lg:text-lg opacity-95 leading-relaxed text-right">
-              <p>آجر بستری برای حرفه‌ای‌های املاک.</p>
-              <p>مشاورین متخصص در آجر همیشه درحال جستجوی بهترین و به‌قیمت‌ترین ملک‌ها برای شما هستند.</p>
+              <p>بوملکس بستری برای حرفه‌ای‌های املاک.</p>
+              <p>مشاورین متخصص در بوملکس همیشه درحال جستجوی بهترین و به‌قیمت‌ترین ملک‌ها برای شما هستند.</p>
             </div>
             <button className="mt-4 relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-red-600 group hover:scale-105 active:scale-95 whitespace-nowrap">
               <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
@@ -66,7 +66,7 @@ export default function ConsultantsSection() {
             />
           </div>
           <div className="-mt-6 flex flex-col items-center px-4">
-            <h2 className="text-2xl font-bold text-white text-center">هزاران مشاور فعال در آجر</h2>
+            <h2 className="text-2xl font-bold text-white text-center">هزاران مشاور فعال در بوملکس</h2>
             <button className="mt-3 relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-bold text-white transition-all duration-300 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-red-600 group hover:scale-105 active:scale-95">
               <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
               <span className="relative text-base sm:text-lg">برای دانلود کلیک کنید</span>

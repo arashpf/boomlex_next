@@ -25,7 +25,7 @@ const parcelIcon = new L.Icon({
   iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
 });
 
-const PAPER_MAP_URL = "https://api.ajur.app/public/complex/maps/shahrakkhane.jpg"; 
+const PAPER_MAP_URL = "https://api.boomlex.ir/public/complex/maps/shahrakkhane.jpg"; 
 
 const MapEvents = ({ isAddingMode, onMapClick }) => {
   useMapEvents({
@@ -146,7 +146,7 @@ const ParcelMap = ({ complexId, center = [35.4935, 51.0415], isAdmin = false }) 
   });
 
   const fetchParcels = () => {
-    fetch(`https://api.ajur.app/api/complexes/${complexId}/parcels`)
+    fetch(`https://api.boomlex.ir/api/complexes/${complexId}/parcels`)
       .then(res => res.json())
       .then(data => setParcels(data))
       .catch(err => console.error("Error fetching parcels:", err));
@@ -166,7 +166,7 @@ const ParcelMap = ({ complexId, center = [35.4935, 51.0415], isAdmin = false }) 
       ...formData, complex_id: complexId, coordinates: [newLocation], user_id: 1, 
     };
     try {
-      const res = await fetch('https://api.ajur.app/api/parcels', {
+      const res = await fetch('https://api.boomlex.ir/api/parcels', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
       });
       if (res.ok) {
@@ -267,10 +267,10 @@ const ParcelMap = ({ complexId, center = [35.4935, 51.0415], isAdmin = false }) 
               <Tooltip direction="top" offset={[0, -41]} opacity={1}>{`قطعه ${parcel.parcel_number}`}</Tooltip>
               <Popup>
                 <div style={{ textAlign: 'right', direction: 'rtl', fontFamily: 'Tahoma', minWidth: '200px' }}>
-                  <h3 style={{ margin: '0 0 8px 0', fontSize: '16px', color: '#b92a31' }}>قطعه {parcel.parcel_number}</h3>
+                  <h3 style={{ margin: '0 0 8px 0', fontSize: '16px', color: '#7a97ff' }}>قطعه {parcel.parcel_number}</h3>
                   <p style={{ margin: '4px 0' }}>متراژ: {parcel.area || 'نامشخص'}</p>
                   <p style={{ margin: '4px 0' }}>نوع: {parcel.property_type}</p>
-                  {parcel.ajar_link && (<Button href={parcel.ajar_link} target="_blank" variant="contained" size="small" style={{ marginTop: '10px', backgroundColor: '#b92a31' }}>مشاهده در آجر</Button>)}
+                  {parcel.ajar_link && (<Button href={parcel.ajar_link} target="_blank" variant="contained" size="small" style={{ marginTop: '10px', backgroundColor: '#7a97ff' }}>مشاهده در بوملکس</Button>)}
                 </div>
               </Popup>
             </Marker>
@@ -330,7 +330,7 @@ const ParcelMap = ({ complexId, center = [35.4935, 51.0415], isAdmin = false }) 
       )}
 
       <Dialog open={openModal} onClose={() => setOpenModal(false)} maxWidth="sm" fullWidth>
-         <DialogTitle sx={{ textAlign: 'center', color: '#b92a31', fontWeight: 'bold' }}>مشخصات قطعه جدید</DialogTitle>
+         <DialogTitle sx={{ textAlign: 'center', color: '#7a97ff', fontWeight: 'bold' }}>مشخصات قطعه جدید</DialogTitle>
         <DialogContent sx={{ display: 'flex', flexDirection: 'column', gap: '15px', paddingTop: '20px !important' }}>
           <Box sx={{ display: 'flex', gap: '15px' }}>
             <TextField label="شماره قطعه" variant="outlined" fullWidth value={formData.parcel_number} onChange={e => setFormData({...formData, parcel_number: e.target.value})} />
@@ -355,12 +355,12 @@ const ParcelMap = ({ complexId, center = [35.4935, 51.0415], isAdmin = false }) 
             <TextField label="قیمت" variant="outlined" fullWidth value={formData.price} onChange={e => setFormData({...formData, price: e.target.value})} />
             <TextField label="آخرین قیمت مالک" variant="outlined" fullWidth value={formData.last_owner_price} onChange={e => setFormData({...formData, last_owner_price: e.target.value})} />
           </Box>
-          <TextField label="لینک آجر" variant="outlined" fullWidth value={formData.ajar_link} onChange={e => setFormData({...formData, ajar_link: e.target.value})} />
+          <TextField label="لینک بوملکس" variant="outlined" fullWidth value={formData.ajar_link} onChange={e => setFormData({...formData, ajar_link: e.target.value})} />
           <TextField label="توضیحات" variant="outlined" fullWidth multiline rows={3} value={formData.description} onChange={e => setFormData({...formData, description: e.target.value})} />
         </DialogContent>
         <DialogActions sx={{ padding: '15px 24px' }}>
           <Button onClick={() => { setOpenModal(false); setNewLocation(null); }} color="inherit">انصراف</Button>
-          <Button onClick={handleSubmitForm} variant="contained" sx={{ backgroundColor: '#b92a31' }}>ذخیره در دیتابیس</Button>
+          <Button onClick={handleSubmitForm} variant="contained" sx={{ backgroundColor: '#7a97ff' }}>ذخیره در دیتابیس</Button>
         </DialogActions>
       </Dialog>
     </Box>

@@ -153,7 +153,7 @@ const Header = (props) => {
 
   return (
     <>
-      <AppBar style={{ background: "#b92a31" }} position="absolute" open={open}>
+      <AppBar style={{ background: "#7a97ff" }} position="absolute" open={open}>
         <Toolbar>
           {/* Profile picture on the left */}
           <Box sx={{ flexGrow: 0, mr: 2 }}>

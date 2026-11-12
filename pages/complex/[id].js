@@ -54,7 +54,7 @@ const generatePageTitle = (details) => {
   const parts = [details.name, details.category_name];
   if (details.city) parts.push(`در ${details.city}`);
   if (details.region && details.region !== details.city) parts.push(details.region);
-  parts.push("| آجر");
+  parts.push("| بوملکس");
   return parts.join(" - ");
 };
 
@@ -161,9 +161,9 @@ const WorkerSingle = (props) => {
     const pageTitle = generatePageTitle(details);
     const metaDescription = generateMetaDescription(details);
     const keywords = details.seo_keywords || [details.name, details.category_name, details.city, details.region, details.neighbourhood, "املاک", "خرید", "فروش", "اجاره"].filter(Boolean).join("، ");
-    const canonicalUrl = `https://ajur.app/complex/${details.id}`;
-    const shareImage = details.thumb || "https://api.ajur.app/logo/og-default.jpg";
-    return { pageTitle, metaDescription, keywords, canonicalUrl, shareImage, siteName: "آجر" };
+    const canonicalUrl = `https://boomlex.ir/complex/${details.id}`;
+    const shareImage = details.thumb || "https://api.boomlex.ir/logo/og-default.jpg";
+    return { pageTitle, metaDescription, keywords, canonicalUrl, shareImage, siteName: "بوملکس" };
   }, [details]);
 
   // -------- Schema JSON-LD --------
@@ -199,14 +199,14 @@ const WorkerSingle = (props) => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "خانه", item: "https://ajur.app" },
-        { "@type": "ListItem", position: 2, name: details.city || "تهران", item: `https://ajur.app/${details.city_slug || "tehran"}` },
-        { "@type": "ListItem", position: 3, name: details.category_name || "املاک", item: `https://ajur.app/${details.city_slug || "tehran"}/${details.category_eng_name || ""}` },
+        { "@type": "ListItem", position: 1, name: "خانه", item: "https://boomlex.ir" },
+        { "@type": "ListItem", position: 2, name: details.city || "تهران", item: `https://boomlex.ir/${details.city_slug || "tehran"}` },
+        { "@type": "ListItem", position: 3, name: details.category_name || "املاک", item: `https://boomlex.ir/${details.city_slug || "tehran"}/${details.category_eng_name || ""}` },
         { "@type": "ListItem", position: 4, name: details.name || "آگهی", item: canonicalUrl },
       ],
     };
 
-    const agentSchema = cleanRealstate?.id ? { "@context": "https://schema.org", "@type": "RealEstateAgent", "@id": `${canonicalUrl}#agent`, name: cleanRealstate.name || "مشاور املاک", ...(cleanRealstate.phone ? { telephone: cleanRealstate.phone } : {}), url: `https://ajur.app/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}` } : null;
+    const agentSchema = cleanRealstate?.id ? { "@context": "https://schema.org", "@type": "RealEstateAgent", "@id": `${canonicalUrl}#agent`, name: cleanRealstate.name || "مشاور املاک", ...(cleanRealstate.phone ? { telephone: cleanRealstate.phone } : {}), url: `https://boomlex.ir/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}` } : null;
     return { listingSchema, breadcrumbSchema, agentSchema };
   }, [seoData, details, images, cleanRealstate]);
 
@@ -238,7 +238,7 @@ const WorkerSingle = (props) => {
   const handlePropertyCall = async () => {
     const phone = cleanRealstate?.phone || details.cellphone;
     try {
-      await axios.post("https://api.ajur.app/api/track/worker-call", { worker_id: details.id });
+      await axios.post("https://api.boomlex.ir/api/track/worker-call", { worker_id: details.id });
     } catch (error) { console.error("Worker call tracking failed:", error); }
     if (phone) window.location.href = `tel:${phone}`;
   };
@@ -303,8 +303,8 @@ const WorkerSingle = (props) => {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://api.ajur.app" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://api.ajur.app" />
+        <link rel="preconnect" href="https://api.boomlex.ir" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.boomlex.ir" />
         <link rel="preconnect" href="https://maps.googleapis.com" />
         {details.thumb && <link rel="preload" as="image" href={details.thumb} fetchPriority="high" />}
         <title>{seoData.pageTitle}</title>
@@ -333,7 +333,7 @@ const WorkerSingle = (props) => {
         {details.updated_at && <meta property="article:modified_time" content={new Date(details.updated_at).toISOString()} />}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta name="format-detection" content="telephone=yes" />
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
       </Head>
 
       <Script id="jsonld-listing" type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData.listingSchema) }} />
@@ -350,7 +350,7 @@ const WorkerSingle = (props) => {
               <div className={Styles["media-wrapper"]}>
                 <WorkerMedia details={details} images={images} videos={videos} virtual_tours={virtual_tours} />
                 <button className={Styles["favorite-icon"]} onClick={toggleFavorite} aria-label={isFavorite ? "حذف از علاقه‌مندی‌ها" : "افزودن به علاقه‌مندی‌ها"} style={{ position: "absolute", top: 10, right: 10, background: "white", border: "none", borderRadius: "50%", width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "0 2px 8px rgba(0,0,0,0.15)", zIndex: 10 }}>
-                  {isFavorite ? <FavoriteIcon style={{ color: "#b92a31" }} /> : <FavoriteBorderIcon style={{ color: "#666" }} />}
+                  {isFavorite ? <FavoriteIcon style={{ color: "#7a97ff" }} /> : <FavoriteBorderIcon style={{ color: "#666" }} />}
                 </button>
               </div>
 
@@ -402,7 +402,7 @@ const WorkerSingle = (props) => {
         {/* NEW SECTION: THE PARCEL MAP INTEGRATION */}
         {/* ======================================================== */}
         <Box sx={{ mt: 6, mb: 4 }}>
-          <h2 className={Styles["title"]} style={{ fontSize: "22px", marginBottom: "20px", borderBottom: '2px solid #b92a31', display: 'inline-block', paddingBottom: '5px' }}>
+          <h2 className={Styles["title"]} style={{ fontSize: "22px", marginBottom: "20px", borderBottom: '2px solid #7a97ff', display: 'inline-block', paddingBottom: '5px' }}>
             نقشه قطعات {details.name}
           </h2>
           <ParcelMap 
@@ -416,8 +416,8 @@ const WorkerSingle = (props) => {
         {/* Sticky Call Button - Mobile Only */}
         {(cleanRealstate?.phone || details.cellphone) && (
           <Box sx={{ display: { xs: "block", md: "none" }, position: "fixed", bottom: 0, left: 0, right: 0, padding: "16px 20px", backgroundColor: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(10px)", boxShadow: "0 -2px 20px rgba(0,0,0,0.1)", zIndex: 10001, transform: "translateZ(0)" }} className="sticky-call-button">
-            <div onClick={(e) => { e.preventDefault(); handlePropertyCall(); }} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", padding: "14px 16px", background: "linear-gradient(135deg, #b92a31 0%, #d84343 100%)", color: "#fff", border: "none", borderRadius: "12px", textDecoration: "none", fontWeight: "700", fontSize: "18px", cursor: "pointer", transition: "all 0.2s", width: "100%", boxShadow: "0 4px 12px rgba(185, 42, 49, 0.3)", WebkitTapHighlightColor: "transparent" }} aria-label={`تماس با ${cleanRealstate?.name || details.name}`}>
-              <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#a92b31", display: "flex", alignItems: "center", justifyContent: "center", flex: "0 0 36px", boxShadow: "0 2px 6px rgba(0,0,0,0.2)" }}>
+            <div onClick={(e) => { e.preventDefault(); handlePropertyCall(); }} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", padding: "14px 16px", background: "linear-gradient(135deg, #7a97ff 0%, #d84343 100%)", color: "#fff", border: "none", borderRadius: "12px", textDecoration: "none", fontWeight: "700", fontSize: "18px", cursor: "pointer", transition: "all 0.2s", width: "100%", boxShadow: "0 4px 12px rgba(15, 180, 187, 0.3)", WebkitTapHighlightColor: "transparent" }} aria-label={`تماس با ${cleanRealstate?.name || details.name}`}>
+              <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#7a97ff", display: "flex", alignItems: "center", justifyContent: "center", flex: "0 0 36px", boxShadow: "0 2px 6px rgba(0,0,0,0.2)" }}>
                 <CallIcon style={{ fontSize: "20px", color: "#fff" }} />
               </div>
               <span style={{ lineHeight: 1 }}>تماس: {cleanRealstate?.phone || details.cellphone}</span>
@@ -428,7 +428,7 @@ const WorkerSingle = (props) => {
         {/* Map Modal */}
         <Dialog open={mapModalOpen} onClose={() => setMapModalOpen(false)} maxWidth="lg" fullWidth sx={{ "& .MuiDialog-paper": { height: "90vh", maxHeight: "90vh", margin: { xs: "10px", sm: "20px" } } }} aria-labelledby="map-dialog-title">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 16px", backgroundColor: "#f5f5f5", borderBottom: "1px solid #ddd" }}>
-            <IconButton onClick={openDirections} title="مسیریابی در Google Maps" aria-label="مسیریابی در Google Maps" sx={{ color: "#b92a31" }}><DirectionsIcon /></IconButton>
+            <IconButton onClick={openDirections} title="مسیریابی در Google Maps" aria-label="مسیریابی در Google Maps" sx={{ color: "#7a97ff" }}><DirectionsIcon /></IconButton>
             <IconButton onClick={() => setMapModalOpen(false)} aria-label="بستن نقشه" sx={{ color: "#666" }}><CloseIcon /></IconButton>
           </div>
           <DialogContent sx={{ padding: 0, height: "calc(100% - 64px)" }}>
@@ -448,7 +448,7 @@ const WorkerSingle = (props) => {
       {/* Loading Overlay */}
       {isNavigating && (
         <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "rgba(255, 255, 255, 0.9)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 99999, backdropFilter: "blur(4px)" }}>
-          <div style={{ width: 70, height: 70, borderRadius: "50%", background: "linear-gradient(90deg, #b92a31 25%, #d84343 50%, #b92a31 75%)", backgroundSize: "200% 100%", animation: "spin 1s infinite linear", boxShadow: "0 4px 20px rgba(185, 42, 49, 0.3)" }} />
+          <div style={{ width: 70, height: 70, borderRadius: "50%", background: "linear-gradient(90deg, #7a97ff 25%, #d84343 50%, #7a97ff 75%)", backgroundSize: "200% 100%", animation: "spin 1s infinite linear", boxShadow: "0 4px 20px rgba(15, 180, 187, 0.3)" }} />
         </div>
       )}
 
@@ -458,7 +458,7 @@ const WorkerSingle = (props) => {
         .worker-single-page .swiper { padding: 0 !important; }
         .map-container { transition: transform 0.2s; }
         .map-container:hover { transform: scale(1.02); }
-        .map-container:focus-visible { outline: 2px solid #b92a31; outline-offset: 2px; }
+        .map-container:focus-visible { outline: 2px solid #7a97ff; outline-offset: 2px; }
         .favorite-icon { transition: transform 0.2s; }
         .favorite-icon:hover { transform: scale(1.1); }
         .favorite-icon:active { transform: scale(0.95); }
@@ -490,7 +490,7 @@ export async function getServerSideProps(context) {
   res.setHeader("X-Content-Type-Options", "nosniff");
 
   try {
-    const response = await axios.get(`https://api.ajur.app/api/complexes/${id}`, {
+    const response = await axios.get(`https://api.boomlex.ir/api/complexes/${id}`, {
       timeout: 15000,
       headers: { Accept: "application/json" },
     });

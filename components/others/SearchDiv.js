@@ -98,7 +98,7 @@ const handleSmartSearch = (filters) => {
             variant="contained"
             size="small"
             fullWidth
-            style={{ background: "#b92a31" }}
+            style={{ background: "#7a97ff" }}
           >
             <p>{neighbor.name}</p>
           </Button>

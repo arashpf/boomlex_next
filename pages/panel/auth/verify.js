@@ -83,7 +83,7 @@ function Verify() {
 const attribution = getAttribution();
 const referrerCode = attribution?.referrer_code || null;
 
-const res = await axios.post('https://api.ajur.app/webauth/verify', null, {
+const res = await axios.post('https://api.boomlex.ir/webauth/verify', null, {
     params: {
         phone: number,
         code,
@@ -154,7 +154,7 @@ const res = await axios.post('https://api.ajur.app/webauth/verify', null, {
         if (cooldown > 0) return;
 
         try {
-            await axios.post('https://api.ajur.app/webauth/register', null, {
+            await axios.post('https://api.boomlex.ir/webauth/register', null, {
                 params: {
                     phone: number,
                     ref: ref,
@@ -341,7 +341,7 @@ const res = await axios.post('https://api.ajur.app/webauth/verify', null, {
                     display="block"
                     fontSize="12px"
                 >
-                    © {new Date().getFullYear()} Ajur.app
+                    © {new Date().getFullYear()} boomlex.ir
                 </Typography>
             </Box>
         </Container>

@@ -45,13 +45,13 @@ export default function RealstateCard(props) {
     if (navigator.share) {
       navigator.share({
         // title: `${realstate.name} ${realstate.family}`,
-        text: ` صفحه اختصاصی   ${realstate.name} ${realstate.family}  در املاک هوشمند آجر`,
-        url: `https://ajur.app/realestates/${realstate.id}`,
+        text: ` صفحه اختصاصی   ${realstate.name} ${realstate.family}  در املاک هوشمند بوملکس`,
+        url: `https://boomlex.ir/realestates/${realstate.id}`,
       })
         .catch((error) => console.log('Error sharing:', error));
     } else {
       // Fallback: Copy to clipboard
-      const textToCopy = `https://ajur.app/realestates/${realstate.id}`;
+      const textToCopy = `https://boomlex.ir/realestates/${realstate.id}`;
       navigator.clipboard.writeText(textToCopy)
         .then(() => alert('لینک کپی شد!'))
         .catch((error) => console.log('Error copying:', error));
@@ -191,7 +191,7 @@ export default function RealstateCard(props) {
         {/* 
         <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
           <QrCodeGenerator 
-            url={"https://ajur.app/realestates/" + realstate.id + "?slug=" + slug}  
+            url={"https://boomlex.ir/realestates/" + realstate.id + "?slug=" + slug}  
             title='اسکن کنید'
           />
         </Box>

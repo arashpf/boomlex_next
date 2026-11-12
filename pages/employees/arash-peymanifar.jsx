@@ -5,18 +5,18 @@ import Script from "next/script";
 const About = () => {
   const [language, setLanguage] = useState('persian');
 
-  const pageUrl = "https://ajur.app/employees/arash-peymanifar";
-  const imageUrl = "https://ajur.app/img/arash.jpg";
+  const pageUrl = "https://boomlex.ir/employees/arash-peymanifar";
+  const imageUrl = "https://boomlex.ir/img/arash.jpg";
 
   const translations = {
     persian: {
       headerAbout: 'آرش پیمانی فر',
       aboutText:
-        'آرش پیمانی فر بنیانگذار پلتفرم آجر (Ajur) و از فعالان حوزه فناوری و خدمات آنلاین در ایران است. او با هدف ساده‌تر کردن معاملات املاک و ایجاد ارتباط مستقیم میان کاربران و مشاوران املاک، پلتفرم آجر را طراحی و توسعه داد.',
-      historyHeader: 'نحوه شکل‌گیری آجر',
+        'آرش پیمانی فر بنیانگذار پلتفرم بوملکس (Ajur) و از فعالان حوزه فناوری و خدمات آنلاین در ایران است. او با هدف ساده‌تر کردن معاملات املاک و ایجاد ارتباط مستقیم میان کاربران و مشاوران املاک، پلتفرم بوملکس را طراحی و توسعه داد.',
+      historyHeader: 'نحوه شکل‌گیری بوملکس',
       historyText:
-        'ایده پلتفرم آجر در سال ۱۴۰۰ توسط آرش پیمانی فر شکل گرفت. هدف از ایجاد این پلتفرم، ایجاد یک بستر دیجیتال برای جستجو، معرفی و مدیریت املاک در سراسر ایران بود.',
-      teamNames: 'بنیانگذار پلتفرم آجر',
+        'ایده پلتفرم بوملکس در سال ۱۴۰۰ توسط آرش پیمانی فر شکل گرفت. هدف از ایجاد این پلتفرم، ایجاد یک بستر دیجیتال برای جستجو، معرفی و مدیریت املاک در سراسر ایران بود.',
+      teamNames: 'بنیانگذار پلتفرم بوملکس',
       footerText: 'تمام حقوق محفوظ است © Ajur'
     },
 
@@ -34,11 +34,11 @@ const About = () => {
     arabic: {
       headerAbout: 'آرش بيماني فر',
       aboutText:
-        'آرش بيماني فر هو مؤسس منصة آجر الرقمية المتخصصة في خدمات العقارات.',
-      historyHeader: 'كيف تم إنشاء آجر',
+        'آرش بيماني فر هو مؤسس منصة بوملکس الرقمية المتخصصة في خدمات العقارات.',
+      historyHeader: 'كيف تم إنشاء بوملکس',
       historyText:
-        'تم تطوير فكرة منصة آجر في عام 2021.',
-      teamNames: 'مؤسس منصة آجر',
+        'تم تطوير فكرة منصة بوملکس في عام 2021.',
+      teamNames: 'مؤسس منصة بوملکس',
       footerText: 'جميع الحقوق محفوظة © Ajur'
     },
 
@@ -81,14 +81,14 @@ const About = () => {
     <>
       <Head>
 
-        <title>آرش پیمانی فر | بنیانگذار آجر | Arash Peymanifar</title>
+        <title>آرش پیمانی فر | بنیانگذار بوملکس | Arash Peymanifar</title>
 
         <meta
           name="description"
-          content="آرش پیمانی فر بنیانگذار پلتفرم آجر (Ajur) است. در این صفحه با سوابق، فعالیت‌ها و نقش او در ایجاد و توسعه پلتفرم آجر آشنا شوید."
+          content="آرش پیمانی فر بنیانگذار پلتفرم بوملکس (Ajur) است. در این صفحه با سوابق، فعالیت‌ها و نقش او در ایجاد و توسعه پلتفرم بوملکس آشنا شوید."
         />
 
-        <meta name="keywords" content="آرش پیمانی فر, Arash Peymanifar, بنیانگذار آجر, Ajur founder" />
+        <meta name="keywords" content="آرش پیمانی فر, Arash Peymanifar, بنیانگذار بوملکس, Ajur founder" />
 
         <meta name="author" content="آرش پیمانی فر" />
 
@@ -96,8 +96,8 @@ const About = () => {
 
         <link rel="canonical" href={pageUrl} />
 
-        <meta property="og:title" content="آرش پیمانی فر | بنیانگذار آجر" />
-        <meta property="og:description" content="صفحه رسمی آرش پیمانی فر بنیانگذار پلتفرم آجر" />
+        <meta property="og:title" content="آرش پیمانی فر | بنیانگذار بوملکس" />
+        <meta property="og:description" content="صفحه رسمی آرش پیمانی فر بنیانگذار پلتفرم بوملکس" />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="profile" />
@@ -118,7 +118,7 @@ const About = () => {
           worksFor: {
             "@type": "Organization",
             name: "Ajur",
-            url: "https://ajur.app"
+            url: "https://boomlex.ir"
           },
           sameAs: [
             "https://www.linkedin.com/"
@@ -141,7 +141,7 @@ const About = () => {
             worksFor: {
               "@type": "Organization",
               name: "Ajur",
-              url: "https://ajur.app"
+              url: "https://boomlex.ir"
             }
           },
           inLanguage: "fa"
@@ -233,7 +233,7 @@ const About = () => {
               <div style={styles.imageWrapper}>
                 <img
                   src="/img/arash.jpg"
-                  alt="آرش پیمانی فر بنیانگذار پلتفرم آجر Ajur Founder Arash Peymanifar"
+                  alt="آرش پیمانی فر بنیانگذار پلتفرم بوملکس Ajur Founder Arash Peymanifar"
                   style={styles.partnersImage}
                 />
               </div>

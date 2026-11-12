@@ -157,7 +157,7 @@ const TourDialog = (props) => {
     axios({ 
            method:'post',
            // url:'https://irabist.ir/api/register-login',
-           url:'https://api.ajur.app/webauth/visit-register',
+           url:'https://api.boomlex.ir/webauth/visit-register',
 
            params: {
             phone: phone,
@@ -199,7 +199,7 @@ const TourDialog = (props) => {
    }else{
      axios({
            method:'post',
-            url:'https://api.ajur.app/webauth/visit-verify',
+            url:'https://api.boomlex.ir/webauth/visit-verify',
             params: {
             phone: phone,
             code: code,
@@ -401,7 +401,7 @@ const TourDialog = (props) => {
         // value= {phone}
        />
         <Form.Text className="text-muted">
-        با وارد کردن شماره شما اجازه تماس از سمت همکاران آجر را خواهید داد 
+        با وارد کردن شماره شما اجازه تماس از سمت همکاران بوملکس را خواهید داد 
         </Form.Text>
       </Form.Group>
     </Form>
@@ -433,7 +433,7 @@ const TourDialog = (props) => {
         <div>
           <Form>
             <Form.Group className="mb-3" controlId="formvalidationCode">
-              <p style={{color:'green'}}>  درخواست شما با موفقیت در آجر ثبت شد و در اختیار مشاور قرار خواهد گرفت </p>
+              <p style={{color:'green'}}>  درخواست شما با موفقیت در بوملکس ثبت شد و در اختیار مشاور قرار خواهد گرفت </p>
             
               <p style={{color:'black'}}>
               ممکن است قبل از بازدید مشاوران ما با شما تماس بگیرند

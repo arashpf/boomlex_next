@@ -515,7 +515,7 @@ function Header() {
                 <img
                   className={styles.image_logo}
                   src="/logo/web-logo-text.png"
-                  alt="لوگوی آجر"
+                  alt="لوگوی بوملکس"
                 />
               </Link>
             </Navbar.Brand>
@@ -554,12 +554,12 @@ function Header() {
                   <img
                     className={styles["logo-just-mobile-image"]}
                     src="/img/big-logo-180.png"
-                    alt="لوگوی مشاور املاک آجر"
+                    alt="لوگوی مشاور املاک بوملکس"
                     width={45}
                     height={45}
                     style={{ marginRight: '5px' }}
                   />
-                  مشاور املاک هوشمند آجر
+                  مشاور املاک هوشمند بوملکس
                 </p>
               </Offcanvas.Title>
             </Offcanvas.Header>
@@ -571,7 +571,7 @@ function Header() {
                   <p>خانه</p>
                 </Nav.Link>
                 <Nav.Link href="/about" onClick={onClickAboutUs}>
-                  <p>درباره آجر</p>
+                  <p>درباره بوملکس</p>
                 </Nav.Link>
                 <Nav.Link href="/support" onClick={onClickSupport}>
                   <p>پشتیبانی</p>

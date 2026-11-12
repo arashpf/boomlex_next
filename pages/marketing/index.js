@@ -26,7 +26,7 @@ const index = (props) => {
     {
       id: 1,
       title: "تا یک میلیون نفر اول",
-      description: "کسب درآمد میلیونی برای یک میلیون نفر اول آجر",
+      description: "کسب درآمد میلیونی برای یک میلیون نفر اول بوملکس",
       lottieSource: require("./assets/Money.json"),
       color: "#2196F3",
     },
@@ -39,9 +39,9 @@ const index = (props) => {
     },
     {
       id: 3,
-      title: "لطفا اپلیکیشن آجر را نصب کنید",
+      title: "لطفا اپلیکیشن بوملکس را نصب کنید",
       description:
-        "برای استفاده از پنل بازاریابی و دیگر قابلیت های آجر لطفا اپلیکیشن ما را نصب کنید",
+        "برای استفاده از پنل بازاریابی و دیگر قابلیت های بوملکس لطفا اپلیکیشن ما را نصب کنید",
       image: "/img/ajur-1200.png",
       color: "#9C27B0",
     },
@@ -151,10 +151,10 @@ const index = (props) => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="robots" content="max-image-preview:large" />
-        <title> مشاور املاک هوشمند آجر | بخش بازاریابی </title>
+        <title> مشاور املاک هوشمند بوملکس | بخش بازاریابی </title>
         <meta
           name="description"
-          content="کسب درامد، فقط با ارسال لینک بازاریابی آجر"
+          content="کسب درامد، فقط با ارسال لینک بازاریابی بوملکس"
         />
         <meta
           name="robots"
@@ -164,14 +164,14 @@ const index = (props) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="  کسب درامد دیجیتال |   بازاریابی آجر"
+          content="  کسب درامد دیجیتال |   بازاریابی بوملکس"
         />
         <meta
           property="og:description"
           content="فقط با اشتراک لینک کسب درامد کنید"
         />
-        <meta property="og:url" content="https://ajur.app" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:url" content="https://boomlex.ir" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta
           property="article:published_time"
           content="2023-05-19T21:34:43+00:00"
@@ -182,7 +182,7 @@ const index = (props) => {
         />
         <meta
           property="og:image"
-          content="https://ajur.app/img/big-logo-180.png"
+          content="https://boomlex.ir/img/big-logo-180.png"
         />
         <meta property="og:image:width" content="180" />
         <meta property="og:image:height" content="180" />
@@ -190,7 +190,7 @@ const index = (props) => {
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content="آرش پیمانی فر" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://ajur.app/marketing" />
+        <link rel="canonical" href="https://boomlex.ir/marketing" />
       </Head>
       <IntroSlider
         visible={showIntroSlider}

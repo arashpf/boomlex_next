@@ -46,7 +46,7 @@ const WorkerPanelActions = (props) => {
 
         axios({
             method: 'get',
-            url: 'https://api.ajur.app/api/destroy-worker',
+            url: 'https://api.boomlex.ir/api/destroy-worker',
             params: {
                 token: token,
                 workerid: worker.id,
@@ -106,7 +106,7 @@ const WorkerPanelActions = (props) => {
       if (!worker) return;
     
       const shareText = `${worker.name}`;
-      const shareUrl = `https://ajur.app/worker/${worker.id}`;
+      const shareUrl = `https://boomlex.ir/worker/${worker.id}`;
     
       if (navigator.share) {
         navigator.share({

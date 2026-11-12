@@ -67,7 +67,7 @@ export default function CategorySingle() {
       set_user_initial_lat(userInitialLat);
       set_user_initial_long(userInitialLong);
       var catid = parseInt(params.categoryId);
-      var baseurl = 'https://api.ajur.app/api/category-workers';
+      var baseurl = 'https://api.boomlex.ir/api/category-workers';
       axios({
               method:'get',
               url: baseurl,
@@ -411,7 +411,7 @@ export default function CategorySingle() {
                     handleParentClick(worker)
 
                     /* fetching single worker data */
-                    var baseurl = 'https://api.ajur.app/api/single-worker';
+                    var baseurl = 'https://api.boomlex.ir/api/single-worker';
                     axios({
                     method:'get',
                     url: baseurl,

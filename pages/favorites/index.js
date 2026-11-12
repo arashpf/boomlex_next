@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import WorkerCard from "../../components/cards/WorkerCard";
 
-const API_BASE = "https://api.ajur.app/api";
+const API_BASE = "https://api.boomlex.ir/api";
 const COOKIE_KEY = "favorited";
 
 // ─────────────────────────────────────────────────────────────
@@ -196,7 +196,7 @@ const favoritesIndex = () => {
               margin: 0,
             }}
           >
-            فایل های مورد پسند شما در آجر
+            فایل های مورد پسند شما در بوملکس
           </h1>
 
           <Box sx={{ flexGrow: 1, py: 3 }}>
@@ -264,7 +264,7 @@ const favoritesIndex = () => {
             onClick={searchOnFiles}
             sx={{
               display: "inline-block",
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "12px 32px",
               borderRadius: "24px",
@@ -275,7 +275,7 @@ const favoritesIndex = () => {
               "&:hover": {
                 backgroundColor: "#a01c22",
                 transform: "translateY(-2px)",
-                boxShadow: "0 4px 12px rgba(185, 42, 49, 0.3)",
+                boxShadow: "0 4px 12px rgba(15, 180, 187, 0.3)",
               },
             }}
           >
@@ -327,13 +327,13 @@ const favoritesIndex = () => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <title>آجر : فایل های مورد پسند شما</title>
+        <title>بوملکس : فایل های مورد پسند شما</title>
         <meta
           name="description"
-          content="فایل های مورد پسند شما در آجر در این صفحه نمایش داده میشوند"
+          content="فایل های مورد پسند شما در بوملکس در این صفحه نمایش داده میشوند"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://ajur.app/favorites" />
+        <link rel="canonical" href="https://boomlex.ir/favorites" />
       </Head>
 
       {loading ? renderSpinner() : renderFavotited()}

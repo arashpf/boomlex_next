@@ -36,10 +36,10 @@ const CategoryFilters = ({ categories, selectedCategory, onCategorySelect }) => 
               p: 1.5,
               borderRadius: 1,
               border: '1px solid',
-              borderColor: selectedCategory?.id === category.id ? '#b92a31' : '#e0e0e0',
-              bgcolor: selectedCategory?.id === category.id ? 'rgba(185, 42, 49, 0.1)' : 'white',
+              borderColor: selectedCategory?.id === category.id ? '#7a97ff' : '#e0e0e0',
+              bgcolor: selectedCategory?.id === category.id ? 'rgba(15, 180, 187, 0.1)' : 'white',
               '&:hover': {
-                bgcolor: selectedCategory?.id === category.id ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                bgcolor: selectedCategory?.id === category.id ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
               },
               '& .MuiFormControlLabel-label': {
                 flex: 1,

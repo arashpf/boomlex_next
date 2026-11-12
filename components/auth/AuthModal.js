@@ -273,7 +273,7 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
             <FormHelperText
               sx={{
                 textAlign: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontFamily: "iransans, Arial, sans-serif",
               }}
             >
@@ -290,7 +290,7 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
               mt: 2,
               py: 1.4,
               borderRadius: "12px",
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               fontFamily: "iransans, Arial, sans-serif",
               fontSize: 16,
               fontWeight: 700,
@@ -319,9 +319,9 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
             <a
               href="/terms"
               target="_blank"
-              style={{ color: "#b92a31", textDecoration: "underline" }}
+              style={{ color: "#7a97ff", textDecoration: "underline" }}
             >
-              قوانین آجر
+              قوانین بوملکس
             </a>{" "}
             را می‌پذیرید
           </Typography>
@@ -387,7 +387,7 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
             <FormHelperText
               sx={{
                 textAlign: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontFamily: "iransans, Arial, sans-serif",
               }}
             >
@@ -404,7 +404,7 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
               mt: 2,
               py: 1.4,
               borderRadius: "12px",
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               fontFamily: "iransans, Arial, sans-serif",
               fontSize: 16,
               fontWeight: 700,
@@ -446,7 +446,7 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
               variant="body2"
               onClick={handleResend}
               sx={{
-                color: cooldown > 0 ? "#bbb" : "#b92a31",
+                color: cooldown > 0 ? "#bbb" : "#7a97ff",
                 textDecoration: cooldown > 0 ? "none" : "underline",
                 cursor: cooldown > 0 ? "default" : "pointer",
                 fontFamily: "iransans, Arial, sans-serif",

@@ -121,7 +121,7 @@ export default function LandingPage() {
 
       // --- دانلود مستقیم (APK) - غیرفعال ---
       // if (downloadType === "direct")
-      //   downloadData.url = "https://api.ajur.app/download/ajur.apk"
+      //   downloadData.url = "https://api.boomlex.ir/download/ajur.apk"
 
       // --- دانلود از بازار - فعال ---
       if (downloadType === "bazaar")
@@ -210,7 +210,7 @@ export default function LandingPage() {
       {/* Header Title Above Cards */}
       <div className="w-full flex justify-center mt-6 mb-4">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 font-iransans">
-          آجر، مشاور املاک هوشمند
+          بوملکس، مشاور املاک هوشمند
         </h1>
       </div>
       {/* 
@@ -263,7 +263,7 @@ export default function LandingPage() {
           </IconButton>
         </DialogTitle>
         <DialogContent dividers sx={{ direction: "rtl" }}>
-          <p>برای نصب اپلیکیشن آجر بر روی دستگاه iOS:</p>
+          <p>برای نصب اپلیکیشن بوملکس بر روی دستگاه iOS:</p>
           <ol style={{ paddingRight: 20 }}>
             <li>در مرورگر Safari روی دکمه "اشتراک‌گذاری" بزنید.</li>
             <li>گزینه "Add to Home Screen" را انتخاب کنید.</li>
@@ -271,7 +271,7 @@ export default function LandingPage() {
           </ol>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleCloseIOSInstructions} variant="contained" sx={{ backgroundColor: "#a92b31", "&:hover": { backgroundColor: "#8e2529" } }}>
+          <Button onClick={handleCloseIOSInstructions} variant="contained" sx={{ backgroundColor: "#7a97ff", "&:hover": { backgroundColor: "#8e2529" } }}>
             فهمیدم
           </Button>
         </DialogActions>

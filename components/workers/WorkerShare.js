@@ -76,7 +76,7 @@ const WorkerShare = (props) => {
   const [problem, setProblem] = useState("test");
   const [open_snak, set_open_snak] = useState(false);
 
-  const shareUrl = "http://ajur.app/worker/" + details.id ;
+  const shareUrl = "http://boomlex.ir/worker/" + details.id ;
   console.log("the shareUrl in workershare is :");
   console.log(shareUrl);
   const title = details.name;
@@ -91,7 +91,7 @@ const WorkerShare = (props) => {
   const WorkerShareLinkCopyClick = () => {
     console.log("realestateMarketingLinkClick toched");
     copyToClipBoard(
-      "https://ajur.app/worker/" +
+      "https://boomlex.ir/worker/" +
         details.id 
     );
   };
@@ -178,7 +178,7 @@ const WorkerShare = (props) => {
         <p className={Styles["share-title"]}>ارسال این ملک به دیگران</p>
 
         <QrCodeGenerator
-          url={"http://ajur.app/worker/" + details.id + "?slug=" + slug}
+          url={"http://boomlex.ir/worker/" + details.id + "?slug=" + slug}
           title="اسکن کنید"
         />
         
@@ -188,7 +188,7 @@ const WorkerShare = (props) => {
           
           <OutlinedInput
             value={
-              "https://ajur.app/worker/" +
+              "https://boomlex.ir/worker/" +
               details.id 
             }
             readOnly

@@ -39,7 +39,7 @@ export default function Faq() {
 
     <Grid item md={10} xs={10}>
 
-      <p style={{textAlign:'center',padding:10}}>سوالات پر تکرار آجر </p>
+      <p style={{textAlign:'center',padding:10}}>سوالات پر تکرار بوملکس </p>
 
     <Accordion expanded={expanded === 'panel0'} onChange={handleChange('panel0')}>
       <AccordionSummary
@@ -47,11 +47,11 @@ export default function Faq() {
         aria-controls="panel1bh-content"
         id="panel1bh-header"
       >
-      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا ثبت  ملک در آجر رایگان است؟</p>
+      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا ثبت  ملک در بوملکس رایگان است؟</p>
       </AccordionSummary>
       <AccordionDetails>
           <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
-       بله، ثبت ملک در همه دسته بندی ها ،رایگان است و تمامی امکانات پایه آجر برای همیشه رایگان خواهد ماند   
+       بله، ثبت ملک در همه دسته بندی ها ،رایگان است و تمامی امکانات پایه بوملکس برای همیشه رایگان خواهد ماند   
           </p>
       </AccordionDetails>
     </Accordion>
@@ -62,7 +62,7 @@ export default function Faq() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-        <p style={{ color:'black',textAlign:'center',width:'100%'}}>ملک من چند روز در آجر نمایش داده میشود</p>
+        <p style={{ color:'black',textAlign:'center',width:'100%'}}>ملک من چند روز در بوملکس نمایش داده میشود</p>
         </AccordionSummary>
         <AccordionDetails>
             <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
@@ -92,15 +92,15 @@ export default function Faq() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <p style={{ color:'black',textAlign:'center',width:'100%'}}>کسب درآمد از بازاریابی آجر؟</p>
+          <p style={{ color:'black',textAlign:'center',width:'100%'}}>کسب درآمد از بازاریابی بوملکس؟</p>
 
         </AccordionSummary>
         <AccordionDetails>
         <p style={{ color:'#444',textAlign:'center',width:'100%',fontSize:20}}>
-       فقط برای مدت محدودی میتوانید در بازاریابی آجر و قسمتی از آینده این پلتفرم سهیم باشید
+       فقط برای مدت محدودی میتوانید در بازاریابی بوملکس و قسمتی از آینده این پلتفرم سهیم باشید
         </p>
 
-        <a href="https://api.ajur.app/ref">
+        <a href="https://api.boomlex.ir/ref">
         <Button
         startIcon={<StarsIcon style={{fontSize:25,marginBottom:7}}/>}
           fullWidth

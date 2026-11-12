@@ -17,7 +17,7 @@ export default function NiyavaranTehranApartmentsPage() {
 
   const fetchApartments = async () => {
     try {
-      const res = await fetch('https://api.ajur.app/api/niyavaran-tehran-apartments');
+      const res = await fetch('https://api.boomlex.ir/api/niyavaran-tehran-apartments');
       const data = await res.json();
       
       let apts = [];
@@ -656,13 +656,13 @@ export default function NiyavaranTehranApartmentsPage() {
                 }}>
                   📞 ۰۹۳۸۲۷۴۰۴۸۸
                 </a>
-                <a href="https://ajur.app" style={{ 
+                <a href="https://boomlex.ir" style={{ 
                   color: '#60a5fa', 
                   textDecoration: 'none',
                   fontWeight: '500',
                   fontSize: '1rem'
                 }}>
-                  صفحه اصلی آجر
+                  صفحه اصلی بوملکس
                 </a>
               </div>
               <p className="persian-text" style={{ 
@@ -674,7 +674,7 @@ export default function NiyavaranTehranApartmentsPage() {
                 marginTop: '0.75rem',
                 textAlign: 'right'
               }}>
-                © {new Date().getFullYear()} آجر - آپارتمان‌های لوکس نیاوران تهران. تمامی حقوق محفوظ است.
+                © {new Date().getFullYear()} بوملکس - آپارتمان‌های لوکس نیاوران تهران. تمامی حقوق محفوظ است.
               </p>
             </div>
           </Box>

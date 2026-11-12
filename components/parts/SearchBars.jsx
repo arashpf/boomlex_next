@@ -280,7 +280,7 @@ const SearchBars = ({ realstates, clientIp = null }) => {
       setSearchStatus("در حال جستجوی مشاورین...");
 
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: {
             title: searchTerm,
@@ -422,7 +422,7 @@ const SearchBars = ({ realstates, clientIp = null }) => {
         case "buySell": {
           try {
             const response = await axios.post(
-              "https://api.ajur.app/api/search-intent",
+              "https://api.boomlex.ir/api/search-intent",
               {
                 query: query,
                 cityid: cityId,
@@ -858,7 +858,7 @@ const SearchBars = ({ realstates, clientIp = null }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>

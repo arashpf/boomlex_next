@@ -440,7 +440,7 @@ export default function ImgMediaCard(props) {
     console.log("try to fetch worker with the id of " + worker.id);
     axios({
       method: "get",
-      url: `https://api.ajur.app/api/posts/${worker.id}`,
+      url: `https://api.boomlex.ir/api/posts/${worker.id}`,
     }).then(function (response) {
       set_details(response.data.details);
       set_images(response.data.images);

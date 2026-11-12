@@ -40,7 +40,7 @@ export default function MagCards() {
   async function fetchPage(p) {
     try {
       // Include author data in the request
-      const res = await fetch(`https://mag.ajur.app/wp-json/wp/v2/posts?per_page=${PER_PAGE}&page=${p}&_embed=author`);
+      const res = await fetch(`https://mag.boomlex.ir/wp-json/wp/v2/posts?per_page=${PER_PAGE}&page=${p}&_embed=author`);
       if (!res.ok) return [];
       const data = await res.json();
       return data;

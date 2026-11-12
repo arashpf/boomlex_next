@@ -69,8 +69,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://ajur.app">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir">
+        boomlex.ir
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -173,7 +173,7 @@ const NewDepartment = (props) => {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/get-user",
+      url: "https://api.boomlex.ir/api/get-user",
       params: {
         token: token,
       },
@@ -273,7 +273,7 @@ const NewDepartment = (props) => {
 
     axios({
       method: "post",
-      url: "https://api.ajur.app/api/edit-department",
+      url: "https://api.boomlex.ir/api/edit-department",
       params: {
         token: token,
         name: name,

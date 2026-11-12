@@ -48,7 +48,7 @@ const SubmitButton = ({
         sx={{
           height: 54,
           borderRadius: "12px",
-          backgroundColor: "#a92b31",
+          backgroundColor: "#7a97ff",
           color: "white",
           fontFamily: "iransans, Arial, sans-serif",
           fontSize: 18,

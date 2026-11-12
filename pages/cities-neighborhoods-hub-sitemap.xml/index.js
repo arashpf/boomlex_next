@@ -2,12 +2,12 @@ import { getServerSideSitemap } from "next-sitemap";
 
 export const getServerSideProps = async (ctx) => {
   const baseUrl = (
-    process.env.NEXT_PUBLIC_SITE_URL || "https://ajur.app"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://boomlex.ir"
   ).replace(/\/$/, "");
 
   try {
     const response = await fetch(
-      "https://api.ajur.app/api/active-cities",
+      "https://api.boomlex.ir/api/active-cities",
       {
         headers: {
           Accept: "application/json",

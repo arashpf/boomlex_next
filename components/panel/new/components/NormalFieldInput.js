@@ -93,7 +93,7 @@ const NormalFieldInput = ({
               transformOrigin: "top right",
             },
 
-            "&.Mui-focused": { color: "#a92b31" },
+            "&.Mui-focused": { color: "#7a97ff" },
             "&.MuiFormLabel-filled": { color: "#333" },
           },
         }}

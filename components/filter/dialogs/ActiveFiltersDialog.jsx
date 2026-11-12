@@ -136,7 +136,7 @@ export default function ActiveFiltersDialog({
             sx={{
               fontFamily: FONT,
               fontSize: 13,
-              color: "#b92a31",
+              color: "#7a97ff",
               fontWeight: 600,
               cursor: "pointer",
             }}
@@ -241,8 +241,8 @@ export default function ActiveFiltersDialog({
                 fontWeight: 700,
                 textTransform: "none",
                 borderRadius: "10px",
-                color: "#b92a31",
-                borderColor: "#b92a31",
+                color: "#7a97ff",
+                borderColor: "#7a97ff",
                 "&:hover": {
                   borderColor: "#a01c22",
                   backgroundColor: "rgba(185,42,49,0.06)",
@@ -278,7 +278,7 @@ function Row({ label, sublabel, onPress, onRemove }) {
         onClick={onPress}
         label={
           <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-            <Typography sx={{ fontFamily: FONT, fontSize: 13, fontWeight: 700, color: "#b92a31" }}>
+            <Typography sx={{ fontFamily: FONT, fontSize: 13, fontWeight: 700, color: "#7a97ff" }}>
               {label}
             </Typography>
             {sublabel && (
@@ -293,11 +293,11 @@ function Row({ label, sublabel, onPress, onRemove }) {
           height: "auto",
           py: 1,
           backgroundColor: "#fff",
-          border: "1.5px solid #b92a31",
+          border: "1.5px solid #7a97ff",
           borderRadius: "8px",
           justifyContent: "flex-start",
           "& .MuiChip-label": { width: "100%", px: 1 },
-          "& .MuiChip-deleteIcon": { color: "#b92a31", "&:hover": { color: "#a01c22" } },
+          "& .MuiChip-deleteIcon": { color: "#7a97ff", "&:hover": { color: "#a01c22" } },
         }}
       />
     </Box>

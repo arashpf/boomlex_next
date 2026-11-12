@@ -13,16 +13,15 @@ const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [open, setOpen] = useState(false);
-  // Pending actions to run after a successful login.
-  // We keep at most ONE at a time — a new openAuth() replaces the previous.
+  // Pending actions now store both success and cancel callbacks.
   const pendingActionsRef = useRef([]);
   const [reason, setReason] = useState("");
 
-  const openAuth = useCallback((onSuccess, reasonText = "") => {
+  const openAuth = useCallback((onSuccess, reasonText = "", onCancel) => {
     // Replace any pending action — a new request supersedes the old one.
     pendingActionsRef.current = [];
-    if (typeof onSuccess === "function") {
-      pendingActionsRef.current.push(onSuccess);
+    if (typeof onSuccess === "function" || typeof onCancel === "function") {
+      pendingActionsRef.current.push({ onSuccess, onCancel });
     }
     setReason(reasonText);
     setOpen(true);
@@ -31,35 +30,49 @@ export function AuthProvider({ children }) {
   const closeAuth = useCallback(() => {
     setOpen(false);
     setReason("");
-    // User dismissed the modal — discard pending actions so they don't
-    // fire later when a *different* action opens the modal.
+    const pending = pendingActionsRef.current;
     pendingActionsRef.current = [];
+    
+    // Fire the onCancel callbacks if the user dismissed the modal
+    pending.forEach(({ onCancel }) => {
+      if (typeof onCancel === "function") {
+        try {
+          onCancel();
+        } catch (e) {
+          console.error("[AuthProvider] cancel action failed", e);
+        }
+      }
+    });
   }, []);
 
   const handleLoginSuccess = useCallback((result) => {
     setOpen(false);
     setReason("");
-    const actions = pendingActionsRef.current;
+    const pending = pendingActionsRef.current;
     pendingActionsRef.current = [];
-    // Fire them in order (usually just one)
-    actions.forEach((fn) => {
-      try {
-        fn(result);
-      } catch (e) {
-        console.error("[AuthProvider] pending action failed", e);
+    
+    // Fire the onSuccess callbacks
+    pending.forEach(({ onSuccess }) => {
+      if (typeof onSuccess === "function") {
+        try {
+          onSuccess(result);
+        } catch (e) {
+          console.error("[AuthProvider] pending action failed", e);
+        }
       }
     });
   }, []);
 
   const requireAuth = useCallback(
-    (onSuccess, reasonText = "") => {
+    (onSuccess, reasonText = "", onCancel) => {
       const token =
         typeof window !== "undefined" ? Cookies.get("id_token") : null;
       if (token) {
         if (typeof onSuccess === "function") onSuccess();
         return true;
       }
-      openAuth(onSuccess, reasonText);
+      // Pass onCancel to openAuth
+      openAuth(onSuccess, reasonText, onCancel);
       return false;
     },
     [openAuth]

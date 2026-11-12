@@ -40,7 +40,7 @@ export async function getServerSideProps(context) {
   const city = params?.categories || "tehran";
 
   // ─── Build analytics context (reads cookies, IP, UA) ───
-  const pageUrl = `https://ajur.app/${city}`;
+  const pageUrl = `https://boomlex.ir/${city}`;
   const clientContext = buildClientContext(context, pageUrl);
 
   // ─── Fetch city data so we can pass it to the page and know counts ───
@@ -53,7 +53,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Get Persian name + ID
-    const citiesRes = await fetch("https://api.ajur.app/api/search-cities", {
+    const citiesRes = await fetch("https://api.boomlex.ir/api/search-cities", {
       headers: {
         Accept: "application/json",
         "User-Agent": req.headers["user-agent"] || "Ajur-SSR",
@@ -70,7 +70,7 @@ export async function getServerSideProps(context) {
     }
 
     // Get main city data
-    const baseRes = await fetch(`https://api.ajur.app/api/base?city=${city}`, {
+    const baseRes = await fetch(`https://api.boomlex.ir/api/base?city=${city}`, {
       headers: {
         Accept: "application/json",
         "User-Agent": req.headers["user-agent"] || "Ajur-SSR",

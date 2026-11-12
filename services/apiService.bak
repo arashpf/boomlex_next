@@ -7,7 +7,7 @@ const AsyncStorage = {
 };
 import Cookies from 'js-cookie';
 
-const API_BASE_URL = 'https://api.ajur.app/api';
+const API_BASE_URL = 'https://api.boomlex.ir/api';
 
 // Create axios instance
 const api = axios.create({

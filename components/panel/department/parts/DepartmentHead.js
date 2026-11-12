@@ -61,7 +61,7 @@ export default function DepartmentHead(props) {
             <div style={{ padding: 10 }}>
               <QrCodeGenerator
                 url={
-                  "https://ajur.app/department/" +
+                  "https://boomlex.ir/department/" +
                   department.id +
                   "?slug=" +
                   slug

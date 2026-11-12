@@ -340,14 +340,14 @@
 
 //   // SEO Data - Use Persian city name in title and description
 //   const seoData = {
-//     title: `مشاور املاک هوشمند آجر | خرید فروش و اجاره ملک در ${seoPersianCity}`,
-//     description: `آجر، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
-//     keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, آجر, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
-//     canonical: `https://ajur.app/${seoEnglishCity}`,
-//     image: "https://ajur.app/logo/ajour-meta-image.jpg",
+//     title: `مشاور املاک هوشمند بوملکس | خرید فروش و اجاره ملک در ${seoPersianCity}`,
+//     description: `بوملکس، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
+//     keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, بوملکس, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
+//     canonical: `https://boomlex.ir/${seoEnglishCity}`,
+//     image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
 //     imageWidth: "1080",
 //     imageHeight: "702",
-//     siteName: "آجر - مشاور املاک هوشمند",
+//     siteName: "بوملکس - مشاور املاک هوشمند",
 //     twitterHandle: "@ajur_app",
 //   };
 
@@ -365,7 +365,7 @@
 //     {
 //       id: 2,
 //       title: "ثبت آگهی",
-//       description: "ملک خود را برای فروش یا اجاره در آجر ثبت کنید",
+//       description: "ملک خود را برای فروش یا اجاره در بوملکس ثبت کنید",
 //       illustration: "/img/card2.png",
 //       action: "ثبت آگهی",
 
@@ -454,7 +454,7 @@
 //           }
 //         }
 
-//         const apiUrl = `https://api.ajur.app/api/base?city=${selectedCity}`;
+//         const apiUrl = `https://api.boomlex.ir/api/base?city=${selectedCity}`;
 //         console.log(`Fetching from API: ${apiUrl}`);
 
 //         const response = await fetch(apiUrl, {
@@ -700,7 +700,7 @@
 //       <div className="flex flex-col sm:flex-row gap-4 mt-4">
 //         <button
 //           onClick={() => window.location.reload()}
-//           className="px-6 py-3 bg-[#b92a31] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+//           className="px-6 py-3 bg-[#7a97ff] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
 //         >
 //           تلاش مجدد
 //         </button>
@@ -959,10 +959,10 @@
 //     mainEntity: [
 //       {
 //         "@type": "Question",
-//         name: "آجر چیست؟",
+//         name: "بوملکس چیست؟",
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: `آجر یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
+//           text: `بوملکس یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
 //         },
 //       },
 //       {
@@ -970,15 +970,15 @@
 //         name: `چگونه می‌توانم در ${seoPersianCity} آگهی ثبت کنم؟`,
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: "برای ثبت آگهی در آجر، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
+//           text: "برای ثبت آگهی در بوملکس، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
 //         },
 //       },
 //       {
 //         "@type": "Question",
-//         name: "آیا آجر رایگان است؟",
+//         name: "آیا بوملکس رایگان است؟",
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: "بله، مشاهده آگهی‌ها در آجر کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
+//           text: "بله، مشاهده آگهی‌ها در بوملکس کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
 //         },
 //       },
 //       {
@@ -986,7 +986,7 @@
 //         name: `بهترین محله‌های ${seoPersianCity} برای خرید ملک کجاست؟`,
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از آجر می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
+//           text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از بوملکس می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
 //         },
 //       },
 //     ],
@@ -996,14 +996,14 @@
 //   const websiteSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "WebSite",
-//     "@id": `https://ajur.app/#website`,
+//     "@id": `https://boomlex.ir/#website`,
 //     name: seoData.siteName,
-//     url: "https://ajur.app",
+//     url: "https://boomlex.ir",
 //     potentialAction: {
 //       "@type": "SearchAction",
 //       target: {
 //         "@type": "EntryPoint",
-//         urlTemplate: `https://ajur.app/search?q={search_term_string}&city=${seoEnglishCity}`,
+//         urlTemplate: `https://boomlex.ir/search?q={search_term_string}&city=${seoEnglishCity}`,
 //       },
 //       "query-input": "required name=search_term_string",
 //     },
@@ -1013,12 +1013,12 @@
 //   const organizationSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "Organization",
-//     name: "آجر",
-//     url: "https://ajur.app",
-//     logo: "https://ajur.app/logo/ajur.png",
+//     name: "بوملکس",
+//     url: "https://boomlex.ir",
+//     logo: "https://boomlex.ir/logo/ajur.png",
 //     sameAs: [
 //       "https://twitter.com/ajur_app",
-//       "https://www.instagram.com/ajur.app",
+//       "https://www.instagram.com/boomlex.ir",
 //       "https://www.linkedin.com/company/ajur",
 //     ],
 //     contactPoint: {
@@ -1038,7 +1038,7 @@
 //   const localBusinessSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "RealEstateAgent",
-//     name: `آجر - مشاور املاک ${seoPersianCity}`,
+//     name: `بوملکس - مشاور املاک ${seoPersianCity}`,
 //     image: seoData.image,
 //     "@id": `${seoData.canonical}#realestateagent`,
 //     url: seoData.canonical,
@@ -1068,7 +1068,7 @@
 //         closes: "21:00",
 //       },
 //     ],
-//     sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/ajur.app"],
+//     sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/boomlex.ir"],
 //   };
 
 //   // WebPage Schema
@@ -1080,7 +1080,7 @@
 //     name: seoData.title,
 //     description: seoData.description,
 //     inLanguage: "fa-IR",
-//     isPartOf: { "@id": `https://ajur.app/#website` },
+//     isPartOf: { "@id": `https://boomlex.ir/#website` },
 //     about: {
 //       "@type": "Place",
 //       name: seoPersianCity,
@@ -1092,7 +1092,7 @@
 //     "@context": "https://schema.org",
 //     "@type": "BreadcrumbList",
 //     itemListElement: [
-//       { "@type": "ListItem", position: 1, name: "آجر", item: "https://ajur.app" },
+//       { "@type": "ListItem", position: 1, name: "بوملکس", item: "https://boomlex.ir" },
 //       {
 //         "@type": "ListItem",
 //         position: 2,
@@ -1155,7 +1155,7 @@
 //       <main className={styles["main"]}>
 //       <div className={`max-w-7xl mx-auto text-center ${styles.sectionSpacing} ${styles.heroHeading}`}>
 //   <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">
-//     <span style={{ color: "#b92a31" }}>آجر</span>، مشاور املاک هوشمند در{" "}
+//     <span style={{ color: "#7a97ff" }}>بوملکس</span>، مشاور املاک هوشمند در{" "}
 //     {persianCity}
 //   </h1>
 // </div>
@@ -1172,7 +1172,7 @@
 //         <div className="w-full flex justify-center items-center my-6">
 //           <div className="max-w-7xl mx-auto text-center">
 //             <h2 className="text-3xl md:text-4xl font-bold">
-//               خدمات آجر در {persianCity}
+//               خدمات بوملکس در {persianCity}
 //             </h2>
 //           </div>
 //         </div>
@@ -1184,7 +1184,7 @@
 //         <div className="w-full flex justify-center items-center my-6">
 //           <div className="max-w-7xl mx-auto text-center">
 //             <h2 className="text-3xl md:text-4xl font-bold">
-//               بهترین‌های آجر در {persianCity}
+//               بهترین‌های بوملکس در {persianCity}
 //             </h2>
 //           </div>
 //         </div>
@@ -1303,8 +1303,8 @@
 
 //         {/* Preload critical resources */}
 //         <link rel="preload" href="/logo/ajour-gif.gif" as="image" />
-//         <link rel="preconnect" href="https://api.ajur.app" />
-//         <link rel="dns-prefetch" href="https://api.ajur.app" />
+//         <link rel="preconnect" href="https://api.boomlex.ir" />
+//         <link rel="dns-prefetch" href="https://api.boomlex.ir" />
 
 //         {/* Critical CSS */}
 //         <style dangerouslySetInnerHTML={{ __html: criticalCSS }} />
@@ -1313,7 +1313,7 @@
 //         <title>{seoData.title}</title>
 //         <meta name="description" content={seoData.description} />
 //         <meta name="keywords" content={seoData.keywords} />
-//         <meta name="author" content="آجر" />
+//         <meta name="author" content="بوملکس" />
 //         <meta
 //           name="robots"
 //           content="index, follow, max-image-preview:large, max-snippet:-1"
@@ -1327,8 +1327,8 @@
 //         <link rel="canonical" href={seoData.canonical} />
 
 //         {/* Alternate language versions */}
-//         <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="fa-IR" />
-//         <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="x-default" />
+//         <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="fa-IR" />
+//         <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="x-default" />
 
 //         {/* Open Graph */}
 //         <meta property="og:locale" content="fa_IR" />
@@ -1342,7 +1342,7 @@
 //         <meta property="og:image:height" content={seoData.imageHeight} />
 //         <meta
 //           property="og:image:alt"
-//           content={`آجر - مشاور املاک ${seoPersianCity}`}
+//           content={`بوملکس - مشاور املاک ${seoPersianCity}`}
 //         />
 
 //         {/* Twitter Card */}
@@ -1365,7 +1365,7 @@
 //         <link rel="manifest" href="/site.webmanifest" />
 
 //         {/* PWA */}
-//         <meta name="theme-color" content="#b92a31" />
+//         <meta name="theme-color" content="#7a97ff" />
 //         <meta name="apple-mobile-web-app-capable" content="yes" />
 //         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -1446,7 +1446,7 @@
 //               <div className="mr-3">
 //                 <h3 className="text-sm font-medium text-gray-900">توجه</h3>
 //                 <p className="mt-1 text-sm text-gray-600">
-//                   برای استفاده بهتر از آجر، لطفاً فیلترشکن خود را خاموش کنید
+//                   برای استفاده بهتر از بوملکس، لطفاً فیلترشکن خود را خاموش کنید
 //                 </p>
 //               </div>
 //               <button
@@ -1503,7 +1503,7 @@
 
 //   try {
 //     // First, fetch all cities to validate and get Persian name
-//     const citiesResponse = await fetch('https://api.ajur.app/api/search-cities', {
+//     const citiesResponse = await fetch('https://api.boomlex.ir/api/search-cities', {
 //       headers: {
 //         Accept: "application/json",
 //         "User-Agent": req.headers["user-agent"] || "Ajur-SSR",
@@ -1532,7 +1532,7 @@
 //     }
 
 //     // Fetch main data
-//     const apiUrl = `https://api.ajur.app/api/base?city=${city}`;
+//     const apiUrl = `https://api.boomlex.ir/api/base?city=${city}`;
 //     console.log("Fetching from:", apiUrl);
 
 //     const response = await fetch(apiUrl, {
@@ -1933,14 +1933,14 @@
 
 //   // SEO Data - Use Persian city name in title and description
 //   const seoData = {
-//     title: `مشاور املاک هوشمند آجر | خرید فروش و اجاره ملک در ${seoPersianCity}`,
-//     description: `آجر، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
-//     keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, آجر, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
-//     canonical: `https://ajur.app/${seoEnglishCity}`,
-//     image: "https://ajur.app/logo/ajour-meta-image.jpg",
+//     title: `مشاور املاک هوشمند بوملکس | خرید فروش و اجاره ملک در ${seoPersianCity}`,
+//     description: `بوملکس، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
+//     keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, بوملکس, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
+//     canonical: `https://boomlex.ir/${seoEnglishCity}`,
+//     image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
 //     imageWidth: "1080",
 //     imageHeight: "702",
-//     siteName: "آجر - مشاور املاک هوشمند",
+//     siteName: "بوملکس - مشاور املاک هوشمند",
 //     twitterHandle: "@ajur_app",
 //   };
 
@@ -1958,7 +1958,7 @@
 //     {
 //       id: 2,
 //       title: "ثبت آگهی",
-//       description: "ملک خود را برای فروش یا اجاره در آجر ثبت کنید",
+//       description: "ملک خود را برای فروش یا اجاره در بوملکس ثبت کنید",
 //       illustration: "/img/card2.png",
 //       action: "ثبت آگهی",
 
@@ -2046,7 +2046,7 @@
 //           }
 //         }
 
-//         const apiUrl = `https://api.ajur.app/api/base?city=${selectedCity}`;
+//         const apiUrl = `https://api.boomlex.ir/api/base?city=${selectedCity}`;
 //         console.log(`Fetching from API: ${apiUrl}`);
 
 //         const response = await fetch(apiUrl, {
@@ -2292,7 +2292,7 @@
 //       <div className="flex flex-col sm:flex-row gap-4 mt-4">
 //         <button
 //           onClick={() => window.location.reload()}
-//           className="px-6 py-3 bg-[#b92a31] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+//           className="px-6 py-3 bg-[#7a97ff] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
 //         >
 //           تلاش مجدد
 //         </button>
@@ -2551,10 +2551,10 @@
 //     mainEntity: [
 //       {
 //         "@type": "Question",
-//         name: "آجر چیست؟",
+//         name: "بوملکس چیست؟",
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: `آجر یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
+//           text: `بوملکس یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
 //         },
 //       },
 //       {
@@ -2562,15 +2562,15 @@
 //         name: `چگونه می‌توانم در ${seoPersianCity} آگهی ثبت کنم؟`,
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: "برای ثبت آگهی در آجر، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
+//           text: "برای ثبت آگهی در بوملکس، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
 //         },
 //       },
 //       {
 //         "@type": "Question",
-//         name: "آیا آجر رایگان است؟",
+//         name: "آیا بوملکس رایگان است؟",
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: "بله، مشاهده آگهی‌ها در آجر کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
+//           text: "بله، مشاهده آگهی‌ها در بوملکس کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
 //         },
 //       },
 //       {
@@ -2578,7 +2578,7 @@
 //         name: `بهترین محله‌های ${seoPersianCity} برای خرید ملک کجاست؟`,
 //         acceptedAnswer: {
 //           "@type": "Answer",
-//           text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از آجر می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
+//           text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از بوملکس می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
 //         },
 //       },
 //     ],
@@ -2588,14 +2588,14 @@
 //   const websiteSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "WebSite",
-//     "@id": `https://ajur.app/#website`,
+//     "@id": `https://boomlex.ir/#website`,
 //     name: seoData.siteName,
-//     url: "https://ajur.app",
+//     url: "https://boomlex.ir",
 //     potentialAction: {
 //       "@type": "SearchAction",
 //       target: {
 //         "@type": "EntryPoint",
-//         urlTemplate: `https://ajur.app/search?q={search_term_string}&city=${seoEnglishCity}`,
+//         urlTemplate: `https://boomlex.ir/search?q={search_term_string}&city=${seoEnglishCity}`,
 //       },
 //       "query-input": "required name=search_term_string",
 //     },
@@ -2605,12 +2605,12 @@
 //   const organizationSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "Organization",
-//     name: "آجر",
-//     url: "https://ajur.app",
-//     logo: "https://ajur.app/logo/ajur.png",
+//     name: "بوملکس",
+//     url: "https://boomlex.ir",
+//     logo: "https://boomlex.ir/logo/ajur.png",
 //     sameAs: [
 //       "https://twitter.com/ajur_app",
-//       "https://www.instagram.com/ajur.app",
+//       "https://www.instagram.com/boomlex.ir",
 //       "https://www.linkedin.com/company/ajur",
 //     ],
 //     contactPoint: {
@@ -2630,7 +2630,7 @@
 //   const localBusinessSchema = {
 //     "@context": "https://schema.org",
 //     "@type": "RealEstateAgent",
-//     name: `آجر - مشاور املاک ${seoPersianCity}`,
+//     name: `بوملکس - مشاور املاک ${seoPersianCity}`,
 //     image: seoData.image,
 //     "@id": `${seoData.canonical}#realestateagent`,
 //     url: seoData.canonical,
@@ -2660,7 +2660,7 @@
 //         closes: "21:00",
 //       },
 //     ],
-//     sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/ajur.app"],
+//     sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/boomlex.ir"],
 //   };
 
 //   // WebPage Schema
@@ -2672,7 +2672,7 @@
 //     name: seoData.title,
 //     description: seoData.description,
 //     inLanguage: "fa-IR",
-//     isPartOf: { "@id": `https://ajur.app/#website` },
+//     isPartOf: { "@id": `https://boomlex.ir/#website` },
 //     about: {
 //       "@type": "Place",
 //       name: seoPersianCity,
@@ -2684,7 +2684,7 @@
 //     "@context": "https://schema.org",
 //     "@type": "BreadcrumbList",
 //     itemListElement: [
-//       { "@type": "ListItem", position: 1, name: "آجر", item: "https://ajur.app" },
+//       { "@type": "ListItem", position: 1, name: "بوملکس", item: "https://boomlex.ir" },
 //       {
 //         "@type": "ListItem",
 //         position: 2,
@@ -2747,7 +2747,7 @@
 //       <main className={styles["main"]}>
 //       <div className={`max-w-7xl mx-auto text-center ${styles.sectionSpacing} ${styles.heroHeading}`}>
 //   <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">
-//     <span style={{ color: "#b92a31" }}>آجر</span>، مشاور املاک هوشمند در{" "}
+//     <span style={{ color: "#7a97ff" }}>بوملکس</span>، مشاور املاک هوشمند در{" "}
 //     {persianCity}
 //   </h1>
 // </div>
@@ -2764,7 +2764,7 @@
 //         <div className="w-full flex justify-center items-center my-6">
 //           <div className="max-w-7xl mx-auto text-center">
 //             <h2 className="text-3xl md:text-4xl font-bold">
-//               خدمات آجر در {persianCity}
+//               خدمات بوملکس در {persianCity}
 //             </h2>
 //           </div>
 //         </div>
@@ -2776,7 +2776,7 @@
 //         <div className="w-full flex justify-center items-center my-6">
 //           <div className="max-w-7xl mx-auto text-center">
 //             <h2 className="text-3xl md:text-4xl font-bold">
-//               بهترین‌های آجر در {persianCity}
+//               بهترین‌های بوملکس در {persianCity}
 //             </h2>
 //           </div>
 //         </div>
@@ -2893,8 +2893,8 @@
 
 //         {/* Preload critical resources */}
 //         <link rel="preload" href="/logo/ajour-gif.gif" as="image" />
-//         <link rel="preconnect" href="https://api.ajur.app" />
-//         <link rel="dns-prefetch" href="https://api.ajur.app" />
+//         <link rel="preconnect" href="https://api.boomlex.ir" />
+//         <link rel="dns-prefetch" href="https://api.boomlex.ir" />
 
 //         {/* Critical CSS */}
 //         <style dangerouslySetInnerHTML={{ __html: criticalCSS }} />
@@ -2903,7 +2903,7 @@
 //         <title>{seoData.title}</title>
 //         <meta name="description" content={seoData.description} />
 //         <meta name="keywords" content={seoData.keywords} />
-//         <meta name="author" content="آجر" />
+//         <meta name="author" content="بوملکس" />
 //         <meta
 //           name="robots"
 //           content="index, follow, max-image-preview:large, max-snippet:-1"
@@ -2917,8 +2917,8 @@
 //         <link rel="canonical" href={seoData.canonical} />
 
 //         {/* Alternate language versions */}
-//         <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="fa-IR" />
-//         <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="x-default" />
+//         <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="fa-IR" />
+//         <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="x-default" />
 
 //         {/* Open Graph */}
 //         <meta property="og:locale" content="fa_IR" />
@@ -2932,7 +2932,7 @@
 //         <meta property="og:image:height" content={seoData.imageHeight} />
 //         <meta
 //           property="og:image:alt"
-//           content={`آجر - مشاور املاک ${seoPersianCity}`}
+//           content={`بوملکس - مشاور املاک ${seoPersianCity}`}
 //         />
 
 //         {/* Twitter Card */}
@@ -2955,7 +2955,7 @@
 //         <link rel="manifest" href="/site.webmanifest" />
 
 //         {/* PWA */}
-//         <meta name="theme-color" content="#b92a31" />
+//         <meta name="theme-color" content="#7a97ff" />
 //         <meta name="apple-mobile-web-app-capable" content="yes" />
 //         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -3036,7 +3036,7 @@
 //               <div className="mr-3">
 //                 <h3 className="text-sm font-medium text-gray-900">توجه</h3>
 //                 <p className="mt-1 text-sm text-gray-600">
-//                   برای استفاده بهتر از آجر، لطفاً فیلترشکن خود را خاموش کنید
+//                   برای استفاده بهتر از بوملکس، لطفاً فیلترشکن خود را خاموش کنید
 //                 </p>
 //               </div>
 //               <button
@@ -3097,7 +3097,7 @@
 
 //   try {
 //     // First, fetch all cities to validate and get Persian name
-//     const citiesResponse = await fetch('https://api.ajur.app/api/search-cities', {
+//     const citiesResponse = await fetch('https://api.boomlex.ir/api/search-cities', {
 //       headers: {
 //         Accept: "application/json",
 //         "User-Agent": req.headers["user-agent"] || "Ajur-SSR",
@@ -3119,7 +3119,7 @@
 //     }
 
 //     // Fetch main data
-//     const apiUrl = `https://api.ajur.app/api/base?city=${city}`;
+//     const apiUrl = `https://api.boomlex.ir/api/base?city=${city}`;
 //     console.log("Fetching from:", apiUrl);
 
 //     const response = await fetch(apiUrl, {
@@ -3454,14 +3454,14 @@ function Home(props) {
   const seoPersianCity = props?.url_persian_city || persianCity || "تهران";
 
   const seoData = {
-    title: `مشاور املاک هوشمند آجر | خرید فروش و اجاره ملک در ${seoPersianCity}`,
-    description: `آجر، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
-    keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, آجر, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
-    canonical: `https://ajur.app/${seoEnglishCity}`,
-    image: "https://ajur.app/logo/ajour-meta-image.jpg",
+    title: `مشاور املاک هوشمند بوملکس | خرید فروش و اجاره ملک در ${seoPersianCity}`,
+    description: `بوملکس، مشاور املاک هوشمند در ${seoPersianCity}. خرید، فروش و اجاره آپارتمان، خانه ویلایی، مغازه، دفتر کار و زمین در ${seoPersianCity} و سراسر ایران. بیش از ۱۰۰۰۰ آگهی فعال ملک با بهترین قیمت. مشاوره رایگان تخصصی.`,
+    keywords: `مشاور املاک, خرید خانه, فروش آپارتمان, اجاره ملک, بوملکس, ${seoPersianCity}, املاک ${seoPersianCity}, خرید ملک در ${seoPersianCity}, فروش ملک در ${seoPersianCity}`,
+    canonical: `https://boomlex.ir/${seoEnglishCity}`,
+    image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
     imageWidth: "1080",
     imageHeight: "702",
-    siteName: "آجر - مشاور املاک هوشمند",
+    siteName: "بوملکس - مشاور املاک هوشمند",
     twitterHandle: "@ajur_app",
   };
 
@@ -3479,7 +3479,7 @@ function Home(props) {
     {
       id: 2,
       title: "ثبت آگهی",
-      description: "ملک خود را برای فروش یا اجاره در آجر ثبت کنید",
+      description: "ملک خود را برای فروش یا اجاره در بوملکس ثبت کنید",
       illustration: "/img/card2.png",
       action: "ثبت آگهی",
       onClick: () => {
@@ -3557,7 +3557,7 @@ function Home(props) {
           }
         }
 
-        const apiUrl = `https://api.ajur.app/api/base?city=${selectedCity}`;
+        const apiUrl = `https://api.boomlex.ir/api/base?city=${selectedCity}`;
 
         const response = await fetch(apiUrl, {
           signal: controller.signal,
@@ -3734,7 +3734,7 @@ function Home(props) {
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
         <button
           onClick={() => window.location.reload()}
-          className="px-6 py-3 bg-[#b92a31] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+          className="px-6 py-3 bg-[#7a97ff] text-white rounded-lg font-medium hover:bg-[#a0252c] transition-colors duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
         >
           تلاش مجدد
         </button>
@@ -3944,10 +3944,10 @@ function Home(props) {
     mainEntity: [
       {
         "@type": "Question",
-        name: "آجر چیست؟",
+        name: "بوملکس چیست؟",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `آجر یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
+          text: `بوملکس یک مشاور املاک هوشمند است که به شما در خرید، فروش و اجاره ملک در ${seoPersianCity} و سراسر ایران کمک می‌کند. با بیش از ۱۰۰۰۰ آگهی فعال، می‌توانید بهترین ملک را با مناسب‌ترین قیمت پیدا کنید.`,
         },
       },
       {
@@ -3955,15 +3955,15 @@ function Home(props) {
         name: `چگونه می‌توانم در ${seoPersianCity} آگهی ثبت کنم؟`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: "برای ثبت آگهی در آجر، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
+          text: "برای ثبت آگهی در بوملکس، کافی است روی دکمه 'ثبت آگهی' کلیک کرده و اطلاعات ملک خود را وارد کنید. آگهی شما پس از بررسی توسط کارشناسان، در سایت نمایش داده می‌شود.",
         },
       },
       {
         "@type": "Question",
-        name: "آیا آجر رایگان است؟",
+        name: "آیا بوملکس رایگان است؟",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "بله، مشاهده آگهی‌ها در آجر کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
+          text: "بله، مشاهده آگهی‌ها در بوملکس کاملاً رایگان است. همچنین ثبت آگهی برای کاربران عادی رایگان بوده و فقط برای مشاوران املاک حرفه‌ای دارای طرح‌های ویژه است.",
         },
       },
       {
@@ -3971,7 +3971,7 @@ function Home(props) {
         name: `بهترین محله‌های ${seoPersianCity} برای خرید ملک کجاست؟`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از آجر می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
+          text: `در ${seoPersianCity} محله‌های مختلفی برای خرید ملک وجود دارد. با استفاده از بوملکس می‌توانید آگهی‌های تمام محله‌ها را مشاهده و مقایسه کنید.`,
         },
       },
     ],
@@ -3980,14 +3980,14 @@ function Home(props) {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": `https://ajur.app/#website`,
+    "@id": `https://boomlex.ir/#website`,
     name: seoData.siteName,
-    url: "https://ajur.app",
+    url: "https://boomlex.ir",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `https://ajur.app/search?q={search_term_string}&city=${seoEnglishCity}`,
+        urlTemplate: `https://boomlex.ir/search?q={search_term_string}&city=${seoEnglishCity}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -3996,12 +3996,12 @@ function Home(props) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "آجر",
-    url: "https://ajur.app",
-    logo: "https://ajur.app/logo/ajur.png",
+    name: "بوملکس",
+    url: "https://boomlex.ir",
+    logo: "https://boomlex.ir/logo/ajur.png",
     sameAs: [
       "https://twitter.com/ajur_app",
-      "https://www.instagram.com/ajur.app",
+      "https://www.instagram.com/boomlex.ir",
       "https://www.linkedin.com/company/ajur",
     ],
     contactPoint: {
@@ -4017,7 +4017,7 @@ function Home(props) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: `آجر - مشاور املاک ${seoPersianCity}`,
+    name: `بوملکس - مشاور املاک ${seoPersianCity}`,
     image: seoData.image,
     "@id": `${seoData.canonical}#realestateagent`,
     url: seoData.canonical,
@@ -4037,7 +4037,7 @@ function Home(props) {
         closes: "21:00",
       },
     ],
-    sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/ajur.app"],
+    sameAs: ["https://twitter.com/ajur_app", "https://www.instagram.com/boomlex.ir"],
   };
 
   const webPageSchema = {
@@ -4048,7 +4048,7 @@ function Home(props) {
     name: seoData.title,
     description: seoData.description,
     inLanguage: "fa-IR",
-    isPartOf: { "@id": `https://ajur.app/#website` },
+    isPartOf: { "@id": `https://boomlex.ir/#website` },
     about: { "@type": "Place", name: seoPersianCity },
   };
 
@@ -4056,7 +4056,7 @@ function Home(props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "آجر", item: "https://ajur.app" },
+      { "@type": "ListItem", position: 1, name: "بوملکس", item: "https://boomlex.ir" },
       {
         "@type": "ListItem",
         position: 2,
@@ -4111,7 +4111,7 @@ function Home(props) {
       <main className={styles["main"]}>
         <div className={`max-w-7xl mx-auto text-center ${styles.sectionSpacing} ${styles.heroHeading}`}>
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">
-            <span style={{ color: "#b92a31" }}>آجر</span>، مشاور املاک هوشمند در{" "}
+            <span style={{ color: "#7a97ff" }}>بوملکس</span>، مشاور املاک هوشمند در{" "}
             {persianCity}
           </h1>
         </div>
@@ -4128,7 +4128,7 @@ function Home(props) {
         <div className="w-full flex justify-center items-center my-6">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">
-              خدمات آجر در {persianCity}
+              خدمات بوملکس در {persianCity}
             </h2>
           </div>
         </div>
@@ -4140,7 +4140,7 @@ function Home(props) {
         <div className="w-full flex justify-center items-center my-6">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">
-              بهترین‌های آجر در {persianCity}
+              بهترین‌های بوملکس در {persianCity}
             </h2>
           </div>
         </div>
@@ -4228,22 +4228,22 @@ function Home(props) {
         <meta name="language" content="fa" />
 
         <link rel="preload" href="/logo/ajour-gif.gif" as="image" />
-        <link rel="preconnect" href="https://api.ajur.app" />
-        <link rel="dns-prefetch" href="https://api.ajur.app" />
+        <link rel="preconnect" href="https://api.boomlex.ir" />
+        <link rel="dns-prefetch" href="https://api.boomlex.ir" />
 
         <style dangerouslySetInnerHTML={{ __html: criticalCSS }} />
 
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.description} />
         <meta name="keywords" content={seoData.keywords} />
-        <meta name="author" content="آجر" />
+        <meta name="author" content="بوملکس" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
         <link rel="canonical" href={seoData.canonical} />
 
-        <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="fa-IR" />
-        <link rel="alternate" href={`https://ajur.app/${seoEnglishCity}`} hrefLang="x-default" />
+        <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="fa-IR" />
+        <link rel="alternate" href={`https://boomlex.ir/${seoEnglishCity}`} hrefLang="x-default" />
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
@@ -4254,7 +4254,7 @@ function Home(props) {
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:width" content={seoData.imageWidth} />
         <meta property="og:image:height" content={seoData.imageHeight} />
-        <meta property="og:image:alt" content={`آجر - مشاور املاک ${seoPersianCity}`} />
+        <meta property="og:image:alt" content={`بوملکس - مشاور املاک ${seoPersianCity}`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={seoData.twitterHandle} />
@@ -4272,7 +4272,7 @@ function Home(props) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -4341,7 +4341,7 @@ function Home(props) {
               <div className="mr-3">
                 <h3 className="text-sm font-medium text-gray-900">توجه</h3>
                 <p className="mt-1 text-sm text-gray-600">
-                  برای استفاده بهتر از آجر، لطفاً فیلترشکن خود را خاموش کنید
+                  برای استفاده بهتر از بوملکس، لطفاً فیلترشکن خود را خاموش کنید
                 </p>
               </div>
               <button
@@ -4409,12 +4409,12 @@ export async function getServerSideProps(context) {
   res.setHeader("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
 
   // ─── Analytics: build client context ───
-  const pageUrl = `https://ajur.app/${city}`;
+  const pageUrl = `https://boomlex.ir/${city}`;
   const clientContext = buildClientContext(context, pageUrl);
 
   try {
     // ─── Fetch cities list (for Persian name lookup) ───
-    const citiesResponse = await fetch("https://api.ajur.app/api/search-cities", {
+    const citiesResponse = await fetch("https://api.boomlex.ir/api/search-cities", {
       headers: {
         Accept: "application/json",
         "User-Agent": req.headers["user-agent"] || "Ajur-SSR",
@@ -4435,7 +4435,7 @@ export async function getServerSideProps(context) {
     }
 
     // ─── Fetch main data for this city ───
-    const apiUrl = `https://api.ajur.app/api/base?city=${city}`;
+    const apiUrl = `https://api.boomlex.ir/api/base?city=${city}`;
 
     const response = await fetch(apiUrl, {
       headers: {

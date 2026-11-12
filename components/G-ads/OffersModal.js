@@ -37,7 +37,7 @@ function OffersModal({ open, setOpen }) {
         console.log("📦 Payload to send:", payload);
 
         // try {
-        //     const response = await axios.post("https://api.ajur.app/api/payment", payload);
+        //     const response = await axios.post("https://api.boomlex.ir/api/payment", payload);
         //     console.log("Sent:", response.data);
         // } catch (error) {
         //     console.error("Error:", error);
@@ -125,7 +125,7 @@ function OffersModal({ open, setOpen }) {
                         type="سرویس طلایی"
                         originalPrice="20,000,000"
                         price="18,000,000"
-                        description="پیشنهاد آجر"
+                        description="پیشنهاد بوملکس"
                         buttonText="خرید سرویس طلایی"
                         onButtonClick={() => handlePost(1)}
                         features={[

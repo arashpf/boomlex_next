@@ -85,7 +85,7 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4 flex flex-col items-center justify-center relative">
         {/* mobile phone preview removed — single mobile phone is rendered centrally in the page container */}
         {/* Section title */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6 text-center">قابلیت‌های جدید آجر</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6 text-center">قابلیت‌های جدید بوملکس</h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 w-full max-w-6xl">
           {/* Phone Mockup - Hidden on mobile, visible on desktop */}

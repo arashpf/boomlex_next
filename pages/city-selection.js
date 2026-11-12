@@ -40,7 +40,7 @@ const CitySelection = ({data}) => {
      
       axios({
               method:'get',
-              url:'https://api.ajur.app/api/search-cities',
+              url:'https://api.boomlex.ir/api/search-cities',
               params: {
                 title: title,
               },
@@ -111,7 +111,7 @@ const CitySelection = ({data}) => {
 
     axios({
       method:'get',
-      url:'https://api.ajur.app/api/search-cities',
+      url:'https://api.boomlex.ir/api/search-cities',
       params: {
         kind:'all'
 
@@ -139,7 +139,7 @@ const CitySelection = ({data}) => {
     set_is_all_shown(!is_all_shown);
     axios({
       method:'get',
-      url:'https://api.ajur.app/api/search-cities',
+      url:'https://api.boomlex.ir/api/search-cities',
       
     })
 
@@ -204,27 +204,27 @@ const CitySelection = ({data}) => {
        <meta charSet="UTF-8" />
        <meta name="robots" content="max-image-preview:large" />
        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
-       <title>  آجر : انتخاب شهر </title>
-       <meta name="description" content="مشاور املاک هوشمند آجر مشاور املاکی به وسعت ایران با صدها مشاور مسلط به منطقه" />
+       <title>  بوملکس : انتخاب شهر </title>
+       <meta name="description" content="مشاور املاک هوشمند بوملکس مشاور املاکی به وسعت ایران با صدها مشاور مسلط به منطقه" />
        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
        <meta property="og:locale" content="fa_IR" />
        <meta property="og:type" content="website" />
        <meta property="og:locale" content="fa_IR" />
        <meta property="og:type" content="website" />
-       <meta property="og:title" content="آجر : انتخاب شهر " />
-       <meta property="og:description" content="از خرید و فروش خانه و ویلا تا مشاوره برای سرمایه گزاری در مشاور املاک هوشمند آجر" />
-       <meta property="og:url" content="https://ajur.app" />
-       <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+       <meta property="og:title" content="بوملکس : انتخاب شهر " />
+       <meta property="og:description" content="از خرید و فروش خانه و ویلا تا مشاوره برای سرمایه گزاری در مشاور املاک هوشمند بوملکس" />
+       <meta property="og:url" content="https://boomlex.ir" />
+       <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
        <meta property="article:published_time" content="2020-05-19T21:34:43+00:00" />
        <meta property="article:modified_time" content="2022-01-28T03:47:57+00:00" />
-       <meta property="og:image" content="https://ajur.app/logo/ajour-meta-image.jpg" />
+       <meta property="og:image" content="https://boomlex.ir/logo/ajour-meta-image.jpg" />
        <meta property="og:image:width" content="1080" />
        <meta property="og:image:height" content="702" />
        <meta name="twitter:card" content="summary_large_image" />
        <meta name="twitter:label1" content="Written by" />
        <meta name="twitter:data1" content="آرش پیمانی فر" />
        <link rel="icon" href="/favicon.ico" />
-       <link rel="canonical" href="https://ajur.app" />
+       <link rel="canonical" href="https://boomlex.ir" />
       </Head>
     )
   }
@@ -262,7 +262,7 @@ const CitySelection = ({data}) => {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://api.ajur.app/api/search-cities`)
+  const res = await fetch(`https://api.boomlex.ir/api/search-cities`)
   const data = await res.json()
 
   if(!data){

@@ -24,7 +24,7 @@ const [basecategories, set_basecategories] = useState([]);
 
   axios({
           method:'get',
-          url:'https://api.ajur.app/api/sub-category',
+          url:'https://api.boomlex.ir/api/sub-category',
     })
   .then(function (response) {
     console.log('the response data in CategoryForm');

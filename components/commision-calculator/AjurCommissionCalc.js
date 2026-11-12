@@ -462,7 +462,7 @@ export default function AjurCommissionPage() {
  return (
   <>
     <Head>
-      <title>محاسبه‌گر کمیسیون — آجر</title>
+      <title>محاسبه‌گر کمیسیون — بوملکس</title>
     </Head>
 
     <div
@@ -475,7 +475,7 @@ export default function AjurCommissionPage() {
           محاسبه‌گر کمیسیون
         </h1>
         <p className="text-gray-600 text-sm text-center mb-5">
-          این ماشین‌حساب یک ابزار آزمایشی است. آجر هیچ گونه مسئولیتی در قبال
+          این ماشین‌حساب یک ابزار آزمایشی است. بوملکس هیچ گونه مسئولیتی در قبال
           عدم درستی کمیسیون‌ها قبول نمی‌کند. نرخ مصوب و عرف بازار ممکن است
           متفاوت باشد.
         </p>

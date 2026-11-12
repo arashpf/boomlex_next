@@ -17,7 +17,7 @@ export default function RabatKarimApartmentsPage() {
 
   const fetchApartments = async () => {
     try {
-      const res = await fetch('https://api.ajur.app/api/robat-karim-apartments');
+      const res = await fetch('https://api.boomlex.ir/api/robat-karim-apartments');
       const data = await res.json();
       
       let apts = [];
@@ -352,7 +352,7 @@ export default function RabatKarimApartmentsPage() {
                       marginBottom: '1.5rem',
                       direction: 'rtl'
                     }}>
-                      مزایای خرید از آجر
+                      مزایای خرید از بوملکس
                     </h3>
                     
                     <Grid container spacing={2} sx={{ textAlign: 'center', direction: 'rtl' }}>
@@ -657,13 +657,13 @@ export default function RabatKarimApartmentsPage() {
                 }}>
                   📞 ۰۹۳۸۲۷۴۰۴۸۸
                 </a>
-                <a href="https://ajur.app" style={{ 
+                <a href="https://boomlex.ir" style={{ 
                   color: '#4ade80', 
                   textDecoration: 'none',
                   fontWeight: '500',
                   fontSize: '1rem'
                 }}>
-                  صفحه اصلی آجر
+                  صفحه اصلی بوملکس
                 </a>
               </div>
               <p className="persian-text" style={{ 
@@ -675,7 +675,7 @@ export default function RabatKarimApartmentsPage() {
                 marginTop: '0.75rem',
                 textAlign: 'right'
               }}>
-                © {new Date().getFullYear()} آجر - آپارتمان‌های اقتصادی رباط کریم. تمامی حقوق محفوظ است.
+                © {new Date().getFullYear()} بوملکس - آپارتمان‌های اقتصادی رباط کریم. تمامی حقوق محفوظ است.
               </p>
             </div>
           </Box>

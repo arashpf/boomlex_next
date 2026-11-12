@@ -603,7 +603,7 @@ const WorkerFilter = ({
 
   const fetchData = async () => {
     try {
-      let apiUrl = "https://api.ajur.app/api/base";
+      let apiUrl = "https://api.boomlex.ir/api/base";
 
       if (city) {
         apiUrl += `?city=${encodeURIComponent(city)}`;
@@ -1144,7 +1144,7 @@ const WorkerFilter = ({
           <AccordionSummary
             expandIcon={
               <ExpandMore
-                sx={{ color: featuresExpanded ? "#b92a31" : "#666" }}
+                sx={{ color: featuresExpanded ? "#7a97ff" : "#666" }}
               />
             }
             sx={{
@@ -1167,7 +1167,7 @@ const WorkerFilter = ({
           >
             <Typography
               variant="subtitle2"
-              sx={{ color: "#b92a31", fontWeight: 600, textAlign: "right" }}
+              sx={{ color: "#7a97ff", fontWeight: 600, textAlign: "right" }}
             >
               امکانات
             </Typography>
@@ -1188,16 +1188,16 @@ const WorkerFilter = ({
                         justifyContent: "space-between",
                         p: 2,
                         border: "2px solid",
-                        borderColor: isSelected ? "#b92a31" : "#e0e0e0",
+                        borderColor: isSelected ? "#7a97ff" : "#e0e0e0",
                         borderRadius: 3,
                         background: isSelected
-                          ? "linear-gradient(135deg, rgba(185, 42, 49, 0.1) 0%, rgba(192, 192, 192, 0.1) 100%)"
+                          ? "linear-gradient(135deg, rgba(15, 180, 187, 0.1) 0%, rgba(192, 192, 192, 0.1) 100%)"
                           : "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 240, 240, 0.8) 100%)",
                         cursor: "pointer",
                         transition: "all 0.3s ease",
                         "&:hover": {
-                          borderColor: "#b92a31",
-                          boxShadow: "0 2px 8px rgba(185, 42, 49, 0.15)",
+                          borderColor: "#7a97ff",
+                          boxShadow: "0 2px 8px rgba(15, 180, 187, 0.15)",
                         },
                       }}
                       onClick={() => handleFeatureToggle(feature)}
@@ -1207,10 +1207,10 @@ const WorkerFilter = ({
                           width: 24,
                           height: 24,
                           border: "2px solid",
-                          borderColor: isSelected ? "#b92a31" : "#999",
+                          borderColor: isSelected ? "#7a97ff" : "#999",
                           borderRadius: "6px",
                           background: isSelected
-                            ? "linear-gradient(135deg, #b92a31 0%, #a01c22 100%)"
+                            ? "linear-gradient(135deg, #7a97ff 0%, #a01c22 100%)"
                             : "transparent",
                           display: "flex",
                           alignItems: "center",
@@ -1226,7 +1226,7 @@ const WorkerFilter = ({
                       <Typography
                         variant="body2"
                         fontWeight={isSelected ? 600 : 500}
-                        sx={{ color: isSelected ? "#b92a31" : "#333", ml: 1.5 }}
+                        sx={{ color: isSelected ? "#7a97ff" : "#333", ml: 1.5 }}
                       >
                         {feature.value}
                       </Typography>
@@ -1264,7 +1264,7 @@ const WorkerFilter = ({
         <AccordionSummary
           expandIcon={
             <ExpandMore
-              sx={{ color: moreFiltersExpanded ? "#b92a31" : "#666" }}
+              sx={{ color: moreFiltersExpanded ? "#7a97ff" : "#666" }}
             />
           }
           sx={{
@@ -1287,7 +1287,7 @@ const WorkerFilter = ({
         >
           <Typography
             variant="subtitle2"
-            sx={{ color: "#b92a31", fontWeight: 600, textAlign: "right" }}
+            sx={{ color: "#7a97ff", fontWeight: 600, textAlign: "right" }}
           >
             فیلترهای بیشتر
           </Typography>
@@ -1316,9 +1316,9 @@ const WorkerFilter = ({
                         mt: 1.5,
                         p: 1.5,
                         background:
-                          "linear-gradient(135deg, rgba(185, 42, 49, 0.05) 0%, rgba(192, 192, 192, 0.05) 100%)",
+                          "linear-gradient(135deg, rgba(15, 180, 187, 0.05) 0%, rgba(192, 192, 192, 0.05) 100%)",
                         borderRadius: 2,
-                        border: "1px solid rgba(185, 42, 49, 0.1)",
+                        border: "1px solid rgba(15, 180, 187, 0.1)",
                       }}
                     >
                       <Typography
@@ -1395,12 +1395,12 @@ const WorkerFilter = ({
                             backgroundColor: "rgba(255, 255, 255, 0.8)",
                             border: "1.5px solid #e0e0e0",
                             "&:hover": {
-                              borderColor: "#b92a31",
+                              borderColor: "#7a97ff",
                               backgroundColor: "rgba(255, 255, 255, 1)",
                             },
                             "&.Mui-focused": {
-                              borderColor: "#b92a31",
-                              boxShadow: "0 0 0 2px rgba(185, 42, 49, 0.1)",
+                              borderColor: "#7a97ff",
+                              boxShadow: "0 0 0 2px rgba(15, 180, 187, 0.1)",
                             },
                           },
                         }}
@@ -1418,8 +1418,8 @@ const WorkerFilter = ({
                               maxHeight: 150,
                               overflow: "auto",
                               borderRadius: 2,
-                              border: "1.5px solid #b92a31",
-                              boxShadow: "0 4px 12px rgba(185, 42, 49, 0.15)",
+                              border: "1.5px solid #7a97ff",
+                              boxShadow: "0 4px 12px rgba(15, 180, 187, 0.15)",
                             }}
                             elevation={0}
                           >
@@ -1435,8 +1435,8 @@ const WorkerFilter = ({
                                     background:
                                       "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%)",
                                     "&:hover": {
-                                      bgcolor: "rgba(185, 42, 49, 0.08)",
-                                      borderBottomColor: "#b92a31",
+                                      bgcolor: "rgba(15, 180, 187, 0.08)",
+                                      borderBottomColor: "#7a97ff",
                                     },
                                     "&:last-child": {
                                       borderBottom: "none",
@@ -1515,12 +1515,12 @@ const WorkerFilter = ({
                             backgroundColor: "rgba(255, 255, 255, 0.8)",
                             border: "1.5px solid #e0e0e0",
                             "&:hover": {
-                              borderColor: "#b92a31",
+                              borderColor: "#7a97ff",
                               backgroundColor: "rgba(255, 255, 255, 1)",
                             },
                             "&.Mui-focused": {
-                              borderColor: "#b92a31",
-                              boxShadow: "0 0 0 2px rgba(185, 42, 49, 0.1)",
+                              borderColor: "#7a97ff",
+                              boxShadow: "0 0 0 2px rgba(15, 180, 187, 0.1)",
                             },
                           },
                         }}
@@ -1538,8 +1538,8 @@ const WorkerFilter = ({
                               maxHeight: 150,
                               overflow: "auto",
                               borderRadius: 2,
-                              border: "1.5px solid #b92a31",
-                              boxShadow: "0 4px 12px rgba(185, 42, 49, 0.15)",
+                              border: "1.5px solid #7a97ff",
+                              boxShadow: "0 4px 12px rgba(15, 180, 187, 0.15)",
                             }}
                             elevation={0}
                           >
@@ -1555,8 +1555,8 @@ const WorkerFilter = ({
                                     background:
                                       "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%)",
                                     "&:hover": {
-                                      bgcolor: "rgba(185, 42, 49, 0.08)",
-                                      borderBottomColor: "#b92a31",
+                                      bgcolor: "rgba(15, 180, 187, 0.08)",
+                                      borderBottomColor: "#7a97ff",
                                     },
                                     "&:last-child": {
                                       borderBottom: "none",
@@ -1594,9 +1594,9 @@ const WorkerFilter = ({
                         mt: 1.5,
                         p: 1.5,
                         background:
-                          "linear-gradient(135deg, rgba(185, 42, 49, 0.05) 0%, rgba(192, 192, 192, 0.05) 100%)",
+                          "linear-gradient(135deg, rgba(15, 180, 187, 0.05) 0%, rgba(192, 192, 192, 0.05) 100%)",
                         borderRadius: 2,
-                        border: "1px solid rgba(185, 42, 49, 0.1)",
+                        border: "1px solid rgba(15, 180, 187, 0.1)",
                       }}
                     >
                       <Typography
@@ -1651,7 +1651,7 @@ const WorkerFilter = ({
             minWidth: isMobile ? "auto" : 100,
             height: isMobile ? 40 : 48,
             borderRadius: "24px",
-            background: "linear-gradient(135deg, #a92b31 0%, #d45b61 100%)",
+            background: "linear-gradient(135deg, #7a97ff 0%, #d45b61 100%)",
             color: "white",
             boxShadow: "0 4px 15px rgba(169, 43, 49, 0.3)",
             px: isMobile ? 4 : 2, // Increased from 3 to 4 on mobile
@@ -1696,7 +1696,7 @@ const WorkerFilter = ({
                     position: "absolute",
                     top: 0,
                     left: -30,
-                    backgroundColor: "#b92a31", // Red color
+                    backgroundColor: "#7a97ff", // Red color
                     color: "white",
                     borderRadius: "50%",
                     width: 21,
@@ -1763,7 +1763,7 @@ const WorkerFilter = ({
       >
         <Box
           sx={{
-            background: "linear-gradient(135deg, #b92a31 0%, #e74c3c 100%)",
+            background: "linear-gradient(135deg, #7a97ff 0%, #e74c3c 100%)",
             color: "white",
             p: 1.5,
             display: "flex",
@@ -1845,21 +1845,21 @@ const WorkerFilter = ({
                               border: "1px solid",
                               borderColor:
                                 selectedCategory?.id === category.id
-                                  ? "#b92a31"
+                                  ? "#7a97ff"
                                   : "grey.300",
                               borderRadius: 1,
                               bgcolor:
                                 selectedCategory?.id === category.id
-                                  ? "rgba(185, 42, 49, 0.1)"
+                                  ? "rgba(15, 180, 187, 0.1)"
                                   : "white",
                               "&:hover": {
                                 bgcolor:
                                   selectedCategory?.id === category.id
-                                    ? "rgba(185, 42, 49, 0.15)"
+                                    ? "rgba(15, 180, 187, 0.15)"
                                     : "grey.50",
                                 borderColor:
                                   selectedCategory?.id === category.id
-                                    ? "#b92a31"
+                                    ? "#7a97ff"
                                     : "grey.400",
                               },
                               transition: "all 0.2s ease-in-out",
@@ -1869,7 +1869,7 @@ const WorkerFilter = ({
                             onClick={() => handleCategorySelect(category)}
                           >
                             {selectedCategory?.id === category.id ? (
-                              <RadioButtonChecked sx={{ ml: 1, color: "#b92a31" }} />
+                              <RadioButtonChecked sx={{ ml: 1, color: "#7a97ff" }} />
                             ) : (
                                 <RadioButtonUnchecked
                                   sx={{ ml: 1, color: "grey.500" }}
@@ -1959,22 +1959,22 @@ const WorkerFilter = ({
             marginBottom: "4px", // Small spacing between items
             transition: "all 0.2s ease-in-out", // Smooth transitions
             "&.Mui-contained": {
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               "&:hover": {
                 backgroundColor: "#a01c22",
                 transform: "translateY(-2px)", // Lift effect on hover
                 boxShadow: "0 4px 8px rgba(160, 28, 34, 0.3)", // Shadow on hover
               },
-              boxShadow: "0 2px 4px rgba(185, 42, 49, 0.2)", // Subtle shadow
+              boxShadow: "0 2px 4px rgba(15, 180, 187, 0.2)", // Subtle shadow
             },
             "&.Mui-outlined": {
-              borderColor: "#b92a31",
-              color: "#b92a31",
+              borderColor: "#7a97ff",
+              color: "#7a97ff",
               "&:hover": {
                 borderColor: "#a01c22",
-                backgroundColor: "rgba(185, 42, 49, 0.08)", // Slightly stronger hover
+                backgroundColor: "rgba(15, 180, 187, 0.08)", // Slightly stronger hover
                 transform: "translateY(-2px)", // Lift effect on hover
-                boxShadow: "0 4px 8px rgba(185, 42, 49, 0.1)", // Shadow on hover
+                boxShadow: "0 4px 8px rgba(15, 180, 187, 0.1)", // Shadow on hover
               },
             },
             "& .MuiButton-startIcon": {
@@ -2039,11 +2039,11 @@ const WorkerFilter = ({
                       size="small"
                       startIcon={<Sort />}
                       sx={{
-                        borderColor: '#b92a31',
-                        color: '#b92a31',
+                        borderColor: '#7a97ff',
+                        color: '#7a97ff',
                         '&:hover': {
                           borderColor: '#a01c22',
-                          backgroundColor: 'rgba(185, 42, 49, 0.04)',
+                          backgroundColor: 'rgba(15, 180, 187, 0.04)',
                         }
                       }}
                     >
@@ -2067,11 +2067,11 @@ const WorkerFilter = ({
                       variant="outlined"
                       size="small"
                       sx={{
-                        borderColor: '#b92a31',
-                        color: '#b92a31',
+                        borderColor: '#7a97ff',
+                        color: '#7a97ff',
                         '&:hover': {
                           borderColor: '#a01c22',
-                          backgroundColor: 'rgba(185, 42, 49, 0.04)',
+                          backgroundColor: 'rgba(15, 180, 187, 0.04)',
                         }
                       }}
                     >
@@ -2099,11 +2099,11 @@ const WorkerFilter = ({
                       variant="outlined"
                       size="small"
                       sx={{
-                        borderColor: '#b92a31',
-                        color: '#b92a31',
+                        borderColor: '#7a97ff',
+                        color: '#7a97ff',
                         '&:hover': {
                           borderColor: '#a01c22',
-                          backgroundColor: 'rgba(185, 42, 49, 0.04)',
+                          backgroundColor: 'rgba(15, 180, 187, 0.04)',
                         }
                       }}
                     >
@@ -2154,7 +2154,7 @@ const WorkerFilter = ({
               onClick={applyServerSideFilters}
               disabled={filterLoading}
               sx={{
-                background: "linear-gradient(135deg, #b92a31 0%, #e74c3c 100%)",
+                background: "linear-gradient(135deg, #7a97ff 0%, #e74c3c 100%)",
                 color: "white",
                 fontWeight: 600,
                 py: 1,

@@ -47,11 +47,11 @@ export default function Faq() {
         aria-controls="panel1bh-content"
         id="panel1bh-header"
       >
-      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا ثبت  ملک در آجر رایگان است؟</p>
+      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا ثبت  ملک در بوملکس رایگان است؟</p>
       </AccordionSummary>
       <AccordionDetails>
           <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
-    بله ، تمامی امکانات پایه آجر ، از جمله پنل کاربری  حرفه ای املاک به صورت رایگان 
+    بله ، تمامی امکانات پایه بوملکس ، از جمله پنل کاربری  حرفه ای املاک به صورت رایگان 
     در اختیارتان قرار میگیرد 
           </p>
       </AccordionDetails>
@@ -63,12 +63,12 @@ export default function Faq() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-        <p style={{ color:'black',textAlign:'center',width:'100%'}}>فرایند ثبت فایل من در آجر</p>
+        <p style={{ color:'black',textAlign:'center',width:'100%'}}>فرایند ثبت فایل من در بوملکس</p>
         </AccordionSummary>
         <AccordionDetails>
             <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
              فایل شما باید استاندارد های لازم را داشته باشد، کیفیت محتوا از عکاسی تا فیلم برداری هوایی باید 
-             مورد تایید تیم کنترل کیفیت آجر قرار بگیرد
+             مورد تایید تیم کنترل کیفیت بوملکس قرار بگیرد
             </p>
         </AccordionDetails>
       </Accordion>
@@ -98,8 +98,8 @@ export default function Faq() {
         </AccordionSummary>
         <AccordionDetails>
         <p style={{ color:'#444',textAlign:'center',width:'100%',fontSize:20}}>
-     مشاور قیمت فایل های خود را مشخص میکند ، ولی قیمت کارشناسی آجر نیز یا توسط هوش مصنوعی 
-     یا کارشناسان مسلط به منطقه ثبت فایل با عنوان قیمت کارشناسی آجر نمایش داده خواهد شد 
+     مشاور قیمت فایل های خود را مشخص میکند ، ولی قیمت کارشناسی بوملکس نیز یا توسط هوش مصنوعی 
+     یا کارشناسان مسلط به منطقه ثبت فایل با عنوان قیمت کارشناسی بوملکس نمایش داده خواهد شد 
         </p>
 
        

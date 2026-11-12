@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
 
       <Section title="۸. تماس با ما">
         <ul className="list-disc pr-6 space-y-1">
-          <li><strong>ایمیل:</strong> support@ajur.app</li>
+          <li><strong>ایمیل:</strong> support@boomlex.ir</li>
           <li><strong>تلفن:</strong> +989382740488</li>
         </ul>
       </Section>
@@ -136,7 +136,7 @@ export default function PrivacyPolicy() {
 
       <Section title="8. Contact Us">
         <ul className="list-disc pl-6 space-y-1">
-          <li><strong>Email:</strong> support@ajur.app</li>
+          <li><strong>Email:</strong> support@boomlex.ir</li>
           <li><strong>Phone:</strong> +989382740488</li>
         </ul>
       </Section>

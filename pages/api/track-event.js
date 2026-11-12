@@ -88,7 +88,7 @@
 
 //   try {
 //     await axios.post(
-//       "https://api.ajur.app/api/analytics/track",
+//       "https://api.boomlex.ir/api/analytics/track",
 //       {
 //         event_name,
 //         platform: "web",
@@ -140,7 +140,7 @@
 
 // pages/api/track-event.js
 //
-// Same-origin proxy: browser POSTs here, this forwards to api.ajur.app
+// Same-origin proxy: browser POSTs here, this forwards to api.boomlex.ir
 // with X-Client-* headers so Laravel sees the real browser IP / UA
 // instead of our Next.js server's.
 //
@@ -257,7 +257,7 @@ export default async function handler(req, res) {
 
   try {
     await axios.post(
-      "https://api.ajur.app/api/analytics/track",
+      "https://api.boomlex.ir/api/analytics/track",
       {
         event_name,
         platform: "web",

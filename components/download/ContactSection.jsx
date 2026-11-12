@@ -66,10 +66,10 @@ export default function ContactSection() {
 
           {/* Company Name and Contact Links */}
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-2 animate-fade-in-up animation-delay-200">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-0">مشاور املاک هوشمند آجر</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-0">مشاور املاک هوشمند بوملکس</h2>
 
             {/* Tagline */}
-            <h3 className="text-lg md:text-xl font-light text-gray-500 mb-0">آجر فراتر از یک آگهی</h3>
+            <h3 className="text-lg md:text-xl font-light text-gray-500 mb-0">بوملکس فراتر از یک آگهی</h3>
 
             {/* Contact Links */}
             <div className="flex flex-col md:flex-row gap-3 items-center mt-1">
@@ -101,7 +101,7 @@ export default function ContactSection() {
 
               {/* Website Link */}
               <a
-                href="https://ajur.app"
+                href="https://boomlex.ir"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 px-8 py-4 bg-gray-900 rounded-2xl hover:bg-black transition-colors text-white shadow-xl hover:shadow-2xl hover:-translate-y-1 group"
@@ -123,7 +123,7 @@ export default function ContactSection() {
                 <div className="text-right">
                   <div className="text-xs text-gray-400">وب‌سایت رسمی</div>
                   {/* HINT: Update this website URL */}
-                  <div className="text-xl font-bold font-mono">WWW.AJUR.APP</div>
+                  <div className="text-xl font-bold font-mono">WWW.boomlex.ir</div>
                 </div>
               </a>
             </div>

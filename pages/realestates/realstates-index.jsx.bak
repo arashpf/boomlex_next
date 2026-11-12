@@ -21,11 +21,11 @@ const RealStateIndex = () => {
   const englishCity = currentCity?.slug || currentCity?.eng_name || "";
 
   const seoData = {
-    title: `لیست مشاورین املاک ${persianCity} | آجر`,
-    description: `بهترین مشاورین املاک در ${persianCity} را در آجر پیدا کنید. مشاهده پروفایل، امتیاز کاربران و تماس مستقیم با مشاوران املاک ${persianCity}.`,
+    title: `لیست مشاورین املاک ${persianCity} | بوملکس`,
+    description: `بهترین مشاورین املاک در ${persianCity} را در بوملکس پیدا کنید. مشاهده پروفایل، امتیاز کاربران و تماس مستقیم با مشاوران املاک ${persianCity}.`,
     keywords: `مشاور املاک ${persianCity}, املاک ${persianCity}, لیست مشاورین املاک ${persianCity}, بنگاه املاک ${persianCity}`,
-    canonical: `https://ajur.app/${englishCity}/realestates`,
-    image: "https://ajur.app/logo/ajour-meta-image.jpg",
+    canonical: `https://boomlex.ir/${englishCity}/realestates`,
+    image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
   };
 
   const getAgentsCall = async (searchTerm = "all") => {
@@ -44,7 +44,7 @@ const RealStateIndex = () => {
       );
 
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: {
             title: searchTerm,

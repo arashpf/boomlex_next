@@ -9,7 +9,7 @@ const CitySelector = ({ selectedCities, setSelectedCities }) => {
 
     useEffect(() => {
         axios
-            .get("https://api.ajur.app/api/search-cities")
+            .get("https://api.boomlex.ir/api/search-cities")
             .then((res) => {
                 if (Array.isArray(res.data.items)) {
                     setOptions(res.data.items);

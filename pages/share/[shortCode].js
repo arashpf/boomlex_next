@@ -19,7 +19,7 @@ export default function SharePage() {
 
     const fetchSharedItems = async () => {
       try {
-        const res = await fetch(`https://api.ajur.app/api/share/${shortCode}`);
+        const res = await fetch(`https://api.boomlex.ir/api/share/${shortCode}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.message || 'Failed to load shared items');
@@ -64,8 +64,8 @@ export default function SharePage() {
   return (
     <div style={{ backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
       <Head>
-        <title>لیست اختصاصی آجر</title>
-        <meta property="og:title" content="لیست اختصاصی آجر" />
+        <title>لیست اختصاصی بوملکس</title>
+        <meta property="og:title" content="لیست اختصاصی بوملکس" />
         <meta property="og:description" content={`${items.length} فایل به اشتراک گذاشته شده توسط ${Agent ? `${Agent.name || ''} ${Agent.family || ''}` : ''}`} />
       </Head>
 

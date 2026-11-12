@@ -47,7 +47,7 @@ function LandingPage() {
         {
             id: 4,
             title: 'ما کمپین شما را مدیریت می‌کنیم',
-            description: 'تیم تخصصی آجر کمپین شما را به صورت حرفه‌ای تنظیم و بهینه‌سازی می‌کند تا تماس‌ها افزایش یابد.',
+            description: 'تیم تخصصی بوملکس کمپین شما را به صورت حرفه‌ای تنظیم و بهینه‌سازی می‌کند تا تماس‌ها افزایش یابد.',
             image: '/img/G-ads/ajur-gads.png',
             color: '#9C27B0'
         }
@@ -115,7 +115,7 @@ function LandingPage() {
                 </p>
                 <p>
                     <TaskAltIcon style={{ color: 'green', fontSize: 22, marginLeft: 10 }} />
-                    گزارش و شفافیت در پنل اختصاصی آجر
+                    گزارش و شفافیت در پنل اختصاصی بوملکس
                 </p>
             </div>
             <div className={Style["portfolio-container"]}>

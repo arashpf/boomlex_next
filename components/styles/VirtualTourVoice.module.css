@@ -42,7 +42,7 @@
 }
 
 .voiceButton.muted .voiceIcon {
-  stroke: #b92a31;
+  stroke: #7a97ff;
 }
 
 .voiceStatus {
@@ -53,7 +53,7 @@
 }
 
 .mutedText {
-  color: #b92a31;
+  color: #7a97ff;
 }
 
 .activeText {

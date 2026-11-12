@@ -50,9 +50,9 @@ export default function HeroSection({ scrollToSection, onDirectDownload, onDownl
           {/* Main title with animation */}
           <div className="animate-fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-1 leading-tight">
-              مشاور املاک <span className="text-red-200">هوشمند</span> آجر
+              مشاور املاک <span className="text-red-200">هوشمند</span> بوملکس
             </h1>
-            <h2 className="hidden md:block text-2xl md:text-4xl font-light opacity-90 mb-2">آجر فراتر از یک آگهی</h2>
+            <h2 className="hidden md:block text-2xl md:text-4xl font-light opacity-90 mb-2">بوملکس فراتر از یک آگهی</h2>
           </div>
 
           {/* Android Downloads Section */}
@@ -65,7 +65,7 @@ export default function HeroSection({ scrollToSection, onDirectDownload, onDownl
             {/* Download buttons - only Bazaar is active */}
             <div className="grid grid-cols-1 gap-3">
               {/* --- لینک مستقیم (APK) - غیرفعال --- */}
-              {/* <DownloadButton icon={<Download className="w-5 h-5" />} text="لینک مستقیم" onClick={() => onDirectDownload && onDirectDownload("https://api.ajur.app/download/ajur.apk", "direct")} /> */}
+              {/* <DownloadButton icon={<Download className="w-5 h-5" />} text="لینک مستقیم" onClick={() => onDirectDownload && onDirectDownload("https://api.boomlex.ir/download/ajur.apk", "direct")} /> */}
 
               {/* --- مایکت - غیرفعال --- */}
               {/* <DownloadButton icon={<Smartphone className="w-5 h-5" />} text="مایکت" highlight onClick={() => onDirectDownload && onDirectDownload("https://myket.ir/app/com.Ajour", "myket")} /> */}

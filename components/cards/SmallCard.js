@@ -38,7 +38,7 @@ function SmallCard({ realEstate, profileImageKey = "profile_url", compact = fals
             <Image
     className={Styles["card-image"]}
     src={profile_url}
-    alt={`تصویر پروفایل ${realEstate.name || ""} ${realEstate.family || ""} مشاور املاک آجر`}
+    alt={`تصویر پروفایل ${realEstate.name || ""} ${realEstate.family || ""} مشاور املاک بوملکس`}
     width={300}
     height={300}
     style={imgStyle}

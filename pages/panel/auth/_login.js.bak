@@ -30,8 +30,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://ajur.app/">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir/">
+        boomlex.ir
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -115,7 +115,7 @@ const handleClick = () => {
 
       axios({
             method:'post',
-            url:'https://api.ajur.app/webauth/register',
+            url:'https://api.boomlex.ir/webauth/register',
             params: {
              phone: phone,
              ref: ref,

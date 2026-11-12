@@ -26,7 +26,7 @@ const RealStateIndex = () => {
     const fetchCityInfo = async () => {
       try {
         // First, get city info from the slug
-        const cityResponse = await axios.get(`https://api.ajur.app/api/cities/slug/${citySlug}`);
+        const cityResponse = await axios.get(`https://api.boomlex.ir/api/cities/slug/${citySlug}`);
         setCity(cityResponse.data);
       } catch (error) {
         console.error("Error fetching city:", error);
@@ -58,7 +58,7 @@ const RealStateIndex = () => {
         params.city_slug = citySlug;
       }
       
-      const response = await axios.get("https://api.ajur.app/api/agents-search", {
+      const response = await axios.get("https://api.boomlex.ir/api/agents-search", {
         params: params,
         timeout: SEARCH_TIMEOUT,
       });
@@ -96,19 +96,19 @@ const RealStateIndex = () => {
 
   // Dynamic SEO Data
   const seoData = {
-    title: `لیست مشاورین املاک ${persianCity} | آجر - مشاهده شماره تماس و آدرس`,
-    description: `بانک اطلاعات مشاورین املاک ${persianCity}. لیست بهترین بنگاه‌های املاک و مشاورین برتر ${persianCity} به همراه آدرس، شماره تماس و سوابق فعالیت در سامانه آجر.`,
+    title: `لیست مشاورین املاک ${persianCity} | بوملکس - مشاهده شماره تماس و آدرس`,
+    description: `بانک اطلاعات مشاورین املاک ${persianCity}. لیست بهترین بنگاه‌های املاک و مشاورین برتر ${persianCity} به همراه آدرس، شماره تماس و سوابق فعالیت در سامانه بوملکس.`,
     keywords: `مشاور املاک ${persianCity}, املاک ${persianCity}, لیست مشاورین املاک ${persianCity}, بنگاه املاک ${persianCity}, بهترین مشاور املاک ${persianCity}`,
-    canonical: `https://ajur.app/agents/${englishCity}`,
-    image: "https://ajur.app/logo/ajour-meta-image.jpg",
+    canonical: `https://boomlex.ir/agents/${englishCity}`,
+    image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "آجر", "item": "https://ajur.app" },
-      { "@type": "ListItem", "position": 2, "name": `املاک ${persianCity}`, "item": `https://ajur.app/agents/${englishCity}` },
+      { "@type": "ListItem", "position": 1, "name": "بوملکس", "item": "https://boomlex.ir" },
+      { "@type": "ListItem", "position": 2, "name": `املاک ${persianCity}`, "item": `https://boomlex.ir/agents/${englishCity}` },
       { "@type": "ListItem", "position": 3, "name": "مشاورین املاک", "item": seoData.canonical }
     ]
   };
@@ -218,7 +218,7 @@ const RealStateIndex = () => {
             <div className="text-gray-600 text-sm leading-7 space-y-4">
               <p>
                 انتخاب یک مشاور املاک خبره در <strong>{persianCity}</strong> می‌تواند تفاوت بزرگی در سودآوری 
-                معامله شما ایجاد کند. در سامانه آجر، ما تلاش می‌کنیم تا با بررسی سوابق و تخصص هر مشاور، 
+                معامله شما ایجاد کند. در سامانه بوملکس، ما تلاش می‌کنیم تا با بررسی سوابق و تخصص هر مشاور، 
                 فضایی شفاف برای مقایسه خدمات آن‌ها فراهم کنیم.
               </p>
               <p>

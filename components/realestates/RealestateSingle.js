@@ -68,7 +68,7 @@ const RealestateSingle = (props) => {
   const fetchWorker = () => {
     axios({
           method:'get',
-          url:'https://api.ajur.app/api/realstate-front-workers',
+          url:'https://api.boomlex.ir/api/realstate-front-workers',
           params: {
             title: 'title',
             lat : lat,

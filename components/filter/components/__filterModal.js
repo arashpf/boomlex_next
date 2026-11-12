@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
     padding: 16,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     borderTopColor: '#e0e0e0',
   },
   applyButton: {
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
     padding: 16,
     borderRadius: 8,
     alignItems: 'center',

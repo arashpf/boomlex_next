@@ -57,8 +57,8 @@ const PredefineFieldInput = ({ field, value, onChange, isRequired }) => {
               fontFamily: "iransans, Arial, sans-serif",
             },
             "& fieldset": { borderColor: "#d0d0d0" },
-            "&:hover fieldset": { borderColor: "#a92b31" },
-            "&.Mui-focused fieldset": { borderColor: "#a92b31" },
+            "&:hover fieldset": { borderColor: "#7a97ff" },
+            "&.Mui-focused fieldset": { borderColor: "#7a97ff" },
           }}
           MenuProps={{
             PaperProps: {

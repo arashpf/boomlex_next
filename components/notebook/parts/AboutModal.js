@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const AboutModal = ({ visible, onClose }) => {
   const handleReportBug = () => {
     if (typeof window !== 'undefined') {
-      window.location.href = 'mailto:bug-report@ajur.app?subject=گزارش باگ اپلیکیشن دفترچه تلفن&body=لطفاً باگ پیدا شده را به طور کامل شرح دهید:';
+      window.location.href = 'mailto:bug-report@boomlex.ir?subject=گزارش باگ اپلیکیشن دفترچه تلفن&body=لطفاً باگ پیدا شده را به طور کامل شرح دهید:';
     }
   };
 
@@ -23,7 +23,7 @@ const AboutModal = ({ visible, onClose }) => {
           <IoBookOutline size={40} color="#4CAF50" />
           <div className={styles.appName}>Ajur Phone Book</div>
           <div className={styles.versionText}>version : 0.8.beta</div>
-          <div className={styles.copyrightText}>کلیه حقوق , طراحی ها و ایده ها برای مشاور املاک  هوشمند آجر محفوظ است</div>
+          <div className={styles.copyrightText}>کلیه حقوق , طراحی ها و ایده ها برای مشاور املاک  هوشمند بوملکس محفوظ است</div>
           <div className={styles.copyrightText}>© 2025 Ajur Real Estate Corporation</div>
         </div>
 

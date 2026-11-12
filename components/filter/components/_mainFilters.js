@@ -113,7 +113,7 @@ const MainFilters = ({
         <Switch
           value={boolValue}
           onValueChange={(newValue) => onFieldValueChange(field.name, newValue)}
-          trackColor={{ false: "#767577", true: "#b92a31" }}
+          trackColor={{ false: "#767577", true: "#7a97ff" }}
           thumbColor={Platform.OS === 'android' ? "#f4f3f4" : "#f4f3f4"}
         />
       </View>
@@ -287,7 +287,7 @@ const renderFeatures = () => {
               }}
             >
               <View style={styles.checkbox}>
-                {isSelected && <Icon name="check" size={16} color="#a92b31" />}
+                {isSelected && <Icon name="check" size={16} color="#7a97ff" />}
               </View>
               <Text style={[
                 styles.featureText,
@@ -510,7 +510,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   sortOptionSelected: {
-    backgroundColor: '#b92a31',
+    backgroundColor: '#7a97ff',
   },
   sortOptionText: {
     fontSize: 12,
@@ -535,7 +535,7 @@ featureItem: {
 },
 featureItemSelected: {
   backgroundColor: '#e3f2fd',
-  borderColor: '#b92a31',
+  borderColor: '#7a97ff',
 },
 checkbox: {
   width: 20,
@@ -555,7 +555,7 @@ featureText: {
   marginRight: 12, // Add some space between text and checkbox
 },
 featureTextSelected: {
-  color: '#b92a31',
+  color: '#7a97ff',
   fontWeight: 'bold',
 },
 

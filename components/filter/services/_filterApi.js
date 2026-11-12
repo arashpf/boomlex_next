@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { Alert, Platform } from 'react-native';
 
-const BASE_URL = 'https://api.ajur.app/api';
+const BASE_URL = 'https://api.boomlex.ir/api';
 
 export const filterApi = {
   getFilteredWorkers: async (filters = {}) => {

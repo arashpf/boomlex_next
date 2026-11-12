@@ -204,7 +204,7 @@ const FilterModal = ({
             onClick={() => handleChipPress(field.slug, fieldType, chip.value)}
             size="small"
             sx={{ 
-              bgcolor: '#a92b31',
+              bgcolor: '#7a97ff',
               color: 'white',
               '&:hover': { bgcolor: '#8c2328' }
             }}
@@ -377,10 +377,10 @@ const FilterModal = ({
                 p: 2,
                 borderRadius: 2,
                 border: '1px solid',
-                borderColor: selectedCategory?.id === category.id ? '#b92a31' : '#e0e0e0',
-                bgcolor: selectedCategory?.id === category.id ? 'rgba(185, 42, 49, 0.1)' : 'white',
+                borderColor: selectedCategory?.id === category.id ? '#7a97ff' : '#e0e0e0',
+                bgcolor: selectedCategory?.id === category.id ? 'rgba(15, 180, 187, 0.1)' : 'white',
                 '&:hover': {
-                  bgcolor: selectedCategory?.id === category.id ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                  bgcolor: selectedCategory?.id === category.id ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
                 }
               }}
               onClick={() => onCategorySelect(category)}
@@ -390,7 +390,7 @@ const FilterModal = ({
                 {category.name || category.title}
               </Typography>
               {selectedCategory?.id === category.id && (
-                <Check sx={{ color: '#b92a31' }} />
+                <Check sx={{ color: '#7a97ff' }} />
               )}
             </Button>
           ))}
@@ -417,11 +417,11 @@ const FilterModal = ({
                   mb: 1,
                   borderRadius: 2,
                   border: '1px solid',
-                  borderColor: isSelected ? '#b92a31' : '#e0e0e0',
-                  bgcolor: isSelected ? 'rgba(185, 42, 49, 0.1)' : 'white',
+                  borderColor: isSelected ? '#7a97ff' : '#e0e0e0',
+                  bgcolor: isSelected ? 'rgba(15, 180, 187, 0.1)' : 'white',
                   cursor: 'pointer',
                   '&:hover': {
-                    bgcolor: isSelected ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                    bgcolor: isSelected ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
                   }
                 }}
                 onClick={() => onFeatureToggle(feature)}
@@ -464,10 +464,10 @@ const FilterModal = ({
                 p: 2,
                 borderRadius: 2,
                 border: '1px solid',
-                borderColor: sortBy === option.value ? '#b92a31' : '#e0e0e0',
-                bgcolor: sortBy === option.value ? 'rgba(185, 42, 49, 0.1)' : 'white',
+                borderColor: sortBy === option.value ? '#7a97ff' : '#e0e0e0',
+                bgcolor: sortBy === option.value ? 'rgba(15, 180, 187, 0.1)' : 'white',
                 '&:hover': {
-                  bgcolor: sortBy === option.value ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                  bgcolor: sortBy === option.value ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
                 }
               }}
               onClick={() => {
@@ -479,7 +479,7 @@ const FilterModal = ({
                 {option.label}
               </Typography>
               {sortBy === option.value && (
-                <Check sx={{ color: '#b92a31' }} />
+                <Check sx={{ color: '#7a97ff' }} />
               )}
             </Button>
           ))}
@@ -683,7 +683,7 @@ const FilterModal = ({
     >
       <DialogTitle
         sx={{
-          bgcolor: '#b92a31',
+          bgcolor: '#7a97ff',
           color: 'white',
           display: 'flex',
           justifyContent: 'space-between',
@@ -735,7 +735,7 @@ const FilterModal = ({
             onClick={handleApplyAndClose}
             disabled={isLoading}
             sx={{
-              bgcolor: '#b92a31',
+              bgcolor: '#7a97ff',
               py: 1.5,
               borderRadius: 2,
               '&:hover': {

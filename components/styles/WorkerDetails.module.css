@@ -155,12 +155,12 @@
 
 .amenity-item.active {
   background-color: rgba(203, 204, 206, 0.2);
-  color: #b92a31;
+  color: #7a97ff;
   /* color: #0066cc; */
 }
 
 .amenity-item.active svg {
-  color: #b92a31;
+  color: #7a97ff;
 }
 
 .amenity-item.inactive {

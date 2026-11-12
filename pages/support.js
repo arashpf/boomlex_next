@@ -35,31 +35,31 @@ const Contact = (props) => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="max-image-preview:large" />
-        <title>تماس با آجر | مشاور املاک هوشمند آجر</title>
-        <meta name="description" content="صفحه تماس و ارتباط با مشاور املاک هوشمند آجر - اطلاعات تماس، فرم انتقادات و پیشنهادات و موقعیت مکانی" />
+        <title>تماس با بوملکس | مشاور املاک هوشمند بوملکس</title>
+        <meta name="description" content="صفحه تماس و ارتباط با مشاور املاک هوشمند بوملکس - اطلاعات تماس، فرم انتقادات و پیشنهادات و موقعیت مکانی" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="تماس با ما | مشاور املاک هوشمند آجر" />
-        <meta property="og:description" content="صفحه تماس و ارتباط با مشاور املاک هوشمند آجر" />
-        <meta property="og:url" content="https://ajur.app/contact" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:title" content="تماس با ما | مشاور املاک هوشمند بوملکس" />
+        <meta property="og:description" content="صفحه تماس و ارتباط با مشاور املاک هوشمند بوملکس" />
+        <meta property="og:url" content="https://boomlex.ir/contact" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="article:published_time" content="2020-05-19T21:34:43+00:00" />
         <meta property="article:modified_time" content="2022-01-28T03:47:57+00:00" />
-        <meta property="og:image" content="https://ajur.app/logo/ajour-meta-image.jpg" />
+        <meta property="og:image" content="https://boomlex.ir/logo/ajour-meta-image.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="533" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content="آرش پیمانی فر" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://ajur.app/contact" />
+        <link rel="canonical" href="https://boomlex.ir/contact" />
       </Head>
 
       {/* Hero Section */}
       <div className="contact-hero">
         <div className="hero-content">
-          <h1 className="hero-title">تماس با آجر</h1>
+          <h1 className="hero-title">تماس با بوملکس</h1>
           <p className="hero-subtitle">ما اینجا هستیم تا به شما در خرید، فروش و اجاره ملک کمک کنیم</p>
           <div className="hero-divider"></div>
         </div>
@@ -81,7 +81,7 @@ const Contact = (props) => {
                 </div>
                 <div className="contact-details">
                   <h3>شماره تماس</h3>
-                  <a href="tel:02140557301" className="contact-link">۰۲۱-۴۰۵۵۷۳۰۱</a>
+                  {/* <a href="tel:02140557301" className="contact-link">۰۲۱-۴۰۵۵۷۳۰۱</a> */}
                   <a href="tel:09382740488" className="contact-link">۰۹۳۸-۲۷۴-۰۴۸۸</a>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Contact = (props) => {
                 </div>
                 <div className="contact-details">
                   <h3>آدرس</h3>
-                  <p className="contact-link">تهران، رباط کریم، بلوار آزادگان، نبش آزادگان چهارم، دپارتمان ستاره شهر</p>
+                  <p className="contact-link">تهران، نیاوران، روبروی پمپ بنزین نیاوران</p>
                 </div>
               </div>
 
@@ -107,8 +107,8 @@ const Contact = (props) => {
                 </div>
                 <div className="contact-details">
                   <h3>ایمیل</h3>
-                  <a href="mailto:info@ajur.app" className="contact-link">info@ajur.app</a>
-                  <a href="mailto:support@ajur.app" className="contact-link">support@ajur.app</a>
+                  <a href="mailto:info@boomlex.ir" className="contact-link">info@boomlex.ir</a>
+                  <a href="mailto:support@boomlex.ir" className="contact-link">support@boomlex.ir</a>
                 </div>
               </div>
             </div>
@@ -223,24 +223,26 @@ const Contact = (props) => {
               <div className="map-container">
                 <div className="map-wrapper">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3248.884058307922!2d51.07735107462606!3d35.48241234087211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2s!4v1762329466301!5m2!1sen!2s"
+                    src="https://www.google.com/maps?q=35.8686,51.4830&z=16&output=embed"
                     width="100%" 
                     height="400" 
                     style={{ border: 0, borderRadius: '8px' }} 
                     allowFullScreen="" 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="دپارتمان ستاره شهر - رباط کریم، بلوار آزادگان"
+                    title="نیاوران، روبروی پمپ بنزین نیاوران"
                   ></iframe>
                   
-                  {/* ناحیه قرمز رنگ ثابت */}
-                  <div className="fixed-area-highlight">
-                    <div className="highlight-border"></div>
-                    <div className="highlight-fill"></div>
-                    <div className="highlight-center"></div>
-                    <div className="area-label">
-                      <strong>📍 دپارتمان ستاره شهر</strong>
-                      <span>مشاور املاک هوشمند آجر</span>
+                  {/* ناحیه قرمز رنگ ثابت - overlay */}
+                  <div className="map-overlay">
+                    <div className="fixed-area-highlight">
+                      <div className="highlight-border"></div>
+                      <div className="highlight-fill"></div>
+                      <div className="highlight-center"></div>
+                      <div className="area-label">
+                        <strong>📍 بوملکس</strong>
+                        <span>مشاور املاک هوشمند</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -258,7 +260,6 @@ const Contact = (props) => {
         }
         
         .contact-hero {
-          // background: linear-gradient(135deg, #577387 0%, #577387 100%);
           background: linear-gradient(135deg, #7fa5bbff 0%, #2c3e50 100%);
           color: white;
           padding: 80px 20px;
@@ -581,14 +582,27 @@ const Contact = (props) => {
           border-radius: 12px;
         }
         
+        .map-wrapper iframe {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .map-overlay {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          z-index: 1000;
+        }
+        
         .fixed-area-highlight {
           position: absolute;
-          top: 55%;
-          left: 48%;
+          top: 50%;
+          left: 50%;
           width: 120px;
           height: 80px;
           transform: translate(-50%, -50%);
-          z-index: 1000;
           pointer-events: none;
         }
         
@@ -730,8 +744,6 @@ const Contact = (props) => {
           }
           
           .fixed-area-highlight {
-            top: 50%;
-            left: 45%;
             width: 100px;
             height: 60px;
           }

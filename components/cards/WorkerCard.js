@@ -18,7 +18,7 @@ import Styles from "../styles/WorkerCard.module.css";
 import { trackEvent } from "../lib/track";
 import useAuthGate from "../../hooks/useAuthGate"; // ← ADDED
 
-const API_BASE = "https://api.ajur.app/api";
+const API_BASE = "https://api.boomlex.ir/api";
 
 // ─── Local favorites helpers (cookie) ───
 const readLocalFavorites = () => {
@@ -280,7 +280,7 @@ export default function ImgMediaCard(props) {
       >
         <FavoriteIcon
           className={heartAnimating ? Styles["heart-pop"] : ""}
-          style={{ color: "#b92a31" }}
+          style={{ color: "#7a97ff" }}
         />
       </div>
     ) : (

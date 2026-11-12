@@ -136,10 +136,10 @@ export default function ImgMediaCard(props) {
       const daysPast = differenceInDays(new Date(), createdDate);
       
       return daysPast < 1 
-        ? 'امروز در آجر' 
-        : `${daysPast} روز در آجر`;
+        ? 'امروز در بوملکس' 
+        : `${daysPast} روز در بوملکس`;
     } catch {
-      return 'امروز در آجر';
+      return 'امروز در بوملکس';
     }
   };
 
@@ -175,7 +175,7 @@ export default function ImgMediaCard(props) {
           tabIndex={0}
           className={Styles["card-inside-heart"]}
         >
-          <FavoriteIcon style={{ color: "#b92a31" }} />
+          <FavoriteIcon style={{ color: "#7a97ff" }} />
         </div>
       );
     } else if (isfavorite == "off") {
@@ -642,10 +642,10 @@ export default function ImgMediaCard(props) {
       const daysPast = differenceInDays(new Date(), createdDate);
       
       return daysPast < 1 
-        ? 'امروز در آجر' 
-        : `${daysPast} روز در آجر`;
+        ? 'امروز در بوملکس' 
+        : `${daysPast} روز در بوملکس`;
     } catch {
-      return 'امروز در آجر';
+      return 'امروز در بوملکس';
     }
   };
 
@@ -681,7 +681,7 @@ export default function ImgMediaCard(props) {
           tabIndex={0}
           className={Styles["card-inside-heart"]}
         >
-          <FavoriteIcon style={{ color: "#b92a31" }} />
+          <FavoriteIcon style={{ color: "#7a97ff" }} />
         </div>
       );
     } else if (isfavorite == "off") {
@@ -1147,10 +1147,10 @@ export default function ImgMediaCard(props) {
       const daysPast = differenceInDays(new Date(), createdDate);
 
       return daysPast < 1
-        ? "امروز در آجر"
-        : `${daysPast} روز در آجر`;
+        ? "امروز در بوملکس"
+        : `${daysPast} روز در بوملکس`;
     } catch {
-      return "امروز در آجر";
+      return "امروز در بوملکس";
     }
   };
 
@@ -1186,7 +1186,7 @@ export default function ImgMediaCard(props) {
           tabIndex={0}
           className={Styles["card-inside-heart"]}
         >
-          <FavoriteIcon style={{ color: "#b92a31" }} />
+          <FavoriteIcon style={{ color: "#7a97ff" }} />
         </div>
       );
     } else if (isfavorite == "off") {

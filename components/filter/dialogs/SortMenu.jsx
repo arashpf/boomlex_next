@@ -38,7 +38,7 @@ export default function SortMenu({ open, anchorEl, current, onChange, onClose })
             sx={{
               fontFamily: "inherit",
               fontSize: 14,
-              color: selected ? "#b92a31" : "#333",
+              color: selected ? "#7a97ff" : "#333",
               fontWeight: selected ? 700 : 500,
               justifyContent: "space-between",
             }}
@@ -51,7 +51,7 @@ export default function SortMenu({ open, anchorEl, current, onChange, onClose })
             />
             {selected && (
               <ListItemIcon sx={{ minWidth: 0, ml: 1 }}>
-                <CheckIcon sx={{ fontSize: 18, color: "#b92a31" }} />
+                <CheckIcon sx={{ fontSize: 18, color: "#7a97ff" }} />
               </ListItemIcon>
             )}
           </MenuItem>

@@ -68,7 +68,7 @@ const generatePageTitle = (details) => {
   const parts = [details.name, details.category_name];
   if (details.city) parts.push(`در ${details.city}`);
   if (details.region && details.region !== details.city) parts.push(details.region);
-  parts.push("| آجر");
+  parts.push("| بوملکس");
 
   return parts.join(" - ");
 };
@@ -159,7 +159,7 @@ const UnavailableNotice = ({ reason, details }) => {
     : "این آگهی در دسترس نیست";
 
   const message = isUnderReview
-    ? "این ملک در حال حاضر در حال بازبینی توسط کارشناسان آجر است و به‌زودی در دسترس قرار می‌گیرد. لطفاً بعداً مراجعه کنید."
+    ? "این ملک در حال حاضر در حال بازبینی توسط کارشناسان بوملکس است و به‌زودی در دسترس قرار می‌گیرد. لطفاً بعداً مراجعه کنید."
     : "این ملک دیگر در دسترس نیست. ممکن است آگهی حذف شده باشد یا معامله انجام شده باشد.";
 
   return (
@@ -181,7 +181,7 @@ const UnavailableNotice = ({ reason, details }) => {
           background: "#fff",
           border: "1px solid #f0dede",
           borderRadius: 20,
-          boxShadow: "0 12px 40px rgba(185, 42, 49, 0.08)",
+          boxShadow: "0 12px 40px rgba(15, 180, 187, 0.08)",
           padding: "40px 28px",
           textAlign: "center",
         }}
@@ -207,7 +207,7 @@ const UnavailableNotice = ({ reason, details }) => {
           style={{
             fontSize: 22,
             fontWeight: 800,
-            color: "#b92a31",
+            color: "#7a97ff",
             margin: "0 0 12px",
           }}
         >
@@ -248,7 +248,7 @@ const UnavailableNotice = ({ reason, details }) => {
           <Link href="/" legacyBehavior>
             <a
               style={{
-                background: "#b92a31",
+                background: "#7a97ff",
                 color: "#fff",
                 padding: "12px 28px",
                 borderRadius: 12,
@@ -265,8 +265,8 @@ const UnavailableNotice = ({ reason, details }) => {
             onClick={() => window.history.back()}
             style={{
               background: "#fff",
-              color: "#b92a31",
-              border: "1.5px solid #b92a31",
+              color: "#7a97ff",
+              border: "1.5px solid #7a97ff",
               padding: "12px 28px",
               borderRadius: 12,
               fontWeight: 700,
@@ -330,7 +330,7 @@ const TransientErrorNotice = ({ onRetry }) => {
           style={{
             fontSize: 22,
             fontWeight: 800,
-            color: "#b92a31",
+            color: "#7a97ff",
             margin: "0 0 12px",
           }}
         >
@@ -359,7 +359,7 @@ const TransientErrorNotice = ({ onRetry }) => {
           <button
             onClick={onRetry}
             style={{
-              background: "#b92a31",
+              background: "#7a97ff",
               color: "#fff",
               border: "none",
               padding: "12px 28px",
@@ -376,8 +376,8 @@ const TransientErrorNotice = ({ onRetry }) => {
             <a
               style={{
                 background: "#fff",
-                color: "#b92a31",
-                border: "1.5px solid #b92a31",
+                color: "#7a97ff",
+                border: "1.5px solid #7a97ff",
                 padding: "12px 28px",
                 borderRadius: 12,
                 fontWeight: 700,
@@ -441,7 +441,7 @@ const StaleListingModal = ({ open, onClose, onCall }) => {
           style={{
             fontSize: 18,
             fontWeight: 800,
-            color: "#b92a31",
+            color: "#7a97ff",
             margin: "0 0 12px",
           }}
         >
@@ -465,7 +465,7 @@ const StaleListingModal = ({ open, onClose, onCall }) => {
             onClick={onClose}
             style={{
               flex: 1,
-              background: "#b92a31",
+              background: "#7a97ff",
               color: "#fff",
               border: "none",
               padding: "12px 16px",
@@ -484,8 +484,8 @@ const StaleListingModal = ({ open, onClose, onCall }) => {
               style={{
                 flex: 1,
                 background: "#fff",
-                color: "#b92a31",
-                border: "1.5px solid #b92a31",
+                color: "#7a97ff",
+                border: "1.5px solid #7a97ff",
                 padding: "12px 16px",
                 borderRadius: 12,
                 fontWeight: 700,
@@ -509,6 +509,9 @@ const WorkerSingle = (props) => {
   const [staleModalOpen, setStaleModalOpen] = useState(false);
   const [shareFeedback, setShareFeedback] = useState("");
   const [isActionsPinned, setIsActionsPinned] = useState(false);
+
+  const [contactRequested, setContactRequested] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
 
   const [contactOpen, setContactOpen] = useState(false);
   const { requireAuth } = useAuthGate();
@@ -588,10 +591,10 @@ const WorkerSingle = (props) => {
         .filter(Boolean)
         .join("، ");
 
-    const canonicalUrl = `https://ajur.app/worker/${details.id}`;
+    const canonicalUrl = `https://boomlex.ir/worker/${details.id}`;
 
-    const shareImage = details.thumb || "https://api.ajur.app/logo/og-default.jpg";
-    const siteName = "آجر";
+    const shareImage = details.thumb || "https://api.boomlex.ir/logo/og-default.jpg";
+    const siteName = "بوملکس";
 
     return {
       pageTitle,
@@ -705,18 +708,18 @@ const WorkerSingle = (props) => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "خانه", item: "https://ajur.app" },
+        { "@type": "ListItem", position: 1, name: "خانه", item: "https://boomlex.ir" },
         {
           "@type": "ListItem",
           position: 2,
           name: details.city || "تهران",
-          item: `https://ajur.app/${details.city_slug || "tehran"}`,
+          item: `https://boomlex.ir/${details.city_slug || "tehran"}`,
         },
         {
           "@type": "ListItem",
           position: 3,
           name: details.category_name || "املاک",
-          item: `https://ajur.app/${details.city_slug || "tehran"}/${details.category_eng_name || ""}`,
+          item: `https://boomlex.ir/${details.city_slug || "tehran"}/${details.category_eng_name || ""}`,
         },
         { "@type": "ListItem", position: 4, name: details.name || "آگهی", item: canonicalUrl },
       ],
@@ -729,7 +732,7 @@ const WorkerSingle = (props) => {
         "@id": `${canonicalUrl}#agent`,
         name: cleanRealstate.name || "مشاور املاک",
         ...(cleanRealstate.phone ? { telephone: cleanRealstate.phone } : {}),
-        url: `https://ajur.app/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}`,
+        url: `https://boomlex.ir/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}`,
       }
       : null;
 
@@ -823,7 +826,7 @@ const WorkerSingle = (props) => {
     );
 
     try {
-      await axios.post("https://api.ajur.app/api/track/worker-call", {
+      await axios.post("https://api.boomlex.ir/api/track/worker-call", {
         worker_id: details.id,
       });
     } catch (error) {
@@ -833,9 +836,14 @@ const WorkerSingle = (props) => {
 
   // New: guests log in first, then the ContactDrawer opens
   const handleContactClick = () => {
+    setIsAuthOpen(true); // نوار پایین را مخفی می‌کند
     requireAuth(
-      () => setContactOpen(true),
-      "برای مشاهده اطلاعات تماس وارد شوید"
+      () => {
+        setIsAuthOpen(false); // اگر لاگین موفق بود، وضعیت لاگین را می‌بندیم
+        setContactOpen(true);  // دراور تماس را باز می‌کنیم
+      },
+      "برای مشاهده اطلاعات تماس وارد شوید",
+      () => setIsAuthOpen(false) // 👈 ADD THIS LINE
     );
   };
 
@@ -883,7 +891,7 @@ const WorkerSingle = (props) => {
         ? window.location.href
         : seoData.canonicalUrl;
 
-    const shareTitle = details.name || seoData.pageTitle || "آگهی ملک در آجر";
+    const shareTitle = details.name || seoData.pageTitle || "آگهی ملک در بوملکس";
     const shareText = details.name
       ? `${details.name} - ${details.category_name || ""} در ${details.city || ""
         }`.trim()
@@ -1048,14 +1056,14 @@ const WorkerSingle = (props) => {
     return (
       <>
         <Head>
-          <title>خطای موقت | آجر</title>
+          <title>خطای موقت | بوملکس</title>
           <meta name="robots" content="noindex, nofollow" />
           <meta
             name="description"
             content="ارتباط با سرور برقرار نشد. لطفاً دوباره تلاش کنید."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-          <meta name="theme-color" content="#b92a31" />
+          <meta name="theme-color" content="#7a97ff" />
         </Head>
 
         <TransientErrorNotice onRetry={() => window.location.reload()} />
@@ -1069,7 +1077,7 @@ const WorkerSingle = (props) => {
       <>
         <Head>
           <title>
-            {isUnderReview ? "آگهی در حال بررسی | آجر" : "آگهی در دسترس نیست | آجر"}
+            {isUnderReview ? "آگهی در حال بررسی | بوملکس" : "آگهی در دسترس نیست | بوملکس"}
           </title>
           <meta name="robots" content="noindex, nofollow" />
           <meta
@@ -1081,7 +1089,7 @@ const WorkerSingle = (props) => {
             }
           />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-          <meta name="theme-color" content="#b92a31" />
+          <meta name="theme-color" content="#7a97ff" />
         </Head>
 
         <UnavailableNotice reason={props.unavailableReason} details={details} />
@@ -1092,8 +1100,8 @@ const WorkerSingle = (props) => {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://api.ajur.app" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://api.ajur.app" />
+        <link rel="preconnect" href="https://api.boomlex.ir" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.boomlex.ir" />
         <link rel="preconnect" href="https://maps.googleapis.com" />
 
         {details.thumb && <link rel="preload" as="image" href={details.thumb} fetchPriority="high" />}
@@ -1130,7 +1138,7 @@ const WorkerSingle = (props) => {
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta name="format-detection" content="telephone=yes" />
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
       </Head>
 
       <Script
@@ -1233,7 +1241,7 @@ const WorkerSingle = (props) => {
                     onMouseUp={(e) => (e.currentTarget.style.transform = "scale(1)")}
                   >
                     {isFavorite ? (
-                      <FavoriteIcon style={{ color: "#b92a31", fontSize: 22 }} />
+                      <FavoriteIcon style={{ color: "#7a97ff", fontSize: 22 }} />
                     ) : (
                       <FavoriteBorderIcon style={{ color: "#666", fontSize: 22 }} />
                     )}
@@ -1378,7 +1386,8 @@ const WorkerSingle = (props) => {
           </Grid>
         </Box>
 
-        {!contactOpen && (cleanRealstate?.phone || details.cellphone) && (
+        {/* {!contactOpen && (cleanRealstate?.phone || details.cellphone) && ( */}
+          {!contactOpen && !isAuthOpen && (cleanRealstate?.phone || details.cellphone) && (
           <Box
             sx={{
               display: { xs: "block", md: "none" },
@@ -1390,7 +1399,7 @@ const WorkerSingle = (props) => {
               backgroundColor: "rgba(255, 255, 255, 0.95)",
               backdropFilter: "blur(10px)",
               boxShadow: "0 -2px 20px rgba(0,0,0,0.1)",
-              zIndex: 10001,
+              zIndex: 1001,
               transform: "translateZ(0)",
             }}
             className="sticky-call-button"
@@ -1406,7 +1415,7 @@ const WorkerSingle = (props) => {
                 justifyContent: "center",
                 gap: "10px",
                 padding: "14px 16px",
-                background: "linear-gradient(135deg, #b92a31 0%, #d84343 100%)",
+                background: "linear-gradient(135deg, #7a97ff 0%, #d84343 100%)",
                 color: "#fff",
                 border: "none",
                 borderRadius: "12px",
@@ -1416,7 +1425,7 @@ const WorkerSingle = (props) => {
                 cursor: "pointer",
                 transition: "all 0.2s",
                 width: "100%",
-                boxShadow: "0 4px 12px rgba(185, 42, 49, 0.3)",
+                boxShadow: "0 4px 12px rgba(15, 180, 187, 0.3)",
                 WebkitTapHighlightColor: "transparent",
               }}
               aria-label={`تماس با ${cleanRealstate?.name || details.name}`}
@@ -1426,7 +1435,7 @@ const WorkerSingle = (props) => {
                   width: "36px",
                   height: "36px",
                   borderRadius: "50%",
-                  background: "#a92b31",
+                  background: "#7a97ff",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -1516,10 +1525,10 @@ const WorkerSingle = (props) => {
               height: 70,
               borderRadius: "50%",
               background:
-                "linear-gradient(90deg, #b92a31 25%, #d84343 50%, #b92a31 75%)",
+                "linear-gradient(90deg, #7a97ff 25%, #d84343 50%, #7a97ff 75%)",
               backgroundSize: "200% 100%",
               animation: "spin 1s infinite linear",
-              boxShadow: "0 4px 20px rgba(185, 42, 49, 0.3)",
+              boxShadow: "0 4px 20px rgba(15, 180, 187, 0.3)",
             }}
           />
         </div>
@@ -1552,7 +1561,7 @@ const WorkerSingle = (props) => {
           transform: scale(1.02);
         }
         .map-container:focus-visible {
-          outline: 2px solid #b92a31;
+          outline: 2px solid #7a97ff;
           outline-offset: 2px;
         }
         @media (max-width: 600px) {
@@ -1717,7 +1726,7 @@ function buildClientContext(context, listingId) {
     acceptLanguage: req.headers["accept-language"] || null,
     position: query?.position || null,
     source: query?.source || "worker-page",
-    pageUrl: `https://ajur.app/worker/${listingId}`,
+    pageUrl: `https://boomlex.ir/worker/${listingId}`,
     anonymousId: cookies["ajur_anonymous_id"] || null,
     sessionId: cookies["ajur_session_id"] || null,
     attribution,   // ← ADD
@@ -1749,7 +1758,7 @@ async function fireSsrEvent(eventName, payload, ctx) {
   };
 
   await axios.post(
-    "https://api.ajur.app/api/analytics/track",
+    "https://api.boomlex.ir/api/analytics/track",
     {
       event_name: eventName,
       platform: "web",
@@ -1769,7 +1778,7 @@ async function fetchPostWithRetry(id) {
   for (let attempt = 0; attempt <= API_RETRIES; attempt++) {
     try {
       const response = await axios.get(
-        `https://api.ajur.app/api/posts/${id}`,
+        `https://api.boomlex.ir/api/posts/${id}`,
         {
           timeout: API_TIMEOUT_MS,
           headers: { Accept: "application/json" },

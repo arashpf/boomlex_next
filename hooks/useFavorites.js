@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API = "https://api.ajur.app/api";
+const API = "https://api.boomlex.ir/api";
 const COOKIE_KEY = "favorited"; // legacy cookie — kept for backwards compat
 
 // Read local (cookie) favorites

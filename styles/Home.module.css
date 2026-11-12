@@ -89,7 +89,7 @@
 }
 
 .title h2:hover {
-  color: #b92a31;
+  color: #7a97ff;
   transition: color 0.2s ease;
 }
 
@@ -201,7 +201,7 @@
 
 .simple-action:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(185, 42, 49, 0.12);
+  box-shadow: 0 0 0 4px rgba(15, 180, 187, 0.12);
 }
 
 /* Card-style action buttons */
@@ -269,9 +269,9 @@
   margin-top: 6px;
   padding: 8px 14px;
   border-radius: 8px;
-  border: 2px solid #b92a31;
+  border: 2px solid #7a97ff;
   background: white;
-  color: #b92a31;
+  color: #7a97ff;
   font-weight: 600;
   cursor: pointer;
 }
@@ -335,7 +335,7 @@
 }
 
 .main h2:hover {
-  color: #b92a31;
+  color: #7a97ff;
 }
 
 .main h2 span {
@@ -463,7 +463,7 @@
 .search-on-files {
   padding: 32px 0;
   margin: 0;
-  background-color: #b92a31;
+  background-color: #7a97ff;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -517,7 +517,7 @@
   width: 18px;
   height: 18px;
   display: inline-block;
-  color: #b92a31;
+  color: #7a97ff;
 }
 
 /* Deal title */

@@ -17,7 +17,7 @@ export default function FeaturesHub() {
   return (
     <section 
     style={{ 
-      background: 'linear-gradient(180deg, #ffffff 0%, #a92b31 100%)',
+      background: 'linear-gradient(180deg, #ffffff 0%, #7a97ff 100%)',
       borderRadius: 14 
     }} 
     className="w-full py-16 px-4 md:px-6 mx-0 text-center" 
@@ -130,7 +130,7 @@ const features = [
     ),
   },
   {
-    title: "بازاریابی آجر",
+    title: "بازاریابی بوملکس",
     link: "/marketing",
     icon: (
       <svg
@@ -171,8 +171,8 @@ const features = [
     ),
   },
   {
-    title: "مجله آجر",
-    link: "https://mag.ajur.app/category/educational/",
+    title: "مجله بوملکس",
+    link: "https://mag.boomlex.ir/category/educational/",
     external: true,
     icon: (
       <svg

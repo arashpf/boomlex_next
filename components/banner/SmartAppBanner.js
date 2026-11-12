@@ -45,7 +45,7 @@ const SmartAppBanner = () => {
     <div className={styles.appBanner}>
       <button className={styles.closeBtn} onClick={closeBanner}>✖</button>
       <div className={styles.bannerContent}>
-        <h3>دانلود اپلیکیشن آجر</h3>
+        <h3>دانلود اپلیکیشن بوملکس</h3>
         <p>برای بهترین تجربه، نصب کنید.</p>
       </div>
       <a

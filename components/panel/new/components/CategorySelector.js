@@ -29,7 +29,7 @@ const CategorySelector = ({
         borderRadius: "8px",
         cursor: "pointer",
         "&:hover": {
-          borderColor: "#a92b31",
+          borderColor: "#7a97ff",
           backgroundColor: "#fef8f8",
         },
         transition: "all 0.2s",

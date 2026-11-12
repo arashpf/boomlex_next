@@ -308,7 +308,7 @@ function ComplexDetails(props) {
     const workerId = details.id; // adjust if needed
 
     try {
-      await axios.post("https://api.ajur.app/api/track/worker-call", {
+      await axios.post("https://api.boomlex.ir/api/track/worker-call", {
         worker_id: workerId,
       });
     } catch (error) {
@@ -382,7 +382,7 @@ function ComplexDetails(props) {
               width: "32px",
               height: "32px",
               borderRadius: "50%",
-              background: "#a92b31",
+              background: "#7a97ff",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

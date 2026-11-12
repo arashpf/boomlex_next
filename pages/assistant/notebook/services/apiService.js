@@ -8,7 +8,7 @@ const AsyncStorage = {
   removeItem: async (key) => (typeof window !== 'undefined' ? localStorage.removeItem(key) : null),
 };
 
-const API_BASE_URL = 'https://api.ajur.app/api';
+const API_BASE_URL = 'https://api.boomlex.ir/api';
 
 // Create axios instance
 const api = axios.create({

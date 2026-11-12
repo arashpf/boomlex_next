@@ -179,7 +179,7 @@ const Profile = () => {
     const token = Cookies.get("id_token");
     if (!token) return;
 
-    axios.get("https://api.ajur.app/api/get-user", { params: { token } }).then((res) => {
+    axios.get("https://api.boomlex.ir/api/get-user", { params: { token } }).then((res) => {
       set_data(res.data.user);
       set_realstate(res.data.user);
       set_profileImage(res.data.user.profile_url);
@@ -206,7 +206,7 @@ const Profile = () => {
       return;
     }
     const token = Cookies.get("id_token");
-    axios.post("https://api.ajur.app/api/edit-realestate", null, {
+    axios.post("https://api.boomlex.ir/api/edit-realestate", null, {
       params: { token, name, family, realstate: realstate_name, description },
     }).then((response) => {
       if (response.status === 200) {
@@ -224,8 +224,8 @@ const Profile = () => {
     // Share functionality - can be customized
     if (navigator.share) {
       navigator.share({
-        title: ` در آجر ${name} ${family} - پروفایل و فایل های ملکی `,
-        text: `پروفایل ${name} ${family} در آجر`,
+        title: ` در بوملکس ${name} ${family} - پروفایل و فایل های ملکی `,
+        text: `پروفایل ${name} ${family} در بوملکس`,
         url: window.location.href,
       });
     } else {

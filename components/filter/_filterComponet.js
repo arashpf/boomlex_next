@@ -434,7 +434,7 @@ const FilterComponent = ({
     <View style={styles.container}>
       {onBackToCategories && (
         <TouchableOpacity style={styles.backToCategoriesButton} onPress={onBackToCategories}>
-          <Icon name="arrow-back" size={20} color="#b92a31" />
+          <Icon name="arrow-back" size={20} color="#7a97ff" />
           <Text style={styles.backToCategoriesText}>بازگشت به دسته‌بندی‌ها</Text>
         </TouchableOpacity>
       )}
@@ -509,7 +509,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   backToCategoriesText: {
-    color: '#b92a31',
+    color: '#7a97ff',
     fontSize: 16,
     fontFamily: 'iransans',
     marginRight: 8,

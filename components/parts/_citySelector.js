@@ -33,7 +33,7 @@ const CitySelector = ({ handleCitySelect }) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: searchQuery || "" },
           timeout: 5000,

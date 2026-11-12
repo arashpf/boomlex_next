@@ -80,7 +80,7 @@ const StepIndicator = ({
               size="small"
               sx={{
                 mr: -0.5,
-                color: "#a92b31",
+                color: "#7a97ff",
                 "&:hover": { backgroundColor: "#fef0f1" },
               }}
               aria-label="back"
@@ -108,7 +108,7 @@ const StepIndicator = ({
             sx={{
               height: "100%",
               width: `${progressPercent}%`,
-              backgroundColor: "#a92b31",
+              backgroundColor: "#7a97ff",
               borderRadius: 2,
               transition: "width 0.3s ease",
             }}

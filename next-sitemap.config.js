@@ -1,4 +1,4 @@
-// // const siteUrl = 'https://ajur.app';
+// // const siteUrl = 'https://boomlex.ir';
 
 // // module.exports = {
 // //   siteUrl,
@@ -49,7 +49,7 @@
 
 
 
-// const siteUrl = "https://ajur.app";
+// const siteUrl = "https://boomlex.ir";
 
 // module.exports = {
 //   siteUrl,
@@ -106,7 +106,7 @@
 // };
 
 
-const siteUrl = "https://ajur.app";
+const siteUrl = "https://boomlex.ir";
 
 module.exports = {
     siteUrl,

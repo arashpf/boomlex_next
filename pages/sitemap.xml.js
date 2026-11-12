@@ -1,6 +1,6 @@
 // // pages/sitemap.xml.js
 // export async function getServerSideProps({ res }) {
-//     const baseUrl = 'https://ajur.app';
+//     const baseUrl = 'https://boomlex.ir';
 //     const currentDate = new Date().toISOString();
     
 //     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -50,7 +50,7 @@
 // pages/sitemap.xml.js
 
 export async function getServerSideProps({ res }) {
-  const baseUrl = 'https://ajur.app';
+  const baseUrl = 'https://boomlex.ir';
   const currentDate = new Date().toISOString();
   
   // List ALL your sitemaps

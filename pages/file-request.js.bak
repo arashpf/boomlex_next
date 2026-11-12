@@ -172,7 +172,7 @@ export default function FileRequestForm() {
         if (cachedCities) {
             setCities(JSON.parse(cachedCities));
         } else {
-            axios.get("https://api.ajur.app/api/search-cities")
+            axios.get("https://api.boomlex.ir/api/search-cities")
                 .then((res) => {
                     const items = res.data.items || [];
                     setCities(items);
@@ -298,7 +298,7 @@ export default function FileRequestForm() {
         if (errors.length > 0) return;
 
         setVerifying(true);
-        axios.post("https://api.ajur.app/webauth/property-request-register", null, {
+        axios.post("https://api.boomlex.ir/webauth/property-request-register", null, {
             params: generatePayload(),
         }).then((res) => {
             setRequestId(res.data.property_request_id);
@@ -318,7 +318,7 @@ export default function FileRequestForm() {
             return;
         }
         setVerifying(true);
-        axios.post("https://api.ajur.app/webauth/property-request-register", null, {
+        axios.post("https://api.boomlex.ir/webauth/property-request-register", null, {
             params: generatePayload(),
         }).then((res) => {
             setRequestId(res.data.property_request_id);
@@ -339,7 +339,7 @@ export default function FileRequestForm() {
             return;
         }
 
-        axios.post("https://api.ajur.app/webauth/property-request-verify", null, {
+        axios.post("https://api.boomlex.ir/webauth/property-request-verify", null, {
             params: {
                 phone: toEnglishDigits(phone),
                 code: parseInt(cleanCode),
@@ -426,7 +426,7 @@ export default function FileRequestForm() {
                             lineHeight: 1.7
                         }}
                     >
-                        این درخواست به مشاوران آجر در شهر مورد نظر شما ارسال خواهد شد.
+                        این درخواست به مشاوران بوملکس در شهر مورد نظر شما ارسال خواهد شد.
                     </Typography>
                 )}
 
@@ -749,7 +749,7 @@ export default function FileRequestForm() {
                                 در بعضی موارد به خاطر حجم بالای درخواست ها ممکن است تا ۴۸ ساعت زمان نیاز داشته باشیم
                                 تا درخواست شما را بررسی کنیم، لطفا شماره {confirmedPhone} را روشن و در دسترس داشته باشید.
                             </Typography>
-                            <Typography align="center" sx={{ mt: 3, fontWeight: 500 }}>با تشکر از اعتماد شما، تیم بررسی فایل آجر</Typography>
+                            <Typography align="center" sx={{ mt: 3, fontWeight: 500 }}>با تشکر از اعتماد شما، تیم بررسی فایل بوملکس</Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Button fullWidth variant="contained" onClick={resetFormAndCloseModal} sx={{ backgroundColor: '#bc323a', '&:hover': { backgroundColor: '#a72b32' } }}>

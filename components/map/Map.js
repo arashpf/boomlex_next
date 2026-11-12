@@ -95,7 +95,7 @@ function Test({ location, search }) {
       set_user_initial_lat(userInitialLat);
       set_user_initial_long(userInitialLong);
       var catid = parseInt(id);
-      var baseurl = 'https://api.ajur.app/api/category-workers';
+      var baseurl = 'https://api.boomlex.ir/api/category-workers';
       axios({
               method:'get',
               url: baseurl,
@@ -132,7 +132,7 @@ function Test({ location, search }) {
       set_user_initial_lat(userInitialLat);
       set_user_initial_long(userInitialLong);
       var catid = parseInt(id);
-      var baseurl = 'https://api.ajur.app/api/category-workers';
+      var baseurl = 'https://api.boomlex.ir/api/category-workers';
       axios({
               method:'get',
               url: baseurl,
@@ -291,7 +291,7 @@ function Test({ location, search }) {
     set_loading(true);
     console.log('the lat in fetchLocationWorkers is ');
     var catid = parseInt(id);
-    var baseurl = 'https://api.ajur.app/api/category-workers';
+    var baseurl = 'https://api.boomlex.ir/api/category-workers';
     axios({
             method:'get',
             url: baseurl,
@@ -480,7 +480,7 @@ function Test({ location, search }) {
                       handleParentClick(worker)
 
                       /* fetching single worker data */
-                      var baseurl = 'https://api.ajur.app/api/single-worker';
+                      var baseurl = 'https://api.boomlex.ir/api/single-worker';
                       axios({
                       method:'get',
                       url: baseurl,
@@ -540,28 +540,28 @@ function Test({ location, search }) {
      <Head>
      <meta charSet="UTF-8" />
      <meta name="robots" content="max-image-preview:large" />
-   <title>  {details.name} | مشاور املاک هوشمند آجر </title>
+   <title>  {details.name} | مشاور املاک هوشمند بوملکس </title>
  {/* // TODO: the description need to be fill in the data base for each category for now its just null */}
-   <meta name="description" content={" مشاهده فایل های مشاور املاک  روی نقشه آجر به صورت آنلاین با مختصات دقیق و اطالاعات و عکس های انحصاری در دسته بندی " + details.name } />
+   <meta name="description" content={" مشاهده فایل های مشاور املاک  روی نقشه بوملکس به صورت آنلاین با مختصات دقیق و اطالاعات و عکس های انحصاری در دسته بندی " + details.name } />
      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
      <meta property="og:locale" content="fa_IR" />
    <meta property="og:type" content="website" />
      <meta property="og:locale" content="fa_IR" />
-   <meta property="og:title" content={details.name  + " |" + " مشاور املاک هوشمند آجر" } />
+   <meta property="og:title" content={details.name  + " |" + " مشاور املاک هوشمند بوملکس" } />
  <meta property="og:description"  content={details.description}/>
-   <meta property="og:url" content={'https://ajur.app/categories/'+name+'?id='+id} />
-     <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+   <meta property="og:url" content={'https://boomlex.ir/categories/'+name+'?id='+id} />
+     <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
      <meta property="article:published_time" content={details.created_at} />
    {/* // TODO: the updated_at need to be change on each worker is added to database for now its just remain static as point to its creation at 2021 */}
      <meta property="article:modified_time" content={details.updated_at} />
-   <meta property="og:image" content="https://ajur.app/logo/ajour-meta-image.jpg" />
+   <meta property="og:image" content="https://boomlex.ir/logo/ajour-meta-image.jpg" />
      <meta property="og:image:width" content="1080" />
    <meta property="og:image:height" content="703" />
      <meta name="twitter:card" content="summary_large_image" />
    <meta name="twitter:label1" content={"فایل های دسته بندی  " + details.name} />
  <meta name="twitter:data1" content={details.name} />
      <link rel="icon" href="/favicon.ico" />
-   <link rel="canonical" href={'https://ajur.app/categories/'+name+'?id='+id} />
+   <link rel="canonical" href={'https://boomlex.ir/categories/'+name+'?id='+id} />
     </Head>
         {renderOrSpinner()}
 

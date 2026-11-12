@@ -37,16 +37,16 @@ import LazyLoader from "../../components/lazyLoader/Loading";
 import ContactDrawer from "../../components/workers/ContactDrawer";
 import useAuthGate from "../../hooks/useAuthGate";
 
-const SITE_URL = "https://ajur.app";
+const SITE_URL = "https://boomlex.ir";
 
 const API_URL =
-  "https://api.ajur.app/api/realstate-front-workers";
+  "https://api.boomlex.ir/api/realstate-front-workers";
 
 const CATEGORY_FIELDS_API =
-  "https://api.ajur.app/api/category-fields";
+  "https://api.boomlex.ir/api/category-fields";
 
 const TRACK_CALL_API =
-  "https://api.ajur.app/api/track/agent-call";
+  "https://api.boomlex.ir/api/track/agent-call";
 
 const DEFAULT_META_IMAGE =
   `${SITE_URL}/logo/ajour-meta-image.jpg`;
@@ -512,7 +512,7 @@ const RealestateSingle = ({
 
   const agentImageAlt = useMemo(() => {
     if (!agentName) {
-      return "مشاور املاک در آجر";
+      return "مشاور املاک در بوملکس";
     }
 
     if (agencyName && cityName) {
@@ -553,13 +553,13 @@ const RealestateSingle = ({
   const seoData = useMemo(() => {
     if (!pageAvailable) {
       return {
-        title: "مشاور املاک | آجر",
+        title: "مشاور املاک | بوملکس",
         description:
-          "مشاهده اطلاعات مشاوران املاک و فایل‌های ملکی در سامانه املاک آجر.",
+          "مشاهده اطلاعات مشاوران املاک و فایل‌های ملکی در سامانه املاک بوملکس.",
         canonical,
         image: DEFAULT_META_IMAGE,
         imageAlt:
-          "مشاوران املاک در آجر",
+          "مشاوران املاک در بوملکس",
       };
     }
 
@@ -567,13 +567,13 @@ const RealestateSingle = ({
 
     if (agencyName) {
       title =
-        `${agentName}، ${agencyName} | آجر`;
+        `${agentName}، ${agencyName} | بوملکس`;
     } else if (cityName) {
       title =
-        `${agentName}، مشاور املاک در ${cityName} | آجر`;
+        `${agentName}، مشاور املاک در ${cityName} | بوملکس`;
     } else {
       title =
-        `${agentName}، مشاور املاک | آجر`;
+        `${agentName}، مشاور املاک | بوملکس`;
     }
 
     let description = "";
@@ -581,19 +581,19 @@ const RealestateSingle = ({
     if (agencyName && cityName) {
       description =
         `اطلاعات تماس، معرفی و فایل‌های ملکی ${agentName}، ` +
-        `مشاور فعال در ${agencyName} در ${cityName} را در آجر مشاهده کنید.`;
+        `مشاور فعال در ${agencyName} در ${cityName} را در بوملکس مشاهده کنید.`;
     } else if (agencyName) {
       description =
         `اطلاعات تماس، معرفی و فایل‌های ملکی ${agentName}، ` +
-        `مشاور فعال در ${agencyName} را در آجر مشاهده کنید.`;
+        `مشاور فعال در ${agencyName} را در بوملکس مشاهده کنید.`;
     } else if (cityName) {
       description =
         `اطلاعات تماس، معرفی و فایل‌های ملکی ${agentName}، ` +
-        `مشاور املاک در ${cityName} را در آجر مشاهده کنید.`;
+        `مشاور املاک در ${cityName} را در بوملکس مشاهده کنید.`;
     } else {
       description =
         `اطلاعات تماس، معرفی و فایل‌های ملکی ${agentName} ` +
-        `را در سامانه املاک آجر مشاهده کنید.`;
+        `را در سامانه املاک بوملکس مشاهده کنید.`;
     }
 
     if (agentDescription) {
@@ -1457,7 +1457,7 @@ const RealestateSingle = ({
         {
           "@type": "ListItem",
           position: 1,
-          name: "آجر",
+          name: "بوملکس",
           item: SITE_URL,
         },
         {
@@ -1519,7 +1519,7 @@ const RealestateSingle = ({
           "@id":
             `${SITE_URL}/#website`,
           url: SITE_URL,
-          name: "آجر",
+          name: "بوملکس",
           inLanguage: "fa-IR",
         },
 
@@ -2266,7 +2266,7 @@ const RealestateSingle = ({
           <img
             className="spinner-image"
             src="/logo/ajour-gif.gif"
-            alt="در حال بارگذاری آجر"
+            alt="در حال بارگذاری بوملکس"
             width="80"
             height="80"
           />
@@ -2488,7 +2488,7 @@ const RealestateSingle = ({
 
         <meta
           property="og:site_name"
-          content="آجر"
+          content="بوملکس"
         />
 
         <meta

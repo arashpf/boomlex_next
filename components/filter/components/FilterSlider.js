@@ -87,9 +87,9 @@ const FilterSlider = ({
       },
       field: {
         bgcolor: '#f8f9fa',
-        borderColor: '#b92a31',
+        borderColor: '#7a97ff',
         borderWidth: 1.5,
-        color: '#b92a31',
+        color: '#7a97ff',
       },
       neighborhood: {
         bgcolor: '#e8f4fd',
@@ -122,7 +122,7 @@ const FilterSlider = ({
           m: 0.5,
           ...chipStyles[type],
           '& .MuiChip-deleteIcon': {
-            color: type === 'field' ? '#b92a31' : '#666',
+            color: type === 'field' ? '#7a97ff' : '#666',
             fontSize: 16,
           },
           '&:hover': {
@@ -139,13 +139,13 @@ const FilterSlider = ({
         variant="outlined"
         onClick={onFilterModalOpen}
         sx={{
-          borderColor: '#b92a31',
-          color: '#b92a31',
+          borderColor: '#7a97ff',
+          color: '#7a97ff',
           borderRadius: 8,
           px: 3,
           '&:hover': {
             borderColor: '#a01c22',
-            bgcolor: 'rgba(185, 42, 49, 0.04)',
+            bgcolor: 'rgba(15, 180, 187, 0.04)',
           }
         }}
       >
@@ -166,7 +166,7 @@ const FilterSlider = ({
             '&:hover': { bgcolor: '#f5f5f5' }
           }}
         >
-          <FilterList sx={{ color: '#b92a31' }} />
+          <FilterList sx={{ color: '#7a97ff' }} />
         </IconButton>
       </Box>
     );
@@ -207,10 +207,10 @@ const FilterSlider = ({
             sx={{
               m: 0.5,
               bgcolor: 'white',
-              border: '1.5px solid #b92a31',
-              color: '#b92a31',
+              border: '1.5px solid #7a97ff',
+              color: '#7a97ff',
               '& .MuiChip-deleteIcon': {
-                color: '#b92a31',
+                color: '#7a97ff',
               },
             }}
           />
@@ -311,14 +311,14 @@ const FilterSlider = ({
           variant="outlined"
           onClick={onFilterModalOpen}
           sx={{
-            borderColor: '#b92a31',
-            color: '#b92a31',
+            borderColor: '#7a97ff',
+            color: '#7a97ff',
             borderRadius: 2,
             px: 2,
             minWidth: 'auto',
             '&:hover': {
               borderColor: '#a01c22',
-              bgcolor: 'rgba(185, 42, 49, 0.04)',
+              bgcolor: 'rgba(15, 180, 187, 0.04)',
             }
           }}
         >
@@ -334,7 +334,7 @@ const FilterSlider = ({
               position: 'absolute',
               top: -8,
               right: -8,
-              bgcolor: '#b92a31',
+              bgcolor: '#7a97ff',
               color: 'white',
               borderRadius: '50%',
               width: 20,

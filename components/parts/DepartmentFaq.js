@@ -47,7 +47,7 @@ export default function DepartmentFaq() {
         aria-controls="panel1bh-content"
         id="panel1bh-header"
       >
-      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا راه اندازی دپارتمان مجازی در آجر رایگان است؟</p>
+      <p style={{ color:'black',textAlign:'center',width:'100%'}}>آیا راه اندازی دپارتمان مجازی در بوملکس رایگان است؟</p>
       </AccordionSummary>
       <AccordionDetails>
           <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
@@ -63,13 +63,13 @@ export default function DepartmentFaq() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-        <p style={{ color:'black',textAlign:'center',width:'100%'}}>دپارتمان مجازی آجر چیست </p>
+        <p style={{ color:'black',textAlign:'center',width:'100%'}}>دپارتمان مجازی بوملکس چیست </p>
         </AccordionSummary>
         <AccordionDetails>
             <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
-           سکوی آجر با ایجاد بستری خاص و انحصاری امکان ایجاد فضایی را به شما میدهد که امکان عضو کردن و مدیریت مشاوران در سمت های 
-            مختلف مانند رییس ، مدیر، مدیر رنج فروش ، مدیر رنج اجاره و مشاور را به شما میدهد ، سیستم فایلینگ حرفه ای ، انتشار و نمایش به مشتریان آجر 
-            و شرکای تجاری اش از جمله امکانات دپارتمان مجازی آجر است
+           سکوی بوملکس با ایجاد بستری خاص و انحصاری امکان ایجاد فضایی را به شما میدهد که امکان عضو کردن و مدیریت مشاوران در سمت های 
+            مختلف مانند رییس ، مدیر، مدیر رنج فروش ، مدیر رنج اجاره و مشاور را به شما میدهد ، سیستم فایلینگ حرفه ای ، انتشار و نمایش به مشتریان بوملکس 
+            و شرکای تجاری اش از جمله امکانات دپارتمان مجازی بوملکس است
             </p>
         </AccordionDetails>
       </Accordion>
@@ -100,8 +100,8 @@ export default function DepartmentFaq() {
         </AccordionSummary>
         <AccordionDetails>
         <p style={{ color:'#444',textAlign:'center',width:'100%'}}>
-     مشاور و دپارتمان  قیمت فایل های خود را مشخص میکنند  ، ولی قیمت کارشناسی آجر نیز یا توسط هوش مصنوعی 
-     یا کارشناسان مسلط به منطقه ثبت فایل با عنوان قیمت کارشناسی آجر ممکن است  نمایش داده  شود 
+     مشاور و دپارتمان  قیمت فایل های خود را مشخص میکنند  ، ولی قیمت کارشناسی بوملکس نیز یا توسط هوش مصنوعی 
+     یا کارشناسان مسلط به منطقه ثبت فایل با عنوان قیمت کارشناسی بوملکس ممکن است  نمایش داده  شود 
         </p>
 
        

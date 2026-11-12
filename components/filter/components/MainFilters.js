@@ -233,11 +233,11 @@ const MainFilters = ({
                   mb: 1,
                   borderRadius: 1,
                   border: '1px solid',
-                  borderColor: isSelected ? '#b92a31' : '#ddd',
-                  bgcolor: isSelected ? 'rgba(185, 42, 49, 0.1)' : 'white',
+                  borderColor: isSelected ? '#7a97ff' : '#ddd',
+                  bgcolor: isSelected ? 'rgba(15, 180, 187, 0.1)' : 'white',
                   cursor: 'pointer',
                   '&:hover': {
-                    bgcolor: isSelected ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                    bgcolor: isSelected ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
                   }
                 }}
                 onClick={() => onFeatureToggle(feature)}
@@ -247,13 +247,13 @@ const MainFilters = ({
                     width: 20,
                     height: 20,
                     border: '2px solid',
-                    borderColor: isSelected ? '#b92a31' : '#666',
+                    borderColor: isSelected ? '#7a97ff' : '#666',
                     borderRadius: 0.5,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     mr: 1.5,
-                    bgcolor: isSelected ? '#b92a31' : 'transparent',
+                    bgcolor: isSelected ? '#7a97ff' : 'transparent',
                   }}
                 >
                   {isSelected && <Check sx={{ fontSize: 16, color: 'white' }} />}
@@ -261,7 +261,7 @@ const MainFilters = ({
                 <Typography
                   sx={{
                     flex: 1,
-                    color: isSelected ? '#b92a31' : '#666',
+                    color: isSelected ? '#7a97ff' : '#666',
                     fontWeight: isSelected ? 600 : 400,
                   }}
                 >
@@ -295,11 +295,11 @@ const MainFilters = ({
                   mb: 1,
                   borderRadius: 1,
                   border: '1px solid',
-                  borderColor: isSelected ? '#b92a31' : '#ddd',
-                  bgcolor: isSelected ? 'rgba(185, 42, 49, 0.1)' : 'white',
+                  borderColor: isSelected ? '#7a97ff' : '#ddd',
+                  bgcolor: isSelected ? 'rgba(15, 180, 187, 0.1)' : 'white',
                   cursor: 'pointer',
                   '&:hover': {
-                    bgcolor: isSelected ? 'rgba(185, 42, 49, 0.15)' : '#f5f5f5',
+                    bgcolor: isSelected ? 'rgba(15, 180, 187, 0.15)' : '#f5f5f5',
                   }
                 }}
                 onClick={() => onFeatureToggle(feature)}
@@ -309,13 +309,13 @@ const MainFilters = ({
                     width: 20,
                     height: 20,
                     border: '2px solid',
-                    borderColor: isSelected ? '#b92a31' : '#666',
+                    borderColor: isSelected ? '#7a97ff' : '#666',
                     borderRadius: 0.5,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     mr: 1.5,
-                    bgcolor: isSelected ? '#b92a31' : 'transparent',
+                    bgcolor: isSelected ? '#7a97ff' : 'transparent',
                   }}
                 >
                   {isSelected && <Check sx={{ fontSize: 16, color: 'white' }} />}
@@ -323,7 +323,7 @@ const MainFilters = ({
                 <Typography
                   sx={{
                     flex: 1,
-                    color: isSelected ? '#b92a31' : '#666',
+                    color: isSelected ? '#7a97ff' : '#666',
                     fontWeight: isSelected ? 600 : 400,
                   }}
                 >
@@ -351,12 +351,12 @@ const MainFilters = ({
             size="small"
             onClick={() => onSectionChange('categories')}
             sx={{
-              borderColor: '#b92a31',
-              color: '#b92a31',
+              borderColor: '#7a97ff',
+              color: '#7a97ff',
               borderRadius: 1,
               '&:hover': {
                 borderColor: '#a01c22',
-                bgcolor: 'rgba(185, 42, 49, 0.04)',
+                bgcolor: 'rgba(15, 180, 187, 0.04)',
               }
             }}
           >
@@ -382,12 +382,12 @@ const MainFilters = ({
             size="small"
             onClick={() => onSectionChange('neighborhoods')}
             sx={{
-              borderColor: '#b92a31',
-              color: '#b92a31',
+              borderColor: '#7a97ff',
+              color: '#7a97ff',
               borderRadius: 1,
               '&:hover': {
                 borderColor: '#a01c22',
-                bgcolor: 'rgba(185, 42, 49, 0.04)',
+                bgcolor: 'rgba(15, 180, 187, 0.04)',
               }
             }}
           >

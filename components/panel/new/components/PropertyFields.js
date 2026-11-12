@@ -118,7 +118,7 @@ const PropertyFields = ({
           py: 6,
         }}
       >
-        <CircularProgress sx={{ color: "#a92b31" }} />
+        <CircularProgress sx={{ color: "#7a97ff" }} />
       </Box>
     );
   }
@@ -187,7 +187,7 @@ const PropertyFields = ({
             cursor: "pointer",
             transition: "all 0.2s",
             "&:hover": {
-              borderColor: "#a92b31",
+              borderColor: "#7a97ff",
               backgroundColor: "#fef8f8",
             },
           }}
@@ -202,7 +202,7 @@ const PropertyFields = ({
             {selectedCount > 0 ? (
               <Box
                 sx={{
-                  backgroundColor: "#a92b31",
+                  backgroundColor: "#7a97ff",
                   color: "white",
                   px: 1.25,
                   py: 0.4,
@@ -219,14 +219,14 @@ const PropertyFields = ({
                 sx={{
                   fontFamily: "iransans, Arial, sans-serif",
                   fontSize: 14,
-                  color: "#a92b31",
+                  color: "#7a97ff",
                   fontWeight: 500,
                 }}
               >
                 انتخاب
               </Typography>
             )}
-            <ChevronLeftIcon sx={{ color: "#a92b31", fontSize: 20 }} />
+            <ChevronLeftIcon sx={{ color: "#7a97ff", fontSize: 20 }} />
           </Box>
           <Typography
             sx={{

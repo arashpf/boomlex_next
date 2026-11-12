@@ -115,7 +115,7 @@ function HomeScreen({ disableScroll = false }) {
           <AppIcon color="bg-pink-500" icon={<TrendingUp className="text-white w-6 h-6" />} label="افزایش بازدید" />
           <AppIcon color="bg-red-500" icon={<Settings className="text-white w-6 h-6" />} label="مدیریت" />
           <AppIcon color="bg-purple-600" icon={<Calculator className="text-white w-6 h-6" />} label="محاسبه کمیسیون" />
-          <AppIcon color="bg-orange-500" icon={<Megaphone className="text-white w-6 h-6" />} label="بازاریابی آجر" />
+          <AppIcon color="bg-orange-500" icon={<Megaphone className="text-white w-6 h-6" />} label="بازاریابی بوملکس" />
         </div>
 
         {/* Featured property image */}

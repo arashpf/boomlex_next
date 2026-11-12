@@ -25,18 +25,18 @@ const RealStateIndex = () => {
 
   const seoData = {
     title: persianCity
-      ? `لیست مشاورین املاک ${persianCity} | آجر`
-      : "لیست مشاورین املاک | آجر",
+      ? `لیست مشاورین املاک ${persianCity} | بوملکس`
+      : "لیست مشاورین املاک | بوملکس",
     description: persianCity
-      ? `بهترین مشاورین املاک در ${persianCity} را در آجر پیدا کنید.`
+      ? `بهترین مشاورین املاک در ${persianCity} را در بوملکس پیدا کنید.`
       : "لیست مشاورین املاک در سراسر کشور.",
     keywords: persianCity
       ? `مشاور املاک ${persianCity}, املاک ${persianCity}`
       : "مشاور املاک, املاک",
     canonical: englishCity
-      ? `https://ajur.app/agents/${englishCity}`
-      : "https://ajur.app/agents",
-    image: "https://ajur.app/logo/ajour-meta-image.jpg",
+      ? `https://boomlex.ir/agents/${englishCity}`
+      : "https://boomlex.ir/agents",
+    image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
   };
 
   const getAgentsCall = async (searchTerm = "all") => {
@@ -52,7 +52,7 @@ const RealStateIndex = () => {
       );
 
       const response = await axios.get(
-        "https://api.ajur.app/api/city-agents-search",
+        "https://api.boomlex.ir/api/city-agents-search",
         {
           params: {
             title: searchTerm,
@@ -243,27 +243,27 @@ const RealStateIndex = () => {
 
   const seoData = useMemo(() => {
     const title = titleCity
-      ? `مشاور املاک ${titleCity} | لیست مشاورین املاک ${titleCity} | آجر`
-      : "لیست مشاورین املاک | آجر";
+      ? `مشاور املاک ${titleCity} | لیست مشاورین املاک ${titleCity} | بوملکس`
+      : "لیست مشاورین املاک | بوملکس";
 
     const description = titleCity
-      ? `لیست بهترین مشاورین املاک ${titleCity} را در آجر ببینید. اطلاعات تماس، جستجو و مشاهده مشاورین فعال املاک در ${titleCity}.`
-      : "لیست مشاورین املاک در آجر. جستجو و مشاهده بهترین مشاورین املاک شهرهای مختلف.";
+      ? `لیست بهترین مشاورین املاک ${titleCity} را در بوملکس ببینید. اطلاعات تماس، جستجو و مشاهده مشاورین فعال املاک در ${titleCity}.`
+      : "لیست مشاورین املاک در بوملکس. جستجو و مشاهده بهترین مشاورین املاک شهرهای مختلف.";
 
     const keywords = titleCity
       ? `مشاور املاک ${titleCity}, املاک ${titleCity}, بنگاه املاک ${titleCity}, لیست مشاورین املاک ${titleCity}`
       : "مشاور املاک, املاک, بنگاه املاک, لیست مشاورین املاک";
 
     const canonical = englishCity
-      ? `https://ajur.app/agents/${englishCity}`
-      : "https://ajur.app/agents";
+      ? `https://boomlex.ir/agents/${englishCity}`
+      : "https://boomlex.ir/agents";
 
     return {
       title,
       description,
       keywords,
       canonical,
-      image: "https://ajur.app/logo/ajour-meta-image.jpg",
+      image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
     };
   }, [titleCity, englishCity]);
 
@@ -280,7 +280,7 @@ const RealStateIndex = () => {
       );
 
       const response = await axios.get(
-        "https://api.ajur.app/api/city-agents-search",
+        "https://api.boomlex.ir/api/city-agents-search",
         {
           params: {
             title: searchTerm,
@@ -389,7 +389,7 @@ const RealStateIndex = () => {
           position: index + 1,
           name: [agent?.name, agent?.family].filter(Boolean).join(" "),
           url: agent?.slug
-            ? `https://ajur.app/real-estate/${agent.slug}`
+            ? `https://boomlex.ir/real-estate/${agent.slug}`
             : seoData.canonical,
         })),
       },
@@ -399,14 +399,14 @@ const RealStateIndex = () => {
           {
             "@type": "ListItem",
             position: 1,
-            name: "آجر",
-            item: "https://ajur.app",
+            name: "بوملکس",
+            item: "https://boomlex.ir",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "مشاورین املاک",
-            item: "https://ajur.app/agents",
+            item: "https://boomlex.ir/agents",
           },
           {
             "@type": "ListItem",
@@ -435,7 +435,7 @@ const RealStateIndex = () => {
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={seoData.canonical} />
-        <meta property="og:site_name" content="آجر" />
+        <meta property="og:site_name" content="بوملکس" />
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
 
@@ -585,12 +585,12 @@ const RealStateIndex = () => {
 
   const seoData = useMemo(() => {
     const title = titleCity
-      ? `مشاور املاک ${titleCity} | لیست مشاورین املاک ${titleCity} | آجر`
-      : "لیست مشاورین املاک | آجر";
+      ? `مشاور املاک ${titleCity} | لیست مشاورین املاک ${titleCity} | بوملکس`
+      : "لیست مشاورین املاک | بوملکس";
 
     const description = titleCity
-      ? `لیست بهترین مشاورین املاک ${titleCity} را در آجر ببینید. اطلاعات تماس، جستجو و مشاهده مشاورین فعال املاک در ${titleCity}.`
-      : "لیست مشاورین املاک در آجر. جستجو و مشاهده بهترین مشاورین املاک شهرهای مختلف.";
+      ? `لیست بهترین مشاورین املاک ${titleCity} را در بوملکس ببینید. اطلاعات تماس، جستجو و مشاهده مشاورین فعال املاک در ${titleCity}.`
+      : "لیست مشاورین املاک در بوملکس. جستجو و مشاهده بهترین مشاورین املاک شهرهای مختلف.";
 
     const keywords = titleCity
       ? `مشاور املاک ${titleCity}, املاک ${titleCity}, بنگاه املاک ${titleCity}, لیست مشاورین املاک ${titleCity}`
@@ -598,15 +598,15 @@ const RealStateIndex = () => {
 
     // ساخت آدرس Canonical بر اساس اسلاگ انگلیسی شهر
     const canonical = englishCity
-      ? `https://ajur.app/agents/${englishCity}`
-      : "https://ajur.app/agents";
+      ? `https://boomlex.ir/agents/${englishCity}`
+      : "https://boomlex.ir/agents";
 
     return {
       title,
       description,
       keywords,
       canonical,
-      image: "https://ajur.app/logo/ajour-meta-image.jpg",
+      image: "https://boomlex.ir/logo/ajour-meta-image.jpg",
     };
   }, [titleCity, englishCity]);
 
@@ -623,7 +623,7 @@ const RealStateIndex = () => {
       );
 
       const response = await axios.get(
-        "https://api.ajur.app/api/city-agents-search",
+        "https://api.boomlex.ir/api/city-agents-search",
         {
           params: {
             title: searchTerm,
@@ -733,9 +733,9 @@ const RealStateIndex = () => {
           return {
             "@type": "ListItem",
             position: index + 1,
-            name: agentName || agent?.realstate || "مشاور آجر",
+            name: agentName || agent?.realstate || "مشاور بوملکس",
             url: agent?.slug
-              ? `https://ajur.app/real-estate/${agent.slug}`
+              ? `https://boomlex.ir/real-estate/${agent.slug}`
               : seoData.canonical,
           };
         }),
@@ -746,14 +746,14 @@ const RealStateIndex = () => {
           {
             "@type": "ListItem",
             position: 1,
-            name: "آجر",
-            item: "https://ajur.app",
+            name: "بوملکس",
+            item: "https://boomlex.ir",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "مشاورین املاک",
-            item: "https://ajur.app/agents",
+            item: "https://boomlex.ir/agents",
           },
           {
             "@type": "ListItem",
@@ -782,7 +782,7 @@ const RealStateIndex = () => {
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={seoData.canonical} />
-        <meta property="og:site_name" content="آجر" />
+        <meta property="og:site_name" content="بوملکس" />
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
 

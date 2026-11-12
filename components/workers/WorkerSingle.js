@@ -46,7 +46,7 @@ const WorkerSingle = (props) => {
 
 
       var worker_id = parseInt(workerId);
-      var baseurl = "https://api.ajur.app/api/single-worker";
+      var baseurl = "https://api.boomlex.ir/api/single-worker";
       axios({
               method:'get',
               url: baseurl,

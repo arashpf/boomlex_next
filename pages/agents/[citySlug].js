@@ -3,8 +3,8 @@ import axios from "axios";
 import Head from "next/head";
 import SmallCard from "../../components/cards/SmallCard";
 
-const API_URL = "https://api.ajur.app/api/city-agents-search";
-const SITE_URL = "https://ajur.app";
+const API_URL = "https://api.boomlex.ir/api/city-agents-search";
+const SITE_URL = "https://boomlex.ir";
 const DEFAULT_IMAGE = `${SITE_URL}/logo/ajour-meta-image.jpg`;
 
 const SEARCH_TIMEOUT = 15000;
@@ -85,17 +85,17 @@ const RealStateIndex = ({
   const seoData = useMemo(() => {
     if (!titleCity) {
       return {
-        title: "لیست مشاورین املاک | آجر",
+        title: "لیست مشاورین املاک | بوملکس",
         description:
-          "جستجو و مشاهده لیست مشاورین املاک فعال در سامانه املاک آجر.",
+          "جستجو و مشاهده لیست مشاورین املاک فعال در سامانه املاک بوملکس.",
         canonical,
         image: DEFAULT_IMAGE,
       };
     }
 
     return {
-      title: `مشاور املاک ${titleCity} | لیست مشاورین فعال | آجر`,
-      description: `لیست مشاورین املاک ${titleCity} را در آجر مشاهده کنید. اطلاعات مشاوران و دفاتر املاک فعال در ${titleCity} را بررسی و مشاور موردنظر خود را پیدا کنید.`,
+      title: `مشاور املاک ${titleCity} | لیست مشاورین فعال | بوملکس`,
+      description: `لیست مشاورین املاک ${titleCity} را در بوملکس مشاهده کنید. اطلاعات مشاوران و دفاتر املاک فعال در ${titleCity} را بررسی و مشاور موردنظر خود را پیدا کنید.`,
       canonical,
       image: DEFAULT_IMAGE,
     };
@@ -318,7 +318,7 @@ const RealStateIndex = ({
             "@type": "WebSite",
             "@id": `${SITE_URL}/#website`,
             url: SITE_URL,
-            name: "آجر",
+            name: "بوملکس",
             inLanguage: "fa-IR",
           },
 
@@ -352,7 +352,7 @@ const RealStateIndex = ({
             {
               "@type": "ListItem",
               position: 1,
-              name: "آجر",
+              name: "بوملکس",
               item: SITE_URL,
             },
             {
@@ -422,7 +422,7 @@ const RealStateIndex = ({
 
         <meta
           property="og:site_name"
-          content="آجر"
+          content="بوملکس"
         />
 
         <meta
@@ -449,8 +449,8 @@ const RealStateIndex = ({
           property="og:image:alt"
           content={
             titleCity
-              ? `مشاورین املاک ${titleCity} در آجر`
-              : "مشاورین املاک در آجر"
+              ? `مشاورین املاک ${titleCity} در بوملکس`
+              : "مشاورین املاک در بوملکس"
           }
         />
 

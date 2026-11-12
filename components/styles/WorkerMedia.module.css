@@ -591,7 +591,7 @@
   /* Progress bar + volume level — brand color */
   .videoJsContainer :global(.vjs-play-progress),
   .videoJsContainer :global(.vjs-volume-level) {
-    background-color: #b92a31 !important;
+    background-color: #7a97ff !important;
   }
   
   /* Control bar */

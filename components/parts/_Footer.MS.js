@@ -429,7 +429,7 @@ const Footer = (props) => {
             </Link>
 
             <Link href={"/about"}>
-              <a>درباره آجر</a>
+              <a>درباره بوملکس</a>
             </Link>
 
             <Link href={"/support"}>
@@ -458,7 +458,7 @@ const Footer = (props) => {
           <div>
             <i className="fa fa-envelope"></i>
             <p>
-              <a href="mailto:support@ajur.app">support@ajur.app</a>
+              <a href="mailto:support@boomlex.ir">support@boomlex.ir</a>
             </p>
           </div>
         </div>
@@ -468,11 +468,11 @@ const Footer = (props) => {
             style={{ textAlign: "right" }}
             className={styles["footer-company-about"]}
           >
-            <span>کمی درباره آجر</span>
-            آجر مشاور املاکی هوشمند است که در شهرهای مختلف در ایران و خارج از
+            <span>کمی درباره بوملکس</span>
+            بوملکس مشاور املاکی هوشمند است که در شهرهای مختلف در ایران و خارج از
             کشور فعالیت خواهد داشت استفاده از تکنولوژی های روز دنیا از هوش
             مصنوعی گرفته تا تورهای مجازی ، ایجاد شبکه ای از مشاوران در منطقه و
-            ... زیرساخت آجر را پایه گزاری میکنند
+            ... زیرساخت بوملکس را پایه گزاری میکنند
           </p>
 
           <div className={styles["footer-icons"]}>

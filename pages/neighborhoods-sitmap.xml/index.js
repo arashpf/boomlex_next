@@ -1,10 +1,10 @@
 import { getServerSideSitemap } from "next-sitemap";
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch("https://api.ajur.app/api/active-neighborhoods");
+  const res = await fetch("https://api.boomlex.ir/api/active-neighborhoods");
   const data = await res.json();
 
-  const baseUrl = "https://ajur.app";
+  const baseUrl = "https://boomlex.ir";
 
   const fields = data.items.map((item) => {
     // Ensure updated_at is a valid Date object before calling toISOString()

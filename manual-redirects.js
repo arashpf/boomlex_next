@@ -242,7 +242,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.ajur.app',
+        hostname: 'api.boomlex.ir',
         pathname: '/**',
       },
     ],
@@ -339,7 +339,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.ajur.app',
+        hostname: 'api.boomlex.ir',
         pathname: '/**',
       },
     ],

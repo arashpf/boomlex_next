@@ -79,7 +79,7 @@ const VideoUploader = ({
             height: { xs: 110, md: 120 },
             borderRadius: "10px",
             overflow: "hidden",
-            backgroundColor: "#a92b31",
+            backgroundColor: "#7a97ff",
             cursor: uploading || errored ? "default" : "pointer",
           }}
           onClick={() => {
@@ -303,7 +303,7 @@ const VideoUploader = ({
               sx={{
                 height: "100%",
                 width: `${percent}%`,
-                backgroundColor: "#a92b31",
+                backgroundColor: "#7a97ff",
                 transition: "width 0.3s ease",
               }}
             />
@@ -346,7 +346,7 @@ const VideoUploader = ({
                   mb: 1,
                 }}
               >
-                <CircularProgress size={20} sx={{ color: "#a92b31" }} />
+                <CircularProgress size={20} sx={{ color: "#7a97ff" }} />
                 <Typography
                   sx={{
                     fontFamily: "iransans, Arial, sans-serif",
@@ -596,7 +596,7 @@ const VideoUploader = ({
             sx={{
               width: { xs: 110, md: 120 },
               height: { xs: 110, md: 120 },
-              border: "2px dashed #a92b31",
+              border: "2px dashed #7a97ff",
               borderRadius: "10px",
               backgroundColor: "white",
               display: "flex",
@@ -608,12 +608,12 @@ const VideoUploader = ({
               "&:hover": { backgroundColor: "#fef8f8" },
             }}
           >
-            <VideocamIcon sx={{ fontSize: 40, color: "#a92b31", mb: 0.5 }} />
+            <VideocamIcon sx={{ fontSize: 40, color: "#7a97ff", mb: 0.5 }} />
             <Typography
               sx={{
                 fontFamily: "iransans, Arial, sans-serif",
                 fontSize: 12,
-                color: "#a92b31",
+                color: "#7a97ff",
                 fontWeight: 600,
               }}
             >

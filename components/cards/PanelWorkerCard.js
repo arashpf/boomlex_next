@@ -181,7 +181,7 @@ const PanelWorkerCard = ({
 
   // -------- share (native → clipboard → fallback dialog) --------
   const handleShare = async () => {
-    const url = `https://ajur.app/worker/${worker.id}`;
+    const url = `https://boomlex.ir/worker/${worker.id}`;
     const message = worker.description || "";
 
     // 1. Native share sheet (mobile)
@@ -228,7 +228,7 @@ const PanelWorkerCard = ({
       const token = Cookies.get("id_token");
       await axios({
         method: "get",
-        url: "https://api.ajur.app/api/destroy-worker",
+        url: "https://api.boomlex.ir/api/destroy-worker",
         params: { token, workerid: worker.id },
       });
 
@@ -344,7 +344,7 @@ const PanelWorkerCard = ({
                 position: "absolute",
                 top: 8,
                 left: -30,
-                backgroundColor: "#a92b31",
+                backgroundColor: "#7a97ff",
                 py: 0.5,
                 px: 5,
                 transform: "rotate(-45deg)",

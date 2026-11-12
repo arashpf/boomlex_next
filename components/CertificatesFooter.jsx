@@ -17,14 +17,14 @@ const CertificatesFooter = (props) => {
         referrerPolicy="origin"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://trustseal.enamad.ir/?id=623264&Code=uahyFEzqRfBnF1liGadDJ52zuWiLOJQW"
+        href="https://trustseal.enamad.ir/?id=8643104&Code=E75oZlE9yrIBhDQwCyGsEQSbf3zU0JP8"
       >
         <img
           referrerPolicy="origin"
-          src="https://trustseal.enamad.ir/logo.aspx?id=623264&Code=uahyFEzqRfBnF1liGadDJ52zuWiLOJQW"
+          src="https://trustseal.enamad.ir/logo.aspx?id=8643104&Code=E75oZlE9yrIBhDQwCyGsEQSbf3zU0JP8"
           alt="نماد اعتماد الکترونیکی"
           style={{ cursor: "pointer" }}
-          code="uahyFEzqRfBnF1liGadDJ52zuWiLOJQW"
+          code="E75oZlE9yrIBhDQwCyGsEQSbf3zU0JP8"
         />
       </a>
     </div>

@@ -52,8 +52,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://ajur.app">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir">
+        boomlex.ir
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -214,7 +214,7 @@ const New = (props) => {
 
       axios({
         method: 'get',
-        url: 'https://api.ajur.app/api/get-user',
+        url: 'https://api.boomlex.ir/api/get-user',
         params: {
           token: token,
         },
@@ -414,8 +414,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://ajur.app">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir">
+        boomlex.ir
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -606,7 +606,7 @@ const New = (props) => {
 
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/get-user",
+      url: "https://api.boomlex.ir/api/get-user",
       params: {
         token: token,
       },

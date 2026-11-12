@@ -91,7 +91,7 @@ const DepartmentEntro = (props) => {
              </div>
 
              <p style={{textAlign:'justify',direction:'rtl',padding:20,background:'white'}}>معمولا بیشتر ما دوستان املاکی زیادی داریم ، اگر فکر میکنید که در کارشان حرفه ای هستند آنها
-              را به صورت کاملا رایگان به آجر دعوت کنید تا هم دوستتان از پنل حرفه ای املاک ما به صورت رایگان استفاده کنه، هم شما در آینده آجر سهیم باشید و کسب درامد کنید 
+              را به صورت کاملا رایگان به بوملکس دعوت کنید تا هم دوستتان از پنل حرفه ای املاک ما به صورت رایگان استفاده کنه، هم شما در آینده بوملکس سهیم باشید و کسب درامد کنید 
              </p>
 
           </div>
@@ -107,13 +107,13 @@ const DepartmentEntro = (props) => {
 <>
             <img
             src="/img/marketing/for_realestate.jpg"
-            alt="بازاریابی مشاور املاک در آجر"
+            alt="بازاریابی مشاور املاک در بوملکس"
             // width={1000}
             // height={667}
             style={{width:'100%'}}
             />
              <div style={{padding:20}}>
-             <p style={{fontSize:22,color:'gray',paddingTop:10,textAlign:'right'}}>دپارتمان مجازی آجر</p> 
+             <p style={{fontSize:22,color:'gray',paddingTop:10,textAlign:'right'}}>دپارتمان مجازی بوملکس</p> 
                 <p style={{fontSize:12,color:'gray',textAlign:'center'}}>دپارتمان املاک خود را به شیوه ای مدرن راه اندازی کنید</p>
              </div>
 
@@ -129,7 +129,7 @@ const DepartmentEntro = (props) => {
                  </p>
 
                 <p> 
-                    معرفی  دپارتمان به مشتریان آجر در منطقه
+                    معرفی  دپارتمان به مشتریان بوملکس در منطقه
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
                 <p> 
@@ -137,7 +137,7 @@ const DepartmentEntro = (props) => {
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
                 <p> 
-                       فرصت مشارکت در معاملات بزرگ با آجر        
+                       فرصت مشارکت در معاملات بزرگ با بوملکس        
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
              </div>

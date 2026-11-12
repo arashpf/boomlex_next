@@ -77,7 +77,7 @@ import Divider from '@mui/material/Divider';
       <ListItemButton>
       <ListItemText
          disableTypography
-         primary={<Typography type="body2" style={{ color: '#555',textAlign:'right',paddingRight:20 }}>پشتیبانی آجر</Typography>}
+         primary={<Typography type="body2" style={{ color: '#555',textAlign:'right',paddingRight:20 }}>پشتیبانی بوملکس</Typography>}
        />
         <ListItemIcon>
           <SupportAgent />

@@ -197,7 +197,7 @@
 //     if (selectedcat) {
 //       axios({
 //         method: "get",
-//         url: "https://api.ajur.app/api/category-fields",
+//         url: "https://api.boomlex.ir/api/category-fields",
 //         params: {
 //           cat: selectedcat,
 //         },
@@ -1244,7 +1244,7 @@
 //           name="viewport"
 //           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 //         ></meta>
-//         <title>مشاور املاک هوشمند آجر | {details.name} </title>
+//         <title>مشاور املاک هوشمند بوملکس | {details.name} </title>
 //         <meta name="description" content={details.description} />
 //         <meta
 //           name="robots"
@@ -1254,21 +1254,21 @@
 //         <meta property="og:type" content="website" />
 //         <meta property="og:locale" content="fa_IR" />
 //         <meta property="og:type" content="website" />
-//         <meta property="og:title" content="Ajur| مشاور املاک هوشمند آجر " />
+//         <meta property="og:title" content="Ajur| مشاور املاک هوشمند بوملکس " />
 //         <meta
 //           property="og:description"
-//           content="از خرید و فروش خانه و ویلا تا مشاوره برای سرمایه گزاری در مشاور املاک هوشمند آجر"
+//           content="از خرید و فروش خانه و ویلا تا مشاوره برای سرمایه گزاری در مشاور املاک هوشمند بوملکس"
 //         />
 //         <meta
 //           property="og:url"
 //           content={
-//             "https://ajur.app/realestates/" +
+//             "https://boomlex.ir/realestates/" +
 //             details.id +
 //             "?slug=" +
 //             details.slug
 //           }
 //         />
-//         <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+//         <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
 //         <meta
 //           property="article:published_time"
 //           content="2020-05-19T21:34:43+00:00"
@@ -1287,7 +1287,7 @@
 //         <link
 //           rel="canonical"
 //           href={
-//             "https://ajur.app/realestates/" +
+//             "https://boomlex.ir/realestates/" +
 //             details.id +
 //             "?slug=" +
 //             details.slug
@@ -1314,7 +1314,7 @@
 //   const neighbor = context.query.neighbor ? context.query.neighbor : null;
 
 //   const res = await fetch(
-//     `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+//     `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
 //   );
 //   const data = await res.json();
 //   return {
@@ -1620,30 +1620,30 @@
 //           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 //         />
 //         <title>
-//           آجر : {details.name} {city}
+//           بوملکس : {details.name} {city}
 //         </title>
-//         <meta name="description" content={"آجر :" + details.name + city} />
+//         <meta name="description" content={"بوملکس :" + details.name + city} />
 //         <meta
 //           name="robots"
 //           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 //         />
 //         <meta property="og:locale" content="fa_IR" />
 //         <meta property="og:type" content="website" />
-//         <meta property="og:title" content={"آجر :" + details.name + city} />
+//         <meta property="og:title" content={"بوملکس :" + details.name + city} />
 //         <meta
 //           property="og:description"
-//           content={"آجر :" + details.name + city}
+//           content={"بوملکس :" + details.name + city}
 //         />
 //         <meta
 //           property="og:url"
 //           content={
-//             "https://ajur.app/realestates/" +
+//             "https://boomlex.ir/realestates/" +
 //             details.id +
 //             "?slug=" +
 //             details.slug
 //           }
 //         />
-//         <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+//         <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
 //         <meta
 //           property="article:published_time"
 //           content="2024-05-19T21:34:43+00:00"
@@ -1654,17 +1654,17 @@
 //         />
 //         <meta
 //           property="og:image"
-//           content={"ajur.app/cats_image/" + details.avatar + ".jpg"}
+//           content={"boomlex.ir/cats_image/" + details.avatar + ".jpg"}
 //         />
 //         <meta property="og:image:width" content="600" />
 //         <meta property="og:image:height" content="1067" />
 //         <meta name="twitter:card" content="summary_large_image" />
 //         <meta name="twitter:label1" content="Written by" />
-//         <meta name="twitter:data1" content={"آجر :" + details.name + city} />
+//         <meta name="twitter:data1" content={"بوملکس :" + details.name + city} />
 //         <link rel="icon" href="/favicon.ico" />
 //         <link
 //           rel="canonical"
-//           href={"https://ajur.app/" + city + "/" + details.name}
+//           href={"https://boomlex.ir/" + city + "/" + details.name}
 //         />
 //       </Head>
 //       {renderOrSpinner()}
@@ -1682,7 +1682,7 @@
 //   const neighbor = context.query.neighbor ? context.query.neighbor : null;
 
 //   const res = await fetch(
-//     `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+//     `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
 //   );
 //   const data = await res.json();
 
@@ -1994,30 +1994,30 @@ const SingleCategory = (props) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <title>
-          آجر : {details.name} {city}
+          بوملکس : {details.name} {city}
         </title>
-        <meta name="description" content={"آجر :" + details.name + city} />
+        <meta name="description" content={"بوملکس :" + details.name + city} />
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={"آجر :" + details.name + city} />
+        <meta property="og:title" content={"بوملکس :" + details.name + city} />
         <meta
           property="og:description"
-          content={"آجر :" + details.name + city}
+          content={"بوملکس :" + details.name + city}
         />
         <meta
           property="og:url"
           content={
-            "https://ajur.app/realestates/" +
+            "https://boomlex.ir/realestates/" +
             details.id +
             "?slug=" +
             details.slug
           }
         />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta
           property="article:published_time"
           content="2024-05-19T21:34:43+00:00"
@@ -2028,17 +2028,17 @@ const SingleCategory = (props) => {
         />
         <meta
           property="og:image"
-          content={"ajur.app/cats_image/" + details.avatar + ".jpg"}
+          content={"boomlex.ir/cats_image/" + details.avatar + ".jpg"}
         />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="1067" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={"آجر :" + details.name + city} />
+        <meta name="twitter:data1" content={"بوملکس :" + details.name + city} />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href={"https://ajur.app/" + city + "/" + details.name}
+          href={"https://boomlex.ir/" + city + "/" + details.name}
         />
       </Head>
       {renderOrSpinner()}
@@ -2057,7 +2057,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -2384,30 +2384,30 @@ const SingleCategory = (props) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <title>
-          آجر : {details.name} {city}
+          بوملکس : {details.name} {city}
         </title>
-        <meta name="description" content={"آجر :" + details.name + city} />
+        <meta name="description" content={"بوملکس :" + details.name + city} />
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={"آجر :" + details.name + city} />
+        <meta property="og:title" content={"بوملکس :" + details.name + city} />
         <meta
           property="og:description"
-          content={"آجر :" + details.name + city}
+          content={"بوملکس :" + details.name + city}
         />
         <meta
           property="og:url"
           content={
-            "https://ajur.app/realestates/" +
+            "https://boomlex.ir/realestates/" +
             details.id +
             "?slug=" +
             details.slug
           }
         />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta
           property="article:published_time"
           content="2024-05-19T21:34:43+00:00"
@@ -2418,17 +2418,17 @@ const SingleCategory = (props) => {
         />
         <meta
           property="og:image"
-          content={"ajur.app/cats_image/" + details.avatar + ".jpg"}
+          content={"boomlex.ir/cats_image/" + details.avatar + ".jpg"}
         />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="1067" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={"آجر :" + details.name + city} />
+        <meta name="twitter:data1" content={"بوملکس :" + details.name + city} />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href={"https://ajur.app/" + city + "/" + details.name}
+          href={"https://boomlex.ir/" + city + "/" + details.name}
         />
       </Head>
       {renderOrSpinner()}
@@ -2447,7 +2447,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -2652,9 +2652,9 @@ const SingleCategory = (props) => {
         <meta charSet="UTF-8" />
         <meta name="robots" content="max-image-preview:large" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>آجر : {details.name} {props.city}</title>
-        <meta name="description" content={`آجر : ${details.name} ${props.city}`} />
-        <link rel="canonical" href={`https://ajur.app/${props.city}/${details.name}`} />
+        <title>بوملکس : {details.name} {props.city}</title>
+        <meta name="description" content={`بوملکس : ${details.name} ${props.city}`} />
+        <link rel="canonical" href={`https://boomlex.ir/${props.city}/${details.name}`} />
         {/* Keep your other meta tags */}
       </Head>
 
@@ -2800,7 +2800,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
 
     if (!res.ok) {
@@ -3123,30 +3123,30 @@ const SingleCategory = (props) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <title>
-          آجر : {details.name} {city}
+          بوملکس : {details.name} {city}
         </title>
-        <meta name="description" content={"آجر :" + details.name + city} />
+        <meta name="description" content={"بوملکس :" + details.name + city} />
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={"آجر :" + details.name + city} />
+        <meta property="og:title" content={"بوملکس :" + details.name + city} />
         <meta
           property="og:description"
-          content={"آجر :" + details.name + city}
+          content={"بوملکس :" + details.name + city}
         />
         <meta
           property="og:url"
           content={
-            "https://ajur.app/realestates/" +
+            "https://boomlex.ir/realestates/" +
             details.id +
             "?slug=" +
             details.slug
           }
         />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta
           property="article:published_time"
           content="2024-05-19T21:34:43+00:00"
@@ -3157,17 +3157,17 @@ const SingleCategory = (props) => {
         />
         <meta
           property="og:image"
-          content={"ajur.app/cats_image/" + details.avatar + ".jpg"}
+          content={"boomlex.ir/cats_image/" + details.avatar + ".jpg"}
         />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="1067" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={"آجر :" + details.name + city} />
+        <meta name="twitter:data1" content={"بوملکس :" + details.name + city} />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href={"https://ajur.app/" + city + "/" + details.name}
+          href={"https://boomlex.ir/" + city + "/" + details.name}
         />
       </Head>
       {renderOrSpinner()}
@@ -3186,7 +3186,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -3520,7 +3520,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -3595,24 +3595,24 @@ const SingleCategory = (props) => {
   // Get SEO data from props (already available from server-side)
   const seoData = {
     title: props.details?.name && props.city 
-      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند',
+      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند',
     
     description: props.details?.name && props.city 
-      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
     keywords: props.details?.name && props.city 
       ? `${props.details.name}, ${props.city}, ${props.details.name} در ${props.city}, استخدام ${props.details.name}, قیمت ${props.details.name}`
-      : 'مشاور املاک, آجر, خرید ملک, فروش ملک, اجاره ملک',
+      : 'مشاور املاک, بوملکس, خرید ملک, فروش ملک, اجاره ملک',
     
     image: props.details?.avatar 
-      ? `https://ajur.app/cats_image/${props.details.avatar}.jpg`
-      : 'https://ajur.app/logo/og-default.jpg',
+      ? `https://boomlex.ir/cats_image/${props.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/og-default.jpg',
     
     url: props.details?.name && props.city 
-      ? `https://ajur.app/${props.city}/${encodeURIComponent(props.details.name)}`
-      : 'https://ajur.app',
+      ? `https://boomlex.ir/${props.city}/${encodeURIComponent(props.details.name)}`
+      : 'https://boomlex.ir',
   };
 
   return (
@@ -3634,12 +3634,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={seoData.url} />
         <meta property="og:image" content={seoData.image} />
-        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -3656,8 +3656,8 @@ const SingleCategory = (props) => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ItemList",
-              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - آجر',
-              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک آجر',
+              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - بوملکس',
+              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک بوملکس',
               "url": seoData.url,
               "numberOfItems": (props.workers || []).length,
               "itemListOrder": "https://schema.org/ItemListUnordered",
@@ -3668,7 +3668,7 @@ const SingleCategory = (props) => {
                   "@type": "Service",
                   "name": worker.name || "متخصص",
                   "description": worker.description || `متخصص ${props.details?.name || ''}`,
-                  "url": `https://ajur.app/worker/${worker.id}?slug=${worker.slug}`,
+                  "url": `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug}`,
                   "provider": {
                     "@type": "Person",
                     "name": worker.name || "متخصص"
@@ -3690,14 +3690,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {props.details?.name && (
           <>
@@ -3735,7 +3735,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -3755,13 +3755,13 @@ export async function getServerSideProps(context) {
     }
 
     // Build SEO data server-side
-    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - آجر`;
-    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در آجر`;
+    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - بوملکس`;
+    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در بوملکس`;
     const seoKeywords = `${data.details.name}, ${city}, ${data.details.name} در ${city}, استخدام ${data.details.name}, قیمت ${data.details.name}`;
     const seoImage = data.details.avatar 
-      ? `https://ajur.app/cats_image/${data.details.avatar}.jpg`
-      : 'https://ajur.app/logo/og-default.jpg';
-    const seoUrl = `https://ajur.app/${city}/${encodeURIComponent(data.details.name)}`;
+      ? `https://boomlex.ir/cats_image/${data.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/og-default.jpg';
+    const seoUrl = `https://boomlex.ir/${city}/${encodeURIComponent(data.details.name)}`;
 
     return {
       props: {
@@ -4121,7 +4121,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -4197,24 +4197,24 @@ const SingleCategory = (props) => {
   // Get SEO data from props (already available from server-side)
   const seoData = {
     title: props.details?.name && props.city 
-      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند',
+      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند',
     
     description: props.details?.name && props.city 
-      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
     keywords: props.details?.name && props.city 
       ? `${props.details.name}, ${props.city}, ${props.details.name} در ${props.city}, استخدام ${props.details.name}, قیمت ${props.details.name}`
-      : 'مشاور املاک, آجر, خرید ملک, فروش ملک, اجاره ملک',
+      : 'مشاور املاک, بوملکس, خرید ملک, فروش ملک, اجاره ملک',
     
     image: props.details?.avatar 
-      ? `https://ajur.app/cats_image/${props.details.avatar}.jpg`
-      : 'https://ajur.app/logo/og-default.jpg',
+      ? `https://boomlex.ir/cats_image/${props.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/og-default.jpg',
     
     url: props.details?.name && props.city 
-      ? `https://ajur.app/${props.city}/${encodeURIComponent(props.details.name)}`
-      : 'https://ajur.app',
+      ? `https://boomlex.ir/${props.city}/${encodeURIComponent(props.details.name)}`
+      : 'https://boomlex.ir',
   };
 
   return (
@@ -4236,12 +4236,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={seoData.url} />
         <meta property="og:image" content={seoData.image} />
-        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -4258,8 +4258,8 @@ const SingleCategory = (props) => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ItemList",
-              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - آجر',
-              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک آجر',
+              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - بوملکس',
+              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک بوملکس',
               "url": seoData.url,
               "numberOfItems": (props.workers || []).length,
               "itemListOrder": "https://schema.org/ItemListUnordered",
@@ -4270,7 +4270,7 @@ const SingleCategory = (props) => {
                   "@type": "Service",
                   "name": worker.name || "متخصص",
                   "description": worker.description || `متخصص ${props.details?.name || ''}`,
-                  "url": `https://ajur.app/worker/${worker.id}?slug=${worker.slug}`,
+                  "url": `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug}`,
                   "provider": {
                     "@type": "Person",
                     "name": worker.name || "متخصص"
@@ -4292,14 +4292,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {props.details?.name && (
           <>
@@ -4337,7 +4337,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -4357,13 +4357,13 @@ export async function getServerSideProps(context) {
     }
 
     // Build SEO data server-side
-    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - آجر`;
-    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در آجر`;
+    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - بوملکس`;
+    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در بوملکس`;
     const seoKeywords = `${data.details.name}, ${city}, ${data.details.name} در ${city}, استخدام ${data.details.name}, قیمت ${data.details.name}`;
     const seoImage = data.details.avatar 
-      ? `https://ajur.app/cats_image/${data.details.avatar}.jpg`
-      : 'https://ajur.app/logo/ajour-meta-image.jpg';
-    const seoUrl = `https://ajur.app/${city}/${encodeURIComponent(data.details.name)}`;
+      ? `https://boomlex.ir/cats_image/${data.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/ajour-meta-image.jpg';
+    const seoUrl = `https://boomlex.ir/${city}/${encodeURIComponent(data.details.name)}`;
 
     return {
       props: {
@@ -4641,7 +4641,7 @@ const SingleCategory = (props) => {
               width: '60px',
               height: '60px',
               border: '3px solid #f3f3f3',
-              borderTop: '3px solid #b92a31',
+              borderTop: '3px solid #7a97ff',
               borderRadius: '50%',
               animation: 'spin 1s linear infinite'
             }} />
@@ -4728,7 +4728,7 @@ const SingleCategory = (props) => {
                 onClick={handleLoadMore}
                 disabled={filterLoading}
                 style={{
-                  backgroundColor: filterLoading ? "#ddd" : "#b92a31",
+                  backgroundColor: filterLoading ? "#ddd" : "#7a97ff",
                   color: "white",
                   border: "none",
                   padding: "12px 32px",
@@ -4746,7 +4746,7 @@ const SingleCategory = (props) => {
                 }}
                 onMouseLeave={(e) => {
                   if (!filterLoading) {
-                    e.target.style.backgroundColor = "#b92a31";
+                    e.target.style.backgroundColor = "#7a97ff";
                   }
                 }}
               >
@@ -4822,7 +4822,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -4862,7 +4862,7 @@ const SingleCategory = (props) => {
   return (
     <div className="realstate-contents-wrapper">
       <Head>
-        <title>{props.seoData?.title || `${props.details?.name} در ${props.city} | آجر`}</title>
+        <title>{props.seoData?.title || `${props.details?.name} در ${props.city} | بوملکس`}</title>
         <meta name="description" content={props.seoData?.description || ''} />
         <meta name="keywords" content={props.seoData?.keywords || ''} />
         
@@ -4891,7 +4891,7 @@ const SingleCategory = (props) => {
                   "item": {
                     "@type": "Service",
                     "name": worker.name,
-                    "url": `https://ajur.app/worker/${worker.id}`
+                    "url": `https://boomlex.ir/worker/${worker.id}`
                   }
                 }))
               }
@@ -4921,7 +4921,7 @@ const SingleCategory = (props) => {
             fontSize: "14px",
             fontWeight: 500
           }}>
-            <span style={{ color: "#b92a31" }}>{pagination.total_count}</span> مورد یافت شد
+            <span style={{ color: "#7a97ff" }}>{pagination.total_count}</span> مورد یافت شد
             {selectedCat?.name && (
               <span style={{ marginRight: "10px" }}> • دسته‌بندی: {selectedCat.name}</span>
             )}
@@ -4970,7 +4970,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for the main-category-workers endpoint
-    let apiUrl = `https://api.ajur.app/api/main-category-workers?catname=${name}&city=${citySlug}`;
+    let apiUrl = `https://api.boomlex.ir/api/main-category-workers?catname=${name}&city=${citySlug}`;
     
     // Add subcat if provided
     if (subcat) {
@@ -5008,13 +5008,13 @@ export async function getServerSideProps(context) {
 
     // Build SEO data
     const seoData = {
-      title: `${data.details.name} در ${citySlug} | لیست ${data.details.name} - آجر`,
-      description: `لیست کامل ${data.details.name} در ${citySlug} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در آجر`,
+      title: `${data.details.name} در ${citySlug} | لیست ${data.details.name} - بوملکس`,
+      description: `لیست کامل ${data.details.name} در ${citySlug} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در بوملکس`,
       keywords: `${data.details.name}, ${citySlug}, ${data.details.name} در ${citySlug}, استخدام ${data.details.name}, قیمت ${data.details.name}`,
       image: data.details.avatar 
-        ? `https://api.ajur.app/cats_image/${data.details.avatar}.jpg`
-        : 'https://api.ajur.app/logo/ajour-meta-image.jpg',
-      url: `https://ajur.app/${citySlug}/${encodeURIComponent(data.details.name)}`,
+        ? `https://api.boomlex.ir/cats_image/${data.details.avatar}.jpg`
+        : 'https://api.boomlex.ir/logo/ajour-meta-image.jpg',
+      url: `https://boomlex.ir/${citySlug}/${encodeURIComponent(data.details.name)}`,
     };
 
     // Prepare initial category object for FilterComponent
@@ -5067,9 +5067,9 @@ export async function getServerSideProps(context) {
         name: name,
         city: citySlug,
         seoData: {
-          title: `${name} در ${citySlug} | آجر`,
+          title: `${name} در ${citySlug} | بوملکس`,
           description: `صفحه ${name} در ${citySlug}`,
-          url: `https://ajur.app/${citySlug}/${encodeURIComponent(name)}`
+          url: `https://boomlex.ir/${citySlug}/${encodeURIComponent(name)}`
         },
         initialQuery: {},
         initialCategory: null,
@@ -5395,7 +5395,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -5470,24 +5470,24 @@ const SingleCategory = (props) => {
   // Get SEO data from props (already available from server-side)
   const seoData = {
     title: props.details?.name && props.city 
-      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند',
+      ? `${props.details.name} در ${props.city} | لیست ${props.details.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند',
     
     description: props.details?.name && props.city 
-      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+      ? `لیست کامل ${props.details.name} در ${props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
     keywords: props.details?.name && props.city 
       ? `${props.details.name}, ${props.city}, ${props.details.name} در ${props.city}, استخدام ${props.details.name}, قیمت ${props.details.name}`
-      : 'مشاور املاک, آجر, خرید ملک, فروش ملک, اجاره ملک',
+      : 'مشاور املاک, بوملکس, خرید ملک, فروش ملک, اجاره ملک',
     
     image: props.details?.avatar 
-      ? `https://ajur.app/cats_image/${props.details.avatar}.jpg`
-      : 'https://ajur.app/logo/og-default.jpg',
+      ? `https://boomlex.ir/cats_image/${props.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/og-default.jpg',
     
     url: props.details?.name && props.city 
-      ? `https://ajur.app/${props.city}/${encodeURIComponent(props.details.name)}`
-      : 'https://ajur.app',
+      ? `https://boomlex.ir/${props.city}/${encodeURIComponent(props.details.name)}`
+      : 'https://boomlex.ir',
   };
 
   return (
@@ -5509,12 +5509,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={seoData.url} />
         <meta property="og:image" content={seoData.image} />
-        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -5531,8 +5531,8 @@ const SingleCategory = (props) => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ItemList",
-              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - آجر',
-              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک آجر',
+              "name": props.details?.name && props.city ? `لیست ${props.details.name} در ${props.city}` : 'لیست خدمات - بوملکس',
+              "description": props.details?.name && props.city ? `صفحه لیست ${props.details.name} در شهر ${props.city}` : 'صفحه خدمات مشاور املاک بوملکس',
               "url": seoData.url,
               "numberOfItems": (props.workers || []).length,
               "itemListOrder": "https://schema.org/ItemListUnordered",
@@ -5543,7 +5543,7 @@ const SingleCategory = (props) => {
                   "@type": "Service",
                   "name": worker.name || "متخصص",
                   "description": worker.description || `متخصص ${props.details?.name || ''}`,
-                  "url": `https://ajur.app/worker/${worker.id}?slug=${worker.slug}`,
+                  "url": `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug}`,
                   "provider": {
                     "@type": "Person",
                     "name": worker.name || "متخصص"
@@ -5565,14 +5565,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {props.details?.name && (
           <>
@@ -5610,7 +5610,7 @@ export async function getServerSideProps(context) {
 
   try {
     const res = await fetch(
-      `https://api.ajur.app/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
+      `https://api.boomlex.ir/api/main-category-workers?subcat=${subcat}&catname=${name}&city=${city}`
     );
     
     if (!res.ok) {
@@ -5630,13 +5630,13 @@ export async function getServerSideProps(context) {
     }
 
     // Build SEO data server-side
-    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - آجر`;
-    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در آجر`;
+    const seoTitle = `${data.details.name} در ${city} | لیست ${data.details.name} - بوملکس`;
+    const seoDescription = `لیست کامل ${data.details.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${data.details.name} با قیمت‌های روز در بوملکس`;
     const seoKeywords = `${data.details.name}, ${city}, ${data.details.name} در ${city}, استخدام ${data.details.name}, قیمت ${data.details.name}`;
     const seoImage = data.details.avatar 
-      ? `https://ajur.app/cats_image/${data.details.avatar}.jpg`
-      : 'https://ajur.app/logo/og-default.jpg';
-    const seoUrl = `https://ajur.app/${city}/${encodeURIComponent(data.details.name)}`;
+      ? `https://boomlex.ir/cats_image/${data.details.avatar}.jpg`
+      : 'https://boomlex.ir/logo/og-default.jpg';
+    const seoUrl = `https://boomlex.ir/${city}/${encodeURIComponent(data.details.name)}`;
 
     return {
       props: {
@@ -5878,7 +5878,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -6008,7 +6008,7 @@ const SingleCategory = (props) => {
   variant="contained"
   onClick={retryLoading}
   style={{
-    backgroundColor: "#b92a31",
+    backgroundColor: "#7a97ff",
     color: "white",
     padding: "10px 30px",
   }}
@@ -6050,14 +6050,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -6147,7 +6147,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -6224,48 +6224,48 @@ const SingleCategory = (props) => {
   // Get SEO data from props (already available from server-side)
   const seoData = {
     title: props.details?.name && props.city 
-      ? `${props.details.name} در ${currentCity.title} | لیست ${props.details.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند',
+      ? `${props.details.name} در ${currentCity.title} | لیست ${props.details.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند',
     
     description: props.details?.name && props.city 
-      ? `لیست کامل ${props.details.name} در ${currentCity.title} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+      ? `لیست کامل ${props.details.name} در ${currentCity.title} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
     keywords: props.details?.name && props.city 
       ? `${props.details.name}, ${currentCity.title}, ${props.details.name} در ${currentCity.title}, قیمت ${props.details.name}`
-      : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک',
+      : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک',
     
     image: props.details?.avatar 
-      ? `https://api.ajur.app/cats_image/${props.details.avatar}.jpg`
-      : 'https://api.ajur.app/logo/og-default.jpg',
+      ? `https://api.boomlex.ir/cats_image/${props.details.avatar}.jpg`
+      : 'https://api.boomlex.ir/logo/og-default.jpg',
     
     url: props.details?.name && props.city 
-      ? `https://ajur.app/${props.city}/${encodeURIComponent(props.details.name)}`
-      : 'https://ajur.app',
+      ? `https://boomlex.ir/${props.city}/${encodeURIComponent(props.details.name)}`
+      : 'https://boomlex.ir',
   };
 
 
 
   // const seoData = {
   //   title: props.details?.name && (currentCity?.title || props.city)
-  //     ? `${props.details.name} در ${currentCity?.title || props.city} | لیست ${props.details.name} - آجر`
-  //     : 'آجر | مشاور املاک هوشمند',
+  //     ? `${props.details.name} در ${currentCity?.title || props.city} | لیست ${props.details.name} - بوملکس`
+  //     : 'بوملکس | مشاور املاک هوشمند',
     
   //   description: props.details?.name && (currentCity?.title || props.city)
-  //     ? `لیست کامل ${props.details.name} در ${currentCity?.title || props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-  //     : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+  //     ? `لیست کامل ${props.details.name} در ${currentCity?.title || props.city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+  //     : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
   //   keywords: props.details?.name && (currentCity?.title || props.city)
   //     ? `${props.details.name}, ${currentCity?.title || props.city}, ${props.details.name} در ${currentCity?.title || props.city}, قیمت ${props.details.name}`
-  //     : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک',
+  //     : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک',
     
   //   image: props.details?.avatar 
-  //     ? `https://api.ajur.app/cats_image/${props.details.avatar}.jpg`
-  //     : 'https://api.ajur.app/logo/og-default.jpg',
+  //     ? `https://api.boomlex.ir/cats_image/${props.details.avatar}.jpg`
+  //     : 'https://api.boomlex.ir/logo/og-default.jpg',
     
   //   url: props.details?.name && (currentCity?.slug || props.city)
-  //     ? `https://ajur.app/${currentCity?.slug || props.city}/${encodeURIComponent(props.details.name)}`
-  //     : 'https://ajur.app',
+  //     ? `https://boomlex.ir/${currentCity?.slug || props.city}/${encodeURIComponent(props.details.name)}`
+  //     : 'https://boomlex.ir',
   // };
 
   // Add filter parameters to canonical URL
@@ -6331,12 +6331,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={getCanonicalUrl()} />
         <meta property="og:image" content={seoData.image} />
-        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -6357,14 +6357,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {props.details?.name && (
           <>
@@ -6429,7 +6429,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -6468,7 +6468,7 @@ export async function getServerSideProps(context) {
     let categoryDetails = {};
     
     try {
-      const baseRes = await fetch(`https://api.ajur.app/api/base?city=${city}`);
+      const baseRes = await fetch(`https://api.boomlex.ir/api/base?city=${city}`);
       if (baseRes.ok) {
         const baseData = await baseRes.json();
         neighborhoodsData = baseData.the_neighborhoods || [];
@@ -6476,7 +6476,7 @@ export async function getServerSideProps(context) {
       }
       
       // Try to get category details
-      const categoryRes = await fetch(`https://api.ajur.app/api/main-category-workers?catname=${name}&city=${city}`);
+      const categoryRes = await fetch(`https://api.boomlex.ir/api/main-category-workers?catname=${name}&city=${city}`);
       if (categoryRes.ok) {
         const categoryData = await categoryRes.json();
         categoryDetails = categoryData.details || {};
@@ -6487,16 +6487,16 @@ export async function getServerSideProps(context) {
     
     // Build SEO data
     const seoTitle = categoryDetails?.name && city 
-      ? `${categoryDetails.name} در ${city} | لیست ${categoryDetails.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند';
+      ? `${categoryDetails.name} در ${city} | لیست ${categoryDetails.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند';
     
     const seoDescription = categoryDetails?.name && city 
-      ? `لیست کامل ${categoryDetails.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${categoryDetails.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
+      ? `لیست کامل ${categoryDetails.name} در ${city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${categoryDetails.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
     
     const seoImage = categoryDetails?.avatar 
-      ? `https://api.ajur.app/cats_image/${categoryDetails.avatar}.jpg`
-      : 'https://api.ajur.app/logo/og-default.jpg';
+      ? `https://api.boomlex.ir/cats_image/${categoryDetails.avatar}.jpg`
+      : 'https://api.boomlex.ir/logo/og-default.jpg';
     
     return {
       props: {
@@ -6531,9 +6531,9 @@ export async function getServerSideProps(context) {
           description: seoDescription,
           keywords: categoryDetails?.name && city 
             ? `${categoryDetails.name}, ${city}, ${categoryDetails.name} در ${city}`
-            : 'مشاور املاک, آجر, خرید ملک, فروش ملک, اجارة ملک',
+            : 'مشاور املاک, بوملکس, خرید ملک, فروش ملک, اجارة ملک',
           image: seoImage,
-          url: `https://ajur.app/${city}/${encodeURIComponent(name)}`,
+          url: `https://boomlex.ir/${city}/${encodeURIComponent(name)}`,
         }
       },
     };
@@ -6563,11 +6563,11 @@ export async function getServerSideProps(context) {
           total_pages: 1
         },
         seoData: {
-          title: 'خطا در بارگذاری - آجر',
+          title: 'خطا در بارگذاری - بوملکس',
           description: 'مشکلی در بارگذاری اطلاعات پیش آمده است',
-          keywords: 'آجر, خطا',
-          image: 'https://api.ajur.app/logo/og-default.jpg',
-          url: `https://ajur.app/${city}/${encodeURIComponent(name)}`,
+          keywords: 'بوملکس, خطا',
+          image: 'https://api.boomlex.ir/logo/og-default.jpg',
+          url: `https://boomlex.ir/${city}/${encodeURIComponent(name)}`,
         }
       }
     };
@@ -6794,7 +6794,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -6924,7 +6924,7 @@ const SingleCategory = (props) => {
   variant="contained"
   onClick={retryLoading}
   style={{
-    backgroundColor: "#b92a31",
+    backgroundColor: "#7a97ff",
     color: "white",
     padding: "10px 30px",
   }}
@@ -6966,14 +6966,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -7064,7 +7064,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -7149,24 +7149,24 @@ const SingleCategory = (props) => {
   // Get SEO data from props (already available from server-side)
   const seoData = {
     title: props.details?.name && persianCityName 
-      ? `${props.details.name} در ${persianCityName} | لیست ${props.details.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند',
+      ? `${props.details.name} در ${persianCityName} | لیست ${props.details.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند',
     
     description: props.details?.name && persianCityName 
-      ? `لیست کامل ${props.details.name} در ${persianCityName} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
+      ? `لیست کامل ${props.details.name} در ${persianCityName} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${props.details.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران',
     
     keywords: props.details?.name && persianCityName 
       ? `${props.details.name}, ${persianCityName}, ${props.details.name} در ${persianCityName}, قیمت ${props.details.name}`
-      : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک',
+      : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک',
     
     image: props.details?.avatar 
-      ? `https://api.ajur.app/cats_image/${props.details.avatar}.jpg`
-      : 'https://api.ajur.app/logo/og-default.jpg',
+      ? `https://api.boomlex.ir/cats_image/${props.details.avatar}.jpg`
+      : 'https://api.boomlex.ir/logo/og-default.jpg',
     
     url: props.details?.name && props.city 
-      ? `https://ajur.app/${props.city}/${encodeURIComponent(props.details.name)}`
-      : 'https://ajur.app',
+      ? `https://boomlex.ir/${props.city}/${encodeURIComponent(props.details.name)}`
+      : 'https://boomlex.ir',
   };
 
   // Add filter parameters to canonical URL
@@ -7232,12 +7232,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:url" content={getCanonicalUrl()} />
         <meta property="og:image" content={seoData.image} />
-        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={props.details?.name ? `تصویر ${props.details.name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -7258,14 +7258,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {props.details?.name && (
           <>
@@ -7330,7 +7330,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -7383,7 +7383,7 @@ export async function getServerSideProps(context) {
     let categoryDetails = {};
     
     try {
-      const baseRes = await fetch(`https://api.ajur.app/api/base?city=${city}`);
+      const baseRes = await fetch(`https://api.boomlex.ir/api/base?city=${city}`);
       if (baseRes.ok) {
         const baseData = await baseRes.json();
         neighborhoodsData = baseData.the_neighborhoods || [];
@@ -7391,7 +7391,7 @@ export async function getServerSideProps(context) {
       }
       
       // Try to get category details
-      const categoryRes = await fetch(`https://api.ajur.app/api/main-category-workers?catname=${name}&city=${city}`);
+      const categoryRes = await fetch(`https://api.boomlex.ir/api/main-category-workers?catname=${name}&city=${city}`);
       if (categoryRes.ok) {
         const categoryData = await categoryRes.json();
         categoryDetails = categoryData.details || {};
@@ -7402,16 +7402,16 @@ export async function getServerSideProps(context) {
     
     // Build SEO data with Persian city name
     const seoTitle = categoryDetails?.name && persianCityName 
-      ? `${categoryDetails.name} در ${persianCityName} | لیست ${categoryDetails.name} - آجر`
-      : 'آجر | مشاور املاک هوشمند';
+      ? `${categoryDetails.name} در ${persianCityName} | لیست ${categoryDetails.name} - بوملکس`
+      : 'بوملکس | مشاور املاک هوشمند';
     
     const seoDescription = categoryDetails?.name && persianCityName 
-      ? `لیست کامل ${categoryDetails.name} در ${persianCityName} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${categoryDetails.name} با قیمت‌های روز در آجر`
-      : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
+      ? `لیست کامل ${categoryDetails.name} در ${persianCityName} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${categoryDetails.name} با قیمت‌های روز در بوملکس`
+      : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
     
     const seoImage = categoryDetails?.avatar 
-      ? `https://api.ajur.app/cats_image/${categoryDetails.avatar}.jpg`
-      : 'https://api.ajur.app/logo/og-default.jpg';
+      ? `https://api.boomlex.ir/cats_image/${categoryDetails.avatar}.jpg`
+      : 'https://api.boomlex.ir/logo/og-default.jpg';
     
     return {
       props: {
@@ -7447,9 +7447,9 @@ export async function getServerSideProps(context) {
           description: seoDescription,
           keywords: categoryDetails?.name && persianCityName 
             ? `${categoryDetails.name}, ${persianCityName}, ${categoryDetails.name} در ${persianCityName}`
-            : 'مشاور املاک, آجر, خرید ملک, فروش ملک, اجارة ملک',
+            : 'مشاور املاک, بوملکس, خرید ملک, فروش ملک, اجارة ملک',
           image: seoImage,
-          url: `https://ajur.app/${city}/${encodeURIComponent(name)}`,
+          url: `https://boomlex.ir/${city}/${encodeURIComponent(name)}`,
         }
       },
     };
@@ -7483,11 +7483,11 @@ export async function getServerSideProps(context) {
           total_pages: 1
         },
         seoData: {
-          title: 'خطا در بارگذاری - آجر',
+          title: 'خطا در بارگذاری - بوملکس',
           description: 'مشکلی در بارگذاری اطلاعات پیش آمده است',
-          keywords: 'آجر, خطا',
-          image: 'https://api.ajur.app/logo/og-default.jpg',
-          url: `https://ajur.app/${city}/${encodeURIComponent(name)}`,
+          keywords: 'بوملکس, خطا',
+          image: 'https://api.boomlex.ir/logo/og-default.jpg',
+          url: `https://boomlex.ir/${city}/${encodeURIComponent(name)}`,
         }
       }
     };
@@ -7658,7 +7658,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -7756,7 +7756,7 @@ const SingleCategory = (props) => {
             variant="contained"
             onClick={retryLoading}
             style={{
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "10px 30px",
             }}
@@ -7798,14 +7798,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -7895,7 +7895,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -7974,20 +7974,20 @@ const SingleCategory = (props) => {
 
   // Get SEO data from props
   const seoTitle = persian_category_name && persian_city 
-    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - آجر`
-    : 'آجر | مشاور املاک هوشمند';
+    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - بوملکس`
+    : 'بوملکس | مشاور املاک هوشمند';
   
   const seoDescription = persian_category_name && persian_city 
-    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${persian_category_name} با قیمت‌های روز در آجر`
-    : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
+    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${persian_category_name} با قیمت‌های روز در بوملکس`
+    : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
   const seoUrl = details?.name && city 
-    ? `https://ajur.app/${city}/${encodeURIComponent(details.name)}`
-    : 'https://ajur.app';
+    ? `https://boomlex.ir/${city}/${encodeURIComponent(details.name)}`
+    : 'https://boomlex.ir';
 
   return (
     <div className="realstate-contents-wrapper">
@@ -8000,7 +8000,7 @@ const SingleCategory = (props) => {
         <meta name="description" content={seoDescription} />
         <meta name="keywords" content={persian_category_name && persian_city 
           ? `${persian_category_name}, ${persian_city}, ${persian_category_name} در ${persian_city}, قیمت ${persian_category_name}`
-          : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک'} />
+          : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک'} />
         
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -8009,12 +8009,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={seoUrl} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -8035,14 +8035,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {persian_category_name && (
           <>
@@ -8107,7 +8107,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -8135,7 +8135,7 @@ export async function getServerSideProps(context) {
     // 🚀 PARALLEL API CALLS for better performance
     const [mainRes, baseRes] = await Promise.allSettled([
       fetch(apiUrl),
-      fetch(`https://api.ajur.app/api/base?city=${city}`)
+      fetch(`https://api.boomlex.ir/api/base?city=${city}`)
     ]);
     
     // Handle main API response
@@ -8381,7 +8381,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -8479,7 +8479,7 @@ const SingleCategory = (props) => {
             variant="contained"
             onClick={retryLoading}
             style={{
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "10px 30px",
             }}
@@ -8537,14 +8537,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -8634,7 +8634,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -8721,20 +8721,20 @@ const SingleCategory = (props) => {
 
   // Get SEO data from props
   const seoTitle = persian_category_name && persian_city 
-    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - آجر`
-    : 'آجر | مشاور املاک هوشمند';
+    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - بوملکس`
+    : 'بوملکس | مشاور املاک هوشمند';
   
   const seoDescription = persian_category_name && persian_city 
-    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${persian_category_name} با قیمت‌های روز در آجر`
-    : 'مشاور املاک هوشمند آجر - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
+    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده اطلاعات تماس، آدرس و نمونه کارهای ${persian_category_name} با قیمت‌های روز در بوملکس`
+    : 'مشاور املاک هوشمند بوملکس - پیدا کردن بهترین متخصصان و خدمات در سراسر ایران';
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
   const seoUrl = details?.name && city 
-    ? `https://ajur.app/${city}/${encodeURIComponent(details.name)}`
-    : 'https://ajur.app';
+    ? `https://boomlex.ir/${city}/${encodeURIComponent(details.name)}`
+    : 'https://boomlex.ir';
 
   return (
     <div className="realstate-contents-wrapper">
@@ -8747,7 +8747,7 @@ const SingleCategory = (props) => {
         <meta name="description" content={seoDescription} />
         <meta name="keywords" content={persian_category_name && persian_city 
           ? `${persian_category_name}, ${persian_city}, ${persian_category_name} در ${persian_city}, قیمت ${persian_category_name}`
-          : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک'} />
+          : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک'} />
         
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -8756,12 +8756,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={seoUrl} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -8782,14 +8782,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {persian_category_name && (
           <>
@@ -8854,7 +8854,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -8882,7 +8882,7 @@ export async function getServerSideProps(context) {
     // 🚀 PARALLEL API CALLS for better performance
     const [mainRes, baseRes] = await Promise.allSettled([
       fetch(apiUrl),
-      fetch(`https://api.ajur.app/api/base?city=${city}`)
+      fetch(`https://api.boomlex.ir/api/base?city=${city}`)
     ]);
     
     // Handle main API response
@@ -9136,7 +9136,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -9234,7 +9234,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
             variant="contained"
             onClick={retryLoading}
             style={{
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "10px 30px",
             }}
@@ -9292,14 +9292,14 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -9390,7 +9390,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -9477,20 +9477,20 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   // Get SEO data from props
   const seoTitle = persian_category_name && persian_city 
-    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - آجر`
-    : 'آجر | مشاور املاک هوشمند';
+    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - بوملکس`
+    : 'بوملکس | مشاور املاک هوشمند';
   
   const seoDescription = persian_category_name && persian_city 
-    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده   ${persian_category_name} با قیمت‌های روز در آجر`
-    : 'مشاور املاک هوشمند آجر ';
+    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده   ${persian_category_name} با قیمت‌های روز در بوملکس`
+    : 'مشاور املاک هوشمند بوملکس ';
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
   const seoUrl = name && city 
-    ? `https://ajur.app/${city}/${name}`   
-    : 'https://ajur.app';
+    ? `https://boomlex.ir/${city}/${name}`   
+    : 'https://boomlex.ir';
 
   return (
     <div className="realstate-contents-wrapper">
@@ -9504,7 +9504,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
         <meta name="description" content={seoDescription} />
         <meta name="keywords" content={persian_category_name && persian_city 
           ? `${persian_category_name}, ${persian_city}, ${persian_category_name} در ${persian_city}, قیمت ${persian_category_name}`
-          : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک'} />
+          : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک'} />
         
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -9513,12 +9513,12 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={seoUrl} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -9539,14 +9539,14 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {persian_category_name && (
           <>
@@ -9611,7 +9611,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -9639,7 +9639,7 @@ export async function getServerSideProps(context) {
     // 🚀 PARALLEL API CALLS for better performance
     const [mainRes, baseRes] = await Promise.allSettled([
       fetch(apiUrl),
-      fetch(`https://api.ajur.app/api/base?city=${city}`)
+      fetch(`https://api.boomlex.ir/api/base?city=${city}`)
     ]);
     
     // Handle main API response
@@ -10026,7 +10026,7 @@ const SingleCategory = (props) => {
         params.append('sort_order', order);
       }
       
-      const apiUrl = `https://api.ajur.app/api/server-filtered-workers?${params.toString()}`;
+      const apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?${params.toString()}`;
       
       console.log('📡 Loading more from API:', apiUrl);
       
@@ -10089,7 +10089,7 @@ const SingleCategory = (props) => {
             variant="contained"
             onClick={retryLoading}
             style={{
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "10px 30px",
             }}
@@ -10154,14 +10154,14 @@ const SingleCategory = (props) => {
           {hasMore && !showSkeletons && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -10262,7 +10262,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -10352,20 +10352,20 @@ const SingleCategory = (props) => {
 
   // Get SEO data from props
   const seoTitle = persian_category_name && persian_city 
-    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - آجر`
-    : 'آجر | مشاور املاک هوشمند';
+    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - بوملکس`
+    : 'بوملکس | مشاور املاک هوشمند';
   
   const seoDescription = persian_category_name && persian_city 
-    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده   ${persian_category_name} با قیمت‌های روز در آجر`
-    : 'مشاور املاک هوشمند آجر ';
+    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده   ${persian_category_name} با قیمت‌های روز در بوملکس`
+    : 'مشاور املاک هوشمند بوملکس ';
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
   const seoUrl = name && city 
-    ? `https://ajur.app/${city}/${name}`   
-    : 'https://ajur.app';
+    ? `https://boomlex.ir/${city}/${name}`   
+    : 'https://boomlex.ir';
 
   return (
     <div className="realstate-contents-wrapper">
@@ -10378,7 +10378,7 @@ const SingleCategory = (props) => {
         <meta name="description" content={seoDescription} />
         <meta name="keywords" content={persian_category_name && persian_city 
           ? `${persian_category_name}, ${persian_city}, ${persian_category_name} در ${persian_city}, قیمت ${persian_category_name}`
-          : 'مشاور املاک آجر , خرید ملک, فروش ملک, اجاره ملک'} />
+          : 'مشاور املاک بوملکس , خرید ملک, فروش ملک, اجاره ملک'} />
         
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -10387,12 +10387,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={seoUrl} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -10413,14 +10413,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {persian_category_name && (
           <>
@@ -10503,7 +10503,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -10531,7 +10531,7 @@ export async function getServerSideProps(context) {
     // 🚀 PARALLEL API CALLS for better performance with timeouts
     const [mainRes, baseRes] = await Promise.allSettled([
       fetchWithTimeout(apiUrl, 10000), // 10 second timeout for main API
-      fetchWithTimeout(`https://api.ajur.app/api/base?city=${city}`, 8000) // 8 second timeout for base API
+      fetchWithTimeout(`https://api.boomlex.ir/api/base?city=${city}`, 8000) // 8 second timeout for base API
     ]);
     
     // Handle main API response
@@ -10828,7 +10828,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // Call serverFilteredWorkers API for next page
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       // Add all filter parameters
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
@@ -10957,7 +10957,7 @@ const SingleCategory = (props) => {
             variant="contained"
             onClick={retryLoading}
             style={{
-              backgroundColor: "#b92a31",
+              backgroundColor: "#7a97ff",
               color: "white",
               padding: "10px 30px",
             }}
@@ -11017,14 +11017,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} style={{ textAlign: "center", padding: "30px 0" }}>
               {loadingMore ? (
-                <CircularProgress size={30} style={{ color: "#b92a31" }} />
+                <CircularProgress size={30} style={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   style={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     padding: "10px 30px",
                   }}
                 >
@@ -11045,7 +11045,7 @@ const SingleCategory = (props) => {
       // Simple loading indicator
       return (
         <Grid item xs={12} style={{ textAlign: "center", padding: "40px 0" }}>
-          <CircularProgress size={40} style={{ color: "#b92a31" }} />
+          <CircularProgress size={40} style={{ color: "#7a97ff" }} />
           <p style={{ marginTop: "10px", color: "#666" }}>در حال بارگذاری...</p>
         </Grid>
       );
@@ -11124,7 +11124,7 @@ const SingleCategory = (props) => {
           <div style={{ 
             display: "flex", 
             alignItems: "center", 
-            color: "#b92a31",
+            color: "#7a97ff",
             fontWeight: "500",
             fontSize: "14px"
           }}>
@@ -11220,20 +11220,20 @@ const SingleCategory = (props) => {
 
   // Enhanced SEO data
   const seoTitle = persian_category_name && persian_city 
-    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - آجر`
-    : 'آجر | مشاور املاک هوشمند';
+    ? `${persian_category_name} در ${persian_city} | لیست ${persian_category_name} - بوملکس`
+    : 'بوملکس | مشاور املاک هوشمند';
   
   const seoDescription = persian_category_name && persian_city 
-    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده ${persian_category_name} با قیمت‌های روز در آجر. بهترین ${persian_category_name} را در ${persian_city} پیدا کنید.`
-    : 'مشاور املاک هوشمند آجر - خرید، فروش و اجاره ملک در سراسر ایران';
+    ? `لیست کامل ${persian_category_name} در ${persian_city} - مشاهده ${persian_category_name} با قیمت‌های روز در بوملکس. بهترین ${persian_category_name} را در ${persian_city} پیدا کنید.`
+    : 'مشاور املاک هوشمند بوملکس - خرید، فروش و اجاره ملک در سراسر ایران';
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
   const seoUrl = name && city 
-    ? `https://ajur.app/${city}/${name}`   
-    : 'https://ajur.app';
+    ? `https://boomlex.ir/${city}/${name}`   
+    : 'https://boomlex.ir';
 
   // Schema.org structured data
   const schemaData = {
@@ -11249,7 +11249,7 @@ const SingleCategory = (props) => {
       "item": {
         "@type": "ProfessionalService",
         "name": worker.name || `${persian_category_name} در ${persian_city}`,
-        "url": `https://ajur.app/worker/${worker.id}`,
+        "url": `https://boomlex.ir/worker/${worker.id}`,
         "image": worker.image || seoImage,
         "address": {
           "@type": "PostalAddress",
@@ -11275,7 +11275,7 @@ const SingleCategory = (props) => {
         <meta name="description" content={seoDescription} />
         <meta name="keywords" content={persian_category_name && persian_city 
           ? `${persian_category_name}, ${persian_city}, ${persian_category_name} در ${persian_city}, قیمت ${persian_category_name}, بهترین ${persian_category_name} ${persian_city}`
-          : 'مشاور املاک آجر, خرید ملک, فروش ملک, اجاره ملک, املاک ایران'} />
+          : 'مشاور املاک بوملکس, خرید ملک, فروش ملک, اجاره ملک, املاک ایران'} />
         
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -11284,12 +11284,12 @@ const SingleCategory = (props) => {
         {/* Open Graph */}
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={seoUrl} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'آجر - مشاور املاک هوشمند'} />
+        <meta property="og:image:alt" content={persian_category_name ? `تصویر ${persian_category_name}` : 'بوملکس - مشاور املاک هوشمند'} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -11310,14 +11310,14 @@ const SingleCategory = (props) => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* PWA Theme */}
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Page-specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta name="author" content="آجر" />
-        <meta property="article:author" content="آجر" />
+        <meta name="author" content="بوملکس" />
+        <meta property="article:author" content="بوملکس" />
         
         {persian_category_name && (
           <>
@@ -11409,7 +11409,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL for serverFilteredWorkers endpoint
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     // Add filters to API call
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
@@ -11437,7 +11437,7 @@ export async function getServerSideProps(context) {
     // 🚀 PARALLEL API CALLS for better performance with timeouts
     const [mainRes, baseRes] = await Promise.allSettled([
       fetchWithTimeout(apiUrl, 10000),
-      fetchWithTimeout(`https://api.ajur.app/api/base?city=${city}`, 8000)
+      fetchWithTimeout(`https://api.boomlex.ir/api/base?city=${city}`, 8000)
     ]);
     
     // Handle main API response
@@ -11716,7 +11716,7 @@ const SingleCategory = (props) => {
     try {
       const query = { ...router.query, page: nextPage.toString() };
       
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       if (query.categoryId) apiUrl += `&category_id=${query.categoryId}`;
       if (query.features) apiUrl += `&features=${query.features}`;
@@ -11828,14 +11828,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1
                   }}
@@ -11894,20 +11894,20 @@ const SingleCategory = (props) => {
           sx={{ direction: "rtl" }}
         >
           <Link href="/" passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               خانه
             </Box>
           </Link>
           
           <Link href={`/${city}`} passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               {cityName}
             </Box>
           </Link>
           
-          <Box sx={{ display: "flex", alignItems: "center", color: "#b92a31", fontWeight: "500", fontSize: "14px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", color: "#7a97ff", fontWeight: "500", fontSize: "14px" }}>
             <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
             {displayName}
           </Box>
@@ -11985,9 +11985,9 @@ const SingleCategory = (props) => {
   // SEO data based on actual server props
   const seoTitle = useMemo(() => {
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [persian_category_name, persian_city, totalCount]);
   
   const seoDescription = useMemo(() => {
@@ -12003,10 +12003,10 @@ const SingleCategory = (props) => {
   }, [persian_category_name, persian_city, totalCount, workersState]);
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
-  const canonicalUrl = `https://ajur.app/${city}/${name}`;
+  const canonicalUrl = `https://boomlex.ir/${city}/${name}`;
 
   return (
     <div className="realstate-contents-wrapper">
@@ -12027,7 +12027,7 @@ const SingleCategory = (props) => {
         
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -12066,7 +12066,7 @@ const SingleCategory = (props) => {
                   "item": {
                     "@type": "Product",
                     "name": worker.name || `${persian_category_name} در ${persian_city}`,
-                    "url": `https://ajur.app/worker/${worker.id}`,
+                    "url": `https://boomlex.ir/worker/${worker.id}`,
                     "image": worker.thumb || seoImage,
                     ...(price ? {
                       "offers": {
@@ -12158,7 +12158,7 @@ export async function getServerSideProps(context) {
 
   try {
     // Build API URL
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${name}&city=${city}&page=${page}&per_page=${per_page}`;
     
     if (categoryId) apiUrl += `&category_id=${categoryId}`;
     if (features) apiUrl += `&features=${features}`;
@@ -12181,7 +12181,7 @@ export async function getServerSideProps(context) {
     // Parallel API calls
     const [mainRes, baseRes] = await Promise.all([
       fetchWithTimeout(apiUrl, 4000),
-      fetchWithTimeout(`https://api.ajur.app/api/base?city=${city}`, 3000)
+      fetchWithTimeout(`https://api.boomlex.ir/api/base?city=${city}`, 3000)
     ]);
     
     if (!mainRes.ok) { 
@@ -12432,7 +12432,7 @@ const SingleCategory = (props) => {
       const query = { ...router.query, page: nextPage.toString() };
       
       // FIX 2: Added encodeURIComponent to prevent URL crashing on client side
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       if (query.categoryId) apiUrl += `&category_id=${encodeURIComponent(query.categoryId)}`;
       if (query.features) apiUrl += `&features=${encodeURIComponent(query.features)}`;
@@ -12552,14 +12552,14 @@ const SingleCategory = (props) => {
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1
                   }}
@@ -12618,20 +12618,20 @@ const SingleCategory = (props) => {
           sx={{ direction: "rtl" }}
         >
           <Link href="/" passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               خانه
             </Box>
           </Link>
           
           <Link href={`/${city}`} passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               {cityName}
             </Box>
           </Link>
           
-          <Box sx={{ display: "flex", alignItems: "center", color: "#b92a31", fontWeight: "500", fontSize: "14px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", color: "#7a97ff", fontWeight: "500", fontSize: "14px" }}>
             <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
             {displayName}
           </Box>
@@ -12705,9 +12705,9 @@ const SingleCategory = (props) => {
 
   const seoTitle = useMemo(() => {
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [persian_category_name, persian_city, totalCount]);
   
   const seoDescription = useMemo(() => {
@@ -12723,10 +12723,10 @@ const SingleCategory = (props) => {
   }, [persian_category_name, persian_city, totalCount, workersState]);
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
-  const canonicalUrl = `https://ajur.app/${city}/${name}`;
+  const canonicalUrl = `https://boomlex.ir/${city}/${name}`;
 
   return (
     <div className="realstate-contents-wrapper">
@@ -12746,7 +12746,7 @@ const SingleCategory = (props) => {
         
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -12784,7 +12784,7 @@ const SingleCategory = (props) => {
                   "item": {
                     "@type": "Product",
                     "name": worker.name || `${persian_category_name} در ${persian_city}`,
-                    "url": `https://ajur.app/worker/${worker.id}`,
+                    "url": `https://boomlex.ir/worker/${worker.id}`,
                     "image": worker.thumb || seoImage,
                     ...(price ? {
                       "offers": {
@@ -12871,7 +12871,7 @@ export async function getServerSideProps(context) {
 
   try {
     // FIX 4: Added encodeURIComponent to prevent Node crashing on invalid URLs
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
     
     if (categoryId) apiUrl += `&category_id=${encodeURIComponent(categoryId)}`;
     if (features) apiUrl += `&features=${encodeURIComponent(features)}`;
@@ -12893,7 +12893,7 @@ export async function getServerSideProps(context) {
     
     // Independent error handling
     const mainPromise = fetchWithTimeout(apiUrl, 8000).catch(e => { throw e; }); 
-    const basePromise = fetchWithTimeout(`https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`, 5000).catch(e => {
+    const basePromise = fetchWithTimeout(`https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`, 5000).catch(e => {
       console.warn("Base API failed, continuing without neighborhoods", e);
       return null; 
     });
@@ -13137,7 +13137,7 @@ const SingleCategory = () => {
         const per_page = 10;
         
         // Build API URL for workers data
-        let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
+        let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
         
         if (query.categoryId) apiUrl += `&category_id=${encodeURIComponent(query.categoryId)}`;
         if (query.features) apiUrl += `&features=${encodeURIComponent(query.features)}`;
@@ -13194,7 +13194,7 @@ const SingleCategory = () => {
         
         // Fetch base data (neighborhoods and categories)
         try {
-          const baseResponse = await axios.get(`https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`, {
+          const baseResponse = await axios.get(`https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`, {
             timeout: 5000,
             headers: {
               'Accept': 'application/json'
@@ -13223,7 +13223,7 @@ const SingleCategory = () => {
       } catch (error) {
         console.error(`Error fetching workers data for ${name}:`, error);
         setError(true);
-        setErrorMessage('خطا در ارتباط با سرور آجرکی لطفا صفحه را مجددا بارگذاری کنید');
+        setErrorMessage('خطا در ارتباط با سرور بوملکسکی لطفا صفحه را مجددا بارگذاری کنید');
         set_workers([]);
         setDetails({});
         setMainCats([]);
@@ -13246,7 +13246,7 @@ const SingleCategory = () => {
     try {
       const query = router.query;
       
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
       
       if (query.categoryId) apiUrl += `&category_id=${encodeURIComponent(query.categoryId)}`;
       if (query.features) apiUrl += `&features=${encodeURIComponent(query.features)}`;
@@ -13444,14 +13444,14 @@ const SingleCategory = () => {
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1
                   }}
@@ -13523,20 +13523,20 @@ const SingleCategory = () => {
           sx={{ direction: "rtl" }}
         >
           <Link href="/" passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               خانه
             </Box>
           </Link>
           
           <Link href={`/${city}`} passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               {cityName}
             </Box>
           </Link>
           
-          <Box sx={{ display: "flex", alignItems: "center", color: "#b92a31", fontWeight: "500", fontSize: "14px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", color: "#7a97ff", fontWeight: "500", fontSize: "14px" }}>
             <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
             {displayName}
           </Box>
@@ -13611,9 +13611,9 @@ const SingleCategory = () => {
 
   const seoTitle = useMemo(() => {
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [persian_category_name, persian_city, totalCount]);
   
   const seoDescription = useMemo(() => {
@@ -13629,10 +13629,10 @@ const SingleCategory = () => {
   }, [persian_category_name, persian_city, totalCount, workersState]);
   
   const seoImage = details?.avatar 
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
   
-  const canonicalUrl = `https://ajur.app/${city}/${name}`;
+  const canonicalUrl = `https://boomlex.ir/${city}/${name}`;
 
   return (
     <div className="realstate-contents-wrapper">
@@ -13652,7 +13652,7 @@ const SingleCategory = () => {
         
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -13690,7 +13690,7 @@ const SingleCategory = () => {
                   "item": {
                     "@type": "Product",
                     "name": worker.name || `${persian_category_name} در ${persian_city}`,
-                    "url": `https://ajur.app/worker/${worker.id}`,
+                    "url": `https://boomlex.ir/worker/${worker.id}`,
                     "image": worker.thumb || seoImage,
                     ...(price ? {
                       "offers": {
@@ -13937,7 +13937,7 @@ const SingleCategory = ({
     try {
       const query = router.query;
 
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(slugName)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(slugName)}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
 
       if (query.categoryId) apiUrl += `&category_id=${encodeURIComponent(query.categoryId)}`;
       if (query.features) apiUrl += `&features=${encodeURIComponent(query.features)}`;
@@ -13967,25 +13967,25 @@ const SingleCategory = ({
   }, [loadingMore, hasMore, pagination, router.query, slugName, city]);
 
   // --- SEO ---
-  const canonicalUrl = `https://ajur.app/${city}/${slugName}`;
+  const canonicalUrl = `https://boomlex.ir/${city}/${slugName}`;
 
   const seoTitle = useMemo(() => {
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [persian_category_name, persian_city, totalCount]);
 
   const seoDescription = useMemo(() => {
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
-    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در آجر.`;
+    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در بوملکس.`;
   }, [persian_category_name, persian_city, totalCount]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : 'https://api.ajur.app/logo/og-default.jpg';
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : 'https://api.boomlex.ir/logo/og-default.jpg';
 
   // Breadcrumb structured data
   const breadcrumbJsonLd = useMemo(() => {
@@ -13996,8 +13996,8 @@ const SingleCategory = ({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://ajur.app/" },
-        { "@type": "ListItem", "position": 2, "name": cityName, "item": `https://ajur.app/${city}` },
+        { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://boomlex.ir/" },
+        { "@type": "ListItem", "position": 2, "name": cityName, "item": `https://boomlex.ir/${city}` },
         { "@type": "ListItem", "position": 3, "name": displayName, "item": canonicalUrl }
       ]
     };
@@ -14009,7 +14009,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -14060,20 +14060,20 @@ const SingleCategory = ({
       }}>
         <Breadcrumbs aria-label="breadcrumb" separator="›" sx={{ direction: "rtl" }}>
           <Link href="/" passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               خانه
             </Box>
           </Link>
 
           <Link href={`/${city}`} passHref legacyBehavior>
-            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#b92a31" } }}>
+            <Box component="a" sx={{ display: "flex", alignItems: "center", color: "#666", textDecoration: "none", fontSize: "14px", '&:hover': { color: "#7a97ff" } }}>
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
               {cityName}
             </Box>
           </Link>
 
-          <Box sx={{ display: "flex", alignItems: "center", color: "#b92a31", fontWeight: "500", fontSize: "14px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", color: "#7a97ff", fontWeight: "500", fontSize: "14px" }}>
             <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
             {displayName}
           </Box>
@@ -14191,12 +14191,12 @@ const SingleCategory = ({
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
-                  sx={{ color: "#b92a31", borderColor: "#b92a31", px: 4, py: 1 }}
+                  sx={{ color: "#7a97ff", borderColor: "#7a97ff", px: 4, py: 1 }}
                 >
                   نمایش بیشتر
                 </Button>
@@ -14248,7 +14248,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -14361,7 +14361,7 @@ export async function getServerSideProps(context) {
   const per_page = 10;
 
   // Build API URL similarly to your client code
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(catname)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(catname)}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
   if (query.categoryId) apiUrl += `&category_id=${encodeURIComponent(query.categoryId)}`;
   if (query.features) apiUrl += `&features=${encodeURIComponent(query.features)}`;
@@ -14388,7 +14388,7 @@ export async function getServerSideProps(context) {
   try {
     const [workersRes, baseRes] = await Promise.allSettled([
       axios.get(apiUrl, { timeout: 8000, headers: { 'Accept': 'application/json' } }),
-      axios.get(`https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`, { timeout: 8000, headers: { 'Accept': 'application/json' } })
+      axios.get(`https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`, { timeout: 8000, headers: { 'Accept': 'application/json' } })
     ]);
 
     const workersData = workersRes.status === "fulfilled" ? workersRes.value.data : null;
@@ -14610,8 +14610,8 @@ const SingleCategory = ({
   }, [pagination]);
 
   const canonicalUrl = routeNeighborhoodSlug
-    ? `https://ajur.app/${city}/${slugName}/${routeNeighborhoodSlug}`
-    : `https://ajur.app/${city}/${slugName}`;
+    ? `https://boomlex.ir/${city}/${slugName}/${routeNeighborhoodSlug}`
+    : `https://boomlex.ir/${city}/${slugName}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14643,7 +14643,7 @@ const SingleCategory = ({
     try {
       const query = router.query || {};
 
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
         slugName
       )}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
 
@@ -14725,17 +14725,17 @@ const SingleCategory = ({
   const seoTitle = useMemo(() => {
     if (routeNeighborhoodSlug) {
       if (totalCount > 0) {
-        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
       }
 
-      return `${persian_category_name} در ${neighborhoodName} ${persian_city} | آجر`;
+      return `${persian_category_name} در ${neighborhoodName} ${persian_city} | بوملکس`;
     }
 
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
 
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [
     persian_category_name,
     persian_city,
@@ -14747,17 +14747,17 @@ const SingleCategory = ({
   const seoDescription = useMemo(() => {
     if (routeNeighborhoodSlug) {
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
 
-      return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در آجر.`;
+      return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در بوملکس.`;
     }
 
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
 
-    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در آجر.`;
+    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در بوملکس.`;
   }, [
     persian_category_name,
     persian_city,
@@ -14767,8 +14767,8 @@ const SingleCategory = ({
   ]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : "https://api.ajur.app/logo/og-default.jpg";
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : "https://api.boomlex.ir/logo/og-default.jpg";
 
   const breadcrumbJsonLd = useMemo(() => {
     const displayName = persian_category_name || slugName || "";
@@ -14779,19 +14779,19 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 1,
         name: "خانه",
-        item: "https://ajur.app/",
+        item: "https://boomlex.ir/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: cityName,
-        item: `https://ajur.app/${city}`,
+        item: `https://boomlex.ir/${city}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: displayName,
-        item: `https://ajur.app/${city}/${slugName}`,
+        item: `https://boomlex.ir/${city}/${slugName}`,
       },
     ];
 
@@ -14823,7 +14823,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -14895,7 +14895,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -14912,7 +14912,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -14930,7 +14930,7 @@ const SingleCategory = ({
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -14942,7 +14942,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -14957,7 +14957,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -15098,14 +15098,14 @@ const SingleCategory = ({
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1,
                   }}
@@ -15178,7 +15178,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -15332,7 +15332,7 @@ export async function getServerSideProps(context) {
     }
   }
 
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
     catname
   )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
@@ -15381,7 +15381,7 @@ export async function getServerSideProps(context) {
         timeout: 8000,
         headers: { Accept: "application/json" },
       }),
-      axios.get(`https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`, {
+      axios.get(`https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`, {
         timeout: 8000,
         headers: { Accept: "application/json" },
       }),
@@ -15681,8 +15681,8 @@ const SingleCategory = ({
    * - Old query filter pages canonicalize to category page unless there is path slug.
    */
   const canonicalUrl = routeNeighborhoodSlug
-    ? `https://ajur.app/${city}/${slugName}/${routeNeighborhoodSlug}`
-    : `https://ajur.app/${city}/${slugName}`;
+    ? `https://boomlex.ir/${city}/${slugName}/${routeNeighborhoodSlug}`
+    : `https://boomlex.ir/${city}/${slugName}`;
 
   /**
    * Make WorkerFilter know about the neighborhood when URL is SEO slug.
@@ -15729,7 +15729,7 @@ const SingleCategory = ({
     try {
       const query = router.query || {};
 
-      let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+      let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
         slugName
       )}&city=${encodeURIComponent(city)}&page=${nextPage}&per_page=${pagination.per_page}`;
 
@@ -15816,17 +15816,17 @@ const SingleCategory = ({
   const seoTitle = useMemo(() => {
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
       }
 
-      return `${persian_category_name} در ${neighborhoodName} ${persian_city} | آجر`;
+      return `${persian_category_name} در ${neighborhoodName} ${persian_city} | بوملکس`;
     }
 
     if (totalCount > 0) {
-      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+      return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
     }
 
-    return `${persian_category_name} در ${persian_city} | آجر`;
+    return `${persian_category_name} در ${persian_city} | بوملکس`;
   }, [
     persian_category_name,
     persian_city,
@@ -15837,17 +15837,17 @@ const SingleCategory = ({
   const seoDescription = useMemo(() => {
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
 
-      return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در آجر.`;
+      return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در بوملکس.`;
     }
 
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
 
-    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در آجر.`;
+    return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در بوملکس.`;
   }, [
     persian_category_name,
     persian_city,
@@ -15856,8 +15856,8 @@ const SingleCategory = ({
   ]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : "https://api.ajur.app/logo/og-default.jpg";
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : "https://api.boomlex.ir/logo/og-default.jpg";
 
   const breadcrumbJsonLd = useMemo(() => {
     const displayName = persian_category_name || slugName || "";
@@ -15868,19 +15868,19 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 1,
         name: "خانه",
-        item: "https://ajur.app/",
+        item: "https://boomlex.ir/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: cityName,
-        item: `https://ajur.app/${city}`,
+        item: `https://boomlex.ir/${city}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: displayName,
-        item: `https://ajur.app/${city}/${slugName}`,
+        item: `https://boomlex.ir/${city}/${slugName}`,
       },
     ];
 
@@ -15911,7 +15911,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -15983,7 +15983,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -16000,7 +16000,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -16018,7 +16018,7 @@ const SingleCategory = ({
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -16030,7 +16030,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -16045,7 +16045,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -16186,14 +16186,14 @@ const SingleCategory = ({
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1,
                   }}
@@ -16266,7 +16266,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -16400,7 +16400,7 @@ export async function getServerSideProps(context) {
      * We need this before workers request because SEO slug must become numeric ID.
      */
     const baseRes = await axios.get(
-      `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+      `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
       {
         timeout: 8000,
         headers: { Accept: "application/json" },
@@ -16455,7 +16455,7 @@ export async function getServerSideProps(context) {
   const finalNeighborhoodId =
     resolvedNeighborhood?.id || queryNeighborhood || "";
 
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
     catname
   )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
@@ -16724,7 +16724,7 @@ import React, {
     query = {},
     finalNeighborhoodId = "",
   }) {
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
       catname
     )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
   
@@ -16931,8 +16931,8 @@ import React, {
      */
     const canonicalUrl =
       routeNeighborhoodSlug && !hasMultipleNeighborhoods && !hasQueryNeighborhood
-        ? `https://ajur.app/${city}/${slugName}/${routeNeighborhoodSlug}`
-        : `https://ajur.app/${city}/${slugName}`;
+        ? `https://boomlex.ir/${city}/${slugName}/${routeNeighborhoodSlug}`
+        : `https://boomlex.ir/${city}/${slugName}`;
   
     /**
      * Make WorkerFilter know about the active neighborhood.
@@ -17186,38 +17186,38 @@ import React, {
     const seoTitle = useMemo(() => {
       if (neighborhoodName) {
         if (totalCount > 0) {
-          return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+          return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
         }
   
-        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | آجر`;
+        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | بوملکس`;
       }
   
       if (totalCount > 0) {
-        return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+        return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
       }
   
-      return `${persian_category_name} در ${persian_city} | آجر`;
+      return `${persian_category_name} در ${persian_city} | بوملکس`;
     }, [persian_category_name, persian_city, neighborhoodName, totalCount]);
   
     const seoDescription = useMemo(() => {
       if (neighborhoodName) {
         if (totalCount > 0) {
-          return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+          return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
         }
   
-        return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در آجر.`;
+        return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در بوملکس.`;
       }
   
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
   
-      return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در آجر.`;
+      return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در بوملکس.`;
     }, [persian_category_name, persian_city, neighborhoodName, totalCount]);
   
     const seoImage = details?.avatar
-      ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-      : "https://api.ajur.app/logo/og-default.jpg";
+      ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+      : "https://api.boomlex.ir/logo/og-default.jpg";
   
     const breadcrumbJsonLd = useMemo(() => {
       const displayName = persian_category_name || slugName || "";
@@ -17228,19 +17228,19 @@ import React, {
           "@type": "ListItem",
           position: 1,
           name: "خانه",
-          item: "https://ajur.app/",
+          item: "https://boomlex.ir/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: cityName,
-          item: `https://ajur.app/${city}`,
+          item: `https://boomlex.ir/${city}`,
         },
         {
           "@type": "ListItem",
           position: 3,
           name: displayName,
-          item: `https://ajur.app/${city}/${slugName}`,
+          item: `https://boomlex.ir/${city}/${slugName}`,
         },
       ];
   
@@ -17271,7 +17271,7 @@ import React, {
       const items = (workersState || []).slice(0, 10).map((worker, index) => {
         const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
         const image = worker?.thumb || worker?.image || seoImage;
-        const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+        const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
   
         return {
           "@type": "ListItem",
@@ -17343,7 +17343,7 @@ import React, {
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -17360,7 +17360,7 @@ import React, {
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -17378,7 +17378,7 @@ import React, {
                     color: "#666",
                     textDecoration: "none",
                     fontSize: "14px",
-                    "&:hover": { color: "#b92a31" },
+                    "&:hover": { color: "#7a97ff" },
                   }}
                 >
                   <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -17390,7 +17390,7 @@ import React, {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  color: "#b92a31",
+                  color: "#7a97ff",
                   fontWeight: "500",
                   fontSize: "14px",
                 }}
@@ -17405,7 +17405,7 @@ import React, {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  color: "#b92a31",
+                  color: "#7a97ff",
                   fontWeight: "500",
                   fontSize: "14px",
                 }}
@@ -17546,14 +17546,14 @@ import React, {
             {hasMore && (
               <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
                 {loadingMore ? (
-                  <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                  <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
                 ) : (
                   <Button
                     variant="outlined"
                     onClick={loadMoreWorkers}
                     sx={{
-                      color: "#b92a31",
-                      borderColor: "#b92a31",
+                      color: "#7a97ff",
+                      borderColor: "#7a97ff",
                       px: 4,
                       py: 1,
                     }}
@@ -17626,7 +17626,7 @@ import React, {
   
           <meta property="og:locale" content="fa_IR" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+          <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
           <meta property="og:title" content={seoTitle} />
           <meta property="og:description" content={seoDescription} />
           <meta property="og:url" content={canonicalUrl} />
@@ -17760,7 +17760,7 @@ import React, {
        * We need this before workers request because SEO slug must become numeric ID.
        */
       const baseRes = await axios.get(
-        `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+        `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
         {
           timeout: 8000,
           headers: { Accept: "application/json" },
@@ -18081,7 +18081,7 @@ import React, {
     query = {},
     finalNeighborhoodId = "",
   }) {
-    let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+    let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
       catname
     )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
   
@@ -18306,8 +18306,8 @@ import React, {
      */
     const canonicalUrl =
       routeNeighborhoodSlug && !hasMultipleNeighborhoods && !hasQueryNeighborhood
-        ? `https://ajur.app/${city}/${slugName}/${routeNeighborhoodSlug}`
-        : `https://ajur.app/${city}/${slugName}`;
+        ? `https://boomlex.ir/${city}/${slugName}/${routeNeighborhoodSlug}`
+        : `https://boomlex.ir/${city}/${slugName}`;
   
     /**
      * Make WorkerFilter know about the active neighborhood.
@@ -18561,17 +18561,17 @@ import React, {
     const seoTitle = useMemo(() => {
       if (neighborhoodName) {
         if (totalCount > 0) {
-          return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+          return `${persian_category_name} در ${neighborhoodName} ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
         }
   
-        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | آجر`;
+        return `${persian_category_name} در ${neighborhoodName} ${persian_city} | بوملکس`;
       }
   
       if (totalCount > 0) {
-        return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | آجر`;
+        return `${persian_category_name} در ${persian_city} | لیست ${totalCount} آگهی | بوملکس`;
       }
   
-      return `${persian_category_name} در ${persian_city} | آجر`;
+      return `${persian_category_name} در ${persian_city} | بوملکس`;
     }, [persian_category_name, persian_city, neighborhoodName, totalCount]);
   
     const seoDescription = useMemo(() => {
@@ -18590,20 +18590,20 @@ import React, {
          */
         if (neighborhoodName) {
           if (totalCount > 0) {
-            return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+            return `${totalCount} آگهی ${persian_category_name} در ${neighborhoodName} ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
           }
       
-          return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در آجر.`;
+          return `جدیدترین آگهی‌های ${persian_category_name} در ${neighborhoodName} ${persian_city} در بوملکس.`;
         }
       
         /**
          * Default city SEO
          */
         if (totalCount > 0) {
-          return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+          return `${totalCount} آگهی ${persian_category_name} در ${persian_city}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
         }
       
-        return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در آجر.`;
+        return `جدیدترین آگهی‌های ${persian_category_name} در ${persian_city} در بوملکس.`;
       }, [
         persian_category_name,
         persian_city,
@@ -18614,8 +18614,8 @@ import React, {
       
   
     const seoImage = details?.avatar
-      ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-      : "https://api.ajur.app/logo/og-default.jpg";
+      ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+      : "https://api.boomlex.ir/logo/og-default.jpg";
   
     const breadcrumbJsonLd = useMemo(() => {
       const displayName = persian_category_name || slugName || "";
@@ -18626,19 +18626,19 @@ import React, {
           "@type": "ListItem",
           position: 1,
           name: "خانه",
-          item: "https://ajur.app/",
+          item: "https://boomlex.ir/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: cityName,
-          item: `https://ajur.app/${city}`,
+          item: `https://boomlex.ir/${city}`,
         },
         {
           "@type": "ListItem",
           position: 3,
           name: displayName,
-          item: `https://ajur.app/${city}/${slugName}`,
+          item: `https://boomlex.ir/${city}/${slugName}`,
         },
       ];
   
@@ -18669,7 +18669,7 @@ import React, {
       const items = (workersState || []).slice(0, 10).map((worker, index) => {
         const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
         const image = worker?.thumb || worker?.image || seoImage;
-        const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+        const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
   
         return {
           "@type": "ListItem",
@@ -18741,7 +18741,7 @@ import React, {
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -18758,7 +18758,7 @@ import React, {
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -18776,7 +18776,7 @@ import React, {
                     color: "#666",
                     textDecoration: "none",
                     fontSize: "14px",
-                    "&:hover": { color: "#b92a31" },
+                    "&:hover": { color: "#7a97ff" },
                   }}
                 >
                   <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -18788,7 +18788,7 @@ import React, {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  color: "#b92a31",
+                  color: "#7a97ff",
                   fontWeight: "500",
                   fontSize: "14px",
                 }}
@@ -18803,7 +18803,7 @@ import React, {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  color: "#b92a31",
+                  color: "#7a97ff",
                   fontWeight: "500",
                   fontSize: "14px",
                 }}
@@ -18944,14 +18944,14 @@ import React, {
             {hasMore && (
               <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
                 {loadingMore ? (
-                  <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                  <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
                 ) : (
                   <Button
                     variant="outlined"
                     onClick={loadMoreWorkers}
                     sx={{
-                      color: "#b92a31",
-                      borderColor: "#b92a31",
+                      color: "#7a97ff",
+                      borderColor: "#7a97ff",
                       px: 4,
                       py: 1,
                     }}
@@ -19024,7 +19024,7 @@ import React, {
   
           <meta property="og:locale" content="fa_IR" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+          <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
           <meta property="og:title" content={seoTitle} />
           <meta property="og:description" content={seoDescription} />
           <meta property="og:url" content={canonicalUrl} />
@@ -19180,7 +19180,7 @@ import React, {
        * We need this before workers request because SEO slug must become numeric ID.
        */
       const baseRes = await axios.get(
-        `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+        `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
         {
           timeout: 8000,
           headers: { Accept: "application/json" },
@@ -19494,7 +19494,7 @@ function buildWorkersApiUrl({
   query = {},
   finalNeighborhoodId = "",
 }) {
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
     catname
   )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
@@ -19722,14 +19722,14 @@ const SingleCategory = ({
 
     // If we don't have a valid slug, use a safe fallback
     if (!validSlug) {
-      return `https://ajur.app/${validCity}`;
+      return `https://boomlex.ir/${validCity}`;
     }
 
     if (routeNeighborhoodSlug && !hasMultipleNeighborhoods && !hasQueryNeighborhood) {
-      return `https://ajur.app/${validCity}/${validSlug}/${routeNeighborhoodSlug}`;
+      return `https://boomlex.ir/${validCity}/${validSlug}/${routeNeighborhoodSlug}`;
     }
 
-    return `https://ajur.app/${validCity}/${validSlug}`;
+    return `https://boomlex.ir/${validCity}/${validSlug}`;
   }, [city, slugName, routeNeighborhoodSlug, hasMultipleNeighborhoods, hasQueryNeighborhood]);
 
   /**
@@ -19992,16 +19992,16 @@ const SingleCategory = ({
 
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | آجر`;
+        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
       }
-      return `${categoryName} در ${neighborhoodName} ${cityName} | آجر`;
+      return `${categoryName} در ${neighborhoodName} ${cityName} | بوملکس`;
     }
 
     if (totalCount > 0) {
-      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | آجر`;
+      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
     }
 
-    return `${categoryName} در ${cityName} | آجر`;
+    return `${categoryName} در ${cityName} | بوملکس`;
   }, [persian_category_name, persian_city, neighborhoodName, totalCount, slugName, city]);
 
   /**
@@ -20026,19 +20026,19 @@ const SingleCategory = ({
      */
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
-      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در آجر.`;
+      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در بوملکس.`;
     }
 
     /**
      * Default city SEO
      */
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
 
-    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در آجر.`;
+    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در بوملکس.`;
   }, [
     persian_category_name,
     persian_city,
@@ -20050,8 +20050,8 @@ const SingleCategory = ({
   ]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : "https://api.ajur.app/logo/og-default.jpg";
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : "https://api.boomlex.ir/logo/og-default.jpg";
 
   /**
    * FIXED: Breadcrumb JSON-LD with proper fallbacks
@@ -20067,13 +20067,13 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 1,
         name: "خانه",
-        item: "https://ajur.app/",
+        item: "https://boomlex.ir/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: cityName,
-        item: `https://ajur.app/${validCitySlug}`,
+        item: `https://boomlex.ir/${validCitySlug}`,
       },
     ];
 
@@ -20083,7 +20083,7 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 3,
         name: displayName,
-        item: `https://ajur.app/${validCitySlug}/${validCategorySlug}`,
+        item: `https://boomlex.ir/${validCitySlug}/${validCategorySlug}`,
       });
     }
 
@@ -20114,7 +20114,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -20186,7 +20186,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -20203,7 +20203,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -20221,7 +20221,7 @@ const SingleCategory = ({
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -20233,7 +20233,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -20248,7 +20248,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -20389,14 +20389,14 @@ const SingleCategory = ({
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1,
                   }}
@@ -20469,7 +20469,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -20603,9 +20603,9 @@ const SingleCategory = ({
                     color: "#333",
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      backgroundColor: "#b92a31",
+                      backgroundColor: "#7a97ff",
                       color: "#fff",
-                      borderColor: "#b92a31",
+                      borderColor: "#7a97ff",
                     },
                   }}
                 >
@@ -20663,7 +20663,7 @@ export async function getServerSideProps(context) {
      * We need this before workers request because SEO slug must become numeric ID.
      */
     const baseRes = await axios.get(
-      `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+      `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
       {
         timeout: 8000,
         headers: { Accept: "application/json" },
@@ -20974,7 +20974,7 @@ function buildWorkersApiUrl({
   query = {},
   finalNeighborhoodId = "",
 }) {
-  let apiUrl = `https://api.ajur.app/api/server-filtered-workers?catname=${encodeURIComponent(
+  let apiUrl = `https://api.boomlex.ir/api/server-filtered-workers?catname=${encodeURIComponent(
     catname
   )}&city=${encodeURIComponent(city)}&page=${page}&per_page=${per_page}`;
 
@@ -21028,10 +21028,10 @@ function buildWorkersApiUrl({
  */
 function toAbsoluteUrl(path) {
   const clean = String(path || "").trim();
-  if (!clean) return "https://ajur.app/";
+  if (!clean) return "https://boomlex.ir/";
   if (clean.startsWith("http://") || clean.startsWith("https://")) return clean;
   const prefixed = clean.startsWith("/") ? clean : `/${clean}`;
-  return `https://ajur.app${prefixed}`;
+  return `https://boomlex.ir${prefixed}`;
 }
 
 function stripTrailingSlash(url) {
@@ -21052,16 +21052,16 @@ function buildCanonical({
   const validCity = city || "tehran";
   const validCategory = category || "";
 
-  if (!validCategory) return `https://ajur.app/${safePathSegment(validCity)}`;
+  if (!validCategory) return `https://boomlex.ir/${safePathSegment(validCity)}`;
 
   // Neighborhood canonical only when it is a pure SEO neighborhood URL
   if (neighborhoodSlug && !hasMultipleNeighborhoods && !hasQueryNeighborhood) {
-    return `https://ajur.app/${safePathSegment(validCity)}/${safePathSegment(
+    return `https://boomlex.ir/${safePathSegment(validCity)}/${safePathSegment(
       validCategory
     )}/${safePathSegment(neighborhoodSlug)}`;
   }
 
-  return `https://ajur.app/${safePathSegment(validCity)}/${safePathSegment(validCategory)}`;
+  return `https://boomlex.ir/${safePathSegment(validCity)}/${safePathSegment(validCategory)}`;
 }
 
 function buildWebPageJsonLd({ canonicalUrl, seoTitle, seoDescription }) {
@@ -21075,9 +21075,9 @@ function buildWebPageJsonLd({ canonicalUrl, seoTitle, seoDescription }) {
     inLanguage: "fa-IR",
     isPartOf: {
       "@type": "WebSite",
-      "@id": "https://ajur.app/#website",
-      url: "https://ajur.app/",
-      name: "آجر - مشاور املاک هوشمند",
+      "@id": "https://boomlex.ir/#website",
+      url: "https://boomlex.ir/",
+      name: "بوملکس - مشاور املاک هوشمند",
     },
   };
 }
@@ -21086,12 +21086,12 @@ function buildOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://ajur.app/#realestateagent",
-    name: "آجر",
-    url: "https://ajur.app/",
+    "@id": "https://boomlex.ir/#realestateagent",
+    name: "بوملکس",
+    url: "https://boomlex.ir/",
     logo: {
       "@type": "ImageObject",
-      url: "https://api.ajur.app/logo/og-default.jpg",
+      url: "https://api.boomlex.ir/logo/og-default.jpg",
     },
     sameAs: [],
   };
@@ -21462,16 +21462,16 @@ const SingleCategory = ({
 
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | آجر`;
+        return `${categoryName} در ${neighborhoodName} ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
       }
-      return `${categoryName} در ${neighborhoodName} ${cityName} | آجر`;
+      return `${categoryName} در ${neighborhoodName} ${cityName} | بوملکس`;
     }
 
     if (totalCount > 0) {
-      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | آجر`;
+      return `${categoryName} در ${cityName} | لیست ${totalCount} آگهی | بوملکس`;
     }
 
-    return `${categoryName} در ${cityName} | آجر`;
+    return `${categoryName} در ${cityName} | بوملکس`;
   }, [persian_category_name, persian_city, neighborhoodName, totalCount, slugName, city]);
 
   const seoDescription = useMemo(() => {
@@ -21484,16 +21484,16 @@ const SingleCategory = ({
 
     if (neighborhoodName) {
       if (totalCount > 0) {
-        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+        return `${totalCount} آگهی ${categoryName} در ${neighborhoodName} ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
       }
-      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در آجر.`;
+      return `جدیدترین آگهی‌های ${categoryName} در ${neighborhoodName} ${cityName} در بوملکس.`;
     }
 
     if (totalCount > 0) {
-      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در آجر ببینید.`;
+      return `${totalCount} آگهی ${categoryName} در ${cityName}. جدیدترین فایل‌ها، قیمت‌ها و مشخصات را در بوملکس ببینید.`;
     }
 
-    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در آجر.`;
+    return `جدیدترین آگهی‌های ${categoryName} در ${cityName} در بوملکس.`;
   }, [
     persian_category_name,
     persian_city,
@@ -21505,8 +21505,8 @@ const SingleCategory = ({
   ]);
 
   const seoImage = details?.avatar
-    ? `https://api.ajur.app/cats_image/${details.avatar}.jpg`
-    : "https://api.ajur.app/logo/og-default.jpg";
+    ? `https://api.boomlex.ir/cats_image/${details.avatar}.jpg`
+    : "https://api.boomlex.ir/logo/og-default.jpg";
 
   const breadcrumbJsonLd = useMemo(() => {
     const displayName = persian_category_name || slugName || "آگهی";
@@ -21519,13 +21519,13 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 1,
         name: "خانه",
-        item: "https://ajur.app/",
+        item: "https://boomlex.ir/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: cityName,
-        item: `https://ajur.app/${safePathSegment(validCitySlug)}`,
+        item: `https://boomlex.ir/${safePathSegment(validCitySlug)}`,
       },
     ];
 
@@ -21534,7 +21534,7 @@ const SingleCategory = ({
         "@type": "ListItem",
         position: 3,
         name: displayName,
-        item: `https://ajur.app/${safePathSegment(validCitySlug)}/${safePathSegment(
+        item: `https://boomlex.ir/${safePathSegment(validCitySlug)}/${safePathSegment(
           validCategorySlug
         )}`,
       });
@@ -21560,7 +21560,7 @@ const SingleCategory = ({
     const items = (workersState || []).slice(0, 10).map((worker, index) => {
       const price = normalizePriceToIRR(worker?.price || worker?.specialvalue2);
       const image = worker?.thumb || worker?.image || seoImage;
-      const url = `https://ajur.app/worker/${worker.id}?slug=${worker.slug || ""}`;
+      const url = `https://boomlex.ir/worker/${worker.id}?slug=${worker.slug || ""}`;
 
       return {
         "@type": "ListItem",
@@ -21642,7 +21642,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <HomeIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -21659,7 +21659,7 @@ const SingleCategory = ({
                 color: "#666",
                 textDecoration: "none",
                 fontSize: "14px",
-                "&:hover": { color: "#b92a31" },
+                "&:hover": { color: "#7a97ff" },
               }}
             >
               <LocationOnIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -21677,7 +21677,7 @@ const SingleCategory = ({
                   color: "#666",
                   textDecoration: "none",
                   fontSize: "14px",
-                  "&:hover": { color: "#b92a31" },
+                  "&:hover": { color: "#7a97ff" },
                 }}
               >
                 <CategoryIcon sx={{ fontSize: "16px", ml: 0.5 }} />
@@ -21689,7 +21689,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -21704,7 +21704,7 @@ const SingleCategory = ({
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "500",
                 fontSize: "14px",
               }}
@@ -21845,14 +21845,14 @@ const SingleCategory = ({
           {hasMore && (
             <Grid item xs={12} sx={{ textAlign: "center", py: 4 }}>
               {loadingMore ? (
-                <CircularProgress size={30} sx={{ color: "#b92a31" }} />
+                <CircularProgress size={30} sx={{ color: "#7a97ff" }} />
               ) : (
                 <Button
                   variant="outlined"
                   onClick={loadMoreWorkers}
                   sx={{
-                    color: "#b92a31",
-                    borderColor: "#b92a31",
+                    color: "#7a97ff",
+                    borderColor: "#7a97ff",
                     px: 4,
                     py: 1,
                   }}
@@ -21924,7 +21924,7 @@ const SingleCategory = ({
 
         <meta property="og:locale" content="fa_IR" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="آجر - مشاور املاک هوشمند" />
+        <meta property="og:site_name" content="بوملکس - مشاور املاک هوشمند" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -22072,9 +22072,9 @@ const SingleCategory = ({
                     color: "#333",
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      backgroundColor: "#b92a31",
+                      backgroundColor: "#7a97ff",
                       color: "#fff",
-                      borderColor: "#b92a31",
+                      borderColor: "#7a97ff",
                     },
                   }}
                 >
@@ -22128,7 +22128,7 @@ export async function getServerSideProps(context) {
 
   try {
     const baseRes = await axios.get(
-      `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+      `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
       {
         timeout: 8000,
         headers: { Accept: "application/json" },

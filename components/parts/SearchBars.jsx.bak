@@ -438,7 +438,7 @@ const SearchBars = ({ realstates }) => {
     try {
      
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -532,7 +532,7 @@ const SearchBars = ({ realstates }) => {
       setLoadingAgents(true);
       setSearchStatus("در حال جستجوی مشاورین...");
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { title: searchTerm, limit: 20, city: currentCity.id },
           timeout: SEARCH_TIMEOUT,
@@ -656,7 +656,7 @@ const SearchBars = ({ realstates }) => {
         case "buySell":
           try {
             const response = await axios.post(
-              "https://api.ajur.app/api/search-intent",
+              "https://api.boomlex.ir/api/search-intent",
               {
                 query: searchQuery,
                 cityid: currentCity.id,
@@ -1086,7 +1086,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -1833,7 +1833,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -1925,7 +1925,7 @@ const SearchBars = ({ realstates }) => {
       setLoadingAgents(true);
       setSearchStatus("در حال جستجوی مشاورین...");
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { title: searchTerm, limit: 20, city: currentCity.id },
           timeout: SEARCH_TIMEOUT,
@@ -2057,7 +2057,7 @@ const SearchBars = ({ realstates }) => {
             console.log("Extracted main category:", mainCategory);
             
             const response = await axios.post(
-              "https://api.ajur.app/api/search-intent",
+              "https://api.boomlex.ir/api/search-intent",
               {
                 query: mainCategory,
                 original_query: searchQuery,
@@ -2472,7 +2472,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -3128,7 +3128,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -3220,7 +3220,7 @@ const SearchBars = ({ realstates }) => {
       setLoadingAgents(true);
       setSearchStatus("در حال جستجوی مشاورین...");
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { title: searchTerm, limit: 20, city: currentCity.id },
           timeout: SEARCH_TIMEOUT,
@@ -3311,7 +3311,7 @@ const SearchBars = ({ realstates }) => {
                 try {
                   // Fetch neighborhoods for this category
                   const response = await axios.post(
-                    "https://api.ajur.app/api/search-intent",
+                    "https://api.boomlex.ir/api/search-intent",
                     {
                       query: category.name,
                       original_query: searchQuery,
@@ -3725,7 +3725,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -4400,7 +4400,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -4542,7 +4542,7 @@ const SearchBars = ({ realstates }) => {
       setLoadingAgents(true);
       setSearchStatus("در حال جستجوی مشاورین...");
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { title: searchTerm, limit: 20, city: currentCity.id },
           timeout: SEARCH_TIMEOUT,
@@ -4641,7 +4641,7 @@ const SearchBars = ({ realstates }) => {
                 try {
                   // Fetch neighborhoods for this category
                   const response = await axios.post(
-                    "https://api.ajur.app/api/search-intent",
+                    "https://api.boomlex.ir/api/search-intent",
                     {
                       query: category.name,
                       original_query: query,
@@ -5095,7 +5095,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -5750,7 +5750,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -5899,7 +5899,7 @@ const SearchBars = ({ realstates }) => {
       
       // Use city ID for API call
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { 
             title: searchTerm, 
@@ -6008,7 +6008,7 @@ const SearchBars = ({ realstates }) => {
                 try {
                   // Fetch neighborhoods for this category
                   const response = await axios.post(
-                    "https://api.ajur.app/api/search-intent",
+                    "https://api.boomlex.ir/api/search-intent",
                     {
                       query: category.name,
                       original_query: query,
@@ -6466,7 +6466,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -7171,7 +7171,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -7320,7 +7320,7 @@ const SearchBars = ({ realstates }) => {
       
       // Use city ID for API call
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { 
             title: searchTerm, 
@@ -7444,7 +7444,7 @@ const SearchBars = ({ realstates }) => {
                 try {
                   // Fetch neighborhoods for this category
                   const response = await axios.post(
-                    "https://api.ajur.app/api/search-intent",
+                    "https://api.boomlex.ir/api/search-intent",
                     {
                       query: category.name,
                       original_query: query,
@@ -7903,7 +7903,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -8615,7 +8615,7 @@ const SearchBars = ({ realstates }) => {
   const fetch_cities_from_data_base = async () =>  {
     try {
       const response = await axios.get(
-        "https://api.ajur.app/api/search-cities",
+        "https://api.boomlex.ir/api/search-cities",
         {
           params: { title: '' || "" },
           timeout: 5000,
@@ -8764,7 +8764,7 @@ const SearchBars = ({ realstates }) => {
       
       // Use city ID for API call
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: { 
             title: searchTerm, 
@@ -8888,7 +8888,7 @@ const SearchBars = ({ realstates }) => {
                 try {
                   // Fetch neighborhoods for this category
                   const response = await axios.post(
-                    "https://api.ajur.app/api/search-intent",
+                    "https://api.boomlex.ir/api/search-intent",
                     {
                       query: category.name,
                       original_query: query,
@@ -9347,7 +9347,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>
@@ -9751,7 +9751,7 @@ const SearchBars = ({ realstates }) => {
       setSearchStatus("در حال جستجوی مشاورین...");
 
       const response = await axios.get(
-        "https://api.ajur.app/api/agents-search",
+        "https://api.boomlex.ir/api/agents-search",
         {
           params: {
             title: searchTerm,
@@ -9889,7 +9889,7 @@ const SearchBars = ({ realstates }) => {
         case "buySell": {
           try {
             const response = await axios.post(
-              "https://api.ajur.app/api/search-intent",
+              "https://api.boomlex.ir/api/search-intent",
               {
                 query: query,
                 cityid: cityId,
@@ -10298,7 +10298,7 @@ const SearchBars = ({ realstates }) => {
             >
               <img
                 src="/logo/web-logo-text.png"
-                alt="آجر"
+                alt="بوملکس"
                 className="h-8 w-auto"
               />
             </button>

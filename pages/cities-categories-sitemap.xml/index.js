@@ -1,10 +1,10 @@
 // import { getServerSideSitemap } from "next-sitemap";
 
 // export const getServerSideProps = async (ctx) => {
-//   let cities = await fetch("https://api.ajur.app/api/active-category-cities");
+//   let cities = await fetch("https://api.boomlex.ir/api/active-category-cities");
 //   cities = await cities.json();
   
-//   const baseUrl = 'https://ajur.app'; // Hardcoded domain
+//   const baseUrl = 'https://boomlex.ir'; // Hardcoded domain
   
 //   const newsSitemaps = cities.items.map((item) => ({
 //     loc: `${baseUrl}/${item.slug.toString()}/${item.eng_cat.toString()}`,
@@ -23,12 +23,12 @@
 import { getServerSideSitemap } from "next-sitemap";
 
 export const getServerSideProps = async (ctx) => {
-  const baseUrl = process.env.NEXT_PUBLIC_AJUR_APP_URL || 'https://ajur.app'; // استفاده از متغیر محیطی برای دامنه
+  const baseUrl = process.env.NEXT_PUBLIC_AJUR_APP_URL || 'https://boomlex.ir'; // استفاده از متغیر محیطی برای دامنه
   let cities = []; // مقداردهی اولیه خالی
 
   try {
     // Fetch داده‌ها از API
-    const res = await fetch("https://api.ajur.app/api/active-category-cities");
+    const res = await fetch("https://api.boomlex.ir/api/active-category-cities");
     
     // بررسی وضعیت پاسخ API
     if (!res.ok) {

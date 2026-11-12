@@ -58,7 +58,7 @@ const DepartmentShare = (props) => {
   let department = props.department;
 
   const shareUrl =
-    "https://ajur.app/realestates//" + department.id + "?slug=" + slug;
+    "https://boomlex.ir/realestates//" + department.id + "?slug=" + slug;
   console.log("the shareUrl in workershare is :");
   console.log(shareUrl);
   const title = department.name;

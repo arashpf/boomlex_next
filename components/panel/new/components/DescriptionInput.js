@@ -29,10 +29,10 @@ const DescriptionInput = ({
         borderWidth: 1,
       },
       "&:hover fieldset": {
-        borderColor: "#a92b31",
+        borderColor: "#7a97ff",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "#a92b31",
+        borderColor: "#7a97ff",
         borderWidth: 2,
       },
     },

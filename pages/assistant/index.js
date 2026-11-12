@@ -49,7 +49,7 @@ export default function AssistantButtons() {
     // },
     {
       key: "education",
-      link: "https://mag.ajur.app/category/real-estate-education/",
+      link: "https://mag.boomlex.ir/category/real-estate-education/",
       label: "آموزش",
       color: "#ffffff",
       icon: "/Assistant-Icons/instruction",
@@ -66,7 +66,7 @@ export default function AssistantButtons() {
     {
       key: "marketing",
       link: "/marketing",
-      label: "بازاریابی آجر",
+      label: "بازاریابی بوملکس",
       color: "#ffffff",
       icon: "/Assistant-Icons/marketing",
     },

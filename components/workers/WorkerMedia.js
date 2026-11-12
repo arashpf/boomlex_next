@@ -1170,7 +1170,7 @@ export default function WorkerMedia({
                   <div className={Styles.thumbnailContainer}>
                     <img
                       src={getOptimizedImageUrl(memoizedTours[0]?.thumbnail_url, "thumbnail")}
-                      alt="بازدید مجازی آجر"
+                      alt="بازدید مجازی بوملکس"
                       className={Styles.thumbnail}
                       loading="lazy"
                       width="300"

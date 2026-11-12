@@ -684,7 +684,7 @@ const DepartmentPanel = (props) => {
   const DepartmentInviteLinkCopyClick = () => {
     console.log("realestateMarketingLinkClick toched");
     copyToClipBoard(
-      "https://ajur.app/department/" +
+      "https://boomlex.ir/department/" +
         department.id +
         "?invite_from=" +
         user_from.phone
@@ -747,7 +747,7 @@ const DepartmentPanel = (props) => {
                 <div style={{ padding: 10 }}>
                   <QrCodeGenerator
                     url={
-                      "https://ajur.app/department/" +
+                      "https://boomlex.ir/department/" +
                       department.id +
                       "?invite_from=" +
                       user_from.phone
@@ -763,7 +763,7 @@ const DepartmentPanel = (props) => {
                 </p>
                 <Share
                   link={
-                    "https://ajur.app/department/" +
+                    "https://boomlex.ir/department/" +
                     department.id +
                     "?invite_from=" +
                     user_from.phone
@@ -773,7 +773,7 @@ const DepartmentPanel = (props) => {
                 <FormControl sx={{ m: 1, width: "100%" }} variant="outlined">
                   <OutlinedInput
                     value={
-                      "https://ajur.app/department/" +
+                      "https://boomlex.ir/department/" +
                       department.id +
                       "?invite_from=" +
                       user_from.phone
@@ -963,7 +963,7 @@ const DepartmentPanel = (props) => {
     var token = Cookies.get("id_token");
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/get-department",
+      url: "https://api.boomlex.ir/api/get-department",
       params: {
         token: token,
       },
@@ -1026,7 +1026,7 @@ const DepartmentPanel = (props) => {
                   onClick={renderNewAgentModal}
                   FabProps={{
                     sx: {
-                      bgcolor: "#b92a31",
+                      bgcolor: "#7a97ff",
                       "&:hover": {
                         bgcolor: "primary.main",
                       },

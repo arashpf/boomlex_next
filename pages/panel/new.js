@@ -263,11 +263,11 @@ const NewWorkerPage = () => {
       draftData.images.forEach((img) => {
         let url = img.url;
         if (!url || !url.startsWith("http")) {
-          url = `https://api.ajur.app/public/workers/images/${img.filepath}`;
+          url = `https://api.boomlex.ir/public/workers/images/${img.filepath}`;
         }
         url = url.replace(
-          "https://api.ajur.app/storage/workers/images/",
-          "https://api.ajur.app/public/workers/images/"
+          "https://api.boomlex.ir/storage/workers/images/",
+          "https://api.boomlex.ir/public/workers/images/"
         );
         addImages([
           {
@@ -284,10 +284,10 @@ const NewWorkerPage = () => {
       draftData.videos.forEach((video) => {
         let url =
           video.url ||
-          `https://api.ajur.app/public/workers/videos/${video.filepath}`;
+          `https://api.boomlex.ir/public/workers/videos/${video.filepath}`;
         url = url.replace(
-          "https://api.ajur.app/storage/workers/videos/",
-          "https://api.ajur.app/public/workers/videos/"
+          "https://api.boomlex.ir/storage/workers/videos/",
+          "https://api.boomlex.ir/public/workers/videos/"
         );
         addVideo({
           uri: url,
@@ -860,7 +860,7 @@ const NewWorkerPage = () => {
         await import("axios").then(({ default: axios }) =>
           axios({
             method: "post",
-            url: "https://api.ajur.app/api/post-model-location",
+            url: "https://api.boomlex.ir/api/post-model-location",
             timeout: 1000 * 35,
             params: {
               token,
@@ -943,7 +943,7 @@ const NewWorkerPage = () => {
           gap: 2,
         }}
       >
-        <CircularProgress sx={{ color: "#a92b31" }} />
+        <CircularProgress sx={{ color: "#7a97ff" }} />
         {isLoadingDraft && (
           <Typography variant="body2" sx={{ color: "#888" }}>
             لطفاً صبر کنید
@@ -963,7 +963,7 @@ const NewWorkerPage = () => {
           minHeight: "60vh",
         }}
       >
-        <CircularProgress sx={{ color: "#a92b31" }} />
+        <CircularProgress sx={{ color: "#7a97ff" }} />
       </Box>
     );
   }
@@ -973,10 +973,10 @@ const NewWorkerPage = () => {
       <Head>
         <title>
           {isEditMode
-            ? "ویرایش ملک | آجر"
+            ? "ویرایش ملک | بوملکس"
             : isExistingDraft
-            ? "ادامه پیش‌نویس | آجر"
-            : "ثبت ملک جدید | آجر"}
+            ? "ادامه پیش‌نویس | بوملکس"
+            : "ثبت ملک جدید | بوملکس"}
         </title>
       </Head>
 
@@ -1031,9 +1031,9 @@ const NewWorkerPage = () => {
                   onClick={goToStep1}
                   startIcon={<ChevronLeftIcon sx={{ fontSize: 20 }} />}
                   sx={{
-                    color: "#a92b31",
+                    color: "#7a97ff",
                     backgroundColor: "transparent",
-                    border: "1px solid #a92b31",
+                    border: "1px solid #7a97ff",
                     borderRadius: "10px",
                     fontFamily: "iransans, Arial, sans-serif",
                     fontSize: 14,

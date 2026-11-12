@@ -356,7 +356,7 @@ function Header() {
 
 
                 >
-            <img className={styles.image_logo_small}   src='/logo/web-logo-text.png' alt="لوگوی آجر" />
+            <img className={styles.image_logo_small}   src='/logo/web-logo-text.png' alt="لوگوی بوملکس" />
             </Link>
             
           </Navbar.Brand>
@@ -393,18 +393,18 @@ function Header() {
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                <p style={{background:'#f9f9f9',margin:20,padding:10,fontSize:16,textAlign:'center'}}>
-                مشاور املاک هوشمند آجر
+                مشاور املاک هوشمند بوملکس
               </p>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className={`flex-grow-1 pe-3 ${styles['nav-link-wrapper-end']}  `}>
                 <Nav.Link href="/"   onClick={onClickHome}>خانه</Nav.Link>
-                <Nav.Link  href="/about"  onClick={onClickAboutUs}>درباره آجر</Nav.Link>
+                <Nav.Link  href="/about"  onClick={onClickAboutUs}>درباره بوملکس</Nav.Link>
                 <Nav.Link href="/support"   onClick={onClickSupport}>پشتیبانی</Nav.Link>
 
                 <NavDropdown
-                  title="ورود به آجر"
+                  title="ورود به بوملکس"
                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                  
                 >
@@ -442,7 +442,7 @@ function Header() {
 
                 <div className={styles['logo-just-mobile']}>
 
-                <img className={styles['logo-just-mobile-image']} src="/img/big-logo-180.png" alt="لوگوی مشاور املاک آجر" width={180} height={180} />
+                <img className={styles['logo-just-mobile-image']} src="/img/big-logo-180.png" alt="لوگوی مشاور املاک بوملکس" width={180} height={180} />
                 </div>
             </Offcanvas.Body>
 

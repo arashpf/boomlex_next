@@ -261,11 +261,11 @@ const ImageUploader = ({
             let realUrl =
               result.image.url ||
               (result.image.filepath
-                ? `https://api.ajur.app/public/workers/images/${result.image.filepath}`
+                ? `https://api.boomlex.ir/public/workers/images/${result.image.filepath}`
                 : dataUrl);
             realUrl = realUrl.replace(
-              "https://api.ajur.app/storage/workers/images/",
-              "https://api.ajur.app/public/workers/images/"
+              "https://api.boomlex.ir/storage/workers/images/",
+              "https://api.boomlex.ir/public/workers/images/"
             );
             updateImage(tempUri, {
               id: result.image.id,
@@ -492,7 +492,7 @@ const ImageUploader = ({
           fontSize: 13,
         }}
       >
-        ملک هایی که عکس های با کیفیتی دارند در آجر تا ۵ برابر بیشتر دیده میشوند
+        ملک هایی که عکس های با کیفیتی دارند در بوملکس تا ۵ برابر بیشتر دیده میشوند
       </Typography>
 
       <Box
@@ -513,7 +513,7 @@ const ImageUploader = ({
             sx={{
               width: { xs: 100, md: 110 },
               height: { xs: 100, md: 110 },
-              border: "2px dashed #a92b31",
+              border: "2px dashed #7a97ff",
               borderRadius: "10px",
               backgroundColor: "white",
               display: "flex",
@@ -526,12 +526,12 @@ const ImageUploader = ({
               "&:hover": { backgroundColor: "#fef8f8", borderColor: "#8a2228" },
             }}
           >
-            <AddPhotoAlternateIcon sx={{ fontSize: 40, color: "#a92b31", mb: 0.5 }} />
+            <AddPhotoAlternateIcon sx={{ fontSize: 40, color: "#7a97ff", mb: 0.5 }} />
             <Typography
               sx={{
                 fontFamily: "iransans, Arial, sans-serif",
                 fontSize: 11,
-                color: "#a92b31",
+                color: "#7a97ff",
                 fontWeight: 600,
                 textAlign: "center",
               }}
@@ -614,10 +614,10 @@ const ImageUploader = ({
                       py: 0.5,
                       color: aspect === a.value ? "#fff" : "#aaa",
                       backgroundColor:
-                        aspect === a.value ? "#a92b31" : "transparent",
+                        aspect === a.value ? "#7a97ff" : "transparent",
                       border: "1px solid",
                       borderColor:
-                        aspect === a.value ? "#a92b31" : "#444",
+                        aspect === a.value ? "#7a97ff" : "#444",
                       borderRadius: "20px",
                       fontFamily: "iransans, Arial, sans-serif",
                       fontSize: 12,
@@ -700,7 +700,7 @@ const ImageUploader = ({
                     step={0.05}
                     onChange={(e, val) => setZoom(val)}
                     sx={{
-                      color: "#a92b31",
+                      color: "#7a97ff",
                       "& .MuiSlider-thumb": { backgroundColor: "white" },
                     }}
                   />
@@ -725,7 +725,7 @@ const ImageUploader = ({
                     step={1}
                     onChange={(e, val) => setRotation(val)}
                     sx={{
-                      color: "#a92b31",
+                      color: "#7a97ff",
                       "& .MuiSlider-thumb": { backgroundColor: "white" },
                     }}
                   />
@@ -796,7 +796,7 @@ const ImageUploader = ({
               sx={{
                 flex: 1,
                 m: 2,
-                border: "2px dashed #a92b31",
+                border: "2px dashed #7a97ff",
                 borderRadius: "16px",
                 backgroundColor: "#fdf7f8",
                 display: "flex",
@@ -811,7 +811,7 @@ const ImageUploader = ({
               onClick={openFileDialog}
             >
               <input {...getInputProps()} />
-              <AddPhotoAlternateIcon sx={{ fontSize: 70, color: "#a92b31", mb: 2 }} />
+              <AddPhotoAlternateIcon sx={{ fontSize: 70, color: "#7a97ff", mb: 2 }} />
               <Typography
                 sx={{
                   fontFamily: "iransans, Arial, sans-serif",

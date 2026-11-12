@@ -215,7 +215,7 @@ const MainListItems = ({onCloseMenu, onGrabClicked}) => {
               type="body2"
               style={{ color: "#555", textAlign: "right", paddingRight: 20 }}
             >
-              درباره آجر
+              درباره بوملکس
             </p>
           }
         />
@@ -266,7 +266,7 @@ const MainListItems = ({onCloseMenu, onGrabClicked}) => {
               type="body2"
               style={{ color: "#555", textAlign: "right", paddingRight: 20 }}
             >
-              پشتیبانی آجر
+              پشتیبانی بوملکس
             </p>
           }
         />

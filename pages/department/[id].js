@@ -350,7 +350,7 @@ const singleDeparment = (props) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <title>مشاور املاک هوشمند آجر | {department.name}</title>
+        <title>مشاور املاک هوشمند بوملکس | {department.name}</title>
         <meta name="description" content={department.description} />
         <meta
           name="robots"
@@ -360,24 +360,24 @@ const singleDeparment = (props) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content={"مشاور املاک هوشمند آجر |" + department.name}
+          content={"مشاور املاک هوشمند بوملکس |" + department.name}
         />
         <meta
           property="og:description"
           content={
-            " صفحه اختصاصی  " + department.name + " | مشاور املاک هوشمند آجر "
+            " صفحه اختصاصی  " + department.name + " | مشاور املاک هوشمند بوملکس "
           }
         />
         <meta
           property="og:url"
           content={
-            "https://ajur.app/department/" +
+            "https://boomlex.ir/department/" +
             department.id +
             "?slug=" +
             department.slug
           }
         />
-        <meta property="og:site_name" content="مشاور املاک هوشمند آجر" />
+        <meta property="og:site_name" content="مشاور املاک هوشمند بوملکس" />
         <meta
           property="article:published_time"
           content="2020-05-19T21:34:43+00:00"
@@ -396,7 +396,7 @@ const singleDeparment = (props) => {
         <link
           rel="canonical"
           href={
-            "https://ajur.app/department/" +
+            "https://boomlex.ir/department/" +
             department.id +
             "?slug=" +
             department.slug
@@ -413,7 +413,7 @@ export async function getServerSideProps(context) {
   const id = params.id;
 
   const res = await fetch(
-    `https://api.ajur.app/api/get-department-front?department_id=${id}`
+    `https://api.boomlex.ir/api/get-department-front?department_id=${id}`
   );
   const data = await res.json();
   return {

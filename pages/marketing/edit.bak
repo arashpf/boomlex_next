@@ -63,8 +63,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://ajur.app">
-        Ajur.app
+      <Link color="inherit" href="https://boomlex.ir">
+        boomlex.ir
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -123,7 +123,7 @@ const editMarketer = (props) => {
 
       axios({
         method: 'get',
-        url: 'https://api.ajur.app/api/get-user',
+        url: 'https://api.boomlex.ir/api/get-user',
         params: {
           token: token,
         },
@@ -190,7 +190,7 @@ const editMarketer = (props) => {
         var token = Cookies.get('id_token');
         axios({
             method: 'post',
-            url: 'https://api.ajur.app/api/edit-marketer',
+            url: 'https://api.boomlex.ir/api/edit-marketer',
             params: {
               token: token,
               user_name : user_name,

@@ -51,7 +51,7 @@ function UserDashboard() {
         }
 
         setLoading(true);
-        axios.post("https://api.ajur.app/api/user-gads", null, {
+        axios.post("https://api.boomlex.ir/api/user-gads", null, {
             params: { token: currentToken },
         })
         .then((response) => {

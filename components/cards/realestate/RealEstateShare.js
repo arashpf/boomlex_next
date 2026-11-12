@@ -58,7 +58,7 @@ const RealEstateShare = (props) => {
   let realstate = props.realstate;
 
   const shareUrl =
-    "https://ajur.app/realestates//" + realstate.id + "?slug=" + slug;
+    "https://boomlex.ir/realestates//" + realstate.id + "?slug=" + slug;
   console.log("the shareUrl in workershare is :");
   console.log(shareUrl);
   const title = realstate.name;

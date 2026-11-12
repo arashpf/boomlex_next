@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import ClipLoader from "react-spinners/ClipLoader";
 import styles from "./SmartSearchBox.module.css";
 
-const API_BASE = "https://api.ajur.app/api/ai/v1";
+const API_BASE = "https://api.boomlex.ir/api/ai/v1";
 const SEARCH_INTENT = "http://localhost:8000/api/search-intent";
 
 export default function SmartSearchBox({ onSearch, showDebug = false }) {
@@ -128,7 +128,7 @@ export default function SmartSearchBox({ onSearch, showDebug = false }) {
 
       {loading && (
         <div className={styles.loader}>
-          <ClipLoader color="#b92a31" size={25} />
+          <ClipLoader color="#7a97ff" size={25} />
         </div>
       )}
 

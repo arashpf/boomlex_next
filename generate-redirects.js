@@ -7,7 +7,7 @@ const projectRoot = process.cwd();
 
 function fetchData() {
   return new Promise((resolve, reject) => {
-    https.get('https://api.ajur.app/api/active-category-cities', (res) => {
+    https.get('https://api.boomlex.ir/api/active-category-cities', (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {

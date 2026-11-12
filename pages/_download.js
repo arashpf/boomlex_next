@@ -115,8 +115,8 @@ const DownloadPage = () => {
       }}
     >
       <Head>
-        <title>دانلود اپلیکیشن آجر | Ajur</title>
-        <meta name="description" content="دانلود اپلیکیشن آجر برای اندروید و iOS" />
+        <title>دانلود اپلیکیشن بوملکس | Ajur</title>
+        <meta name="description" content="دانلود اپلیکیشن بوملکس برای اندروید و iOS" />
       </Head>
 
       <Box sx={{ maxWidth: 900, mx: "auto", px: 3 }}>
@@ -124,9 +124,9 @@ const DownloadPage = () => {
           variant="h4"
           align="center"
           fontWeight="bold"
-          sx={{ color: "#a92b31", mb: 4 }}
+          sx={{ color: "#7a97ff", mb: 4 }}
         >
-          دانلود اپلیکیشن آجر
+          دانلود اپلیکیشن بوملکس
         </Typography>
 
         {/* --- Android Section --- */}
@@ -150,11 +150,11 @@ const DownloadPage = () => {
                 fullWidth
                 variant="contained"
                 size="large"
-                href="https://api.ajur.app/download/ajur.apk"
+                href="https://api.boomlex.ir/download/ajur.apk"
                 startIcon={<DownloadIcon />}
                 sx={{
                   py: 1.5,
-                  backgroundColor: "#a92b31",
+                  backgroundColor: "#7a97ff",
                   "&:hover": { backgroundColor: "#8e2529" },
                 }}
               >
@@ -222,7 +222,7 @@ const DownloadPage = () => {
             sx={{
               py: 1.5,
               px: 6,
-              backgroundColor: "#a92b31",
+              backgroundColor: "#7a97ff",
               "&:hover": { backgroundColor: "#8e2529" },
             }}
           >
@@ -257,7 +257,7 @@ const DownloadPage = () => {
         </DialogTitle>
         <DialogContent dividers sx={{ direction: "rtl" }}>
           <Typography variant="body1" gutterBottom>
-            برای نصب اپلیکیشن آجر بر روی دستگاه iOS:
+            برای نصب اپلیکیشن بوملکس بر روی دستگاه iOS:
           </Typography>
           <ol style={{ paddingRight: 20 }}>
             <li>در مرورگر Safari روی دکمه "اشتراک‌گذاری" بزنید.</li>
@@ -270,7 +270,7 @@ const DownloadPage = () => {
             onClick={handleCloseIOSInstructions}
             variant="contained"
             sx={{
-              backgroundColor: "#a92b31",
+              backgroundColor: "#7a97ff",
               "&:hover": { backgroundColor: "#8e2529" },
             }}
           >

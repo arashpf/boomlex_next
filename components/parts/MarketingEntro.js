@@ -91,7 +91,7 @@ const MarketingEntro = (props) => {
              </div>
 
              <p style={{textAlign:'justify',direction:'rtl',padding:20,background:'white'}}>معمولا بیشتر ما دوستان املاکی زیادی داریم ، اگر فکر میکنید که در کارشان حرفه ای هستند آنها
-              را به صورت کاملا رایگان به آجر دعوت کنید تا هم دوستتان از پنل حرفه ای املاک ما به صورت رایگان استفاده کنه، هم شما در آینده آجر سهیم باشید و کسب درامد کنید 
+              را به صورت کاملا رایگان به بوملکس دعوت کنید تا هم دوستتان از پنل حرفه ای املاک ما به صورت رایگان استفاده کنه، هم شما در آینده بوملکس سهیم باشید و کسب درامد کنید 
              </p>
 
           </div>
@@ -107,13 +107,13 @@ const MarketingEntro = (props) => {
 <>
             <img
             src="/img/marketing/for_realestate.jpg"
-            alt="بازاریابی مشاور املاک در آجر"
+            alt="بازاریابی مشاور املاک در بوملکس"
             // width={1000}
             // height={667}
             style={{width:'100%'}}
             />
              <div style={{padding:20}}>
-             <p style={{fontSize:22,color:'gray',paddingTop:10,textAlign:'right'}}>پیشنهاد همکاری املاک هوشمند آجر</p>
+             <p style={{fontSize:22,color:'gray',paddingTop:10,textAlign:'right'}}>پیشنهاد همکاری املاک هوشمند بوملکس</p>
                 <p style={{fontSize:12,color:'gray',textAlign:'center'}}>اگر یک مشاور حرفه ای املاک هستید،جای درستی وارد شده اید</p>
              </div>
 
@@ -124,7 +124,7 @@ const MarketingEntro = (props) => {
                  </p>
 
                 <p> 
-                    معرفی به مشتریان آجر در منطقه
+                    معرفی به مشتریان بوملکس در منطقه
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
                 <p> 
@@ -132,7 +132,7 @@ const MarketingEntro = (props) => {
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
                 <p> 
-                       فرصت مشارکت در معاملات بزرگ با آجر        
+                       فرصت مشارکت در معاملات بزرگ با بوملکس        
                 <TaskAltIcon  style={{color:'green',fontSize:22,marginLeft:10}}/>
                 </p>
              </div>

@@ -61,7 +61,7 @@ function Login() {
         try {
             const ref = Cookies.get('ref');
 
-            await axios.post('https://api.ajur.app/webauth/register', null, {
+            await axios.post('https://api.boomlex.ir/webauth/register', null, {
                 params: {
                     phone: phoneNumber,
                     ref: ref,
@@ -167,7 +167,7 @@ function Login() {
                 >
                     شما با وارد کردن شماره خود{' '}
                     <a href="#" style={{ color: '#add8e6', textDecoration: 'underline' }}>
-                        قوانین و مقررات آجر
+                        قوانین و مقررات بوملکس
                     </a>{' '}
                     را قبول می‌کنید
                 </Typography>

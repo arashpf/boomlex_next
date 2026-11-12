@@ -1,9 +1,9 @@
 export const getServerSideProps = async ({ res }) => {
-  const response = await fetch("https://api.ajur.app/api/active-posts-images");
+  const response = await fetch("https://api.boomlex.ir/api/active-posts-images");
   const json = await response.json();
 
   const posts = json.data || [];
-  const baseUrl = "https://ajur.app";
+  const baseUrl = "https://boomlex.ir";
 
   // Unicode characters for RTL handling
   const RLE = "\u202B"; // Right-to-Left Embedding
@@ -51,7 +51,7 @@ ${posts
     const imageXml = images
       .map((img) => {
         // Prepare Persian strings
-        const rawTitle = item.name || "آجر - خدمات ساختمانی";
+        const rawTitle = item.name || "بوملکس - خدمات ساختمانی";
         const rawCaption = `${item.name || "آگهی"}${
           item.neighbourhood
             ? ` در ${item.neighbourhood}`

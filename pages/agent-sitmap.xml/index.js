@@ -1,9 +1,9 @@
 import { getServerSideSitemap } from "next-sitemap";
 
 const API_URL =
-  "https://api.ajur.app/api/index-agents-sitemap";
+  "https://api.boomlex.ir/api/index-agents-sitemap";
 
-const BASE_URL = "https://ajur.app";
+const BASE_URL = "https://boomlex.ir";
 
 /**
  * اعتبارسنجی و تبدیل شناسه مشاور

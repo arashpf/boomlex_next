@@ -55,13 +55,13 @@ const generateMetaDescription = (details) => {
 
 const generatePageTitle = (details) => {
   if (details.seo_title) return details.seo_title;
-  // تغییر فرمت عنوان به: محله {نام محله} در {نام شهر} -- آجر
+  // تغییر فرمت عنوان به: محله {نام محله} در {نام شهر} -- بوملکس
   const neighborhoodName = details.name || "";
   const cityName = details.city_name || "";
   if (neighborhoodName && cityName) {
-    return ` ${neighborhoodName}  -- آجر`;
+    return ` ${neighborhoodName}  -- بوملکس`;
   }
-  return `${neighborhoodName || ""} -- آجر`;
+  return `${neighborhoodName || ""} -- بوملکس`;
 };
 
 const getPropertyType = (details) => {
@@ -209,11 +209,11 @@ const WorkerSingle = (props) => {
         .join("، ");
 
     // canonical (keep stable; optionally keep ?slug if you want a single canonical format)
-    const canonicalUrl = `https://ajur.app/worker/${details.id}`;
+    const canonicalUrl = `https://boomlex.ir/worker/${details.id}`;
 
     // prefer thumb; else fallback
-    const shareImage = details.thumb || "https://api.ajur.app/logo/og-default.jpg";
-    const siteName = "آجر";
+    const shareImage = details.thumb || "https://api.boomlex.ir/logo/og-default.jpg";
+    const siteName = "بوملکس";
 
     return {
       pageTitle,
@@ -330,18 +330,18 @@ const WorkerSingle = (props) => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "خانه", item: "https://ajur.app" },
+        { "@type": "ListItem", position: 1, name: "خانه", item: "https://boomlex.ir" },
         {
           "@type": "ListItem",
           position: 2,
           name: details.city || "تهران",
-          item: `https://ajur.app/${details.city_slug || "tehran"}`,
+          item: `https://boomlex.ir/${details.city_slug || "tehran"}`,
         },
         {
           "@type": "ListItem",
           position: 3,
           name: details.category_name || "املاک",
-          item: `https://ajur.app/${details.city_slug || "tehran"}/${details.category_eng_name || ""}`,
+          item: `https://boomlex.ir/${details.city_slug || "tehran"}/${details.category_eng_name || ""}`,
         },
         { "@type": "ListItem", position: 4, name: details.name || "آگهی", item: canonicalUrl },
       ],
@@ -355,7 +355,7 @@ const WorkerSingle = (props) => {
           "@id": `${canonicalUrl}#agent`,
           name: cleanRealstate.name || "مشاور املاک",
           ...(cleanRealstate.phone ? { telephone: cleanRealstate.phone } : {}),
-          url: `https://ajur.app/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}`,
+          url: `https://boomlex.ir/realestates/${cleanRealstate.id}?slug=${cleanRealstate.slug || ""}`,
         }
       : null;
 
@@ -401,7 +401,7 @@ const WorkerSingle = (props) => {
     const phone = cleanRealstate?.phone || details.cellphone;
 
     try {
-      await axios.post("https://api.ajur.app/api/track/worker-call", {
+      await axios.post("https://api.boomlex.ir/api/track/worker-call", {
         worker_id: details.id,
       });
     } catch (error) {
@@ -546,8 +546,8 @@ const WorkerSingle = (props) => {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://api.ajur.app" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://api.ajur.app" />
+        <link rel="preconnect" href="https://api.boomlex.ir" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.boomlex.ir" />
         <link rel="preconnect" href="https://maps.googleapis.com" />
 
         {details.thumb && <link rel="preload" as="image" href={details.thumb} fetchPriority="high" />}
@@ -584,7 +584,7 @@ const WorkerSingle = (props) => {
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta name="format-detection" content="telephone=yes" />
-        <meta name="theme-color" content="#b92a31" />
+        <meta name="theme-color" content="#7a97ff" />
       </Head>
 
       {/* JSON-LD (Property Listing + Breadcrumb + optional Agent) */}
@@ -650,7 +650,7 @@ const WorkerSingle = (props) => {
                     zIndex: 10,
                   }}
                 >
-                  {isFavorite ? <FavoriteIcon style={{ color: "#b92a31" }} /> : <FavoriteBorderIcon style={{ color: "#666" }} />}
+                  {isFavorite ? <FavoriteIcon style={{ color: "#7a97ff" }} /> : <FavoriteBorderIcon style={{ color: "#666" }} />}
                 </button>
               </div>
 
@@ -788,7 +788,7 @@ const WorkerSingle = (props) => {
                 justifyContent: "center",
                 gap: "10px",
                 padding: "14px 16px",
-                background: "linear-gradient(135deg, #b92a31 0%, #d84343 100%)",
+                background: "linear-gradient(135deg, #7a97ff 0%, #d84343 100%)",
                 color: "#fff",
                 border: "none",
                 borderRadius: "12px",
@@ -798,7 +798,7 @@ const WorkerSingle = (props) => {
                 cursor: "pointer",
                 transition: "all 0.2s",
                 width: "100%",
-                boxShadow: "0 4px 12px rgba(185, 42, 49, 0.3)",
+                boxShadow: "0 4px 12px rgba(15, 180, 187, 0.3)",
                 WebkitTapHighlightColor: "transparent",
               }}
               aria-label={`تماس با ${cleanRealstate?.name || details.name}`}
@@ -808,7 +808,7 @@ const WorkerSingle = (props) => {
                   width: "36px",
                   height: "36px",
                   borderRadius: "50%",
-                  background: "#a92b31",
+                  background: "#7a97ff",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -849,7 +849,7 @@ const WorkerSingle = (props) => {
               borderBottom: "1px solid #ddd",
             }}
           >
-            <IconButton onClick={openDirections} title="مسیریابی در Google Maps" aria-label="مسیریابی در Google Maps" sx={{ color: "#b92a31" }}>
+            <IconButton onClick={openDirections} title="مسیریابی در Google Maps" aria-label="مسیریابی در Google Maps" sx={{ color: "#7a97ff" }}>
               <DirectionsIcon />
             </IconButton>
             <IconButton onClick={() => setMapModalOpen(false)} aria-label="بستن نقشه" sx={{ color: "#666" }}>
@@ -865,7 +865,7 @@ const WorkerSingle = (props) => {
         <div style={{ marginTop: "40px", marginBottom: "20px" }}>
           <h2 className={Styles["title"]} style={{ fontSize: "22px", marginBottom: "20px" }}>
             {/* {details.category_name}های مشابه در {details.neighbourhood || details.city} */}
-                 مشاورین فعال آجر  در   {details.name}
+                 مشاورین فعال بوملکس  در   {details.name}
 
           </h2>
           <Grid container spacing={{ xs: 2, md: 3 }} sx={{ marginTop: "10px" }}>
@@ -908,10 +908,10 @@ const WorkerSingle = (props) => {
               width: 70,
               height: 70,
               borderRadius: "50%",
-              background: "linear-gradient(90deg, #b92a31 25%, #d84343 50%, #b92a31 75%)",
+              background: "linear-gradient(90deg, #7a97ff 25%, #d84343 50%, #7a97ff 75%)",
               backgroundSize: "200% 100%",
               animation: "spin 1s infinite linear",
-              boxShadow: "0 4px 20px rgba(185, 42, 49, 0.3)",
+              boxShadow: "0 4px 20px rgba(15, 180, 187, 0.3)",
             }}
           />
         </div>
@@ -944,7 +944,7 @@ const WorkerSingle = (props) => {
           transform: scale(1.02);
         }
         .map-container:focus-visible {
-          outline: 2px solid #b92a31;
+          outline: 2px solid #7a97ff;
           outline-offset: 2px;
         }
         .favorite-icon {
@@ -1011,7 +1011,7 @@ export async function getServerSideProps(context) {
   res.setHeader("X-Content-Type-Options", "nosniff");
 
   try {
-    const response = await axios.get(`https://api.ajur.app/api/neighborhoods/${id}`, {
+    const response = await axios.get(`https://api.boomlex.ir/api/neighborhoods/${id}`, {
       timeout: 15000,
       headers: { Accept: "application/json" },
     });

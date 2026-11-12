@@ -56,8 +56,9 @@ export default function PhoneBoxes({ value, onChange, autoFocus = true }) {
         userSelect: "none",
         direction: "ltr",
         display: "flex",
-        justifyContent: "center",
-        gap: { xs: "3px", sm: "5px" },
+        width: "100%",           // 👈 Take full width of the parent
+        justifyContent: "space-between",
+        gap: { xs: "2px", sm: "4px", md: "6px" }, // 👈 Responsive gaps
         my: 1.5,
       }}
     >
@@ -94,15 +95,16 @@ export default function PhoneBoxes({ value, onChange, autoFocus = true }) {
           <Box
             key={i}
             sx={{
-              width: { xs: 24, sm: 30, md: 34 },
-              height: { xs: 36, sm: 44, md: 50 },
+              flex: 1,             // 👈 All boxes share the remaining width equally
+              minWidth: 0,         // 👈 Crucial: allows flex items to shrink below content size
+              height: { xs: 40, sm: 46, md: 50 }, // 👈 Fixed height for consistent roundness
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: "8px",
+              borderRadius: "10px", // 👈 Round corners as requested
               border: "1.5px solid",
               borderColor: isActive
-                ? "#b92a31"
+                ? "#7a97ff"
                 : isFilled
                 ? "#ccc"
                 : "#e0e0e0",
@@ -114,7 +116,7 @@ export default function PhoneBoxes({ value, onChange, autoFocus = true }) {
               position: "relative",
               transition: "border-color 0.15s ease, box-shadow 0.15s ease",
               boxShadow: isActive
-                ? "0 0 0 3px rgba(185,42,49,0.12)"
+                ? "0 0 0 3px rgba(122, 151, 255, 0.12)"
                 : "none",
             }}
           >
@@ -126,7 +128,7 @@ export default function PhoneBoxes({ value, onChange, autoFocus = true }) {
                   display: "inline-block",
                   width: "1.5px",
                   height: { xs: 16, sm: 20, md: 22 },
-                  backgroundColor: "#b92a31",
+                  backgroundColor: "#7a97ff",
                   animation: "phoneCursorBlink 1s steps(2, start) infinite",
                   "@keyframes phoneCursorBlink": {
                     to: { visibility: "hidden" },

@@ -96,7 +96,7 @@ const FileRequest = (props) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "https://api.ajur.app/api/search-cities",
+      url: "https://api.boomlex.ir/api/search-cities",
     }).then(function (response) {
       set_cities(response.data.items);
       console.log("-------the cities is ---------");
@@ -252,7 +252,7 @@ const FileRequest = (props) => {
 
     axios({
       method: "post",
-      url: "https://api.ajur.app/webauth/property-request-register",
+      url: "https://api.boomlex.ir/webauth/property-request-register",
       params: {
         phone: phone,
         name: name,
@@ -317,7 +317,7 @@ const FileRequest = (props) => {
     } else {
       axios({
         method: "post",
-        url: "https://api.ajur.app/webauth/property-request-verify",
+        url: "https://api.boomlex.ir/webauth/property-request-verify",
         params: {
           phone: phone,
           code: code,
@@ -387,7 +387,7 @@ const FileRequest = (props) => {
           <Grid item xs={12} md={6} lg={6}>
             <img
               src="/img/marketing/invite_realestate.jpg"
-              alt="دعوت مشاورین املاک به آجر"
+              alt="دعوت مشاورین املاک به بوملکس"
               style={{ width: "100%" }}
             />
           </Grid>
@@ -564,7 +564,7 @@ const FileRequest = (props) => {
                 style={{ marginBottom: 20 }}
               />
               <Form.Text className="text-muted">
-                با وارد کردن شماره شما اجازه تماس از سمت همکاران آجر را خواهید
+                با وارد کردن شماره شما اجازه تماس از سمت همکاران بوملکس را خواهید
                 داد
               </Form.Text>
               <Button onClick={onClickSendCode} fullWidth variant="contained">
@@ -604,7 +604,7 @@ const FileRequest = (props) => {
             <Grid item xs={12} md={6} lg={6}>
               <img
                 src="/img/marketing/invite_realestate.jpg"
-                alt="دعوت به مشارکت در بازاریابی آجر"
+                alt="دعوت به مشارکت در بازاریابی بوملکس"
                 style={{ width: "100%" }}
               />
               <p
@@ -623,7 +623,7 @@ const FileRequest = (props) => {
               </p>
 
               <p style={{ textAlign: "center" }}>
-                با تشکر از اعتماد شما ، تیم برسی فایل آجر
+                با تشکر از اعتماد شما ، تیم برسی فایل بوملکس
               </p>
             </Grid>
 
@@ -691,7 +691,7 @@ const FileRequest = (props) => {
 
         <p style={{ textAlign: "right", padding: 12 }}>
           هنوز فایل دلخواهتان را نیافتید یا موردی برای سپردن دارید؟ فقط کافیه
-          درخواست خودتون رو اینجا ثبت کنید از اینجا به بعدش با آجر
+          درخواست خودتون رو اینجا ثبت کنید از اینجا به بعدش با بوملکس
         </p>
 
         <Grid container spacing={2} justifyContent="center">

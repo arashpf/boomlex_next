@@ -21,7 +21,7 @@ import CheckIcon from "@mui/icons-material/Check";
 
 import axios from "axios";
 
-const API_BASE = "https://api.ajur.app/api";
+const API_BASE = "https://api.boomlex.ir/api";
 
 const AddressModal = ({ isVisible, onClose, onConfirm, isLoading }) => {
   // ---------- data ----------

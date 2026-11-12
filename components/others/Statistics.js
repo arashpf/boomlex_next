@@ -12,10 +12,10 @@ const Statistics = (props) => {
       </p>
 
       {total_day == 0 ?
-       <p style={{direction:'rtl'}}>  اولین  {'روز در آجر'} { ' ' }  </p>
+       <p style={{direction:'rtl'}}>  اولین  {'روز در بوملکس'} { ' ' }  </p>
        
         :
-        <p style={{direction:'rtl'}}>  {total_day}  {'روز در آجر'} { ' ' }  </p>
+        <p style={{direction:'rtl'}}>  {total_day}  {'روز در بوملکس'} { ' ' }  </p>
       
       }
      

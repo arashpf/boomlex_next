@@ -170,7 +170,7 @@ export default function MarketerProgressCard(props) {
               <div >
                 
                 <p style={{fontSize:25,color:'orange'}}>! هرچه بادا باد </p>
-                <p style={{fontSize:14,color:'gray'}}>پنجاه درصد تیم شما - پنجاه درصد تیم آجر </p>
+                <p style={{fontSize:14,color:'gray'}}>پنجاه درصد تیم شما - پنجاه درصد تیم بوملکس </p>
                 <p>
                   سود حاصله از معرفی شما   به صورت فروش اکانت ، نمایش تبلیغات ، فروش های واسطه ای ،ماننده 
                   هایپر مارکت های لوازم ساختمانی و ... که توسط این مشتری به پلتفرم ما هدایت خواهد شد را در آینده 
@@ -230,7 +230,7 @@ export default function MarketerProgressCard(props) {
               <div>
                
                 <p style={{fontSize:25,color:'orange'}}>! تا ۶ لول پورسانت </p>
-                <p style={{fontSize:14,color:'gray'}}>پنجاه درصد تیم شما - پنجاه درصد تیم آجر </p>
+                <p style={{fontSize:14,color:'gray'}}>پنجاه درصد تیم شما - پنجاه درصد تیم بوملکس </p>
                 <p>
               شما با ارسال لینک بازاریابی خود به دوستان علاقه مند به بازاریابی و کسب درامد خود 
               میتوانید شبکه ای از بازاریابان را هدایت کرده و تا ۶ لول پورسانت دریافت کنید  

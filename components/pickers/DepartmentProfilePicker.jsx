@@ -78,7 +78,7 @@ import ReactCrop, {
     
     const old_imgage = props.img;
 
-    const defalut_image = "https://api.ajur.app/public/user/images/profile/thumb/upload-image.png";
+    const defalut_image = "https://api.boomlex.ir/public/user/images/profile/thumb/upload-image.png";
   
     function handleClose(){
         setOpen(false);
@@ -184,7 +184,7 @@ import ReactCrop, {
 
      axios({
         method: 'post',
-        url: 'https://api.ajur.app/api/post-department-images',
+        url: 'https://api.boomlex.ir/api/post-department-images',
         data: formData,
         // timeout: 1000 * 20, // Wait for 20 seconds
         params: {

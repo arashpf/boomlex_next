@@ -9,7 +9,7 @@ const CatSelector = ({ selectedCats, setSelectedCats }) => {
 
     useEffect(() => {
         axios
-            .get("https://api.ajur.app/api/sub-category")
+            .get("https://api.boomlex.ir/api/sub-category")
             .then((res) => {
                 if (Array.isArray(res.data)) {
                     setOptions(res.data);

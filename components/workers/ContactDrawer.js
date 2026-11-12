@@ -62,7 +62,7 @@ export default function ContactDrawer({
     });
 
     try {
-      await axios.post("https://api.ajur.app/api/track/worker-call", {
+      await axios.post("https://api.boomlex.ir/api/track/worker-call", {
         worker_id: details?.id,
       });
     } catch (err) {
@@ -174,7 +174,7 @@ export default function ContactDrawer({
               sx={{
                 py: 1.4,
                 borderRadius: "12px",
-                backgroundColor: "#b92a31",
+                backgroundColor: "#7a97ff",
                 fontFamily: "iransans, Arial, sans-serif",
                 fontWeight: 700,
                 fontSize: 15,
@@ -191,8 +191,8 @@ export default function ContactDrawer({
               sx={{
                 py: 1.4,
                 borderRadius: "12px",
-                borderColor: "#b92a31",
-                color: "#b92a31",
+                borderColor: "#7a97ff",
+                color: "#7a97ff",
                 fontFamily: "iransans, Arial, sans-serif",
                 fontWeight: 700,
                 fontSize: 15,

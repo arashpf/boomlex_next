@@ -133,7 +133,7 @@ const ProfilePicker = (props) => {
 
     axios({
       method: "post",
-      url: "https://api.ajur.app/api/post-profile-images",
+      url: "https://api.boomlex.ir/api/post-profile-images",
       data: formData,
       // timeout: 1000 * 20, // Wait for 20 seconds
       params: {

@@ -156,7 +156,7 @@ export default function BestSection({ englishCity,persianCity }) {
       {
         id: 2,
         title: " بهترین مشاوران "+persianCity,
-        description: "مشاوران برتر و باتجربه آجر در شهر "+persianCity,
+        description: "مشاوران برتر و باتجربه بوملکس در شهر "+persianCity,
         icon: "agent",
         link: englishCity ? `/agents/${englishCity}` : "/agents",
       },
@@ -199,7 +199,7 @@ export default function BestSection({ englishCity,persianCity }) {
     <section
       dir="rtl"
       style={{
-        background: "linear-gradient(180deg, #a92b31  0%, #ffffff 100%)",
+        background: "linear-gradient(180deg, #7a97ff  0%, #ffffff 100%)",
         borderRadius: 14,
       }}
       className="pb-16 pt-8 px-4 bg-transparent"

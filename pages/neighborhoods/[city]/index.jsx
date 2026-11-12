@@ -18,9 +18,9 @@ const CityNeighborhoodHub = ({ city, neighborhoods, error }) => {
   const persianCity = useMemo(() => getPersianCityName(city), [city]);
 
   const seoData = useMemo(() => {
-    const pageTitle = `محله‌ های ${persianCity} | معرفی و راهنمای مناطق شهری | آجر`;
-    const metaDescription = `لیست کامل محله‌ ها و مناطق مسکونی شهر ${persianCity}. جهت بررسی وضعیت دسترسی، خرید و اجاره مسکن در محله‌ های مختلف ${persianCity} وارد آجر شوید.`;
-    const canonicalUrl = `https://ajur.app/neighborhoods/${city}`;
+    const pageTitle = `محله‌ های ${persianCity} | معرفی و راهنمای مناطق شهری | بوملکس`;
+    const metaDescription = `لیست کامل محله‌ ها و مناطق مسکونی شهر ${persianCity}. جهت بررسی وضعیت دسترسی، خرید و اجاره مسکن در محله‌ های مختلف ${persianCity} وارد بوملکس شوید.`;
+    const canonicalUrl = `https://boomlex.ir/neighborhoods/${city}`;
     return { pageTitle, metaDescription, canonicalUrl };
   }, [city, persianCity]);
 
@@ -29,7 +29,7 @@ const CityNeighborhoodHub = ({ city, neighborhoods, error }) => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "خانه", item: "https://ajur.app" },
+        { "@type": "ListItem", position: 1, name: "خانه", item: "https://boomlex.ir" },
         {
           "@type": "ListItem",
           position: 2,
@@ -50,7 +50,7 @@ const CityNeighborhoodHub = ({ city, neighborhoods, error }) => {
         return {
           "@type": "ListItem",
           position: index + 1,
-          url: `https://ajur.app/neighborhoods/${city}/${slug}`,
+          url: `https://boomlex.ir/neighborhoods/${city}/${slug}`,
           name: item.name || item.title,
         };
       }),
@@ -71,8 +71,8 @@ const CityNeighborhoodHub = ({ city, neighborhoods, error }) => {
         <meta property="og:title" content={seoData.pageTitle} />
         <meta property="og:description" content={seoData.metaDescription} />
         <meta property="og:url" content={seoData.canonicalUrl} />
-        <meta property="og:image" content="https://api.ajur.app/logo/og-default.jpg" />
-        <meta name="theme-color" content="#b92a31" />
+        <meta property="og:image" content="https://api.boomlex.ir/logo/og-default.jpg" />
+        <meta name="theme-color" content="#7a97ff" />
       </Head>
 
       <Script
@@ -110,7 +110,7 @@ const CityNeighborhoodHub = ({ city, neighborhoods, error }) => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "#b92a31",
+                color: "#7a97ff",
                 fontWeight: "700",
                 fontSize: "14px",
               }}
@@ -190,7 +190,7 @@ export async function getServerSideProps(context) {
 
   try {
     const baseRes = await axios.get(
-      `https://api.ajur.app/api/base?city=${encodeURIComponent(city)}`,
+      `https://api.boomlex.ir/api/base?city=${encodeURIComponent(city)}`,
       {
         timeout: 10000,
         headers: { Accept: "application/json" },

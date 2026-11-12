@@ -142,7 +142,7 @@ function WorkerDetails(props){
         right: 0,
         width: '100%',
         padding: '12px',
-        backgroundColor: '#a92b31',
+        backgroundColor: '#7a97ff',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

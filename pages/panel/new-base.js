@@ -61,7 +61,7 @@ const new_base = (props) => {
 
   const onClickNewConstruction = () => {
     console.log('new fro construction');
-    setProblem('آجر سازندگان در حال حاضر در دسترس نیست');
+    setProblem('بوملکس سازندگان در حال حاضر در دسترس نیست');
     
     setOpen(true);
   }

@@ -28,14 +28,14 @@ const TickFieldSelector = ({ field, value, onSelect, isRequired }) => {
         mx: 0.5,
         borderRadius: "8px",
         border: "1.5px solid",
-        borderColor: isSelected(label) ? "#a92b31" : "#d0d0d0",
+        borderColor: isSelected(label) ? "#7a97ff" : "#d0d0d0",
         backgroundColor: "white",
         minWidth: 60,
         textAlign: "center",
         cursor: "pointer",
         transition: "all 0.2s",
         "&:hover": {
-          borderColor: "#a92b31",
+          borderColor: "#7a97ff",
         },
       }}
     >
@@ -43,7 +43,7 @@ const TickFieldSelector = ({ field, value, onSelect, isRequired }) => {
         sx={{
           fontFamily: "iransans, Arial, sans-serif",
           fontSize: 14,
-          color: isSelected(label) ? "#a92b31" : "#666",
+          color: isSelected(label) ? "#7a97ff" : "#666",
           fontWeight: isSelected(label) ? "bold" : 400,
         }}
       >

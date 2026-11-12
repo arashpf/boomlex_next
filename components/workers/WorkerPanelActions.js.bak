@@ -45,7 +45,7 @@ const WorkerPanelActions = (props) => {
      
       axios({
         method:'get',
-        url:'https://api.ajur.app/api/destroy-worker',
+        url:'https://api.boomlex.ir/api/destroy-worker',
         params: {
           token: token,
           workerid:worker.id,

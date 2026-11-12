@@ -152,7 +152,7 @@ export default function DepartmentEditRealestate(props) {
     axios({
       method: "post",
 
-      url: "https://api.ajur.app/api/edit-department-agent",
+      url: "https://api.boomlex.ir/api/edit-department-agent",
 
       params: {
         token: token,

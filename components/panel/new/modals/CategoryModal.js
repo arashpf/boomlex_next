@@ -92,7 +92,7 @@ const CategoryModal = ({
               width: 8,
               height: 8,
               borderRadius: "50%",
-              backgroundColor: "#a92b31",
+              backgroundColor: "#7a97ff",
               mx: 1.5,
             }}
           />
@@ -113,7 +113,7 @@ const CategoryModal = ({
               gap: 2,
             }}
           >
-            <CircularProgress sx={{ color: "#a92b31" }} />
+            <CircularProgress sx={{ color: "#7a97ff" }} />
             <Typography
               sx={{
                 fontFamily: "iransans, Arial, sans-serif",
@@ -170,7 +170,7 @@ const CategoryModal = ({
                   >
                     {isSelected && (
                       <CheckCircleIcon
-                        sx={{ fontSize: 24, color: "#a92b31" }}
+                        sx={{ fontSize: 24, color: "#7a97ff" }}
                       />
                     )}
                   </Box>
@@ -179,7 +179,7 @@ const CategoryModal = ({
                       flex: 1,
                       fontFamily: "iransans, Arial, sans-serif",
                       fontSize: 17,
-                      color: isSelected ? "#a92b31" : "#444",
+                      color: isSelected ? "#7a97ff" : "#444",
                       fontWeight: isSelected ? "bold" : 400,
                       textAlign: "right",
                     }}
@@ -203,12 +203,12 @@ const CategoryModal = ({
               borderTop: "1px solid #f0f0f0",
             }}
           >
-            <AlertCircleIcon sx={{ color: "#a92b31", fontSize: 20 }} />
+            <AlertCircleIcon sx={{ color: "#7a97ff", fontSize: 20 }} />
             <Typography
               sx={{
                 fontFamily: "iransans, Arial, sans-serif",
                 fontSize: 14,
-                color: "#a92b31",
+                color: "#7a97ff",
                 fontWeight: 500,
                 ml: 1,
               }}

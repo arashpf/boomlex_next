@@ -59,7 +59,7 @@ export default function WorkerRealstateCard(props) {
   // Kept for backward compat — called from the drawer's onCallTracked.
   const handleCallTracked = async () => {
     try {
-      await axios.post("https://api.ajur.app/api/track/agent-call", {
+      await axios.post("https://api.boomlex.ir/api/track/agent-call", {
         agent_id: realstate?.id,
       });
     } catch (error) {

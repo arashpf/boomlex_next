@@ -15,7 +15,7 @@ app.use(
 
 app.use(express.json());
 
-const AI_API = "https://api.ajur.app/api/ai/v1";
+const AI_API = "https://api.boomlex.ir/api/ai/v1";
 
 let cities = [];
 let neighborhoods = [];
