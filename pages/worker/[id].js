@@ -835,15 +835,28 @@ const WorkerSingle = (props) => {
   };
 
   // New: guests log in first, then the ContactDrawer opens
-  const handleContactClick = () => {
+   // New: guests log in first, then the ContactDrawer opens
+   const handleContactClick = () => {
+    // ─── Analytics: contact intent fires for EVERYONE (before auth check) ───
+    trackEvent(
+      "contact_intent",
+      {
+        listing_id: details.id,
+        realstate_id: cleanRealstate?.id || null,
+        source: "worker-page-fixed-button",
+        has_phone: Boolean(cleanRealstate?.phone || details.cellphone),
+      },
+      props.__clientIp
+    );
+
     setIsAuthOpen(true); // نوار پایین را مخفی می‌کند
     requireAuth(
       () => {
-        setIsAuthOpen(false); // اگر لاگین موفق بود، وضعیت لاگین را می‌بندیم
-        setContactOpen(true);  // دراور تماس را باز می‌کنیم
+        setIsAuthOpen(false);
+        setContactOpen(true);
       },
       "برای مشاهده اطلاعات تماس وارد شوید",
-      () => setIsAuthOpen(false) // 👈 ADD THIS LINE
+      () => setIsAuthOpen(false)
     );
   };
 

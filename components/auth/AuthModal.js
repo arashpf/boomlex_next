@@ -123,6 +123,13 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
         source: "auth-modal",
       });
 
+      // ─── Analytics: auth funnel step 2 ───
+      trackEvent("auth_phone_submitted", {
+        method: "phone",
+        phone_prefix: phone.slice(0, 4),
+        source: "auth-modal",
+      });
+
       setStep("otp");
       setCooldown(RESEND_SECONDS);
     } catch (err) {
@@ -157,6 +164,14 @@ export default function AuthModal({ open, reason, onClose, onSuccess }) {
         phone_prefix: phone.slice(0, 4),
         source: "auth-modal",
         has_next_redirect: false,
+      });
+
+      // ─── Analytics: auth funnel step 3 ───
+      trackEvent("auth_login_complete", {
+        method: "otp",
+        phone_prefix: phone.slice(0, 4),
+        source: "auth-modal",
+        is_new_user: isNewUser,
       });
 
       onSuccess?.(result);
