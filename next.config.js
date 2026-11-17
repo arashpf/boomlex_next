@@ -19,6 +19,8 @@ const nextConfig = {
       'react-bootstrap',
       '@react-three/drei',
     ],
+    cpus: 1,
+    workerThreads: false,
   },
 
   images: {
